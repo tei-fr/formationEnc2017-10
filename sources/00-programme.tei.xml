@@ -28,7 +28,8 @@
       <titlePage xml:lang="fr" xml:id="index">
         <titlePart>00-Programme</titlePart>
         <docImprint>Formation TEI | ENC 17 au 20 mai 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="https://github.com/tei-fr/formationEnc2017-10">Répertoire GitHub</ref> |
+          <ref target="#jour1">jour1</ref> | <ref target="#jour2">jour2</ref> | <ref target="#jour3">jour3</ref> | <ref target="#jour4">jour4</ref></note>
       </titlePage>
     </front>
     <body>
