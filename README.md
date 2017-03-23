@@ -1,9 +1,11 @@
 # formationEnc2017-10
 Formation intensive d’initiation à la TEI de l’École nationale des chartes, du 17 au 20 octobre 2017
 
-Initiation à l’encodage 
+# Initiation à l’encodage 
 
-L'Ecole nationale des chartes propose une formation continue sur les notions fondamentales pour mettre en œuvre le modèle XML / TEI pour l’édition électronique de sources primaires manuscrites.
+La [Text Encoding Initiative (TEI)](http://www.tei-c.org) offre un cadre de travail pour l’édition structurée de textes littéraires ou historiques. Tout à la fois modèle conceptuel, infrastructure technique, et communauté, la TEI s’est largement imposée, au niveau international, comme standard de fait pour la production d’éditions critiques numériques. 
+
+Cette formation continue de l’École nationale des chartes porte est une initiation intensive à la Text Encoding Initiative pour l’édition électronique de sources primaires manuscrites.
 
 ## Contenu de la formation
 
