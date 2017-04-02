@@ -5,7 +5,7 @@ Formation intensive d’initiation à la TEI de l’École nationale des chartes
 
 La [Text Encoding Initiative (TEI)](http://www.tei-c.org) offre un cadre de travail pour l’édition structurée de textes littéraires ou historiques. Tout à la fois modèle conceptuel, infrastructure technique, et communauté, la TEI s’est largement imposée, au niveau international, comme standard de fait pour la production d’éditions critiques numériques. 
 
-Cette formation continue de l’École nationale des chartes porte est une initiation intensive à la Text Encoding Initiative (TEI) pour l’édition électronique de sources primaires manuscrites.
+Cette formation continue de l’École nationale des chartes consiste en une initiation intensive à la Text Encoding Initiative (TEI) pour l’édition électronique de sources primaires manuscrites.
 
 ## Contenu de la formation
 
@@ -28,4 +28,4 @@ Savoir utiliser un traitement de texte, un navigateur Web.
 
 ## Formation avancée
 
-Pour approfondir cette initiation, l’École nationale des chartes propose, au printemps, une formation avancée portant sur la modélisation des éditions critiques avec la Text Encoding Initiative. <lien>
+Pour approfondir cette initiation, l’École nationale des chartes propose, au printemps 2018, une formation avancée portant sur la modélisation des éditions critiques avec la Text Encoding Initiative. <lien>
