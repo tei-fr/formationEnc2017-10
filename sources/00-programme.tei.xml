@@ -16,6 +16,9 @@
     </fileDesc>
     <revisionDesc>
       <change>
+        <date>2017-05</date>
+        <name>Emmanuel Chateau</name>, modifications pour la formation 2016</change>
+      <change>
         <date>2016-05</date>
         <name>Emmanuel Chateau</name>, modifications pour la formation 2016</change>
       <change>
@@ -27,7 +30,7 @@
     <front>
       <titlePage xml:lang="fr" xml:id="index">
         <titlePart>00-Programme</titlePart>
-        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <docImprint>Formation TEI | ENC 17 au 20 oct 2017</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
     </front>
