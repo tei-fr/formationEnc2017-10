@@ -4,11 +4,8 @@ ECHO=
 
 # these are the talks which dont work in html
 PDFTALKS= \
-	talk-01 \
-	talk-02-tei \
-	tei-history \
-	ex-2-analyse
-
+	tei-florilege \
+	talk-xslt 
 
 EXERCISES= \
 	ex-1-oxygen \
@@ -36,7 +33,7 @@ DIAPOS= \
 	11-xsltParesseux \
 	12-teiCommunity 
 
-default: exercises htmlslides
+default: exercises htmlslides pdfslides
 
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
@@ -54,9 +51,7 @@ slides: pdfslides
 
 pdfslides:  
 	for i in $(PDFTALKS) ; do \
-#		saxon $$i.xml frenchify.xsl > $$i-fr.xml; \
-		teitoslides --profile=tei $$i-fr.xml; 		
-	teitoslides --profile=tei $$i.xml; \
+		teitoslides --profile=tei $$i.xml; \
 		mv $$i.xml.slides ../diapos/$$i.pdf; \
 	done
 
