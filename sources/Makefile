@@ -11,29 +11,43 @@ PDFTALKS= \
 
 
 EXERCISES= \
-	ex-1-oxygen.xml \
-	ex-2-analyse.xml \
-	ex-3-roma.xml \
-	ex-4-oulipo.xml \
-	ex-5-header.xml \
-	ex-6-msdesc.xml \
-	ex-7-entites.xml \
-	ex-8-organisation.xml \
-	ex-9-odd.xml \
-	ex-11-xslt.xml
+	ex-1-oxygen \
+	ex-2-analyse \
+	ex-3-roma \
+	ex-4-oulipo \
+	ex-5-header \
+	ex-6-msdesc \
+	ex-7-entites \
+	ex-8-organisation \
+	ex-9-odd \
+	ex-11-xslt
+
+DIAPOS= \
+	00-programme \
+	01-editionNumerique \
+	02-richessesTEI \
+	03-transcriptionManuscrits \
+	04-teiHeader \
+	05-msdesc \
+	06-entitesNommees \
+	07-organisation \
+	08-personnalisation \
+	09-traitementTEI \
+	11-xsltParesseux \
+	12-teiCommunity 
 
 default: exercises htmlslides
 
 htmlslides: 
-	for f in [01]*.xml; do echo $$f; \
-	saxon -o:../diapos/$$f.html $$f ../xsl/tei2md.xsl; done; \
+	for f in $(DIAPOS); do echo $$f; \
+	saxon -o:../diapos/$$f.html $$f.tei.xml ../xsl/tei2md.xsl; done; \
 	cd ../diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
 
 
 exercises:
 	for i in $(EXERCISES) ; do \
-		teitopdf $$i ; \
-		mv $$i.pdf ../diapos/$$i.pdf; \
+		teitopdf $$i.xml ; \
+		mv $$i.xml.pdf ../diapos/$$i.pdf; \
 	done
 
 slides: pdfslides 
