@@ -13,8 +13,9 @@
                                     <item resp="#LB"> TP Modélisation<ref target="ex-2-analyse.xml"
                                                   >ex-2-analyse</ref></item>
                                     <label>13h30 - 14h </label>
-                                    <item> Revoir l’exercice encodage initial</item>
-                                    <label>14h -15h </label>
+                               <!--     <item> Revoir l’exercice encodage initial</item>
+                               -->        <item>? À la découverte d’oXygen <ref target="ex-1-oxygen.xml"/></item>
+                                 <label>14h -15h </label>
                                     <item resp="#LB"> Introduction aux richesses de la TEI<!--<ref
                                                   target="talk-tei-intro.xml"
                                                 >talk-tei-intro</ref>-->
@@ -29,8 +30,8 @@
                         <head>2ème journée…</head>
                         <list>
                                     <label>9h30-10h </label>
-                                    <item> Édition critique <ref target="04-editionCritique.tei.xml"
-                                                  >04-editionCritique.tei</ref></item>
+                                    <item> Édition critique ou transcription<ref target="03-transcriptionManuscrits.tei.xml"
+                                                  ></ref></item>
                           <!-- ??? rmq-editionCritique.xml -->          
                           <label>10h-11h  </label>
                                     <item resp="#LB"> TP Édition critique <ref target="ex-4-oulipo.xml"
@@ -105,6 +106,9 @@
                                   <!-- ??? -->
                               <label>13h30-14h30  </label>
                                     <item> L'outillage TEI</item>
+                          <label>14h30 - 15h</label>
+                          <item>Welcome to the TEI community
+                          <ref target="12-teiCommunity.tei.xml"/></item>
                         </list>
             </div>
 

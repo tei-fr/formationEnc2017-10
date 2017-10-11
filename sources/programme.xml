@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Formation XML-TEI à l’école Nationale des Chartes, mai 2016</title>
+                <author xml:id="LB">Lou Burnard</author>
+                <author xml:id="EM">Emmanuel Château</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>unknown</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <listChange>
+                <change><date>2016-04-09T20:11:28Z</date><name>LB/EMC</name></change>
+            </listChange>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <head>Programme de la formation</head>
+            <div>
+                <head>Premier jour</head>
+                <div>
+                    <head>09h30 Introduction</head>
+                </div>
+                <div xml:id="T00" resp="#EM">
+                    <head>10h-10h45 : Présentation des participants</head>
+                    <p>Chaque participant se présente et expose son travail et les difficultés
+                        rencontrées.</p>
+                    <p>Définition des binômes</p>
+                </div>
+                <div>
+                    <head>Pause</head>
+                </div>
+                <div xml:id="T01" resp="#EM">
+                    <head>11h-11h30 : Synthèse sur le
+                        balisage<!-- PM (présentation magistrale)
+                            EM--></head>
+                    <list>
+                        <item>Théorie du balisage</item>
+                        <item>Expression en utilisant XML</item>
+                        <item>Document bien formé et document valide</item>
+                    </list>
+                    <p>Cf <ref target="01-editionNumerique.tei.xml"
+                        >01-editionNumerique.tei</ref></p>
+                </div>
+                <div xml:id="T02" resp="#LB">
+                    <head>11h30-12h30 : TP Modélisation<!-- TP (travaux pratiques) LB--></head>
+                    <p>Fournir plusieurs documents et discuter ce que l’on doit baliser; Exposés
+                        oraux des participants</p>
+                    <p>
+                        <ref target="ex-2-analyse.xml">ex-2-analyse</ref></p>
+                </div>
+                <div>
+                    <head>LUNCH</head>
+                </div>
+                <div xml:id="T03" resp="#LB #EM">
+                    <head>13h30 - 14h : Revoir l’exercice encodage
+                        initial<!-- (<ref
+                                target="ex-1-oxygen.xml"/>) – LB/EM--></head>
+                    <p>Contrôler que les participants se sont familiarisés avec l’environnement
+                        technique et expérimenter la saisie contextuelle, etc.</p>
+                </div>
+                <div xml:id="T04" resp="#LB">
+                    <head>14h -15h : Introduction aux richesses de la TEI<!-- – PM LB--></head>
+                    <p>Comment partir des complexités du modèle vers la TEI ; les 5 étapes; modules,
+                        classes etc.</p>
+                    <p><ref target="02-richessesTEI.tei.xml">02-richessesTEI.tei</ref></p>
+                </div>
+                <div xml:id="T05" resp="#EM ">
+                    <head>15h - 17h : Personnalisation TEI avec Roma<!--– TP EM--></head>
+                    <p><ref target="ex-3-roma.xml">ex-3-roma</ref></p>
+                    <list>
+                        <item> Création avec Roma ODD schéma réduit</item>
+                        <item> Génération du schéma et de l’ODD</item>
+                        <item> Valider avec le schéma</item>
+                        <item> Transcription d’un manuscrit simple; validation de la transcription.
+                            (exercices sur deGaulle.xml) </item>
+                    </list>
+                    <p>Avant de partir, ne pas oublier de prévenir les participants que nous
+                        attendons d’eux trois diapositives de présentation de leur projet pour le
+                        lendemain.</p>
+                </div>
+                <div>
+                    <head>Social event (bière)</head>
+                    <p>Il faut que je pense à réserver ou choisir un endroit, tout n’est pas
+                        toujours ouvert le lundi. Le Café Vivienne possède une petite salle à
+                        l’étage qui serait parfaite, mais voudront-ils l’ouvrir pour 12
+                        personnes ?</p>
+                </div>
+            </div>
+            <div>
+                <head>2ème journée…</head>
+                <div xml:id="T06" resp="#EM">
+                    <head>9h30-10h :  Édition critique <!--– PM EM--></head>
+                    <p>Transcription sources primaires : segmentation ; interventions éditoriales </p>
+                    <!-- a finir -->
+                    <p><ref target="03-transcriptionManuscrits.tei.xml">03-transcriptionManuscrits.tei</ref></p>
+                    <p> cf. <ident>2015-09-lyon/talk-07-ms.xml</ident>;
+                            <ident>2015-09-lyon/04-editionCritique.tei.xml</ident>
+                    </p>
+                </div>
+                <div xml:id="T07" resp="#LB">
+                    <head>10h-11h  : TP Édition critique <!--– TP LB--></head>
+                    <p><ref target="ex-4-oulipo.xml">ex-4-oulipo</ref></p>
+                    <list type="unordered">
+                        <item>Rappel des choix de modélisation définis la veille</item>
+                        <item>Identification des éléments de la TEI correspondant</item>
+                        <item>Travail avec ODD pour l’édition critique</item>
+                    </list>
+                    <p>Reprise de la transcription déjà faite pour la compléter. Et sélectionner un
+                        document complexe qui pourrait leur être donné à travailler pour
+                        approfondir. </p>
+                </div>
+                <div>
+                    <head>pause</head>
+                </div>
+                <div xml:id="T08" resp="#EM">
+                    <head>11h30 -1200  : TEI Header <!--– PM EM--></head>
+                    <p><ref target="04-teiHeader.tei.xml">04-teiHeader.tei</ref></p>
+                </div>
+                <div xml:id="T08bis" resp="#EM">
+                    <head>12h -12h30 : TP TEI Header<!-- – TP EM--></head>
+                    <p><ref target="ex-5-header.xml">ex-5-header</ref></p>
+                    <list type="unordered">
+                        <item>créer un header simple</item>
+                    </list>
+                </div>
+                <div>
+                    <head>LUNCH</head>
+                </div>
+                <div xml:id="T09" resp="#LB">
+                    <head>13h30 -14h15  : TEI Msdescription<!-- – PM LB--></head>
+                    <p>
+                        <ref target="05-msdesc.tei.xml">05-talk-msdesc.tei</ref>
+                    </p>
+                    <p>Exemple d’un document très spécialisé</p>
+                </div>
+                <div xml:id="T10" resp="#LB">
+                    <head>14h15 - 15h30  : TP TEI Msdescription<!-- – TP LB--></head>
+                    <p><ref target="ex-6-msdesc.xml">ex-6-msdesc</ref></p>
+                </div>
+                <div>
+                    <head>pause</head>
+                </div>
+                <div xml:id="T11" resp="#EM">
+                    <head>16h - 17h  : Présentation projets avec la TEI</head>
+                    <p>Les participants présentent leurs projet de travail : </p>
+                    <list type="unordered">
+                        <item>trois diapos</item>
+                        <item>présentation des sources</item>
+                        <item>enjeux</item>
+                        <item>difficultés</item>
+                        <item>utilité de la TEI</item>
+                    </list>
+                </div>
+            </div>
+            <div>
+                <head>3ème journée…</head>
+                <div xml:id="T12" resp="#EM">
+                    <head>09h30-10h  :  Entités nommées<!-- – PM EM--></head>
+                    <p><ref target="06-entitesNommees.tei.xml">06-entitesNommees.tei</ref></p>
+                    </div>
+                    <div xml:id="T12bis" resp="#EM">
+                        <head>10h-11h00 Création et gestion des Entités nommées – TP EM</head>
+                        <p><ref target="ex-7-entites.xml">ex-7-entites</ref></p>
+                        <!-- a fournir -->
+                    </div>
+                    <div>
+                        <head>11h00-11h30 Pause</head>
+                    </div>
+                    <div xml:id="T13" resp="#LB">
+                        <head>11h30-12h Modalités d’organisation des documents TEI – PM LB </head>
+                        <!-- a fournir -->
+                        <p><ref target="07-organisation.tei.xml">07-organisation.tei</ref></p>
+                        <p>Concepts de group, corpus, facsimile. etc: organisation des fichiers.
+                        </p>
+                    </div>
+                    <div xml:id="T14" resp="#EM">
+                        <head>12h - 12h30 Cas d’étude : organisation du projet Oulipo – TP EM </head>
+                        <!-- a fournir -->
+                        <p><ref target="ex-8-organisation.xml">ex-8-organisation</ref></p>
+                        <p>Comment organiser le projet imaginaire: importance de versioning ;
+                            démontrer usage de Github ? </p>
+                    </div>
+                    <div>
+                        <head>LUNCH</head>
+                    </div>
+                    <div xml:id="T15" resp="#EM">
+                        <head>13h30-14h : Personnalisation avancée avec ODD – PM EM </head>
+                        <p>
+                        <ref target="08-personnalisation.tei.xml">08-personnalisation.tei</ref>
+                    </p>
+                        <p>Revoir et comprendre l’ODD créé</p>
+                    </div>
+                    <div xml:id="T16" resp="#LB">
+                        <head>14h - 15h : Création d’un ODD personnalisé – TP LB </head>
+                        <!-- a fournir -->
+                        <p><ref target="ex-9-personnalisation.xml">ex-9-personnalisation</ref></p>
+                        <list type="unordered">
+                            <item>avec Roma</item>
+                            <item>avec Oxygen (discuter conjointement des choix possibles, modules, éléments, include/exclude, valeurs d’attribut)</item>
+                        </list>
+                    </div>
+                    <div>
+                        <head>pause</head>
+                    </div>
+                    <div xml:id="T17" resp="#LB">
+                        <head>15h30 - 16h15 : Florilège de projets TEI – PM+TP LB</head>
+                        <p><ref target="tei-florilege.xml"/></p>
+                        <!-- a mettre a jour -->
+                </div>
+                <div xml:id="T18" resp="#LB">
+                    <head>16h15-17h : TP Explorations </head>
+                    <p>Comment les gens se servent de la TEI</p>
+                    <p><ref target="ex-10-explore.xml">ex-10-explore</ref></p>
+                </div>
+                <!-- <div xml:id="T18" resp="#EM">
+                        <head>16h15-17h : XPath TP – EM</head>
+                        <!-\- ? is this same as first part of xslt pour les nuls? -\->
+                        <!-\- si oui, le supprimer, et remplacer par l'ex precedent -\->
+                        <p>Rappel de l'intérêt de structuration ; technique essentiel pour ce qui
+                            suit</p>
+                    </div>-->
+            </div>
+            <div>
+                <head>4ème journée…</head>
+                <div xml:id="T19" resp="#EM">
+                    <head>9h30-10h : Chaînes de traitement TEI <!--– PM EM--></head>
+                    <p><ref target="09-traitementTEI.tei.xml">09-traitementTEI.tei</ref></p>
+                    <p>CSS, XSLT, XQuery, environnements de publication</p>
+                    <p>epub, pdf, inDesign, etc.</p>
+                </div>
+                <div xml:id="T20" resp="#LB">
+                    <head>10h00-11h : XSLT Pour les nuls<!-- – PM+TP LB--></head>
+                    <p><ref target="talk-xslt.xml">talk-xslt</ref></p>
+
+                    <p><ref target="ex-11-xslt.xml">ex-11-xslt</ref></p>
+
+                    <p>Création d’une feuille de style très simple pour transformer un document TEI
+                        vers HTML.</p>
+                    <p>Ajout de quelques templates.</p>
+                </div>
+                <div>
+                    <head>Pause</head>
+                </div>
+                <div xml:id="T21" resp="#EM">
+                    <head>11h30-12h30  : XSLT pour les paresseux <!--– PM+TP EM--></head>
+                    <p><ref target="11-xsltParesseux.tei.xml">11-xsltParesseux.tei</ref></p>
+                    <list>
+                        <item>Framework TEI Oxygen </item>
+                        <item>Personnalisation avec les variables </item>
+                        <item>Réécriture d’une règle</item>
+                    </list>
+                </div>
+                <div>
+                    <head>LUNCH</head>
+                </div>
+                <div xml:id="T22" resp="#LB #EM">
+                    <head>13h30-14h30  : L'outillage TEI<!-- a démontrer LB/EM en alternance--></head>
+                    <!-- a preparer -->
+                    <list type="unordered">
+                        <item>Boilerplate LB</item>
+                        <item>VersioningMachine EM </item>
+                        <item>TEI Simple LB</item>
+                        <item>Exist+TEI Simple EM </item>
+                        <item>TXM LB</item>
+                        <item>SynopsX + BaseX EM</item>
+                        <item>TEI Chi LB</item>
+                        <item>Omeka, Zotero EM </item>
+                    </list>
+                    <p>Au cours de la présentation essayer d’engager la discussion autour des outils
+                        en les appliquant aux exemples de la formation.</p>
+                </div>
+                <div>
+                    <head>14h30-16h  : Discussion  sur leurs projets</head>
+                </div>
+                <div>
+                    <head>16h évaluation</head>
+                </div>
+            </div>
+
+            <div>
+                <head>Exercices avant la formation</head>
+                <list>
+                    <item>Lire le bouquin <hi rend="italic">Qu’est-ce que la TEI ?</hi></item>
+                    <item>Leur donner un premier exercice à faire (tutoriel initial) </item>
+                    <item>Appliquer un schéma. Questionnaire </item>
+                    <item>Au début de la formation, dans la session où les gens se présentent,
+                        chacun présente son travail et les difficultés auxquelles il a été
+                        confronté.</item>
+                </list>
+            </div>
+            <div>
+                <head>Quelques documents OULIPO</head>
+                <p>Le dossier <ident>oulipoDox</ident> rassemble quelques un des comptes-rendus des
+                    réunions de l’Oulipo (l’Ouvroir de littérature potentielle) des années 60. Ils
+                    sont présentés en mode page-image (un fichier par page) et également dans un
+                    fichier XML-TEI crée dans le cadre du projet (en cours) DifDepo. Le balisage est
+                    très sommaire, et nous allons l’améliorer et l’approfondir.</p>
+                <p>Chaque fichier est nommé avec la date de la réunion concernée. Par exemple, le
+                    fichier <ident>cr610417.xml</ident> est une transcription TEI du CR de la
+                    réunion du 17 avril 1961 ; il y a trois fichiers pages-images correspondants :
+                        <ident>cr610417_2.jpg</ident>, <ident>cr610417_1.jpg</ident>, et
+                        <ident>cr610417_1.jpg</ident>. </p>
+                <!--   <p><ref target="http://gallica.bnf.fr/ark:/12148/btv1b100101635"><hi
+                            rend="underline color(1155cc)"
+                            >http://gallica.bnf.fr/ark:/12148/btv1b100101635</hi></ref> :
+                    (“Convocation dactylographiée au Congrès de l’Oulipo les 10 et 11 juin adressée
+                    à Marcel Bénabou et signée par François Le Lionnais. Ordre du jour autographe de
+                    Marcel Bénabou de la réunion du 10 juin. Compte rendu autographe de Marcel
+                    Bénabou et Paul Fournel de la même réunion. Compte rendu autographe de Marcel
+                    Bénabou de la réunion du 11 juin. Copie d’un manuscrit autographe de Paul
+                    Braffort « Eléments de schématisation de l’activité littéraire en vue de la
+                    formalisation et de la systématisation ». Manuscrit dactylographié de Jean
+                    Lescure avec ajouts autographes intitulé « Pour le millénaire ».
+                    <hi rend="bold" xml:space="preserve">Droits : </hi>domaine public” )</p>
+                <p><ref target="http://gallica.bnf.fr/ark:/12148/btv1b10010053c"><hi
+                            rend="underline color(1155cc)"
+                            >http://gallica.bnf.fr/ark:/12148/btv1b10010053c</hi></ref> (“Projet
+                    d’ordre du jour dactylographié avec ajouts autographes de François Le Lionnais
+                    de la réunion du 8 mars 1965. Compte rendu dactylographié de Jacques Duchateau
+                    de la réunion du 8 mars 1965. Projet d’ordre du jour dactylographié avec ajouts
+                    autographes de François Le Lionnais de la réunion du 29 mars 1965 (3
+                    exemplaires). Compte rendu dactylographié de Jacques Duchateau de la réunion du
+                    29 mars 1965. Lettre dactylographiée et signée de F. Edeline à François Le
+                    Lionnais du 8 mars 1965. Lettre dactylographiée de François Le Lionnais à F.
+                    Edeline du 9 avril 1965. Projet d’ordre du jour dactylographié avec ajouts
+                    autographes de Raymond Queneau de la réunion du 8 mars 1965. Projet d’ordre du
+                    jour dactylographié avec ajouts autographes de Raymond Queneau de la réunion du
+                    29 mars 1965.”)</p>
+                <p><ref target="http://gallica.bnf.fr/ark:/12148/btv1b100100234"><hi
+                            rend="underline color(1155cc)"
+                            >http://gallica.bnf.fr/ark:/12148/btv1b100100234</hi></ref>
+                    (“Rectification autographe de Jacques Bens de la convocation à la réunion de
+                    septembre 1962. Compte rendu dactylographié de Jacques Bens de la réunion n° 25
+                    du 11 septembre 1962. Annexe 1 dactylographiée : poème de François Dufrêne
+                    intitulé « Oulipo-Java ». Annexe 2 dactylographiée : « Projet de roman
+                    combinatoire ». Copie de « Oulipo-Java ». )</p>
+                <p>Ces 3 dossiers (choisis a l’hasard) rassemble une variete des cas interessants a
+                    mon avis. J’ai aussi telecharger les version PDF, qui nous permettrait de
+                    diffuser directement les pages images individuelles. </p>-->
+            </div>
+            <!--<div xml:id="h.tv5uqemypkvi">
+                    <head>Todo</head>
+                    <p>- <hi rend="strikethrough">sélection des documents</hi> (lou) DONE</p>
+                    <p>-
+                        <hi rend="strikethrough" xml:space="preserve">demander autorisation aux gens Oulipo </hi>(lou)
+                            <hi rend="italic">DONE: les documents sont disponibles sur Gallica donc
+                            aucun probleme.</hi></p>
+                    <p>- ODD simple pour l’édition critique</p>
+                    <p>- ODD riche pour l’édition critique</p>
+                    <p>- selection des documents a envoyer aux partix (EM) ce WE avant le départ de
+                        Lou</p>
+                    <p><hi rend="italic bold"
+                        >voir</hi><hi rend="bold" xml:space="preserve"> https://github.com/lb42/ENC/aLire</hi></p>
+                    <p>- Révision des tutoriaux avant diffusion EM (lou retour 22)</p>
+                    <p>- Transformation avec XSLT Stylesheets (?)</p>
+                    <p>Lou 11 au 21 en Espagne</p>
+                    <p>22 au 23 à Oxford<lb/>24-28 Boston TEI Council</p>
+                    <p>29 avril Oxford</p>
+                    <p>7 train pour Paris</p>
+                </div> -->
+
+        </body>
+    </text>
+</TEI>
