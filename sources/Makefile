@@ -4,12 +4,13 @@ ECHO=
 
 # these are the talks which dont work in html
 PDFTALKS= \
+	ex-2-analyse \
+	02-richessesTEI \
 	tei-florilege \
 	talk-xslt 
 
 EXERCISES= \
 	ex-1-oxygen \
-	ex-2-analyse \
 	ex-3-roma \
 	ex-4-oulipo \
 	ex-5-header \
@@ -22,7 +23,6 @@ EXERCISES= \
 DIAPOS= \
 	00-programme \
 	01-editionNumerique \
-	02-richessesTEI \
 	03-transcriptionManuscrits \
 	04-teiHeader \
 	05-msdesc \
@@ -77,5 +77,10 @@ validate:
 	 | grep -v ': error: unfinished element$$' \
 	 | grep -v ': error: unfinished element .* required to finish the element$$'; done
 
-
+driver:
+	cp /home/lou/Public/corpHeaderStart.txt driver.tei;\
+		for f in *.xml ; do \
+		echo "<xi:include href='$$f'/>" >> driver.tei; \
+	done; echo "</teiCorpus>" >> driver.tei
+	
 

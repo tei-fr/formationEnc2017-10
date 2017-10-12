@@ -34,8 +34,8 @@
     <body>
       <div rend="slide" xml:lang="fr">
         <head>Qu’est-ce que la Text Encoding Initiative (TEI) ?</head>
-        <p><graphic url="../images/whatisteiPt.png" height="60%"/></p>
-        <list>
+        <p><graphic url="../images/whatIsTheTEIPt.png" height="60%"/></p>
+        <cb/><list>
           <item>Une organisation, une institution ?</item>
           <item>Un <soCalled>club</soCalled>, une mode, une religion ?</item>
           <item>Une spécification technique ?</item>

@@ -433,7 +433,7 @@
           <div>
             <head>Exemple de document <hi>XML</hi></head>
             <!-- @todo traiter l’exemple correctement -->
-            <egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <![CDATA[<?xml version="1.0"?>
   <doc xmlns="http://example.org/​namespace">
     <p n="1">This is a paragraph.</p>

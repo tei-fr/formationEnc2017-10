@@ -7,7 +7,7 @@
         <author>Lou Burnard Consulting</author>
       </titleStmt>
       <publicationStmt>
-        <publisher>TEI</publisher>
+        <publisher>LBC</publisher>
         <availability>
           <p>Freely available for use and derivative works under a Creative Commons Attribution
             license.</p>
@@ -27,8 +27,9 @@
         <figure>
           <graphic url="../images/ceci-nest-pas-une-pipe.jpg"/>
         </figure>
-<!--        <note><p>Qu’à chaque fois que l’on créée une représentation d’un texte ou d’autre chose, une image n’est pas réductible à la réalité.</p></note>
-    -->  </div>
+        <!--        <note><p>Qu’à chaque fois que l’on créée une représentation d’un texte ou d’autre chose, une image n’est pas réductible à la réalité.</p></note>
+    -->
+      </div>
 
       <!--<div n="22">
         <head>Ceci n’est pas un arbre</head>
@@ -37,38 +38,46 @@
         </figure>
 
       </div>-->
-      
+
       <div>
         <head>Numériser et encoder…</head>
-        <p>La numérisation nous propose une <emph>image</emph>, une représentation d’un objet déjà existant</p>
-        <p>L’encodage nous permet de représenter l’image des <emph>idées</emph> résultant de ces représentations</p>
-<!--        <note><p>Distinction fine mais très importante.</p></note>-->
+        <p>La numérisation nous propose une <emph>image</emph>, une représentation d’un objet déjà
+          existant</p>
+        <p>L’encodage nous permet de représenter l’image des <emph>idées</emph> résultant de ces
+          représentations</p>
+        <!--        <note><p>Distinction fine mais très importante.</p></note>-->
       </div>
-      
-      
+
+
       <div>
         <head>Des idées sur quoi?</head>
         <p>Tout! mais on peut distinguer plusieurs axes… <list>
-            <item>infos <q>intrinsèques</q> à l’objet : les formes, couleurs, etc. d’une image; les sons, rythmes, etc. d’une musique; les structures linguistiques (mot, phrase, paragraphe) ou formels (chapitre, titre, nom de lieu) d’un texte…</item>
-            <item>infos <q>extrinsèques</q> ou <q>meta</q> sur l’objet : son type, ses origines, ses buts, ses usages …</item>
-            <item>infos <q>interprétatives</q>: la portée d’un texte ou d’un dessin, le programme d’une musique ou d’un rite…</item>
+            <item>infos <q>intrinsèques</q> à l’objet : les formes, couleurs, etc. d’une image; les
+              sons, rythmes, etc. d’une musique; les structures linguistiques (mot, phrase,
+              paragraphe) ou formels (chapitre, titre, nom de lieu) d’un texte…</item>
+            <item>infos <q>extrinsèques</q> ou <q>meta</q> sur l’objet : son type, ses origines, ses
+              buts, ses usages …</item>
+            <item>infos <q>interprétatives</q>: la portée d’un texte ou d’un dessin, le programme
+              d’une musique ou d’un rite…</item>
           </list>
         </p>
         <p rend="display">distinctions floues mais pervasives…</p>
-<!--        <note><p>L’essentiel est de faire le choix. Peut distinguer des actes, des informations intrinsèques à un objet, etc. Des informations dite méta, extrinsèques qui ne sont pas nécessairement présentes dans l’objet : ses origines, ses buts, etc. Enfin, des informations interprétatives.</p></note>-->
+        <!--        <note><p>L’essentiel est de faire le choix. Peut distinguer des actes, des informations intrinsèques à un objet, etc. Des informations dite méta, extrinsèques qui ne sont pas nécessairement présentes dans l’objet : ses origines, ses buts, etc. Enfin, des informations interprétatives.</p></note>-->
       </div>
-      
-      
+
+
       <div>
         <head>Modélisation et structuration</head>
-        <p>Il existe (quelques) méthodes classiques d’analyses de données. L’important c’est de bien comprendre : <list>
+        <p>Il existe (quelques) méthodes classiques d’analyses de données. L’important c’est de bien
+          comprendre : <list>
             <item>toute méthode ne serait qu’une modélisation</item>
-            <item>la modélisation devrait faire ressortir la structuration essentielle d’un objet complexe</item>
+            <item>la modélisation devrait faire ressortir la structuration essentielle d’un objet
+              complexe</item>
           </list>
         </p>
         <p>Après une modélisation, on peut donner une implémentation informatisée ; sans modèle, une
           implémentation risque d’être incompréhensible et aléatoire, inutile…</p>
-<!--        <note><p>Ce que l’on va vouloir faire, c’est modéliser. Pourquoi cette étape ? c’est qu’elle va nous permettre de donner une implémentation informatisée. Si vous n’êtes pas conscient de votre modèle, vous risquer d’avoir une implémentation inconsistante ou incompréhensible qui ne sera pas exploitable.</p></note>-->
+        <!--        <note><p>Ce que l’on va vouloir faire, c’est modéliser. Pourquoi cette étape ? c’est qu’elle va nous permettre de donner une implémentation informatisée. Si vous n’êtes pas conscient de votre modèle, vous risquer d’avoir une implémentation inconsistante ou incompréhensible qui ne sera pas exploitable.</p></note>-->
       </div>
 
       <div>
@@ -80,7 +89,7 @@
             <item>les procédures/traitements essentiels envisagés </item>
           </list>
         </p>
-<!--        <note><p>Dans l’analyse de données classique, on avait l’idée qu’il serait possible de conceptualiser l’ensemble de 
+        <!--        <note><p>Dans l’analyse de données classique, on avait l’idée qu’il serait possible de conceptualiser l’ensemble de 
           l’univers d’une entreprise. On identifie toute de suite les objets d’intérêt, leurs attributs et propriétés, etc.</p>
         <p>On peut également appliquer ce modèle dans notre cas. Vous savez tous ce qu’est qu’une carte postale.</p></note>-->
       </div>
@@ -100,33 +109,49 @@
         <list>
           <item>quelles sont les unités que nous souhaitons traiter ?</item>
           <item>comment sont-elles structurées (quels composants, quels attributs) ?</item>
-          <item>est-ce que les occurrences de ces objets sont clairement identifiables dans un flux textuel ?</item>
+          <item>est-ce que les occurrences de ces objets sont clairement identifiables dans un flux
+            textuel ?</item>
         </list>
         <p rend="box">Essayons cela avec ces trois documents :</p>
-<!--        <note><p>Je vous propose avec l’exercice qui suit de identifier vous même un certain nombre de choses.</p></note>-->
-      </div>
-      
-      <div><head>Document A</head>
-        <figure><graphic url="../travaux/carte-1v.png"/>
-        <head>une carte postale</head></figure></div>
-      
-      <div><head>Document B</head>
-        <figure><graphic url="../travaux/acteRoyale.jpg"/>
-          <head>un manuscrit </head></figure></div>
-      
-      <div><head>Document C</head>
-        <figure><graphic url="../travaux/10010099-1_1.jpg"/>
-          <head>un tapuscrit </head></figure></div>
+       </div>
+
       <div>
-       <head> Exercice 2 : analyse d’un document </head> 
-     <list><item>Dans votre groupe, sélectionner d’abord un rapporteur</item><item>Regarder bien votre document. Supposer que vous en avez quelques centaines d’autres pareils.</item><item>Comment est votre document organisé ? </item>
+        <head>Document A : une carte postale</head>
+        <figure>
+          <graphic url="../travaux/carte-1v.png"/>
+        </figure>
+      </div>
+
+      <div>
+        <head>Document B : un manuscrit</head>
+        <figure>
+          <graphic url="../travaux/acteRoyale.jpg"/>
+        </figure>
+      </div>
+
+      <div>
+        <head>Document C : un tapuscrit</head>
+        <figure>
+          <graphic url="../travaux/10010099-1_1.jpg"/>
+        </figure>
+      </div>
+      <div>
+        <head> Exercice  : analyse d’un document </head>
+        <list>
+          <item>Dans votre groupe, sélectionner d’abord un rapporteur</item>
+          <item>Regarder bien votre document. Supposer que vous en avez quelques centaines d’autres
+            pareils.</item>
+          <item>Comment est votre document organisé ? </item>
           <item>Quels sont ses composants essentiels, commun à tous ces documents ?</item>
           <item>Quels sont ses composants intéressants, possible dans tous ces documents ?</item>
-          <item>Sauriez vous faire en sorte qu’une autre personne reconnaîtrait les mêmes objets ?</item>
+          <item>Sauriez vous faire en sorte qu’une autre personne reconnaîtrait les mêmes
+            objets ?</item>
 
           <item>Faire une liste de tous les objets et propriétés essentiels de votre document</item>
-          <item>Présenter cette liste… et justifier la ! </item></list></div>
-<!--      <note><p>L’une des leçons de cet exercice, c’est que l’on ne peut pas encoder mécaniquement un texte. Il est toujours intéressant de voir comment une personne envisage un document et se l’approprie.</p></note>
+          <item>Présenter cette liste… et justifier la ! </item>
+        </list>
+      </div>
+      <!--      <note><p>L’une des leçons de cet exercice, c’est que l’on ne peut pas encoder mécaniquement un texte. Il est toujours intéressant de voir comment une personne envisage un document et se l’approprie.</p></note>
 -->
     </body>
   </text>
