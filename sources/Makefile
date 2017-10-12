@@ -2,7 +2,6 @@
 # needs to be copied to and run from source directory 
 ECHO=
 
-# these are the talks which dont work in html
 PDFTALKS= \
 	ex-2-analyse \
 	02-richessesTEI \
