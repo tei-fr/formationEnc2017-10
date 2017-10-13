@@ -1,12 +1,13 @@
 # Makefile
 # needs to be copied to and run from source directory 
+# assumes that folders PDF and Diapos exist
 ECHO=
 
 PDFTALKS= \
 	ex-2-analyse \
 	02-richessesTEI \
 	tei-florilege \
-	talk-xslt 
+	10-xsltNuls 
 
 EXERCISES= \
 	ex-1-oxygen \
@@ -36,14 +37,14 @@ default: exercises htmlslides pdfslides
 
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
-	saxon -o:../diapos/$$f.html $$f.tei.xml ../xsl/tei2md.xsl; done; \
-	cd ../diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
+	saxon -o:../Diapos/$$f.html $$f.tei.xml ../xsl/tei2md.xsl; done; \
+	cd ../Diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
 
 
 exercises:
 	for i in $(EXERCISES) ; do \
 		teitopdf $$i.xml ; \
-		mv $$i.xml.pdf ../diapos/$$i.pdf; \
+		mv $$i.xml.pdf ../PDF/$$i.pdf; \
 	done
 
 slides: pdfslides 
@@ -51,11 +52,9 @@ slides: pdfslides
 pdfslides:  
 	for i in $(PDFTALKS) ; do \
 		teitoslides --profile=tei $$i.xml; \
-		mv $$i.xml.slides ../diapos/$$i.pdf; \
+		mv $$i.xml.slides ../Diapos/$$i.pdf; \
 	done
 
-setup:
-	mkdir ../diapos ../xsl ../media
 
 clean:
 	-rm -f *.aux
@@ -81,5 +80,5 @@ driver:
 		for f in *.xml ; do \
 		echo "<xi:include href='$$f'/>" >> driver.tei; \
 	done; echo "</teiCorpus>" >> driver.tei
-	
+
 
