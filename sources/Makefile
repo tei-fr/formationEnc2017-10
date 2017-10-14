@@ -1,16 +1,17 @@
+
 # Makefile
 # needs to be copied to and run from source directory 
 # assumes that folders PDF and Diapos exist
 ECHO=
 
 PDFTALKS= \
-	ex-2-analyse \
 	02-richessesTEI \
 	tei-florilege \
 	10-xsltNuls 
 
 EXERCISES= \
 	ex-1-oxygen \
+	ex-2-analyse \
 	ex-3-roma \
 	ex-4-oulipo \
 	ex-5-header \
