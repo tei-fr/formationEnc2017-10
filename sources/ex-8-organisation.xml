@@ -6,7 +6,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Organisation d’un projet</title>
+            <title>Organisation d’un projet AVEC GITHUB</title>
          </titleStmt>
          <publicationStmt>
             <p>Publication Information</p>
@@ -15,6 +15,9 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
+      <revisionDesc>
+         <change when="2017-10"><name>Lou</name> controle des noms de fichiers</change>
+      </revisionDesc>
    </teiHeader>
    <text>
       <body>
@@ -122,8 +125,8 @@
          <div rend="slide" xml:lang="fr">
             <div>
                <head>Notre répertoire GitHub</head>
-               <p><ref target="https://github.com/tei-fr/formationEnc2016-05"
-                     >https://github.com/tei-fr/formationEnc2016-05</ref></p>
+               <p><ref target="https://github.com/tei-fr/formationEnc2017-10"
+                     >https://github.com/tei-fr/formationEnc2017-10</ref></p>
                <list>
                   <item>Consultez l’historique</item>
                   <item>Voir les contributeurs</item>
@@ -134,7 +137,7 @@
             <head>Instruction pour partager les fichiers de l’édition</head>
             <list>
                <item>Dans le terminal rendez-vous dans votre dossier de la formation
-                     <ident>formationEnc2016-05</ident></item>
+                     <ident>formationEnc2017-10</ident></item>
                <item>Nous avons créé un répertoire destiné à l’édition intitulé
                      <ident>oulipoEd</ident></item>
                <item>Placez-y vos fichiers édités</item>
@@ -150,18 +153,16 @@
          <div type="slide">
             <head>Ajouter votre fichier au corpus</head>
             <list>
-               <item>Consultez le fichier <ident>teiCorpus.xml</ident> que nous avons ajouté au
+               <item>Consultez le fichier <ident>oulipoCorpus.xml</ident> que nous avons ajouté au
                   répertoire</item>
                <item>Ajoutez votre fichier au corpus en suivant l’exemple compris dans le
                   fichier</item>
             </list>
-            <!-- @todo créer un squelette TEI -->
-         </div>
+           </div>
          <div rend="slide" xml:lang="fr">
             <div>
                <head>Définir la place des autres documents</head>
-               <!-- modifier le teiCorpus pour  utiliser XInclude -->
-
+   
                <list>
                   <item>Où mettre les images</item>
                   <!-- : <ident>images</ident> -->

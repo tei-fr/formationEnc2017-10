@@ -6,7 +6,7 @@
   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Ex 7 entités nommées</title>
+            <title>Entités nommées</title>
          </titleStmt>
          <publicationStmt>
             <p>Publication Information</p>
@@ -15,20 +15,25 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
+     <revisionDesc>
+        <change when="2017-10"><name>Lou</name> controle des noms de fichiers</change>
+     </revisionDesc>
   </teiHeader>
   <text>
       <body>
          <div>
-            <p>Cet exercice vise à vous familiariser avec le maniement des entités-nommées. En utilisant un fichier biographique concernant les oulipiens, vous allez commencer la construction d’un index des personnes.</p>
+            <p>Cet exercice vise à vous familiariser avec le maniement des entités-nommées. 
+               En utilisant un fichier biographique concernant les oulipiens, vous allez commencer la construction d’un index des personnes.</p>
          </div>
          <div>
             <head>Balisez les entités-nommées dans la transcription</head>
-            <p>Le texte que vous devez transcrire comporte très probablement en grand nombre de mention de personnes. Balisez ces entités-nommées à l’aide de la balise <gi>persName</gi>.</p>
+            <p>Le texte que vous devez transcrire comporte en grand nombre de mention de personnes. Balisez ces entités-nommées à l’aide de la balise <gi>persName</gi>.</p>
          </div>
          <div>
             <head>Créer un lien entre les entités-nommées et la liste de personne</head>
             <list>
-               <item>Consultez maintenant le fichier de biographie <ident>oulipiens.xml</ident> contenu dans <ident>travaux</ident>.</item>
+               <item>Consultez maintenant le fichier de biographie <ident>oulipiens.xml</ident>
+                  contenu dans le dossier <ident>Travaux</ident>.</item>
                <item>Repérez dans ce fichier les auteurs mentionnés dans votre transcription.</item>
                <item>Établissez un lien entre votre transcription et ce fichier d’index à l’aide d’un pointeur.</item>
             </list>
@@ -51,6 +56,7 @@
                <item>Renseignez son nom, sa localisation géographique</item>
             </list>
          </div>
+         <!-- embed this file in the header ? -->
       </body>
   </text>
 </TEI>

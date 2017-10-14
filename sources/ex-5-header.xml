@@ -42,9 +42,10 @@
                   <item>Vous allez maintenant renseigner les mention de publication avec <gi>publicationStmt</gi>. Observez à quel endroit le schéma vous permet d’ajouter cet élément. Donnez ici une date de publication, et un responsable de la publication (disons la Bibliothèque nationale de France).</item>
                   <label>Description de la source</label>
                   <item>La description de la source avec <gi>sourceDesc</gi> est obligatoire dans un
-                     fichier TEI. Précisons-la maintenant. Vous trouverez des informations utiles sur
-                     le site Gallica: par vous trouverez l'originel du fichier
-                     <ident>650308</ident> à http://gallica.bnf.fr/ark:/12148/btv1b10010053c/f2.image
+                     fichier TEI. Pour le moment, il suffit d'indiquer que l'originel de notre fichier
+                     se trouve au site Gallica, dans la collection <title>
+                        Fonds Oulipo. Dossiers mensuels de réunion (1960-2010)</title>. Nous
+                     revenons sur cela dans le prochain exercice. <!--<ident>650308</ident> à http://gallica.bnf.fr/ark:/12148/btv1b10010053c/f2.image-->
                   </item>
                </list>
             </div>

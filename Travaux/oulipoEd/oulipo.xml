@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Archives oulipiennes</title>
+           <title type="sub">Corpus des comptes-rendus des réunions de l'OULIPO</title>
+            <editor>
+               <persName>
+                  <forename>Lou</forename>
+                  <surname>Burnard</surname>
+               </persName>
+            </editor>
+            <!-- mentionnez-vous -->
+         </titleStmt>
+         <publicationStmt>
+            <publisher>École nationale des chartes: Service de formation continue</publisher>
+            <date when="2016-05">mai 2016</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+        
+      </fileDesc>
+     <profileDesc>
+        <particDesc>
+           <xi:include href="oulipiens.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>          
+        </particDesc>
+     </profileDesc>
+  </teiHeader>
+  <xi:include href="cr610428_1.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+  <xi:include href="CR610428_4.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+  <xi:include href="cr620911_header.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+  <xi:include href="cr650308-flo.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+  <TEI>
+      <teiHeader>
+         <fileDesc>
+            <titleStmt>
+               <title>Liste des personnes citées</title>
+            </titleStmt>
+            <publicationStmt>
+               <p>Unknown</p>
+            </publicationStmt>
+            <sourceDesc>
+               <p>fichier d’index généré informatiquement</p>
+            </sourceDesc>
+         </fileDesc>
+      </teiHeader>
+     <text>
+        <body>
+           <div><divGen type='namelist'/></div>
+        </body>
+     </text>
+   </TEI>
+</teiCorpus>
