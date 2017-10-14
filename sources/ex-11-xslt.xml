@@ -5,11 +5,7 @@
       <titleStmt>
         <title>Un peu de XPath, un peu de XSLT</title>
       </titleStmt>
-      <editionStmt>
-        <edition>
-          <date when="2011-05">mai 2011</date>
-        </edition>
-      </editionStmt>
+      
       <publicationStmt>
         <p/>
       </publicationStmt>
@@ -23,17 +19,18 @@
       </projectDesc>
     </encodingDesc>
     <revisionDesc>
+      <change when="2017-10"><name>Lou</name> controle des noms de fichiers</change>
       <change when="2011-05-23">Drafted on train</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <figure>
-        <graphic url="../images/duBellay.png"/>
+        <graphic url="../images/duBellay.png" height="30%"/>
       </figure>
-      <p>Dans ce petit exercice et le suivant, on prend comme exemple une version numérisée d’un
+      <p>Dans ce petit exercice et le suivant, on prend comme exemple une version numérisée de ce
         célèbre sonnet de DuBellay. Vous trouverez une version de ce sonnet déjà balisée dans le
-        fichier <ident>duBellay.xml</ident> — ouvrez-le d’abord avec Oxygen.</p>
+        fichier <ident>duBellay.xml</ident> de votre dossier <ident>Travaux</ident>— ouvrez-le d’abord avec Oxygen.</p>
 
       <div>
         <head>XPath</head>
@@ -328,9 +325,9 @@
             de style pour n’afficher que le vers initial de chaque strophe. Ensuite, vous pourriez
             les trier par ordre alphabétique….</p>
 
-          <p>Vous trouverez dans le fichier <ident>duBellayCorr.xsl</ident> une version corrigée de
+        <!--  <p>Vous trouverez dans le fichier <ident>duBellayCorr.xsl</ident> une version corrigée de
             cet exercice… ne le regardez pas tout de suite !</p>
-
+-->
         </div>
 
       </div>
