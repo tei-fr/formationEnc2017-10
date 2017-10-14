@@ -18,6 +18,7 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2017-10"><name>Lou</name> controle des noms de fichiers</change>      
       <change when="2016-05"><name>Emmanuel Château</name> corrections rédactionnelles et ajouts divers</change>
     </revisionDesc>
   </teiHeader>
@@ -201,7 +202,7 @@
           brut. En réalité, ce n’est qu’une apparence : derrière tout cela il existe un format XML,
           que l’on peut manipuler, et donc qu’on peut transformer dans un format XML TEI. </p>
         <p>Dans le dossier <ident>Travaux</ident> vous trouverez un fichier nommé
-            <ident>acteRoyal.docx</ident> et un autre <ident>acteRoyal.jpg</ident> : cliquez dessus
+            <ident>acteRoyal.docx</ident> et un autre <ident>acteRoyale.jpg</ident> : cliquez dessus
           pour les ouvrir. Il s’agit d’un document numérisé en mode image qui a ensuite été
           rapidement retranscrit avec Microsoft Word. On va se servir d’oXygen pour transformer
           cette transcription en XML TEI.</p>
@@ -211,7 +212,8 @@
           et donc peut être personnalisée.</p>
         <list>
           <item>Chargez oXygen. Sélectionnez <ident>Ouvrir</ident> dans le menu
-              <ident>Fichier</ident> (ou tapez <code>CTRL-o</code>, ou cliquez l’icône dossier) et sélectionnez le fichier <ident>acteRoyal.docx</ident> dans votre dossier <ident>Travaux</ident>.</item>
+              <ident>Fichier</ident> (ou tapez <code>CTRL-o</code>, ou cliquez l’icône dossier) et
+            sélectionnez le fichier <ident>acteRoyale.docx</ident> dans votre dossier <ident>Travaux</ident>.</item>
           <item>Une fenêtre intitulée <ident>Navigateur d’Archives</ident> s’ouvre à gauche de  l’écran principal. La structure de l’archive docx y est affichée.</item>
         </list>
         <p><graphic url="../images/navigateur-1.png" height="5cm"/></p>

@@ -29,3 +29,7 @@ Savoir utiliser un traitement de texte, un navigateur Web.
 ## Formation avancée
 
 Pour approfondir cette initiation, l’École nationale des chartes propose, au printemps 2018, une formation avancée portant sur la modélisation des éditions critiques avec la Text Encoding Initiative. <lien>
+
+## Structuration du depo
+
+Les dossiers en minuscule (images, sources) rassemblent les ressources utilisées pour la construction de tout le reste. Ces fichiers sont sous contrôle de github. Les dossiers en majuscule (Diapos, PDF, Travaux) contiennent les ressources à distribuer aux participants. Ces fichiers sont générés à partir des autres chaque fois qu'on reconstruit le depo; donc ils ne sont pas sous contrôle de github qu'au dernier moment.

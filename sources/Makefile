@@ -35,6 +35,10 @@ DIAPOS= \
 
 default: exercises htmlslides pdfslides
 
+setup:
+	mkdir ../PDF ../Diapos
+# should empty dir if it exists
+
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
 	saxon -o:../Diapos/$$f.html $$f.tei.xml ../xsl/tei2md.xsl; done; \
