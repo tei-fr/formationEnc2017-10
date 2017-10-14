@@ -94,7 +94,8 @@
             textuel ?</item>
         </list>
         <p> Les trois documents que vous experimentez sont disponibles dans votre dossier
-            <ident>Travaux</ident>
+            <ident>Travaux</ident>: <ident>cartePostale.jpg</ident>, <ident>manuscrit.jpg</ident>
+          et <ident>tapuscrit.jpg</ident>
         </p>
       </div>
      
