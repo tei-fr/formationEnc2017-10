@@ -33,7 +33,7 @@
             </titlePage>
         </front>
         <body xml:lang="fra">
-            <div rend="slide">
+            <div type="slide">
                 <head>Objectifs</head>
                 <p><graphic url="../images/morrisCatalog.jpg" height="50%"/>
                     <graphic url="../images/catalogCard.jpg" height="50%"/>
@@ -44,7 +44,7 @@
                 <p> </p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Le manuscrit : un cas particulier</head>
                 <list>
                     <item>Un manuscrit est <hi>un object <emph>unique</emph></hi>, souvent d’importance culturelle ou politique majeur.</item>
@@ -54,7 +54,7 @@
                 <p>On pourrait dire autant pour d’autres objets "texte-portant" p.e. les inscriptions classiques… cf. Epidoc</p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Propositions de la TEI</head>
                 <p>La TEI propose un élément <gi>msDesc</gi>, apte à plusieurs applications : <list>
                         <item>base de données d’enregistrements bibliographique (<term>finding aid</term>)</item>
@@ -66,7 +66,7 @@
             </div>
 
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Catalogue Raisonné</head>
                 <p>Un <gi>msDesc</gi> peut apparaître dans les mêmes contextes qu’un <gi>p</gi> paragraphe</p>
 
@@ -83,7 +83,7 @@
                 <p>Dans ce cas, la description aura une tendance belle-lettriste</p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Application du <gi>msDesc</gi> dans l’édition numérique</head>
                 <p>Un <gi>msDesc</gi> peut apparaître aussi au sein du <gi>teiHeader</gi> attaché à une édition numérique d’un ou plusieurs manuscrits.</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -104,7 +104,7 @@
                 <p>Dans ce cas, la description aura une tendance base-de-données</p>
             </div>
             <!--
-            <div rend="slide">
+            <div type="slide">
                 <head>Having one’s cake and eating it</head>
                 <p>Two conflicting desires: <list>
                         <item>preserve (or perpetuate) existing descriptive prose</item>
@@ -115,7 +115,7 @@
             </div>
 -->
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Composants du <gi>msDesc</gi> (1)</head>
                 <p>L’élément <gi>msDesc</gi> doit contenir un élément <gi>msIdentifier</gi> qui fournit une identification (ou plusieures) du manuscrit</p>
                 <p>Facultativement il est completé par une séléction d’ éléments plus spécialisés : <list>
@@ -128,7 +128,7 @@
             </div>
 
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Exemple </head>
 
 <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">
@@ -161,7 +161,7 @@
 </sourceDesc></egXML>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Identification (1)</head>
                 <p>L’élément <gi>msIdentifier</gi></p>
                 <p>Une spécification classique est divisée en trois: <list>
@@ -181,7 +181,7 @@
                 </p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Identification (2)</head>
                 <p>L’élément <gi>msName</gi> fournit un nom ou une appellation familière (surnom) : <egXML xmlns="http://www.tei-c.org/ns/Examples">
 <msIdentifier>
@@ -196,7 +196,7 @@
                 </p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Contenu intellectuel</head>
                 <list>
                     <item>Des paragraphes…</item>
@@ -224,7 +224,7 @@
                 </p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>L’élément <gi>msItem</gi></head>
                 <p>Un manuscrit contient plusieurs <hi>items</hi> distincts, chacun en principe localisé dans un (ou plusieurs) lieu(x), ce qu’on appelle leur <term>locus</term>. <list>
                         <item>L’element <gi>locus</gi> contient une localisation formelle, facultativement normalisée par les attributs <att>from</att> et <att>to</att>
@@ -240,7 +240,7 @@
                 </p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head><gi>msContents</gi> avec plusieurs <gi>msItem</gi>s </head>
                 <p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -265,7 +265,7 @@
             </div>
 
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Description physique</head>
                 <p>Un groupement commode de plusieurs sujets :</p>
                 <list>
@@ -280,7 +280,7 @@
                     plus ou moins structurants et une description en prose.</p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head><gi>physDesc</gi> exemple simple </head>
                 <p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -302,7 +302,7 @@
 </egXML></p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Le support (1) </head>
                 <p>Pour distinguer l’objet inscrit de la manière où il est inscrit, <gi>objectDesc</gi> peut etre structuré en <gi>supportDesc</gi> et <gi>layoutDesc</gi>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -318,7 +318,7 @@
 </egXML></p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Le support (2)</head>
                 <p>D’autres éléments structurants sont disponibles pour la description détaillée du support matériel : <gi>support</gi>, <gi>extent</gi>, <gi>foliation</gi>, <gi>collation</gi>, <gi>condition</gi> .</p>
 
@@ -348,7 +348,7 @@
 
 
             </div>
-            <div rend="slide">
+            <div type="slide">
                 <head>Layout(s)</head>
                 <p>Plusiers mise-en-forme (layout)s peuvent être spécifiées : 
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -365,7 +365,7 @@
 </egXML></p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head><gi>handDesc</gi> et <gi>decoDesc</gi></head>
                 <p>Ces éléments décrivent respectivement les mains (écritures) distinguées dans un manuscrit et les décorations, soit en prose, soit avec les éléments structurants : <list>
                         <item><gi>handNote</gi> décrit un style d’écriture ou une main qui sont reconnus dans un manuscrit. </item>
@@ -373,7 +373,7 @@
                     </list></p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head><gi>handDesc</gi> example (1)</head>
                 <p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -390,7 +390,7 @@
                 </p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head><gi>handDesc</gi> exemple (2)</head>
                 <p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -411,7 +411,7 @@
             </div>
 
 
-            <div rend="slide">
+            <div type="slide">
                 <head> Ajouts significatifs </head>
                 <p> L’élément <gi>additions</gi> contient une description des ajouts significatifs trouvés dans un manuscrit, tels que gloses marginales ou autres annotations. </p>
                 <p>
@@ -432,7 +432,7 @@
                 </p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Matériel d’accompagnement </head>
                 <p>
                     <gi>accMat</gi> (accompanying material) donne des détails sur tout matériel d’accompagnement étroitement associé au manuscrit, tel que documents non contemporains ou fragments reliés avec le manuscrit à une époque antérieure.</p>
@@ -446,7 +446,7 @@
             </div>
 
 
-            <div rend="slide">
+            <div type="slide">
                 <head> Historique du manuscrit </head>
                 <p>L’élément <gi>history</gi> rassemble les éléments servant à donner un historique complet du manuscrit : <list>
                         <item><gi>origin</gi> : informations sur l’origine du manuscrit </item>
@@ -456,7 +456,7 @@
                 <p><gi>origin</gi> est membre de la classe <term>datable</term>, d’où sont derivés les attributs normalisants <att>notBefore</att>, <att>notAfter</att>, <att>when</att>, etc. </p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Exemple</head>
                 <p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -477,7 +477,7 @@
             </div>
 
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Informations supplémentaires</head>
 
                 <p>L’élément <gi>additional</gi> regroupe : <list>
@@ -488,7 +488,7 @@
                 </p>
             </div>
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Informations administratives </head>
                 <p>L’élément <gi>admininfo</gi> regroupe : <list>
                         <item><gi>recordHist</gi> : historique du record</item>
@@ -520,7 +520,7 @@
             <!-- surrogates -->
             <!-- listBibl-->
 
-            <div rend="slide">
+            <div type="slide">
                 <head>Et pour en finir...</head>
                 <p>Un <gi>msDesc</gi> peut en contenir un autre, balisé comme <gi>msPart</gi>, dans le cas où des manuscrits d’origine distincts ont été combiné pour faire un manuscrit composé.</p>
 <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">

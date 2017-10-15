@@ -54,7 +54,7 @@
       <div type="part" xml:id="part1">
         <head xml:lang="fr">L’inscription du texte sur le support</head>
         <div type="comments"/>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Prise en charge des lacunes</head>
             <p><gi>gap</gi> passage ne pouvant pas être restitué pour des raisons matérielles</p>
@@ -81,7 +81,7 @@
 </egXML>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
          
             <head>Ajouts et suppressions</head>
             <div>
@@ -99,7 +99,7 @@
 </egXML>
             </div>
           
-          <div rend="slide" xml:lang="fr">
+          <div type="slide" xml:lang="fr">
             <div>
               <head>
                 <gi>subst</gi> substitutions (génétique textuelle)</head>
@@ -115,7 +115,7 @@
       </div>
       <div type="part" xml:id="part2">
         <head xml:lang="fr">Les corrections éditoriales</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Passages fautifs</head>
             <list>
@@ -143,7 +143,7 @@
             <p>Partout, les attributs <att>cert</att>, <att>resp</att> et <att>source</att> peuvent s’avérer utile.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Abréviations</head>
             <list>
@@ -165,7 +165,7 @@
             <p>La manière la plus simple de signaler la présence d’une abréviation dans le texte consiste à utiliser les éléments <gi>abbr</gi> et <gi>expan</gi> qui permettent tantôt de renseigner la forme abrégée ou la forme développée. Appariées avec <gi>choice</gi>, on peut fournir une alternative.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Abréviations</head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -193,7 +193,7 @@
       </div>
       <div type="part" xml:id="part3">
         <head>Les variantes et les mains</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>La description des mains</head>
             <list>
@@ -209,7 +209,7 @@
             <p>handNote est répétable et peut contenir une localisation avec <att>locus</att>.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Trois approches pour l’enregistrement et l’<hi>alignement</hi> des variantes</head>
             <p>Les <title>Guidelines</title> proposent trois approches différentes pour aligner des passages textuels lorsque l’on établit une édition critique :</p>
@@ -230,7 +230,7 @@
             <p>La méthode par segmentation parallèle est le plus couramment utilisée lors de l’encodage de sources en XML-TEI pour comparer des témoins. Cette méthode correspond également à une méthode de travail pour l’établissement du texte. Mais son emploi, qui présente une certain nombre de limites, est sujet à discussion.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Segmentation parallèle</head>
             <list>
@@ -247,7 +247,7 @@
 </egXML>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Variantes</head>
             <list>
@@ -257,7 +257,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Tableau de tradition</head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -281,7 +281,7 @@
 </egXML>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <!-- @todo choisir un meilleur exemple tiré des Guidelines -->
           <div>
             <head>Localisation référencée</head>

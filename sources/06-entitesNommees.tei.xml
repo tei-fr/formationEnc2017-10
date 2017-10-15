@@ -60,7 +60,7 @@
     <body>
       <div type="part" xml:id="part1">
         <head>Entités nommées définition</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Entités nommées définition</head>
             <p>unités lexicales sélectionnées pour leur intérêt sémantique</p>
@@ -80,7 +80,7 @@
             <p>LB : La TEI se positionne avec Frege dans la grande discussion philosophique autour de la théorie de référence : elle cherche à encoder ce qu’il appelle <foreign>das bedeutung</foreign> (signification)</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Pourquoi s’en occuper ?</head>
             <list>
@@ -100,7 +100,7 @@
             <p>en perspective : le web sémantique</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Ce que propose la TEI pour les entités-nommées</head>
             <div>
@@ -122,7 +122,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>La classe <ident>model.nameLike</ident></head>
             <p>Regroupe les éléments qui se rapportent tous à un nom de personne ou de lieu</p>
@@ -142,7 +142,7 @@
       </div>
       <div type="part" xml:id="par2">
         <head>Les formes du nom</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Les formes du nom</head>
             <p>exemple de personne</p>
@@ -173,7 +173,7 @@
             <p>Ou au contraire autoriser son absence.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Composantes du nom</head>
             <list>
@@ -216,7 +216,7 @@
 </egXML>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Liens vers des données d’autorité</head>
             <list>
@@ -254,7 +254,7 @@
       </div>
       <div type="part" xml:id="part3">
         <head>Le modèle de conceptuel</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Le modèle conceptuel</head>
             <p>La TEI fournit trois éléments génériques, et quelques-uns plus spécifiques. Elle identifie trois classes principales d’information :</p>
@@ -275,7 +275,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Éléments biographiques et prosopographiques</head>
             <p>Ce module fournit également des éléments pour la représentation d’information à caractère biographique, historique ou proposographique sur la personne, les lieux, ou l’organisation à laquelle un nom fait référence.</p>
@@ -315,7 +315,7 @@
             </div>
           </div>
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Traits</head>
             <p>Contiennent une description du statut ou de la qualité attribuée à une personne, un lieu ou une organisation qui typiquement, mais pas nécessairement, est indépendante du vouloir ou de l’action du porteur et habituellement n’est pas spécifique à une période de temps.</p>
@@ -329,7 +329,7 @@
             <p><gi>trait</gi> contient une description de statut ou de qualité d’une personne, d’un lieu ou typiquement d’une organisation, mais pas nécessairement, indépendamment des actions de la personne, et habituellement indépendant du temps.</p>
           </div>
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>États</head>
             <p>Les <hi>états</hi> décrivent certains statuts ou qualités attribuées à une personne, à des lieux, ou des organisations généralement à un moment donné ou spécifique à une période de temps.</p>
@@ -351,7 +351,7 @@
             
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Événements</head>
             <list>
@@ -407,7 +407,7 @@
             <p><att>source</att> provides a pointer to the bibliographical source from which a quotation or citation is drawn.</p>
           </div>
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Exemple d’événement</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -422,7 +422,7 @@
             </egXML>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Relations</head>
             <p>

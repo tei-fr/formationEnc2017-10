@@ -28,7 +28,7 @@
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
-      <div rend="slide" xml:lang="fr">
+      <div type="slide" xml:lang="fr">
         <div>
           <head>Introduction</head>
         </div>
@@ -38,7 +38,7 @@
           <p>Cette première présentation s’intéressera plus particulièrement aux caractéristiques attendues d’une édition critique et à la manière dont on peut y répondre en utilisant un balisage descriptif.</p>
         </div>
       </div>
-      <div rend="slide" xml:lang="fr" xml:id="index">
+      <div type="slide" xml:lang="fr" xml:id="index">
         <div>
           <head>Synthèse sur le balisage des éditions critiques</head>
           <head>Sommaire</head>
@@ -55,7 +55,7 @@
     <body>
       <div type="part" xml:id="part1">
         <head xml:lang="fr">Caractéristiques attendues d’une édition critique</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Qu’est-ce qu’une <hi>édition critique</hi> ?</head>
             <list>
@@ -88,7 +88,7 @@
             </div>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Critères de scientificité</head>
             <list>
@@ -117,7 +117,7 @@
             <p>Par exemple, dans le cas des Cours d’Antoine Desgodets à l’Académie d’architecture, s’agissant de mettre à disposition un corpus de textes inédits, établi d’après une tradition abondante de témoins manuscrits, l’édition des cours de Desgodets offrait un intérêt tout particulier pour l’historien de l’art et l’historien du droit. Elle devait présenter toutes les qualités habituellement requises par une édition de haute tenue scientifique en termes de fiabilité, de solidité et de justification des parti-pris. S’agissant d’un matériau entièrement neuf pour la recherche, il s’agissait également de faciliter son étude et de prendre en compte certaines particularités propres à des manuscrits architecturaux pour la consultation.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Un investissement important</head>
             <list>
@@ -136,7 +136,7 @@
       </div>
       <div type="part" xml:id="part2">
         <head xml:lang="fr">Prise en charge de l’édition critique par le balisage descriptif</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Peut-on <hi>(sérieusement)</hi> utiliser un traitement de texte ?</head>
             <head>Plusieurs questions à se poser…</head>
@@ -159,7 +159,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Encodage descriptif</head>
             <head>vs</head>
@@ -174,7 +174,7 @@
             <p>La supériorité du balisage descriptif sur les autres types de balisage du texte a clairement été établie depuis quelques années. Un tel balisage présente l’avantage notable d’assurer une meilleure distinction entre le contenu et la forme (et donc de séparer les traitements). Cette distinction garantit une meilleure maintenance du texte encodé et une meilleure portabilité des artefacts numériques.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>La production d’un <hi>balisage descriptif</hi></head>
             <p>Identifier explicitement la structure sémantique sous-jacente d’un document, indépendamment de tout traitement déterminé à l’avance.</p>
@@ -197,7 +197,7 @@
                 >information sémantique</hi> et pragmatique suffisante pour produire des vues alternatives sur le document ou bien une édition basée sur la structure du texte.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Procédure mise en œuvre lors du <hi>balisage</hi></head>
             <list>
@@ -220,7 +220,7 @@
             <bibl>cf. James Coombs, et al. <hi rend="italic">op. cit.</hi></bibl>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head><hi>OHCO</hi>, Ordered Hierarchical Content Objects</head>
             <p>L’idée d’un balisage descriptif suggère une représentation du texte qui correspond à un modèle d’<hi
@@ -239,7 +239,7 @@
             <p>Dans une telle représentation du texte, les éléments contenus (paragraphes, citations, phrases, notes, etc.) sont présentés à l’intérieur d’une structure hiérarchique. La structure du texte est hiérarchique parce qu’ils résident les uns à l’intérieur des autres. Les objets reçoivent donc des relations linéaires.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Avantages sur un balisage présentationnel</head>
             <list type="ordered">
@@ -300,7 +300,7 @@
                 >http://xml.coverpages.org/coombs.html</ref></bibl>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>e<hi rend="bold">X</hi>tensible <hi rend="bold">M</hi>arkup <hi rend="bold"
               >L</hi>anguage – historique</head>
@@ -345,7 +345,7 @@
             </div>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Principes de conception de <hi>XML</hi></head>
             <list>
@@ -373,7 +373,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head><hi>XML</hi> en 4 points</head>
             <list type="ordered">
@@ -401,7 +401,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Élément <hi>XML</hi></head>
             <figure>
@@ -410,7 +410,7 @@
             </figure>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Attribut <hi>XML</hi></head>
             <figure>
@@ -419,7 +419,7 @@
             </figure>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Exemple de balisage <hi>XML</hi></head>
             <figure>
@@ -428,7 +428,7 @@
             </figure>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Exemple de document <hi>XML</hi></head>
             <!-- @todo traiter l’exemple correctement -->
@@ -449,7 +449,7 @@
             <p>La première ligne de ce documents s’appelle une <soCalled>déclaration XML</soCalled> elle appartient au <soCalled>prologue</soCalled> du document. C’est une instruction qui permet d’indiquer qu’il s’agit d’un document XML et la version du langage.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Spécification de l’<hi>encodage</hi></head>
             <!-- @todo traiter l’exemple correctement -->
@@ -474,7 +474,7 @@
               </list></p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Spécification de l’<hi>encodage</hi></head>
             <!-- @todo traiter l’exemple correctement -->
@@ -497,7 +497,7 @@
             <p>Notez la syntaxe particulière des <soCalled>éléments vides</soCalled>.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Le corps du document XML : un <hi>arbre d’éléments</hi></head>
             <list>
@@ -521,7 +521,7 @@
             <p>Il existe un et un seul élément englobant tous les autres, encodé en premier, juste après le prologue : c’est l’<soCalled>élément racine</soCalled>.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Les <hi>attributs</hi></head>
             <p>Les attributs précisent la signification des éléments, leur ajoutent des caractéristiques.</p>
@@ -543,7 +543,7 @@
             <p>En principe ne sont pas destinés à ajouter du contenu à l’élément, donc leur valeur n’est pas destinée à être affichée telle quelle dans un format de sortie. Mais ils pourront être exploités par des applications informatiques pour faire par exemple des index, ils peuvent servir à identifier les éléments (attributs de type ID), à établir des renvois (attributs de type IDREF).</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head><hi>Contraintes syntaxiques</hi> des noms XML</head>
             <p>Règles pour l’écriture de ces noms (parfois appelés identificateurs génériques) :</p>
@@ -555,7 +555,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Les <hi>entités</hi></head>
             <div>
@@ -582,7 +582,7 @@
             </div>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <div>
               <head>Les commentaires</head>
@@ -601,7 +601,7 @@
             </div>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Notion d’<hi>Espace de nom</hi></head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -626,7 +626,7 @@
             <p><label>exemple</label> Ici l’espace de noms par défaut est défini par l’URI http://www.tei-c.org/ns/1.0, c’est l’espace de noms TEI. Tous les éléments du fichier XML qui sont descendants de l’élément racine et qui ne sont pas préfixés sont dans cet espace de noms.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Document <hi>bien formé</hi></head>
             <p>On dit d’un document XML qu’il est <soCalled>bien formé</soCalled> quand celui-ci répond à un certain nombre de contraintes</p>
@@ -642,7 +642,7 @@
             <p>Le contrôle se fait par <soCalled>analyse syntaxique</soCalled> ou <soCalled>parsing</soCalled> (avec des outils appelés <soCalled>parsers</soCalled>).</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Bien formé, oui ou non ?</head>
             <list>
@@ -660,7 +660,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head><hi>Modèles de documents</hi> ou schéma</head>
             <p>Rappel : définissent les contraintes que doit respecter une certaine classe de documents Diverses syntaxes peuvent être utilisées pour écrire de tels modèles :<list>
@@ -681,7 +681,7 @@
             <p>Beaucoup d’applications XML sont validantes, ainsi un processeur XSLT n’opérera de transformation à partir d’un document XML associé à un modèle que si ce document XML est valide.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Exemples d’éditions numériques</head>
             <list>
@@ -701,7 +701,7 @@
     </body>
     <back>
       <div type="part">
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Conclusions</head>
           </div>
@@ -723,7 +723,7 @@
             <head>Sources et bibliographie</head>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Orientations bibliographiques, édition numérique</head>
             <list>
@@ -747,7 +747,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Orientations bibliographiques .inverse[(édition critique)]</head>
             <list>
@@ -760,7 +760,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Orientations bibliographiques .inverse[(XML)]</head>
             <list>

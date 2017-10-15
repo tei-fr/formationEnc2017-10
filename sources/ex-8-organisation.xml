@@ -21,7 +21,7 @@
    </teiHeader>
    <text>
       <body>
-         <div rend="slide" xml:lang="fr">
+         <div type="slide" xml:lang="fr">
             <div>
                <head>Objectifs</head>
             </div>
@@ -37,7 +37,7 @@
                   d’édition qui implique plusieurs personnes.</p>
             </div>
          </div>
-         <div rend="slide" xml:lang="fr">
+         <div type="slide" xml:lang="fr">
             <div>
                <head>Quelques mots sur GitHub</head>
                <figure>
@@ -111,7 +111,7 @@
             </div>
 
          </div>
-         <div rend="slide" xml:lang="fr">
+         <div type="slide" xml:lang="fr">
             <div>
                <head>Pourquoi utiliser un système de gestion de version ?</head>
                <list>
@@ -122,7 +122,7 @@
                <p>En somme, c’est une bonne pratique !</p>
             </div>
          </div>
-         <div rend="slide" xml:lang="fr">
+         <div type="slide" xml:lang="fr">
             <div>
                <head>Notre répertoire GitHub</head>
                <p><ref target="https://github.com/tei-fr/formationEnc2017-10"
@@ -133,7 +133,7 @@
                </list>
             </div>
          </div>
-         <div rend="slide" xml:lang="fr">
+         <div type="slide" xml:lang="fr">
             <head>Instruction pour partager les fichiers de l’édition</head>
             <list>
                <item>Dans le terminal rendez-vous dans votre dossier de la formation
@@ -159,7 +159,7 @@
                   fichier</item>
             </list>
            </div>
-         <div rend="slide" xml:lang="fr">
+         <div type="slide" xml:lang="fr">
             <div>
                <head>Définir la place des autres documents</head>
    

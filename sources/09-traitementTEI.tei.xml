@@ -46,7 +46,7 @@
     <body>
       <div type="part" xml:id="part1">
         <head>Quelques questions pratiques</head>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Quel éditeur XML choisir ?</head>
             <div>
@@ -59,7 +59,7 @@
         </div>
           </div>
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div><head>Questions courantes</head><div>
             <head>Qui doit encoder ?</head></div>
           <div>
@@ -78,7 +78,7 @@
       </div>
       <div type="part" xml:id="part2">
         <head>Comment traiter ses données <hi>XML-TEI</hi> ?</head>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Un <hi>format pivot</hi> pour la publication</head>
             <p>À partir d’une même source XML-TEI, il est possible de produire plusieurs formats de sortie</p>
@@ -89,7 +89,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Le stockage des données</head>
             <div>
@@ -118,7 +118,7 @@
                 <p>Plusieurs langages de requêtes ont été proposés pour manipuler des données XML (XML-QL, XML-GL, Quilt, XPath et XQuery). Le principal langage de requête pour XML qui ait été standardisé est XQuery. Il repose sur l’utilisation d’expressions de chemins XPath qui adressent des ensembles des parties spécifiques des documents XML.</p>
               </div>
             </div>
-          <div rend="slide">
+          <div type="slide">
             <div>
               <head>Tirer partie de l’outillage XML</head>
               <p>Plusieurs langages de transformation ou de requête pour les données XML peuvent être particulièrement utiles pour exploiter des données XML-TEI.</p>
@@ -142,7 +142,7 @@
             </div>
           </div>
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Processus de transformation <hi>XSL</hi></head>
             <figure>
@@ -155,7 +155,7 @@
             <p>Le résultat est une fonction de l’entrée.</p>
           </div>
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Que peut faire XSLT ?</head>
             <figure>
@@ -164,7 +164,7 @@
           </div>
           
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Les bases de données XML natives</head>
             <p>Elles indexent les documents XML sur la base de leur structure.</p>
@@ -195,7 +195,7 @@
             </div>
           </div>
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Hébergement des données</head>
             <div>
@@ -232,7 +232,7 @@
     <back>
       <div type="part">
         <head>Orientations bibliographiques</head>
-        <div rend="slide">
+        <div type="slide">
           <head>Orientations bibliographiques</head>
           <list>
             <item>Boot, Peter. "Some Digital Editions and Some Remaining Challenges." Janus, Estudios sobre el siglo de oro , no. 1 (2012). <ref

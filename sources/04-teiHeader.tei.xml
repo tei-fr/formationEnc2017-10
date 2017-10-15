@@ -56,7 +56,7 @@
     <body>
       <div type="part" xml:id="part1">
         <head xml:lang="fr">L’en-tête TEI (le <gi>teiHeader</gi>)</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Pourquoi fournir des métadonnées ?</head>
             <list>
@@ -74,7 +74,7 @@
             </div>
           </div>
         </div>
-        <div rend="slide">
+        <div type="slide">
           <div>
             <head>Choix des modèles descriptifs</head>
             <list>
@@ -94,7 +94,7 @@
             <p>http://weboai.cahier.huma-num.fr</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Macrostructure d’un document TEI</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -113,7 +113,7 @@
             <p>C’est au sein du teiHeader que nous allons pouvoir renseigner les métadonnées concernant le texte édité.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Les composants de l’en-tête (<gi>teiHeader</gi>)</head>
             <p>Le <gi rend="mandatory">teiHeader</gi> comporte un élément obligatoire <gi rend="mandatory">fileDesc</gi> et trois éléments facultatifs</p>
@@ -135,7 +135,7 @@
       </div>
       <div type="part">
         <head>La description du fichier (<gi>fileDesc</gi>)</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>La description du fichier (<gi>fileDesc</gi>)</head>
             <p><gi rend="mandatory">fileDesc</gi> contient la description de fichier</p>
@@ -154,7 +154,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Exemple d’en-tête minimale</head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -174,7 +174,7 @@
 </egXML>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Mentions de titre et de responsabilité (<gi>titleStmt</gi>)</head>
             <p><gi rend="mandatory">titleStmt</gi> contient les mentions de titre et de responsabilité</p>
@@ -186,7 +186,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Exemple de mentions de titre et de responsabilité (<gi>titleStmt</gi>)</head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -214,7 +214,7 @@
 </egXML>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Description de la source (<gi>sourceDesc</gi>)</head>
             <p><gi rend="mandatory">sourceDesc</gi> est un élément obligatoire, il est destiné à accueillir une description de la source du document soit en texte libre soit de manière structurée avec les éléments <gi>bibl</gi>, <gi>msDesc</gi>, etc.</p>
@@ -237,7 +237,7 @@
       </div>
       <div type="part">
         <head>Les autres sous-composants de l’en-tête TEI</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Après la description de fichier…</head>
             <p>Après <gi>fileDesc</gi>, l’entête peut contenir trois éléments optionnels</p>
@@ -251,7 +251,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>Description de l’encodage</head>
             <p><gi>encodingDesc</gi> est un élément optionnel destiné à documenter l’encodage.</p>
@@ -270,7 +270,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
           <div>
             <head>exemple d’<gi>encodingDesc</gi></head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -306,7 +306,7 @@
 </egXML>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide" xml:lang="fr">
          
             <head><gi>profileDesc</gi></head>
             <list>
@@ -326,7 +326,7 @@
   </profileDesc>
 </egXML>
         </div>
-          <div rend="slide" xml:lang="fr">
+          <div type="slide" xml:lang="fr">
             <div>
               <head><gi>revisionDesc</gi></head>
               <p>Enregistre les révisions et modifications du fichier</p>
@@ -348,7 +348,7 @@
     <back>
       <div type="part">
         <head>Sources et bibliographie</head>
-      <div rend="slide" xml:lang="fr">
+      <div type="slide" xml:lang="fr">
         <div>
           <head>Orientations bibliographiques</head>
           <list>
