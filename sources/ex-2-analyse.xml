@@ -25,7 +25,7 @@
   <text>
     <body>
       <!-- ceci n’est pas une pipe -->
-      <div rend="slide">
+      <div type="slide">
         <head>Magritte nous rappelle</head>
         <figure>
           <graphic url="../images/ceci-nest-pas-une-pipe.jpg" width="80%"/>

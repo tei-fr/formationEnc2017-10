@@ -51,14 +51,14 @@ quelle point est-ce qu’elle aide le polyvalence de ces ressources et
 les reflexions sur la materialite des textes qu’ils impliquent?
 -->
 
-      <div rend="slide">
+      <div type="slide">
         <head>La TEI, elle est partout…</head>
-        <p>Dans le hall du monastère bouddhiste de la Montagne du Tambour du Dharma ( <seg
+        <p>Dans le hall du monastère bouddhiste de la Montagne du Tambour du Dharma <!--( <seg
             xml:lang="zh-TW"
-            >法鼓山</seg>) au Taiwan vous trouverez un mur couvert de tablettes de marbre vert, sur lesquels sont gravées plusieurs versions du soutra <soCalled>Coeur</soCalled> du Tripitaka. Il y a une version dans tous les langues de l’orient (japonais, hindou, chinois, etc.)…. et aussi une version en TEI P4.</p>
+            >法鼓山</seg>)--> au Taiwan vous trouverez un mur couvert de tablettes de marbre vert, sur lesquels sont gravées plusieurs versions du soutra <soCalled>Coeur</soCalled> du Tripitaka. Il y a une version dans tous les langues de l’orient (japonais, hindou, chinois, etc.)…. et aussi une version en TEI P4.</p>
       </div>
 
-      <div rend="slide">
+      <div type="slide">
         <head>Disponibilité des textes TEI</head>
         <list>
           <item>La TEI (et ses utilisateurs) s’inscrivent entièrement dans l’esprit Open Source</item>
@@ -69,7 +69,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         </list>
       </div>
 
-      <div rend="slide">
+      <div type="slide">
         <head>Interopérabilité des textes TEI</head>
         <p rend="box"
           >La TEI fut conçue comme outil de l’interopérabilité/interchange : est-ce que cette promesse a été validée? </p>
@@ -80,7 +80,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         <p>Nous allons explorer cela…</p>
       </div>
 
-      <div rend="slide">
+      <div type="slide">
         <head>Usages typiques de la TEI</head>
         <p>
           <list>
@@ -91,7 +91,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         </p>
         <p>Ces distinctions sont un peu floues : l’intérêt d’un encodage TEI c’est justement sa polyvalence… </p>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <head>Quelques exemples</head>
         <p>Commençons avec un bref regard sur quelques projets de divers types, d’origines différentes, et également très variables d’un point de vue disciplinaire. Mais ils on tous en commun : <list>
             <item>ils se servent de la TEI</item>
@@ -99,7 +99,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
             <item>ils exposent les sources XML-TEI</item>
           </list></p>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <head>Répertoires d’éditions critiques numériques</head>
         <list>
           <item><ref target="http://www.tei-c.org/Activities/Projects/"
@@ -112,7 +112,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
               >Greta Franzini, Catalogue of Digital Editions</ref></item>
         </list>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <head>Essai sur le récit, ou entretiens sur la manière de raconter de François-Joseph Bérardier de Bataut</head>
         <list>
           <item>http://www.beradier.org</item>
@@ -132,7 +132,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         </note>
       </div>
 
-      <div rend="slide">
+      <div type="slide">
         <head>Le mariage sous L’Ancien Régime</head>
         <list>
           <item>http://mariage.uvic.ca</item>
@@ -144,7 +144,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
 
       <!-- je narrive pas a retrouver les index ? -->
 
-      <div rend="slide">
+      <div type="slide">
         <head>Presses universitaires de Caen, Chroniques latines du Mont Saint-Michel</head>
         <list>
           <item>
@@ -161,7 +161,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
 
 
 
-      <div rend="slide">
+      <div type="slide">
         <head>Bibliothèques virtuelles humanistes </head>
         <list>
           <item><ref target="http://renom.univ-tours.fr/">Renom</ref></item>
@@ -175,14 +175,14 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         under "telecharger", right click TEI to get TEI file
         open it in oxygen to look at the encoding
         -->
-      <div rend="slide">
+      <div type="slide">
         <head>Corpus littéraires</head>
         <p>Le LABEX Obvil (Observatoire de la vie littéraire) rassemble plusieurs corpus de textes littéraires français, pas forcément tous disponibles en XML-TEI</p>
         <p>Par exemple <ref target="http://obvil.paris-sorbonne.fr/corpus/haine-theatre/"
             >Corpus Haine du Théâtre</ref></p>
       </div>
 
-      <div rend="slide">
+      <div type="slide">
         <head>Catalogue en ligne de notices bibliographiques des manuscrits : e-Codices</head>
         <list>
           <item><ref target="http://www.e-codices.unifr.ch">e-Codices </ref></item>
@@ -197,7 +197,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         </p>
       </div>
 
-      <div rend="slide">
+      <div type="slide">
         <head>Dictionnaires</head>
         <p>La TEI propose une gamme de balises très détaillée pour l’encodage des dictionnaires, existantes ou nouvelles.</p>
         <p>Par exemple <list>
@@ -210,7 +210,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
 
 
 
-      <div rend="slide">
+      <div type="slide">
         <head>Applications linguistiques</head>
         <p>Une fois structure en TEI, tout document peut devenir un objet d’analyse linguistique. La plupart des grands projets de corpus de langue européens s’en servent, d’une manière ou d’une autre. </p>
 
@@ -229,7 +229,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
       </div>
 
 
-      <div rend="slide">
+      <div type="slide">
         <head>L’esprit TEI</head>
         <p>Qu’est-ce que cela veut dire : « être conforme » à la TEI ?</p>
         <list>
@@ -239,7 +239,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         </list>
         <p>Un effort de standardisation qui ne dit pas « fais comme moi » ; mais plutôt « explique-moi ce que tu fais ».</p>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <head>TEI explorations</head>
         <p>Dans l’exercice qui suit, vous êtes invité a rechercher la variété des textes TEI disponible sur le web. </p>
         <p>Voici quelques liens que j’ai découvert au hasard en recherchant des textes TEI disponibles sur l’internet. Dans cet exercice, vous êtes invité à : <list>
@@ -249,7 +249,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
           </list>
         </p>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <head>À la recherche des textes français disponible en format TEI…</head>
         <list>
           <item>

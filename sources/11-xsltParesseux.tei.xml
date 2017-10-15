@@ -275,7 +275,7 @@
         <div type="slide">
           <div>
             <head>Exemple d’inclusion d’une <hi>XSLT</hi></head>
-            <egXML xmlns="http://www.w3.org/1999/XSL/Transform">
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <![CDATA[<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
                 <xsl:import href="../path/to/" />
               </xsl:stylesheet>]]>
@@ -314,7 +314,7 @@
               <item>Supprimer les numéros de titres</item>
             </list>
             <p>Exemple :</p>
-<egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
 <![CDATA[<xsl:param name="numberFigures">false</xsl:param>]]>
 </egXML>
             
