@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0"
+  xml:lang="fr">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Un florilège de projets TEI</title>
+        <author>Lou Burnard Consulting</author>
+
+      </titleStmt>
+      <publicationStmt>
+        <publisher>MEET</publisher>
+        <availability>
+          <p>Freely available for use and derivative works under a Creative Commons Attribution
+            license.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Various previous talks, TEI Guidelines, etc.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change when="2016-05-06">Revised for ENC</change>
+      <change when="2013-03-02">Integrated for Tours</change>
+      <change when="2013-03-02">As used for Lille, and Paris </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage xml:lang="fr">
+        <titlePart>09-Florilège de la TEI</titlePart>
+        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+    </front>
+    <body>
+      <!--
+Cette intervention traite tres rapidement l’histoire de la TEI, mais
+principalement se focalise sur quelques utilisations de ses
+"Guidelines" dans de projets de construction et d’exploitation de
+grands corpus textuels. Ces projets sont tres divers, avec des usages
+dans plusieurs domaines scientifiques (litterraires, linguistiques,
+historiques…) et contribuent egalement a la mise en place des
+ressources numeriques a disposition du grand public ou des communautes
+savants. Quel est le role de la TEI dans leur construction?  comment
+contribue-t-elle a leur reussite ? quelle est sa contribution a la
+perennisation de ces grandes collections patrimonialles? jusqu’a
+quelle point est-ce qu’elle aide le polyvalence de ces ressources et
+les reflexions sur la materialite des textes qu’ils impliquent?
+-->
+
+      <div type="slide">
+        <head>La TEI, elle est partout…</head>
+        <p>Dans le hall du monastère bouddhiste de la Montagne du Tambour du Dharma <!--( <seg
+            xml:lang="zh-TW"
+            >法鼓山</seg>)--> au Taiwan vous trouverez un mur couvert de tablettes de marbre vert, sur lesquels sont gravées plusieurs versions du soutra <soCalled>Coeur</soCalled> du Tripitaka. Il y a une version dans tous les langues de l’orient (japonais, hindou, chinois, etc.)…. et aussi une version en TEI P4.</p>
+      </div>
+
+      <div type="slide">
+        <head>Disponibilité des textes TEI</head>
+        <list>
+          <item>La TEI (et ses utilisateurs) s’inscrivent entièrement dans l’esprit Open Source</item>
+          <item>Donc on peut attendre trouver des ressources TEI-XML téléchargeables sans obstacles
+            partout</item>
+          <item>Restent bien sur des problèmes juridiques, ou de la peur de ces obstacles, et d’autres problèmes…</item>
+          <item>Nous allons explorer cela</item>
+        </list>
+      </div>
+
+      <div type="slide">
+        <head>Interopérabilité des textes TEI</head>
+        <p rend="box"
+          >La TEI fut conçue comme outil de l’interopérabilité/interchange : est-ce que cette promesse a été validée? </p>
+        <list>
+          <item>confronté par la richesse, beaucoup d’utilisateurs se limitent è des sous ensembles (pas forcément compatible l’un avec l’autre) </item>
+          <item>confronté par la complexité, beaucoup d’utilisateurs risquent de mal comprendre quelques détails</item>
+        </list>
+        <p>Nous allons explorer cela…</p>
+      </div>
+
+      <div type="slide">
+        <head>Usages typiques de la TEI</head>
+        <p>
+          <list>
+            <item>Éditions de sources patrimoniales en ligne</item>
+            <item>Catalogues en ligne de notices bibliographiques</item>
+            <item>Ressources linguistiques (corpus, lexiques, dictionnaires… )</item>
+          </list>
+        </p>
+        <p>Ces distinctions sont un peu floues : l’intérêt d’un encodage TEI c’est justement sa polyvalence… </p>
+      </div>
+      <div type="slide">
+        <head>Quelques exemples</head>
+        <p>Commençons avec un bref regard sur quelques projets de divers types, d’origines différentes, et également très variables d’un point de vue disciplinaire. Mais ils on tous en commun : <list>
+            <item>ils se servent de la TEI</item>
+            <item>ils traitent des documents français</item>
+            <item>ils exposent les sources XML-TEI</item>
+          </list></p>
+      </div>
+      <div type="slide">
+        <head>Répertoires d’éditions critiques numériques</head>
+        <list>
+          <item><ref target="http://www.tei-c.org/Activities/Projects/"
+              >Projects Using the TEI, site
+              de la TEI</ref></item>
+          <item><ref target="http://www.digitale-edition.de"
+              >Scholarly Digital Editions. An
+              annotated List, compiled by Patrick Sahle</ref></item>
+          <item><ref target="https://github.com/gfranzini/digEds_cat/wiki"
+              >Greta Franzini, Catalogue of Digital Editions</ref></item>
+        </list>
+      </div>
+      <div type="slide">
+        <head>Essai sur le récit, ou entretiens sur la manière de raconter de François-Joseph Bérardier de Bataut</head>
+        <list>
+          <item>http://www.beradier.org</item>
+          <item>Projet modeste consistant à mettre en ligne un seul texte </item>
+          <item>Se servant d’un logiciel du « marché » (drupal)</item>
+          <item>Choix d’affichage du texte : texte de lecture ou transcription linéaire</item>
+        </list>
+        <note rend="none">
+          <list>
+            <item>Choisir une page (e.g. second entretien) </item>
+            <item>Texte de lecture vs Transcription linéaire</item>
+            <item>Utilisation des notes marginales</item>
+            <item>télécharger un chapitre et ouvrir dans oXygen</item>
+            <item>regardez les éléments <gi>choice</gi> dans l’encodage qui rendent tout possible</item>
+            <item>validez avec TEI All (et réglez les erreurs)</item>
+          </list>
+        </note>
+      </div>
+
+      <div type="slide">
+        <head>Le mariage sous L’Ancien Régime</head>
+        <list>
+          <item>http://mariage.uvic.ca</item>
+          <item>Une « anthologie virtuelle » sur la parole polémique relative au mariage, rassemblant des fictions, des gravures, des traités catholiques, médicaux…</item>
+          <item>Indexage des termes et des noms propres beaucoup très minutieuse</item>
+        </list>
+        <!-- mariage-1 to 7b.png -->
+      </div>
+
+      <!-- je narrive pas a retrouver les index ? -->
+
+      <div type="slide">
+        <head>Presses universitaires de Caen, Chroniques latines du Mont Saint-Michel</head>
+        <list>
+          <item>
+            <ref target="http://www.unicaen.fr/services/puc/sources/chroniqueslatines"
+              >http://www.unicaen.fr/services/puc/sources/chroniqueslatines</ref>
+          </item>
+          <item>Équipe d’édition pionnière : une chaîne éditoriale XML-TEI</item>
+          <item>affichage parallèle du texte original et de sa traduction</item>
+          <item>affichage du fac-similé (sans navigation continue)</item>
+          <item>production d’un texte imprimé de format très classique… à partir du format TEI</item>
+        </list>
+        <!-- screenshot of XML source on website -->
+      </div>
+
+
+
+      <div type="slide">
+        <head>Bibliothèques virtuelles humanistes </head>
+        <list>
+          <item><ref target="http://renom.univ-tours.fr/">Renom</ref></item>
+        </list>
+      </div>
+      <!-- play with renom, but mainly we want to see the texts spo go to
+        L’isle sonnante
+        foillow link to tf.bvh.univ-tours.fr/xtf/view?docId=tei/B751131011_RES_P_Y2_1349/B751131011_RES_P_Y2_1349_tei.xml&doc.view=notice;
+        Acceder au docu,ment
+        show display options, searchability
+        under "telecharger", right click TEI to get TEI file
+        open it in oxygen to look at the encoding
+        -->
+      <div type="slide">
+        <head>Corpus littéraires</head>
+        <p>Le LABEX Obvil (Observatoire de la vie littéraire) rassemble plusieurs corpus de textes littéraires français, pas forcément tous disponibles en XML-TEI</p>
+        <p>Par exemple <ref target="http://obvil.paris-sorbonne.fr/corpus/haine-theatre/"
+            >Corpus Haine du Théâtre</ref></p>
+      </div>
+
+      <div type="slide">
+        <head>Catalogue en ligne de notices bibliographiques des manuscrits : e-Codices</head>
+        <list>
+          <item><ref target="http://www.e-codices.unifr.ch">e-Codices </ref></item>
+        </list>
+        <p>On peut faire mention de plusieurs autres projets similaires à vocation nationale.</p>
+        <p>Par exemple : <ref target="http://handrit.is"
+            >Handrit : projet nationale islandais</ref> | <ref
+            target="http://www.manuscriptorium.com"
+            >Manuscriptorium : projet international et coopératif de la BN de Prague</ref> | <ref
+            target="http://www.fihrist.org.uk"
+            >FIHRIST : catalogue des collections britanniques de manuscrits en langue arabe</ref>
+        </p>
+      </div>
+
+      <div type="slide">
+        <head>Dictionnaires</head>
+        <p>La TEI propose une gamme de balises très détaillée pour l’encodage des dictionnaires, existantes ou nouvelles.</p>
+        <p>Par exemple <list>
+            <item><ref target="http://www.freedict.org/fr/"
+                > Projet Freedict : rassemble et harmonise des lexiques disponibles sur internet </ref>
+              <!-- "Liste detaillée"-->
+            </item>
+          </list></p>
+      </div>
+
+
+
+      <div type="slide">
+        <head>Applications linguistiques</head>
+        <p>Une fois structure en TEI, tout document peut devenir un objet d’analyse linguistique. La plupart des grands projets de corpus de langue européens s’en servent, d’une manière ou d’une autre. </p>
+
+        <list>
+          <item><ref target="https://www.ortolang.fr/market/corpora"
+            > Le projet Ortolang</ref> rassemble de nombreux projets linguistiques, dont plusieurs utilisent la TEI. Mais typiquement il faut faire quelques contorsions pour arriver à les télécharger, ou même les visualiser </item>
+          <item>Corpus classique de presse : le quotidien contemporain <ref
+              target="http://www.cnrtl.fr/corpus/estrepublicain/">L’Est Républicain</ref>
+            <!-- lestrep.png --></item>
+          <item>Édition médiévale avec annotation linguistique : <ref
+              target="https://www.ortolang.fr/market/corpora/digulleville"
+              >Le Pelerinage de Vie humaine de Guillaume de Digulleville</ref></item>
+          <item>Corpus multilingue : corpus bouddhiste des <ref
+              target="http://buddhistinformatics.ddbc.edu.tw/BZA/">Samyukta Agama</ref></item>
+        </list>
+      </div>
+
+
+      <div type="slide">
+        <head>L’esprit TEI</head>
+        <p>Qu’est-ce que cela veut dire : « être conforme » à la TEI ?</p>
+        <list>
+          <item>une pratique de balisage consensuelle</item>
+          <item>un lexique commun</item>
+          <item>un respect de l’autonomie</item>
+        </list>
+        <p>Un effort de standardisation qui ne dit pas « fais comme moi » ; mais plutôt « explique-moi ce que tu fais ».</p>
+      </div>
+     
+    </body>
+  </text>
+</TEI>

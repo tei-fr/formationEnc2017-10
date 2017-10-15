@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>TEI Explorations</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc>
+         <change when="2017-10">Lou created</change>
+      </revisionDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>TEI explorations</head>
+         <p>Cet exercice vous invite à rechercher des textes TEI disponible sur le web et de
+            considérer les variations éventuelles qu'ils manifestent. </p>
+         <p>Vous êtes invité à : <list>
+               <item>télécharger un ou plusieurs de ces documents</item>
+               <item>valider le document contre <ident>tei_all</ident> (ou un schéma plus précis
+                  s’il est disponible)</item>
+               <item>comparez (si possible) la version TEI XML avec son affichage sur le web et
+                  considérez quels aspects du balisage détermine l'affichage. </item>
+               <item>considérez l’utilité, la validité, et l’élégance du balisage fourni, et
+                  l’améliorer au besoin.</item>
+            </list>
+         </p>
+     <list>
+        <head>Textes français disponible en format TEI : quelques exemplaires</head>
+        <item>
+                  <ref target="https://www.ortolang.fr/market/corpora/digulleville">Le Pelerinage de
+                     Vie humaine de Guillaume de Digulleville</ref>
+               </item>
+               <item><ref target="http://ota.ox.ac.uk/text/4653.xml">Mémoire justificatif (d’Edward
+                     Gibbon)</ref></item>
+               <item><ref target="http://ota.ox.ac.uk/desc/2555">French Oral Narrative Corpus</ref>
+                  (télécharger le corpus, et rechercher le texte <title> Conte de Bourgogne 1.
+                     Comment les femmes peuvent parfois tirer profit de la grande faiblesse des
+                     hommes. </title> en P5)</item>
+               <item>
+                  <ref target="http://www.licorn-research.fr/Boissy.html">Corpus pièces de théâtre
+                     de Louis de Boissy (1694-1758)</ref> <ref
+                        target="https://github.com/dramacode/boissy">XML
+                        source</ref>
+               </item>
+        <item><ref
+           target="http://obvil.paris-sorbonne.fr/corpus/moliere/moliere">Corpus pièces de théâtre
+           Moliere </ref> <ref target="https://github.com/dramacode/moliere">XML
+                     source</ref>
+               </item>
+               <item><ref
+                     target="http://xtf.bvh.univ-tours.fr/xtf/view?docId=tei/B751131011_RES_P_Y2_1349/B751131011_RES_P_Y2_1349_tei.xml"
+                     > L’Ile Sonnante de Francois Rabelais (BVH) </ref> (selectionner l'option TEI
+                  du menu "Telecharger" pour voir la source)
+                  </item>
+               <!-- <item>http://ota.ox.ac.uk/desc/2499 (Partanopeus de Blois)  (voir http://www.hrionline.ac.uk/partonopeus</item>
+   -->
+               <!--  <item> <bibl><title>Corpus14 (lettres des poilus)</title>
+               <distributor>Ortolang</distributor>
+               <publisher>PRAXILING</publisher>
+               <ref>https://www.ortolang.fr/market/corpora/corpus14</ref>
+               <ident>corpus14.zip</ident>
+            </bibl></item>-->
+            </list>
+            <p>Si aucun des documents dans la liste ne vous intéresse, vous êtes bien sur libres
+               d’aller retrouver d’autres ! </p>
+      </body>
+   </text>
+</TEI>
