@@ -4,7 +4,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>02 - Introduction aux richesses de la TEI</title>
+        <title>02 – Introduction aux richesses de la TEI</title>
       </titleStmt>
       <editionStmt>
         <edition>
@@ -14,9 +14,7 @@
       <publicationStmt>
         <distributor>Lou Burnard Consulting</distributor>
         <availability>
-
-          <p>Freely available for use and derivative works under a Creative Commons Attribution
-            license.</p>
+          <p>Freely available for use and derivative works under a Creative Commons Attribution license.</p>
         </availability>
         <date>2012-01-24</date>
       </publicationStmt>
@@ -26,14 +24,15 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change who="#EC" when="2017-10">Relecture et mise à jour pour la formation de l’ENC</change>
       <change when="2015-01-15">As used for Tours formation </change>
     </revisionDesc>
   </teiHeader>
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>02 - Introduction aux richesses de la TEI</titlePart>
-        <docImprint>Formation TEI | ENC 9 au 12 mai 2015</docImprint>
+        <titlePart>02 – Introduction aux richesses de la TEI</titlePart>
+        <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
     </front>
@@ -44,7 +43,7 @@
         <list type="ordered">
           <item>Modélisation : quels sont les buts et les objets de votre projet ?</item>
           <item>Orientation : est-ce que vos objets sont déjà reconnus par la TEI ?</item>
-          <item>Déclaration : comment créer une specification TEI-conforme ? </item>
+          <item>Déclaration : comment créer une spécification TEI-conforme ? </item>
           <item>Documentation : comment documenter vos pratiques TEI ?</item>
           <item>Validation : comment valider vos efforts ?</item>
         </list>
@@ -64,14 +63,13 @@
         </figure>
       </div>
       <div rend="slide">
-        <head>Comment s’orienter?</head>
-        <p>Les <title>TEI Guidelines</title>, imprimées ou en ligne, se divisent en deux grosses parties : <list>
+        <head>Comment s’orienter ?</head>
+        <p>Les <title>TEI Guidelines</title>, imprimées ou en ligne, se divisent en deux grandes parties : <list>
             <item>une séquence de 23 chapitres, dont la plupart correspondent à un module</item>
-            <item>des listes alphabétiques de définitions exhaustives de classes (183), d’éléments (546), d’attributs (470), de macros(8), et de types de données (28) .</item>
+            <item>des listes alphabétiques de définitions exhaustives de classes (183), d’éléments (546), d’attributs (470), de macros(8), et de types de données (28).</item>
           </list>
         </p>
-        <p rend="box"
-            >Comment savoir quel élément (etc.) choisir pour telle ou telle entité identifiée dans votre analyse préalable ? Comment savoir que vous avez besoin d’une <soCalled>licorne</soCalled> ? </p>
+        <p rend="box">Comment savoir quel élément (etc.) choisir pour telle ou telle entité identifiée dans votre analyse préalable ? Comment savoir que vous avez besoin d’une <soCalled>licorne</soCalled> ? </p>
       </div>
       <div rend="slide">
         <head>La triste vérité…</head>
@@ -103,7 +101,7 @@
         <head>Structuration</head>
         <list>
           <item>C’est un livret de la bibliothèque bleue – un <soCalled>chapbook</soCalled>– organisé de manière traditionnelle, avec des pièces liminaires (une page de titre, une table des matières) et plusieurs chapitres </item>
-          <item>chacun des chapitres contient : <list>
+          <item>chacun des chapitres contient :<list>
               <item>un titre et un sommaire</item>
               <item>des paragraphes narratifs</item>
               <item>des passages de dialogue</item>
@@ -133,32 +131,28 @@
           <item>ou ces trois types d’objet conjointement</item>
         </list>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
-          <TEI>
-            <teiHeader><!-- obligatoire :  métadonnées  --></teiHeader>
-            <facsimile>
-              <!-- facultatif :  rassemble des images de l’objet-->
-            </facsimile>
-            <sourceDoc>
-              <!-- facultatif :  transcription documentaire  de l’objet -->
-            </sourceDoc>
-            <text><!-- facultatif :  transcription textuelle  de l’objet --></text>
-          </TEI>
-        </egXML>
+<TEI>
+  <teiHeader><!-- obligatoire :  métadonnées  --></teiHeader>
+  <facsimile><!-- facultatif :  rassemble des images de l’objet--></facsimile>
+  <sourceDoc><!-- facultatif :  transcription documentaire  de l’objet --></sourceDoc>
+  <text><!-- facultatif :  transcription textuelle  de l’objet --></text>
+</TEI>
+</egXML>
       </div>
       <div rend="slide">
         <head>Un TEI Corpus par contre… </head>
         <p>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <teiCorpus>
-              <teiHeader>
-                <!-- obligatoire -->
-              </teiHeader>
-              <TEI>
-                <!-- obligatoire -->
-              </TEI>
-              <!-- encore d’elements <TEI>  -->
-            </teiCorpus>
-          </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<teiCorpus>
+  <teiHeader>
+    <!-- obligatoire -->
+  </teiHeader>
+  <TEI>
+    <!-- obligatoire -->
+  </TEI>
+    <!-- encore d’elements <TEI>  -->
+  </teiCorpus>
+</egXML>
         </p>
         <p rend="box"
           >Cette structure servirait par exemple à une collection de livres de ce genre</p>
@@ -221,23 +215,23 @@
       <div rend="slide">
         <head>TEI text structure (2)</head>
         <p>Un document composé : <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <text>
-              <front><!-- ... --></front>
-              <group>
-                <text n="1">
-                  <body>
-                    <p>...</p>
-                  </body>
-                </text>
-                <text n="2">
-                  <body>
-                    <p>...</p>
-                  </body>
-                </text>
-              </group>
-              <back><!-- ... --></back>
-            </text>
-          </egXML>
+<text>
+  <front><!-- ... --></front>
+  <group>
+    <text n="1">
+      <body>
+        <p>...</p>
+      </body>
+    </text>
+    <text n="2">
+      <body>
+        <p>...</p>
+      </body>
+    </text>
+  </group>
+  <back><!-- ... --></back>
+</text>
+</egXML>
         </p>
       </div>
       <div rend="slide">
@@ -427,7 +421,7 @@
             <item>des dialogues divisés en énoncés (<gi>sp</gi>), contenant une mélange de <gi>p</gi> ou de <gi>l</gi> facultativement entrecoupée de didascalies (<gi>stage</gi>)</item>
           </list>
         </p>
-        <p rend="box">… et bien sûr des sous-divisions </p>
+        <p rend="box">… et bien sûr des sous-divisions</p>
       </div>
       <div rend="slide">
         <head>Exemple prosaïque… </head>
@@ -444,93 +438,99 @@
         <head>Exemple poétique </head>
         <egXML xmlns="http://www.tei-c.org/ns/Examples" corresp="#fr-ex-Baudelaire-chats"
           rend="tiny">
-          <div type="sonnet">
-            <lg type="quatrain">
-              <l>Les amoureux fervents et les savants austères</l>
-              <l>Aiment également, dans leur mûre saison,</l>
-              <l>Les chats puissants et doux, orgueil de la maison,</l>
-              <l>Qui comme eux sont frileux et comme eux sédentaires.</l>
-            </lg>
-            <lg type="quatrain">
-              <l>Amis de la science et de la volupté</l>
-              <l>Ils cherchent le silence et l’horreur des ténèbres ;</l>
-              <l>L’Erèbe les eût pris pour ses coursiers funèbres,</l>
-              <l>S’ils pouvaient au servage incliner leur fierté.</l>
-            </lg>
-            <lg type="tercet">
-              <l>Ils prennent en songeant les nobles attitudes</l>
-              <l>Des grands sphinx allongés au fond des solitudes,</l>
-              <l>Qui semblent s’endormir dans un rêve sans fin ;</l>
-            </lg>
-            <lg type="tercet">
-              <l>Leurs reins féconds sont pleins d’étincelles magiques,</l>
-              <l>Et des parcelles d’or, ainsi qu’un sable fin,</l>
-              <l>Etoilent vaguement leurs prunelles mystiques.</l>
-            </lg>
-          </div>
-        </egXML>
+<div type="sonnet">
+  <lg type="quatrain">
+    <l>Les amoureux fervents et les savants austères</l>
+    <l>Aiment également, dans leur mûre saison,</l>
+    <l>Les chats puissants et doux, orgueil de la maison,</l>
+    <l>Qui comme eux sont frileux et comme eux sédentaires.</l>
+  </lg>
+  <lg type="quatrain">
+    <l>Amis de la science et de la volupté</l>
+    <l>Ils cherchent le silence et l’horreur des ténèbres ;</l>
+    <l>L’Érèbe les eût pris pour ses coursiers funèbres,</l>
+    <l>S’ils pouvaient au servage incliner leur fierté.</l>
+  </lg>
+  <lg type="tercet">
+    <l>Ils prennent en songeant les nobles attitudes</l>
+    <l>Des grands sphinx allongés au fond des solitudes,</l>
+    <l>Qui semblent s’endormir dans un rêve sans fin ;</l>
+  </lg>
+  <lg type="tercet">
+    <l>Leurs reins féconds sont pleins d’étincelles magiques,</l>
+    <l>Et des parcelles d’or, ainsi qu’un sable fin,</l>
+    <l>Étoilent vaguement leurs prunelles mystiques.</l>
+  </lg>
+</div>
+</egXML>
       </div>
       <div rend="slide">
         <head>Exemples dramatiques (1) </head>
         <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">
-          <sp who="#V">
-            <speaker>Vladimir</speaker>
-            <p>Relève ton pantalon.</p>
-          </sp>
-          <sp who="#E">
-            <speaker>Estragon</speaker>
-            <p>Que j’enlève mon pantalon ?</p>
-          </sp>
-          <sp who="#V">
-            <speaker>Vladimir</speaker>
-            <p><emph>RE</emph>lève ton pantalon.</p>
-          </sp>
-          <sp who="#E">
-            <speaker>Estragon</speaker>
-            <p>C’est vrai. </p>
-            <stage>Il relève son pantalon. Silence.</stage>
-          </sp>
-          <sp who="#V">
-            <speaker>Vladimir</speaker>
-            <p>Alors, on y va ?</p>
-          </sp>
-          <sp who="#E">
-            <speaker>Estragon</speaker>
-            <p>Allons-y.</p>
-          </sp>
-          <stage>Ils ne bougent pas.</stage>
-          <list type="speakers">
-            <item xml:id="V">Vladimir</item>
-            <item xml:id="E">Estragon</item>
-          </list>
-        </egXML>
+<sp who="#V">
+  <speaker>Vladimir</speaker>
+    <p>Relève ton pantalon.</p>
+</sp>
+<sp who="#E">
+  <speaker>Estragon</speaker>
+  <p>Que j’enlève mon pantalon ?</p>
+</sp>
+<sp who="#V">
+  <speaker>Vladimir</speaker>
+  <p><emph>RE</emph>lève ton pantalon.</p>
+</sp>
+<sp who="#E">
+  <speaker>Estragon</speaker>
+  <p>C’est vrai. </p>
+  <stage>Il relève son pantalon. Silence.</stage>
+</sp>
+<sp who="#V">
+  <speaker>Vladimir</speaker>
+  <p>Alors, on y va ?</p>
+</sp>
+<sp who="#E">
+  <speaker>Estragon</speaker>
+  <p>Allons-y.</p>
+</sp>
+<stage>Ils ne bougent pas.</stage>
+<list type="speakers">
+  <item xml:id="V">Vladimir</item>
+  <item xml:id="E">Estragon</item>
+</list></egXML>
       </div>
       <div rend="slide">
         <head>Exemples dramatiques (2)</head>
-        <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples"><sp>
-            <speaker>Alceste.</speaker>
-            <l>Non : j’ ai résolu de n’ en pas faire un pas.</l>
-            <l part="I">J’ ai tort, ou j’ ai raison.</l>
-          </sp><sp>
-            <speaker>Philinte.</speaker>
-            <l part="F">Ne vous y fiez pas.</l>
-          </sp><sp>
-            <speaker>Alceste.</speaker>
-            <l part="I">Je ne remuerai point.</l>
-          </sp><sp>
-            <speaker>Philinte.</speaker>
-            <l part="F">Votre partie est forte,</l>
-            <l part="I">et peut, par sa cabale, entraîner...</l>
-          </sp><sp>
-            <speaker>Alceste.</speaker>
-            <l part="F">Il n’ importe.</l>
-          </sp><sp>
-            <speaker>Philinte.</speaker>
-            <l part="I">Vous vous tromperez.</l>
-          </sp><sp>
-            <speaker>Alceste.</speaker>
-            <l part="F">Soit. J’ en veux voir le suite.</l>
-          </sp></egXML>
+        <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples">
+<sp>
+  <speaker>Alceste.</speaker>
+    <l>Non : j’ ai résolu de n’ en pas faire un pas.</l>
+    <l part="I">J’ ai tort, ou j’ ai raison.</l>
+</sp>
+<sp>
+  <speaker>Philinte.</speaker>
+    <l part="F">Ne vous y fiez pas.</l>
+</sp>
+<sp>
+  <speaker>Alceste.</speaker>
+    <l part="I">Je ne remuerai point.</l>
+</sp>
+<sp>
+  <speaker>Philinte.</speaker>
+    <l part="F">Votre partie est forte,</l>
+    <l part="I">et peut, par sa cabale, entraîner...</l>
+</sp>
+<sp>
+  <speaker>Alceste.</speaker>
+    <l part="F">Il n’ importe.</l>
+</sp>
+<sp>
+  <speaker>Philinte.</speaker>
+    <l part="I">Vous vous tromperez.</l>
+</sp>
+<sp>
+  <speaker>Alceste.</speaker>
+    <l part="F">Soit. J’ en veux voir le suite.</l>
+</sp></egXML>
       </div>
       <div rend="slide">
         <head>Composants textuels typiques</head>
@@ -686,22 +686,21 @@
       </div>
       <div rend="slide">        <head>Les citations bibliographiques</head>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <bibl xml:id="MK_73">Sturm, U. &amp; Drang, F. : <title>Musikalische Katastrophe</title>.
-            (Berlin, W. de Gruyter, 1973)</bibl>
-        </egXML>
+<bibl xml:id="MK_73">Sturm, U. &amp; Drang, F. : <title>Musikalische Katastrophe</title>.
+(Berlin, W. de Gruyter, 1973)</bibl>
+</egXML>
         <list type="unordered">
           <item>Une référence bibliographique peut être plus ou moins structurée, en se servant d’éléments tels que <gi>author</gi>, <gi>editor</gi>, <gi>title</gi>, <gi>pubPlace</gi>, <gi>publisher</gi>, <gi>series</gi> etc.</item>
           <item>les conventions de présentation des références ne sont pas forcément à
             encoder</item>
         </list>
         <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <bibl xml:id="MK73"><author>Sturm, U.</author>
-            <author>Drang, F.</author>
-            <title xml:lang="de" level="m">Musikalische Katastrophe </title>
-            <pubPlace>Berlin</pubPlace>
-            <publisher>W. de Gruyter</publisher>
-            <date>1973</date></bibl>
-        </egXML>
+<bibl xml:id="MK73"><author>Sturm, U.</author>
+  <author>Drang, F.</author>
+  <title xml:lang="de" level="m">Musikalische Katastrophe </title>
+  <pubPlace>Berlin</pubPlace>
+  <publisher>W. de Gruyter</publisher>
+  <date>1973</date></bibl></egXML>
       </div>
       <div rend="slide">
         <head>Et pour terminer, les notes</head>
@@ -956,12 +955,12 @@
         <head>Être conforme à la TEI, ça veut dire quoi ?</head>
         <list>
           <item><label>être honnête</label> : Les éléments XML qui se déclarent comme appartenant à l’espace de nom TEI doivent respecter les définitions TEI de ces éléments</item>
-          <item><label>être explicite</label> : Pour valider un document TEI, un ODD est fortement
+          <item><label>être explicite</label> : Pour valider un document TEI, un ODD est fortement
             conseillé, parce que cela mettra en évidence toutes les modifications effectuées</item>
           <item>Tout document valide TEI est valide par rapport au schéma TEI-ALL</item>
         </list>
         <p rend="box"
-          >L’objet de ces règles est de faciliter le "blind interchange" des documents.</p>
+          >L’objet de ces règles est de faciliter le <foreign xml:lang="en">blind interchange</foreign> des documents.</p>
       </div>
       <!--  <div rend="slide">
         <head>http://www.tei-c.org/Roma/</head>

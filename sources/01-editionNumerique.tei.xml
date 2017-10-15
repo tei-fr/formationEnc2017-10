@@ -7,13 +7,14 @@
       </titleStmt>
       <publicationStmt>
         <publisher>Unknown</publisher>
-        <date when="2016-05">mai 2016</date>
+        <date from="2016-05">mai 2016</date>
       </publicationStmt>
       <sourceDesc>
         <p>Document nativement numérique</p>
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2017-10">Relecture et mise à jour pour la formation de l’ENC</change>
       <change when="2016-05"
         >Remaniement avec le fichier sur l’édition critique et celui sur l’encodage en utilisant des éléments de la présentation de Lou Burnard sur la modélisation</change>
       <change when="2015-05-24">conversion du fichier en TEI</change>
@@ -23,8 +24,8 @@
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>01 - Synthèse sur le balisage des éditions critiques</titlePart>
-        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <titlePart>01 – Synthèse sur le balisage des éditions critiques</titlePart>
+        <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="slide" xml:lang="fr">
@@ -69,9 +70,9 @@
               <head>Un essai de reconstitution d’un texte</head>
               <p>On parle d’édition critique, ou d’édition scientifique – l’adjectif dans appellation venant en désigner le caractère savant –, au sens où il s’agit de produire <hi>une reproduction contrôlée</hi> d’un texte dont sont procurés les états, versions, variantes et leçons.</p>
               <p>De ce point de vue, l’édition critique constitue, selon la définition du manuel de l’École nationale des chartes sur l’édition des textes médiévaux, un <cit>
-                  <quote>Essai de reconstitution d’un texte, pour lequel l’éditeur pèse chacun des mots du texte en se servant de tous les moyens de jugement dont il dispose.</quote>
+                <quote>Essai de reconstitution d’un texte, pour lequel l’éditeur pèse chacun des mots du texte en se servant de tous les moyens de jugement dont il dispose.</quote>
                 </cit>
-                <bibl>Bourgain, Pascale, et Vielliard, Françoise, Conseils pour l’édition des textes médiévaux, Paris, Comité des travaux historiques et scientifiques / École nationale des chartes, 2002, (Documents d'archives, n° Fascicule III, Textes littéraires).</bibl></p>
+                <bibl>Pascale Bourgain et Françoise Vielliard. <hi rend="italic">Conseils pour l’édition des textes médiévaux, Paris, Comité des travaux historiques et scientifiques</hi> / École nationale des chartes, 2002 (Documents d’archives, n° Fascicule III, Textes littéraires).</bibl></p>
             </div>
             <div>
               <head>Plusieurs genres d’édition critique</head>
@@ -82,7 +83,7 @@
                     <item>l’édition <foreign xml:lang="lat"
                       >variorum</foreign>, qui donne le texte accompagné, outre l’apparat normal des variantes, de toutes les solutions des éditeurs précédents.</item>
                   </list></quote>
-                <bibl>Bourgain, Pascale, et Vielliard, Françoise, Conseils pour l’édition des textes médiévaux, Paris, Comité des travaux historiques et scientifiques / École nationale des chartes, 2002, (Documents d'archives, n° Fascicule III, Textes littéraires).</bibl>
+                <bibl>Pascale Bourgain, et Françoise Vielliard. Conseils pour l’édition des textes médiévaux. Paris : Comité des travaux historiques et scientifiques / École nationale des chartes, 2002, (Documents d’archives, n° Fascicule III, Textes littéraires).</bibl>
               </cit>
             </div>
           </div>
@@ -110,9 +111,7 @@
             <p>Ainsi :</p>
             <cit>
               <quote>Une édition critique n’est pas une reproduction photographique. Elle résulte d’un compromis raisonnable entre, d’une part, le respect du texte à publier (dont on ne doit en aucun cas moderniser la graphie) et, d’autre part, le souci de le rendre aussi intelligible que possible pour un lecteur d’aujourd’hui.</quote>
-              <bibl>Barbiche, Bernard, Châtenet, Monique, Delmas, Jean, Guyotjeannin, Olivier, et Belhoste, Jean-François, L'Édition des textes anciens : XVI<hi
-                  rend="superscript">e</hi>-XVIII<hi rend="superscript"
-                >e</hi> siècle, Paris, Association Études, loisirs, patrimoine, 1993, (Documents &amp; méthodes / Inventaire général des monuments et des richesses artistiques de la France, n° 1).</bibl>
+              <bibl>Bernard Barbiche, Monique Châtenet, Jean Delmas, Olivier Guyotjeannin, et Jean-François Belhoste. <hi rend="italic">L’Édition des textes anciens : XVI</hi><hi rend="superscript"><hi rend="italic">e</hi></hi><hi rend="italic">-XVIII</hi><hi rend="superscript"><hi rend="italic">e</hi></hi><hi rend="italic"> siècle</hi>. Paris : Association Études, loisirs, patrimoine, 1993 (Documents &amp; méthodes / Inventaire général des monuments et des richesses artistiques de la France, n° 1).</bibl>
             </cit>
             <p>La production d’une édition critique de qualité exige de ce fait d’avoir bien défini son public de destination. Cette question est déterminante même si l’on ne renonce généralement pas à toucher un public un tant soit peu élargi.</p>
             <p>Par exemple, dans le cas des Cours d’Antoine Desgodets à l’Académie d’architecture, s’agissant de mettre à disposition un corpus de textes inédits, établi d’après une tradition abondante de témoins manuscrits, l’édition des cours de Desgodets offrait un intérêt tout particulier pour l’historien de l’art et l’historien du droit. Elle devait présenter toutes les qualités habituellement requises par une édition de haute tenue scientifique en termes de fiabilité, de solidité et de justification des parti-pris. S’agissant d’un matériau entièrement neuf pour la recherche, il s’agissait également de faciliter son étude et de prendre en compte certaines particularités propres à des manuscrits architecturaux pour la consultation.</p>
@@ -169,9 +168,9 @@
           <div rend="comments">
             <head>Encodage descriptif vs encodage présentationnel</head>
             <p>Parce qu’il détermine tous les traitements informatiques qu’il est possible d’effectuer sur le texte, le balisage a historiquement constitué une question fondamentale dans l’histoire de l’informatique. Depuis l’article séminal de Coombs et ses collègues, on a pris l’habitude de distinguer plusieurs types de balisages : procédural, présentationnel, ou encore descriptif.</p>
-            <bibl>cf. Coombs, James H, Renear, Allen H, et DeRose, Steven J, <ref
-                target="http://xml.coverpages.org/coombs.html"
-                >« Markup Systems and the Future of Scholarly Text Processing »</ref>, Communications of the ACM, n° 11, t. 30, 1987, p.933-947.</bibl>
+            <bibl>cf. James H. Coombs, Allen H Renear, et Steven J DeRose. <ref
+              target="http://xml.coverpages.org/coombs.html"
+              >« Markup Systems and the Future of Scholarly Text Processing »</ref>. <hi rend="italic">Communications of the ACM</hi>, n° 11, t. 30, 1987, p. 933-947.</bibl>
             <p>La supériorité du balisage descriptif sur les autres types de balisage du texte a clairement été établie depuis quelques années. Un tel balisage présente l’avantage notable d’assurer une meilleure distinction entre le contenu et la forme (et donc de séparer les traitements). Cette distinction garantit une meilleure maintenance du texte encodé et une meilleure portabilité des artefacts numériques.</p>
           </div>
         </div>
@@ -180,7 +179,7 @@
             <head>La production d’un <hi>balisage descriptif</hi></head>
             <p>Identifier explicitement la structure sémantique sous-jacente d’un document, indépendamment de tout traitement déterminé à l’avance.</p>
             <list>
-              <item>Distinguer à l'intérieur du texte différents objets éditoriaux</item>
+              <item>Distinguer à l’intérieur du texte différents objets éditoriaux</item>
               <item>Fournir une information sémantique</item>
               <item>Possibilité de produire des vues distinctes</item>
             </list>
@@ -189,9 +188,9 @@
             <head>La production d’un <hi>balisage descriptif</hi></head>
             <p>La production d’un <hi rend="bold"
               >balisage descriptif</hi> consiste à identifier explicitement la structure sémantique sous-jacente d’un document, cela indépendamment de tout traitement déterminé à l’avance.</p>
-            <bibl>cf. Renear, Allen, Dubin, David, Sperberg-McQueen, C. Michael, et Huitfeldt, Claus, <ref
-                target="http://dl.acm.org/citation.cfm?id=827140.827192"
-                >« XML semantics and digital libraries »</ref>, Proceedings of the 3rd ACM/IEEE-CS joint conference on Digital libraries, p. 303-305, 2003.</bibl>
+            <bibl>cf. Allen Renear, David Dubin, C. Michael Sperberg-McQueen, et Claus Huitfeldt. <ref
+              target="http://dl.acm.org/citation.cfm?id=827140.827192"
+              >« XML semantics and digital libraries »</ref>. <hi rend="italic">Proceedings of the 3rd ACM/IEEE-CS joint conference on Digital libraries</hi>, 2003, p. 303-305.</bibl>
             <p>Il s’agit de <hi rend="bold"
                 >distinguer explicitement à l’intérieur du texte différents objets éditoriaux</hi> en les encadrant par des balises dont le nom peut être arbitraire.</p>
             <p>Ce faisant l’auteur d’un balisage fournit une <hi rend="bold"
@@ -204,7 +203,7 @@
             <list>
               <item>Reconnaissance des éléments</item>
               <item>Sélection des balises</item>
-              <item>Réalisation du balisage, marquage de l'élément</item>
+              <item>Réalisation du balisage, marquage de l’élément</item>
             </list>
           </div>
           <div rend="comments">
@@ -216,9 +215,9 @@
               <label>la sélection des balises,</label>
               <item>déterminer le balisage qui s’applique au type d’élément reconnu</item>
               <label>la réalisation du balisage,</label>
-              <item>marquage de l’élément à l'intérieur du flux textuel</item>
+              <item>marquage de l’élément à l’intérieur du flux textuel</item>
             </list>
-            <bibl>cf. Coombs, James, et al., <hi rend="italic">op. cit.</hi></bibl>
+            <bibl>cf. James Coombs, et al. <hi rend="italic">op. cit.</hi></bibl>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
@@ -282,8 +281,8 @@
                 rend="bold"
                 >rendre la structure du texte explicite, c’est-à-dire de clarifier à la fois les relations hiérarchiques et séquentielles</hi>. La présence du balisage détermine par la suite la possibilité de traiter les éléments pour une transformation.</p>
             <p>Le métalangage informatique XML (Extensible Markup Language) permet le développement de vocabulaires descriptifs de balisages interopérables spécifiques à certains domaines.</p>
-            <bibl>cf. Bray, Tim, Paoli, Jean, Sperberg-McQueen, C. Michael, Maler, Eve, et Yergeau, François, Extensible Markup Language (XML) 1.0, Recommandation du W3C, 2008. <ref
-                target="https://www.w3.org/TR/REC-xml/">https://www.w3.org/TR/REC-xml/</ref></bibl>
+            <bibl>cf. Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, et François Yergeau. <hi rend="italic">Extensible Markup Language (XML) 1.0</hi>. Recommandation du W3C, 2008. <ref
+              target="https://www.w3.org/TR/REC-xml/">https://www.w3.org/TR/REC-xml/</ref></bibl>
           </div>
           <div>
             <head>Un modèle de contenu arborescent</head>
@@ -326,7 +325,7 @@
             <div>
               <head>Un héritier de SGML</head>
               <p>SGML lui-même héritier d’un langage descriptif conçu en 1969 par des ingénieurs de la société IBM : DCF (Document Composition Facility).</p>
-              <p>SGML : puissant et générique mais aussi trop souple et complexe en même temps → surtout utilisé dans le cadre d’applications lourdes. Utilisation la plus notable : langage HTML, dérivé du SGML => langage de publication pour le web.Né en 1989 et depuis 2011, HTML 5.</p>
+              <p>SGML : puissant et générique mais aussi trop souple et complexe en même temps → surtout utilisé dans le cadre d’applications lourdes. Utilisation la plus notable : langage HTML, dérivé du SGML => langage de publication pour le web. Né en 1989 et depuis 2011, HTML 5.</p>
             </div>
             <div>
               <head>Publication de XML</head>
@@ -487,7 +486,7 @@
   </doc>]]>
             </egXML>
             <p>Les séquences <code>&lt;</code>, <code>&gt;</code> et <code>&lt;/</code> délimitent les balises : <code>&lt;div&gt;&lt;/div&gt;</code></p>
-            <p>Les paires nom-valeur des attributs ont la forme <code>nom='valeur'</code> équivalente à <code>nom="valeur"</code></p>
+            <p>Les paires nom-valeur des attributs ont la forme <code>nom=’valeur’</code> équivalente à <code>nom="valeur"</code></p>
             <p>Syntaxte des éléments vides : <code>&lt;div&gt;&lt;/div&gt;</code> = <![CDATA[<div/>]]></p>
           </div>
           <div rend="comments">
@@ -561,14 +560,14 @@
             <head>Les <hi>entités</hi></head>
             <div>
               <head>Entités internes</head>
-              <p><soCalled>entités caractères prédéfinies</soCalled> pour saisir certains caractères que l’on doit obligatoirement coder ( <![CDATA[<]]>, <![CDATA[>]]>, <![CDATA[&]]>, <![CDATA["]]>, <![CDATA[']]> : caractères codés au moyen des entités <code>lt</code>, <code>gt</code>, <code>amp</code>, <code>quot</code>, <code>apos</code>)</p>
+              <p><soCalled>entités caractères prédéfinies</soCalled> pour saisir certains caractères que l’on doit obligatoirement coder ( <![CDATA[<]]>, <![CDATA[>]]>, <![CDATA[&]]>, <![CDATA["]]>, <![CDATA[’]]> : caractères codés au moyen des entités <code>lt</code>, <code>gt</code>, <code>amp</code>, <code>quot</code>, <code>apos</code>)</p>
             </div>
             <div>
               <head>Entités externes</head>
               <p>XML propose des mécanismes pour donner un nom à des expressions ou phrases souvent répétées ou pour taper des caractères difficiles à composer au clavier.</p>
               <list>
                 <item>texte : fragments XML formant chacun un fichier</item>
-                <item>non parsées (fichiers non XML tels qu’images, enregistrements sonores…)</item>
+                <item>non-parsées (contenus non XML tels que des images, des enregistrements sonores,…)</item>
               </list>
             </div>
             <div>
@@ -622,7 +621,7 @@
               <item>Formellement un espace de noms est défini par son URI (namespace-uri).</item>
               <item>Si on utilise un ou plusieurs espaces de noms, l’espace de noms (ou les espaces de noms) utilisé(s) doivent être déclarés dans le fichier XML. On le fait le plus souvent en ajoutant un (ou plusieurs) attribut(s) xmlns à l’élément racine du fichier. Un attribut xmlns a pour valeur l’URI d’un espace de noms.</item>
               <item>L’espace de noms peut être déclaré comme l’espace de noms par défaut, dans ce cas l’URI n’est pas associée à un code donné et les noms des attributs et éléments ne sont pas préfixés.</item>
-              <item>Un code peut en effet représenter l’espace de noms, il est alors utilisé à la place de l’URI pour préfixer attributs et éléments ; ce code est appelé préfixe (namespace- prefix).</item>
+              <item>Un code peut en effet représenter l’espace de noms, il est alors utilisé à la place de l’URI pour préfixer attributs et éléments ; ce code est appelé préfixe (namespace-prefix).</item>
             </list>
             <p><label>exemple</label> Ici l’espace de noms par défaut est défini par l’URI http://www.tei-c.org/ns/1.0, c’est l’espace de noms TEI. Tous les éléments du fichier XML qui sont descendants de l’élément racine et qui ne sont pas préfixés sont dans cet espace de noms.</p>
           </div>
@@ -651,7 +650,7 @@
               <item><![CDATA[<segment><article>du</article><nom>texte</nom></segment>]]></item>
               <item><![CDATA[<segment><article>du <nom></article> texte</nom></segment>]]></item>
               <item><![CDATA[<segment type="text">du texte</segment>]]></item>
-              <item><![CDATA[<segment type='text'>du texte</segment>]]></item>
+              <item><![CDATA[<segment type=’text’>du texte</segment>]]></item>
               <item><![CDATA[<segment type=text>du texte</segment>]]></item>
               <item><![CDATA[<segment type="text">du texte<segment/>]]></item>
               <item><![CDATA[<segment type="text">du texte<lacune/></segment>]]></item>
@@ -712,7 +711,7 @@
             <list>
               <item>Ne pas se contraindre du point de vue logiciel</item>
               <item>Profiter pleinement des possibilités offertes par le numérique</item>
-              <item>Disposer d'un cadre de travail qui contrôle la qualité des documents</item>
+              <item>Disposer d’un cadre de travail qui contrôle la qualité des documents</item>
             </list>
             <p>Même si la mise en place d’un balisage descriptif du texte, implique le déploiement d’une infrastructure technique sans-doute moins confortable pour travailler que l’utilisation de logiciels de traitement de texte, il faut relever qu’il permet de se concentrer sur le contenu du texte plutôt que sur la présentation physique finale du document. Bien entendu, concernant l’édition de manuscrits historiques, ou de sources primaires, il pourra être nécessaire de traiter la matérialité physique du document. Néanmoins c’est avant tout l’édition du texte qui est ici privilégiée. Dans une telle démarche, il convient en premier lieu de rendre la structure du texte explicite, c’est-à-dire de clarifier à la fois les relations hiérarchiques et séquentielles. Et la présence du balisage détermine la possibilité de traiter les éléments pour une transformation.</p>
           </div>
@@ -728,9 +727,9 @@
           <div>
             <head>Orientations bibliographiques, édition numérique</head>
             <list>
-              <item><bibl>Burnard, Lou, O'Brien O'Keeffe, Katherine et Unsworth, John. <ref
-                    target="http://www.tei-c.org/About/Archive_new/ETE/Preview/index.xml"
-                    >Electronic Textual Editing. Modern Language Association</ref>, 2006.</bibl></item>
+              <item><bibl>Burnard, Lou, O’Brien O’Keeffe, Katherine et Unsworth, John. <ref
+                target="http://www.tei-c.org/About/Archive_new/ETE/Preview/index.xml"
+                >Electronic Textual Editing. Modern Language Association</ref>, 2006.</bibl></item>
               <item><bibl>Schillingsburg, Peter L., <ref
                     target="http://books.google.fr/books/about/From_Gutenberg_to_Google.html?id=rd57F8IjyF0C"
                     >From Gutenberg to Google</ref>, 2006.</bibl></item>
@@ -752,21 +751,12 @@
           <div>
             <head>Orientations bibliographiques .inverse[(édition critique)]</head>
             <list>
-              <item><bibl>Guyotjeannin, Olivier, and Olivier Poncet. <hi rend="italic">
-                    <ref
-                      target="https://intranet.enc.sorbonne.fr/files/20100315-Edition-electronique-intro-OGJ-OP.pdf"
-                      >L’édition électronique de sources d’archives médiévales et modernes, Quelques réflexions</ref>
+              <item><bibl>Guyotjeannin, Olivier, et Olivier Poncet. <hi rend="italic">
+                    <ref target="https://intranet.enc.sorbonne.fr/files/20100315-Edition-electronique-intro-OGJ-OP.pdf">L’édition électronique de sources d’archives médiévales et modernes, Quelques réflexions</ref>
                   </hi>. mars, 2010.</bibl></item>
-              <item><bibl>Bourgain, Pascale, and Françoise Vieillard (dir.), <hi rend="italic"
-                    >Conseils Pour L'édition Des Textes Médiévaux</hi>. Conseils généraux, Fascicule I. Documents d'archives, Fascicule II. Textes littéraires, Fascicule III. Paris: Comité des travaux historiques et scientifiques / École nationale des chartes, 2001-2002.</bibl></item>
-              <item><bibl>Barbiche, Bernard. <hi rend="italic"
-                    >["Conseils Pour L’édition Des Textes De L’époque Moderne (XVIe-XVIIIe Siècle)"](http://theleme.enc.sorbonne.fr/cours/edition</hi>epoque<hi
-                    rend="italic">moderne/edition</hi>des<hi rend="italic"
-                  >textes)</hi>. Theleme (Techniques pour l'Historien en Ligne : Études, Manuels, Exercices).</bibl></item>
-              <item><bibl>Christine Nougaret et Élisabeth Parinet (dir.), <hi rend="italic"
-                    >Conseils pour l'édition des textes de l’époque moderne</hi>, École nationale des chartes, <hi
-                    rend="bold"
-                    >à paraître en décembre 2014 (avec un chapitre de Florence Clavaud consacré à l'édition électronique) !!</hi>.</bibl></item>
+              <item><bibl>Bourgain, Pascale, et Françoise Vieillard (dir.), <hi rend="italic">Conseils Pour L’édition Des Textes Médiévaux</hi>. Conseils généraux, Fascicule I. Documents d’archives, Fascicule II. Textes littéraires, Fascicule III. Paris: Comité des travaux historiques et scientifiques / École nationale des chartes, 2001-2002.</bibl></item>
+              <item><bibl>Barbiche, Bernard. <hi rend="italic">["Conseils Pour L’édition Des Textes De L’époque Moderne (XVIe-XVIIIe Siècle)"](http://theleme.enc.sorbonne.fr/cours/edition</hi>epoque<hi rend="italic">moderne/edition</hi>des<hi rend="italic">textes)</hi>. Theleme (Techniques pour l’Historien en Ligne : Études, Manuels, Exercices).</bibl></item>
+              <item><bibl>Christine Nougaret et Élisabeth Parinet (dir.), <hi rend="italic">Conseils pour l’édition des textes de l’époque moderne</hi>, École nationale des chartes, <hi rend="bold">à paraître en décembre 2014 (avec un chapitre de Florence Clavaud consacré à l’édition électronique) !!</hi>.</bibl></item>
             </list>
           </div>
         </div>
@@ -777,9 +767,9 @@
               <item>A gentle introduction to XML : <ref
                   target="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html"
                   >http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html</ref></item>
-              <item>XML en concentré : manuel de référence / Elliotte Rusty Harold &amp; W. Scott Means ; traduction de Philippe Ensarguet, Frédéric Laurent. - 3e éd. - Paris : O'Reilly, 2005. ISBN 2-84177-353-1 EAN 9782841773534 ;</item>
+              <item>XML en concentré : manuel de référence / Elliotte Rusty Harold &amp; W. Scott Means ; traduction de Philippe Ensarguet, Frédéric Laurent. - 3<hi rend="superscript">e</hi> éd. - Paris : O’Reilly, 2005. ISBN 2-84177-353-1 EAN 9782841773534 ;</item>
               <item>L’espace XML francophone : actualités, discussions, articles et billets, sur le site Web <ref
-                  target="http://xmlfr.org/">http://xmlfr.org/</ref></item>
+                target="http://xmlfr.org/">http://xmlfr.org/</ref></item>
             </list>
           </div>
         </div>
