@@ -12,6 +12,7 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2017-10">relecture et mise à jour</change>
       <change when="2016-05">modifications diverses et formatage</change>
       <change when="2015-05-24">conversion du fichier en TEI</change>
       <change when="2014-10-30">première rédaction</change>
@@ -28,8 +29,8 @@
          <p>class: center middle</p>-->
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>03-Le teiHeader</titlePart>
-        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <titlePart>03 – Le teiHeader</titlePart>
+        <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title" xml:lang="fr">
@@ -61,7 +62,7 @@
             <list>
               <item>documenter la source</item>
               <item>renseigner l’édition et ses attributions</item>
-              <item>intégration possible dans des bibliothèques numériques</item>
+              <item>rendre possible l’intégration dans des bibliothèques numériques</item>
             </list>
             <p>L’entête d’un fichier TEI ou <gi>teiheader</gi> vous permet de finement renseigner les métadonnées de votre fichier. Elles renseignent aussi bien le fichier de votre édition que la source du texte édité.</p>
             <div rend="comments">
@@ -89,9 +90,8 @@
             <p>Dans le cadre de la production d’une édition numérique il est souvent nécessaire de traiter avec soin les en-têtes TEI et de produire des métadonnées de qualité. La TEI propose de nombreuses manières possibles de fournir une description des fichiers.</p>
             <p>Ici, pour arrêter les choix d’encodages, il convient d’examiner un certain nombre de pratiques documentaires existantes dans le monde bibliothéconomique et de rechercher des guides de bonnes pratiques pour la TEI.</p>
             <p>Un travail en vue de permettre un moissonnage des en-têtes TEI en OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting) des éditions produites au sein du Consortium cahier a permis de se diriger vers la définition de pratiques commune pour la communauté francophone. Il serait dommage de ne pas s’y conformer.</p>
-            <p>Glorieux, Frédéric, et Jolivet, Vincent, <ref
-              target="http://sourceforge.net/p/weboai/wiki/Home/"
-              >« weboai, Human web interface on OAI repository »</ref>, SourceForge.</p>
+            <p>Glorieux, Frédéric, et Jolivet, Vincent, <ref target="http://sourceforge.net/p/weboai/wiki/Home/">« weboai, Human web interface on OAI repository »</ref>, SourceForge.</p>
+            <p>http://weboai.cahier.huma-num.fr</p>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
@@ -147,7 +147,7 @@
             </list>
             <list>
               <head>trois éléments facultatifs</head>
-              <item><gi>editionStmt</gi> informations relatives à l'édition</item>
+              <item><gi>editionStmt</gi> informations relatives à l’édition</item>
               <item><gi>extent</gi> taille du fichier</item>
               <item><gi>seriesStmt</gi> informations relatives à la collection</item>
               <item><gi>noteStmt</gi> notes fournissant des informations sur le texte</item>
@@ -157,21 +157,21 @@
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Exemple d’en-tête minimale</head>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <teiHeader>
-                <fileDesc>
-                  <titleStmt>
-                    <title><!-- titre du document --></title>
-                  </titleStmt>
-                  <publicationSmt>
-                    <p><!-- mentions de publication --></p>
-                  </publicationSmt>
-                  <sourceDesc>
-                    <p><!-- description de la source --></p>
-                  </sourceDesc>
-                </fileDesc>
-              </teiHeader>
-            </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title><!-- titre du document --></title>
+    </titleStmt>
+    <publicationSmt>
+      <p><!-- mentions de publication --></p>
+    </publicationSmt>
+    <sourceDesc>
+      <p><!-- description de la source --></p>
+    </sourceDesc>
+  </fileDesc>
+</teiHeader>
+</egXML>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
@@ -189,45 +189,45 @@
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Exemple de mentions de titre et de responsabilité (<gi>titleStmt</gi>)</head>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <titleStmt>
-                <title xml:lang="fre" type="main">Sauval 1724</title>
-                <principal>
-                  <persName ref="#MCL">
-                    <forename>Marianne</forename>
-                    <surname>Cojannot-Le Blanc</surname>
-                  </persName>
-                </principal>
-                <funder>
-                  <orgName>Labex Les Passés dans le Présent</orgName>
-                  <date from="2013" to="2018">2013-2018</date>
-                </funder>
-                <respStmt>
-                  <resp key="mrk">encodage XML-TEI</resp>
-                  <persName ref="#EC">
-                    <forename>Emmanuel</forename>
-                    <surname>Château</surname>
-                  </persName>
-                </respStmt>
-                <!-- ... -->
-              </titleStmt>
-            </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <titleStmt>
+    <title xml:lang="fre" type="main">Sauval 1724</title>
+    <principal>
+      <persName ref="#MCL">
+        <forename>Marianne</forename>
+        <surname>Cojannot-Le Blanc</surname>
+      </persName>
+    </principal>
+    <funder>
+      <orgName>Labex Les Passés dans le Présent</orgName>
+      <date from="2013" to="2018">2013-2018</date>
+    </funder>
+    <respStmt>
+      <resp key="mrk">encodage XML-TEI</resp>
+        <persName ref="#EC">
+          <forename>Emmanuel</forename>
+          <surname>Château</surname>
+        </persName>
+    </respStmt>
+    <!-- ... -->
+  </titleStmt>
+</egXML>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
           <div>
             <head>Description de la source (<gi>sourceDesc</gi>)</head>
             <p><gi rend="mandatory">sourceDesc</gi> est un élément obligatoire, il est destiné à accueillir une description de la source du document soit en texte libre soit de manière structurée avec les éléments <gi>bibl</gi>, <gi>msDesc</gi>, etc.</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <sourceDesc>
-                <p>Fichier nativement numérique</p>
-              </sourceDesc>
-            </egXML>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <bibl>Henri Sauval. <title>Histoire et recherches des antiquités 
-                de la ville de Paris </title>. Paris : Charles Moette et Jacques
-                Chardon, 1724</bibl>
-            </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <sourceDesc>
+    <p>Fichier nativement numérique</p>
+  </sourceDesc>
+</egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <bibl>Henri Sauval. <title>Histoire et recherches des antiquités 
+  de la ville de Paris </title>. Paris : Charles Moette et Jacques
+  Chardon, 1724</bibl>
+</egXML>
           </div>
           <div rend="comments">
             <p>La description de la source est un élément obligatoire dans la description d’un fichier TEI. Notez bien que la TEI différencie clairement les informations concernant l’édition des informations concernant la source du texte encodé (avec <gi>sourceDesc</gi>).</p>
@@ -273,37 +273,37 @@
         <div rend="slide" xml:lang="fr">
           <div>
             <head>exemple d’<gi>encodingDesc</gi></head>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <encodingDesc>
-                <charDecl>
-                  <glyph xml:id="uut">
-                    <glyphName>two latin small letter u with macron and vertical
-                      line</glyphName>
-                    <charProp>
-                      <localName>entity</localName>
-                      <value>omega2</value>
-                    </charProp>
-                    <mapping type="composed">&#117;&#862;&#117;&#862;&#124;</mapping>
-                    <graphic url="x2.jpg"/>
-                  </glyph>
-                </charDecl>
-                <editorialDecl>
-                  <normalization>
-                    <p>La ponctuation a été ajoutée, conformément...</p>
-                    <p>les mots ont été séparés lorsque l'usage actuel...</p>
-                  </normalization>
-                </editorialDecl>
-              </encodingDesc>
-            </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <encodingDesc>
+    <charDecl>
+      <glyph xml:id="uut">
+        <glyphName>two latin small letter u with macron and vertical
+        line</glyphName>
+        <charProp>
+          <localName>entity</localName>
+          <value>omega2</value>
+        </charProp>
+        <mapping type="composed">&#117;&#862;&#117;&#862;&#124;</mapping>
+        <graphic url="x2.jpg"/>
+      </glyph>
+    </charDecl>
+    <editorialDecl>
+      <normalization>
+        <p>La ponctuation a été ajoutée, conformément...</p>
+        <p>les mots ont été séparés lorsque l’usage actuel...</p>
+      </normalization>
+    </editorialDecl>
+  </encodingDesc>
+</egXML>
           </div>
           <div>
             <head>Par exemple, pour les ouvrages imprimés</head>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <hyphenation>
-                <p>Pour les ouvrages imprimés, il n’a pas été tenu compte 
-                  de l’hyphénation.</p>
-              </hyphenation>
-            </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <hyphenation>
+    <p>Pour les ouvrages imprimés, il n’a pas été tenu compte 
+    de l’hyphénation.</p>
+  </hyphenation>
+</egXML>
           </div>
         </div>
         <div rend="slide" xml:lang="fr">
@@ -315,31 +315,31 @@
               <item><gi>langUsage</gi> langues présentes dans le texte</item>
               <item><gi>textClass</gi> nature du texte d’après un thesaurus interne ou externe</item>
             </list>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <profileDesc>
-                <creation><date when="2009-04-20">20 avril
-                  2009</date></creation>
-                <langUsage>
-                  <language indent="fre" scope="60">Français</language>
-                  <language ident="lat" scope="40">Latin</language>
-                </langUsage>
-              </profileDesc>
-            </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <profileDesc>
+    <creation><date when="2009-04-20">20 avril
+    2009</date></creation>
+    <langUsage>
+      <language indent="fre" scope="60">Français</language>
+      <language ident="lat" scope="40">Latin</language>
+    </langUsage>
+  </profileDesc>
+</egXML>
         </div>
           <div rend="slide" xml:lang="fr">
             <div>
               <head><gi>revisionDesc</gi></head>
               <p>Enregistre les révisions et modifications du fichier</p>
-              <egXML xmlns="http://www.tei-c.org/ns/Examples">
-                <revisionDesc>
-                  <change when="2009-11" who="#VJ">Deuxième édition
-                    électronique</change>
-                  <change when="2009-10" who="#FG">Schéma et 
-                    transformations</change>
-                  <change when="2009-10" who="#CD">Encodage de 
-                    l'apparat critique</change>
-                </revisionDesc>
-              </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <revisionDesc>
+    <change when="2009-11" who="#VJ">Deuxième édition
+    électronique</change>
+    <change when="2009-10" who="#FG">Schéma et 
+    transformations</change>
+    <change when="2009-10" who="#CD">Encodage de 
+    l’apparat critique</change>
+  </revisionDesc>
+</egXML>
             </div>
           </div>
         </div>
@@ -358,7 +358,7 @@
             <item>
               <bibl><ref
                   target="http://www.bnf.fr/fr/professionnels/normes_catalogage/a.ead_demarch.html"
-                  >DeMArch Description des manuscrits et fonds d'archives modernes et contemporains en bibliothèque</ref>.</bibl></item>
+                  >DeMArch Description des manuscrits et fonds d’archives modernes et contemporains en bibliothèque</ref>.</bibl></item>
             <item><bibl>Hawkins, Kevin, Dalmau, Michelle, et Bauman, Syd, <ref
                   target="http://www.tei-c.org/SIG/Libraries/teiinlibraries/main-driver.html"
                   >Best Practices for TEI in Libraries</ref></bibl>.</item>

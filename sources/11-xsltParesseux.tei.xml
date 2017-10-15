@@ -12,14 +12,15 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
+      <change when="2017-10">Révision pour la formation de l’ENC de 2017</change>
       <change>première rédaction, <date when="2016-05">mai 2016</date></change>
     </revisionDesc>
   </teiHeader>
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>08-TEI Stylesheets</titlePart>
-        <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
+        <titlePart>08 – TEI Stylesheets</titlePart>
+        <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
       <div rend="title">

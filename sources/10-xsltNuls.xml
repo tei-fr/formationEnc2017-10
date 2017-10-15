@@ -118,33 +118,32 @@ autres</item>
 
       <div rend="slide">
         <head>Exemple texte XML ... </head>
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <body type="anthology">
-            <div type="poem">
-              <head>The SICK ROSE </head>
-              <lg type="stanza">
-                <l n="1">O Rose thou art sick.</l>
-                <l n="2">The invisible worm,</l>
-                <l n="3">That flies in the night </l>
-                <l n="4">In the howling storm:</l>
-              </lg>
-              <lg type="stanza">
-                <l n="5">Has found out thy bed </l>
-                <l n="6">Of crimson joy:</l>
-                <l n="7">And his dark secret love </l>
-                <l n="8">Does thy life destroy.</l>
-              </lg>
-            </div>
-
-            <div type="shortpoem">
-              <head>Queen Anne’s tipple</head>
-              <lg type="couplet">
-                <l n="1">Here thou Great Anna whom three realms obey</l>
-                <l n="2">Doth sometimes council take, and sometimes tea.</l>
-              </lg>
-            </div>
-          </body>
-        </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<body type="anthology">
+  <div type="poem">
+    <head>The SICK ROSE </head>
+    <lg type="stanza">
+      <l n="1">O Rose thou art sick.</l>
+      <l n="2">The invisible worm,</l>
+      <l n="3">That flies in the night </l>
+      <l n="4">In the howling storm:</l>
+    </lg>
+    <lg type="stanza">
+      <l n="5">Has found out thy bed </l>
+      <l n="6">Of crimson joy:</l>
+      <l n="7">And his dark secret love </l>
+      <l n="8">Does thy life destroy.</l>
+    </lg>
+  </div>
+  <div type="shortpoem">
+    <head>Queen Anne’s tipple</head>
+    <lg type="couplet">
+      <l n="1">Here thou Great Anna whom three realms obey</l>
+      <l n="2">Doth sometimes council take, and sometimes tea.</l>
+    </lg>
+  </div>
+</body>
+</egXML>
         <!--figure><graphic url="xpath-eg-0.png"/></figure-->
       </div>
       <div rend="slide">
@@ -350,11 +349,11 @@ l’exercice...</p>
         <head>Une transformation simplissime></head>
         <p>A partir de ceci :
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <ref target="http://www.tei-c.org">The TEI website</ref>
-          </egXML>
+<ref target="http://www.tei-c.org">The TEI website</ref>
+</egXML>
 on veut produire :
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <a href="http://www.tei-c.org">The TEI website</a></egXML>
+<a href="http://www.tei-c.org">The TEI website</a></egXML>
 donc on va ....
 <list>
             <item>transformer l’élément <gi>ref</gi> de la TEI dans un élément 
@@ -367,63 +366,63 @@ donc on va ....
       <div rend="slide">
         <head>Comment exprimer cela en XSL?</head>
 
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-            xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
-            <xsl:template match="ref">
-              <a href="{@target}">
-                <xsl:apply-templates/>
-              </a>
-            </xsl:template>
-          </xsl:stylesheet>
-        </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+  <xsl:template match="ref">
+    <a href="{@target}">
+      <xsl:apply-templates/>
+    </a>
+  </xsl:template>
+</xsl:stylesheet>
+</egXML>
       </div>
       <div rend="slide">
         <head>Une transformation plus typique</head>
         <p>A partir de ceci :
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <div type="recette" n="34">
-              <head>Pasta pour les débutants</head>
-              <list>
-                <item>pates</item>
-                <item>fromage râpé</item>
-              </list>
-              <p>Faire bouiller les pates, et mélanger avec le fromage.</p>
-            </div>
-          </egXML>
+<div type="recette" n="34">
+  <head>Pasta pour les débutants</head>
+  <list>
+    <item>pates</item>
+    <item>fromage râpé</item>
+  </list>
+  <p>Faire bouiller les pates, et mélanger avec le fromage.</p>
+</div>
+</egXML>
 on veut produire :
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <html xmlns="http://www.w3.org/1999/xhtml">
-              <h1>34: Pasta pour les novices</h1>
-              <p>Ingrédients: pates  fromage râpé</p>
-              <p>Faire bouiller les pates, et melanger avec le fromage.</p>
-            </html>
-          </egXML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <h1>34: Pasta pour les novices</h1>
+  <p>Ingrédients: pates  fromage râpé</p>
+  <p>Faire bouiller les pates, et melanger avec le fromage.</p>
+</html>
+</egXML>
         </p>
       </div>
 
       <div rend="slide">
         <head>Comment exprimer cela en XSL?</head>
         <p>
-          <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-              xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
-              <xsl:template match="div">
-                <html>
-                  <h1>
-                    <xsl:value-of select="@n"/>:
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+  <xsl:template match="div">
+    <html>
+      <h1>
+        <xsl:value-of select="@n"/>:
 	      <xsl:value-of select="head"/>
-                  </h1>
-                  <p>Ingrédients:    
-	    <xsl:apply-templates select="list/item"/>
-                  </p>
-                  <p>
-                    <xsl:value-of select="p"/>
-                  </p>
-                </html>
-              </xsl:template>
-            </xsl:stylesheet>
-          </egXML>
+      </h1>
+      <p>Ingrédients:    
+	      <xsl:apply-templates select="list/item"/>
+      </p>
+      <p>
+        <xsl:value-of select="p"/>
+      </p>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>
+</egXML>
         </p>
       </div>
 
@@ -443,14 +442,14 @@ du norme XSLT employé (1 ou 2)</item>
 sortie, par exemple son format (HTML, XML, TEXT...), encodage
 (ISO-8859-1, UTF-8 ...) etc.</item>
         </list>
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
-            <xsl:output method="html" encoding="ISO-8859-1"/>
-            <xsl:template match="/">
-              <xsl:apply-templates/>
-            </xsl:template>
-          </xsl:stylesheet>
-        </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+  <xsl:output method="html" encoding="ISO-8859-1"/>
+  <xsl:template match="/">
+    <xsl:apply-templates/>
+  </xsl:template>
+</xsl:stylesheet>
+</egXML>
       </div>
 
 
@@ -480,21 +479,20 @@ sortie, par exemple son format (HTML, XML, TEXT...), encodage
 arborescence spécifiée par son attribut <att>match</att></p>
         <p>Il peut contenir d’autres éléments XSL, des éléments d’autres noms
 d’espace (qui seront copiés), ou rien de tout.</p>
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
-              <xsl:template match="div"
-              >
-&lt;!--  .... actions pour les éléments div....-->
-</xsl:template> <xsl:template
-              match="head">
-&lt;!--  .... actions pour tous les éléments head....-->
-</xsl:template>
-              <xsl:template match="div/head"
-              >
-&lt;!--  .... actions pour les éléments head contenus par un div....-->
-</xsl:template>
-              <xsl:template match="teiHeader"/> </xsl:stylesheet>
-        </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<xsl:stylesheet xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+  <xsl:template match="div">
+    <!--  .... actions pour les éléments div... -->
+  </xsl:template>
+  <xsl:template match="head">
+    <!--  .... actions pour tous les éléments head... -->
+  </xsl:template>
+  <xsl:template match="div/head">
+    <!--  .... actions pour les éléments head contenus par un div....-->
+  </xsl:template>
+  <xsl:template match="teiHeader"/>
+</xsl:stylesheet>
+</egXML>
       </div>
       <!--
 <div>
@@ -558,19 +556,19 @@ invoqué) il supprime les noeuds concernes.</p>
 des contextes divers</head>
         <p>Comparer
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <xsl:template match="head">
-  ....
-</xsl:template>
-          </egXML>
+  <xsl:template match="head">
+  <!-- ... -->
+  </xsl:template>
+</egXML>
 avec
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <xsl:template match="div/head">
- ...
+<xsl:template match="div/head">
+  <!-- ... -->
 </xsl:template>
-            <xsl:template match="figure/head">
- ....
+<xsl:template match="figure/head">
+  <!-- ... -->
 </xsl:template>
-          </egXML>
+</egXML>
         </p>
         <p>En cas de conflit, c’est  le template le plus spécifique qui
 gagne.</p>
@@ -585,54 +583,51 @@ contenus par les templates indiques dans son attribut
 <att>select</att>. Si aucun template n’est indiqué, tous les templates
 sont disponibles. </p>
 
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <xsl:template match="/">
-            <html>
-              <xsl:apply-templates/>
-            </html>
-          </xsl:template>
-        </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<xsl:template match="/">
+  <html>
+    <xsl:apply-templates/>
+  </html>
+</xsl:template>
+</egXML>
 
-        <egXML xmlns="http://www.tei-c.org/ns/Examples">
-          <xsl:template match="TEI">
-            <xsl:apply-templates select="text"/>
-          </xsl:template>
-        </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <xsl:template match="TEI">
+    <xsl:apply-templates select="text"/>
+  </xsl:template>
+</egXML>
         <p>Il est très utile pour varier l’ordre des sorties:
-  <egXML
-            xmlns="http://www.tei-c.org/ns/Examples">
-            <xsl:template match="text">
-              <h1>Corps du texte</h1>
-              <xsl:apply-templates select="body"/>
-              <h1>Pièces liminaires</h1>
-              <xsl:apply-templates select="front"/>
-              <xsl:apply-templates select="back"/>
-            </xsl:template>
-          </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<xsl:template match="text">
+  <h1>Corps du texte</h1>
+  <xsl:apply-templates select="body"/>
+  <h1>Pièces liminaires</h1>
+  <xsl:apply-templates select="front"/>
+  <xsl:apply-templates select="back"/>
+</xsl:template>
+</egXML>
         </p>
       </div>
 
       <div rend="slide">
         <head><gi>xsl:value-of</gi></head>
         <p>Cet élément fait sortir la valeur d’un élément ou d’un attribut :
-
-  <egXML
-            xmlns="http://www.tei-c.org/ns/Examples">
-            <xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/>
-          </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<xsl:value-of select="/TEI/teiHeader/fileDesc/titleStmt/title"/>
+</egXML>
         </p>
 
         <p>Attention aux doublons potentiels!
 
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-            <xsl:template match="div">
-              <h2>
-                <xsl:value-of select="@n"/>
-                <xsl:value-of select="head"/></h2>
-              <xsl:apply-templates/>
-            </xsl:template>
-            <xsl:template match="div/head"/>
-          </egXML>
+<xsl:template match="div">
+  <h2>
+    <xsl:value-of select="@n"/>
+    <xsl:value-of select="head"/></h2>
+    <xsl:apply-templates/>
+</xsl:template>
+<xsl:template match="div/head"/>
+</egXML>
         </p>
       </div>
 
@@ -897,7 +892,7 @@ oui
           <item>A <ref target="http://www.gchagnon.fr/cours/xml/"
               >http://www.gchagnon.fr/cours/xml/
 </ref> vous trouverez deux cours complets et très clairs</item>
-          <item>Un texte classique: Philippe Rigaux et Bernd Amann <title>Comprendre
+          <item>Un texte classique : Philippe Rigaux et Bernd Amann <title>Comprendre
 XSLT</title>. O’Reilly, 2002.</item>
           <item>Beaucoup, beaucoup, d’autres ressources anglophones...</item>
         </list>
