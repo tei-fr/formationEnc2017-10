@@ -1,4 +1,4 @@
-STYLESHEET=/home/lou/Public/TEIslides/Remark/TEItoRemark.xsl
+STYLESHEET=../xsl/tei2md.xsl
 
 # Makefile
 # needs to be copied to and run from source directory 
@@ -38,19 +38,19 @@ DIAPOS= \
 default: exercises htmlslides pdfslides
 
 setup:
-	mkdir ../PDF ../Diapos
+	mkdir ../pdf ../diapos
 # should empty dir if it exists
 
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
-	saxon -o:../Diapos/$$f.html $$f.tei.xml $(STYLESHEET); done; \
-	cd ../Diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
+	saxon -o:../diapos/$$f.html $$f.tei.xml $(STYLESHEET); done; \
+	cd ../diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
 
 
 exercises:
 	for i in $(EXERCISES) ; do \
 		teitopdf $$i.xml ; \
-		mv $$i.xml.pdf ../PDF/$$i.pdf; \
+		mv $$i.xml.pdf ../pdf/$$i.pdf; \
 	done
 
 slides: pdfslides 
@@ -58,7 +58,7 @@ slides: pdfslides
 pdfslides:  
 	for i in $(PDFTALKS) ; do \
 		teitoslides --profile=tei $$i.xml; \
-		mv $$i.xml.slides ../Diapos/$$i.pdf; \
+		mv $$i.xml.slides ../diapos/$$i.pdf; \
 	done
 
 
