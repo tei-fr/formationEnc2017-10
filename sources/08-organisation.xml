@@ -19,7 +19,13 @@
     </revisionDesc>
   </teiHeader>
   <text>
-
+    <front>
+      <titlePage xml:lang="fr">
+        <titlePart>08 – L’organisation de la TEI</titlePart>
+        <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
+        <note><ref target="00-programme.html">Programme</ref></note>
+      </titlePage>
+    </front>
     <body>
       <div type="slide">
         <head>Structure(s) d’un document TEI-XML</head>

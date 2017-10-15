@@ -19,17 +19,9 @@
     </revisionDesc>
   </teiHeader>
   <text>
-    <!--<p>title: 05-teiHeader</p>
-         <p>description: emchateau, ENC 27-30 octobre 2014</p>
-         <p>theme: theme/remark-dark.css</p>
-         <p>name: inverse</p>
-         <p>layout: true</p>
-         <p>class: inverse</p>
-         <p>-\-\-</p>
-         <p>class: center middle</p>-->
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>03 – Le teiHeader</titlePart>
+        <titlePart>05 – Le teiHeader</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
@@ -373,7 +365,7 @@
       </div>
       <div rend="title" xml:lang="fr">
         <div>
-          <head>Mettre <ref target="ex-5-header.xml">en pratique</ref></head>
+          <head>Mettre <ref target="ex05-header.xml">en pratique</ref></head>
           <note><ref target="#index">revenir au début</ref><ref target="00-programme.html"
               >Programme</ref></note>
         </div>

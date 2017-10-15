@@ -47,7 +47,7 @@
               >Caractéristiques attendues d’une édition critique</ref></item>
             <item><ref target="#part2"
                 >La prise en charge de l’édition critique par un balisage descriptif</ref></item>
-            <item><ref target="#part3">Rappels sur la syntaxe XML</ref></item>
+            <!--<item><ref target="#part3">Rappels sur la syntaxe XML</ref></item>-->
           </list>
         </div>
       </div>
@@ -271,7 +271,7 @@
           </div>
         </div>
       </div>
-      <div type="part" xml:id="part3">
+      <!--<div type="part" xml:id="part3">
         <head xml:lang="fr">Rappels sur XML (eXtensible Markup Language)</head>
         <div type="comments">
           <div>
@@ -431,7 +431,7 @@
         <div type="slide" xml:lang="fr">
           <div>
             <head>Exemple de document <hi>XML</hi></head>
-            <!-- @todo traiter l’exemple correctement -->
+            <!-\- @todo traiter l’exemple correctement -\->
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <![CDATA[<?xml version="1.0"?>
   <doc xmlns="http://example.org/​namespace">
@@ -452,7 +452,7 @@
         <div type="slide" xml:lang="fr">
           <div>
             <head>Spécification de l’<hi>encodage</hi></head>
-            <!-- @todo traiter l’exemple correctement -->
+            <!-\- @todo traiter l’exemple correctement -\->
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <![CDATA[<?xml version="1.0" encoding="UTF-8?>
   <doc xmlns="http://example.org/​namespace">
@@ -477,7 +477,7 @@
         <div type="slide" xml:lang="fr">
           <div>
             <head>Spécification de l’<hi>encodage</hi></head>
-            <!-- @todo traiter l’exemple correctement -->
+            <!-\- @todo traiter l’exemple correctement -\->
             <egXML  xmlns="http://www.tei-c.org/ns/Examples">
               <![CDATA[<?xml version="1.0" encoding="UTF-8?>
   <doc xmlns="http://example.org/​namespace">
@@ -586,8 +586,8 @@
           <div>
             <div>
               <head>Les commentaires</head>
-              <p>Commencent par <code>&lt;!--</code> et se terminent par <code>--&gt;</code></p>
-              <p>Le double trait d’union « -- » ne doit pas apparaître au sein d’un commentaire</p>
+              <p>Commencent par <code>&lt;!-\-</code> et se terminent par <code>-\-&gt;</code></p>
+              <p>Le double trait d’union « -\- » ne doit pas apparaître au sein d’un commentaire</p>
               <p>Servent à… commenter, utiles pour documenter ce qu’on fait ou consigner des notes. Ne sont pas destinés aux programmes informatiques, qui les ignorent par défaut.</p>
             </div>
             <div>
@@ -606,8 +606,8 @@
             <head>Notion d’<hi>Espace de nom</hi></head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <TEI>
-                <teiHeader><!-- autres éléments --></teiHeader>
-                <text><!-- autres éléments --></text>
+                <teiHeader><!-\- autres éléments -\-></teiHeader>
+                <text><!-\- autres éléments -\-></text>
               </TEI>
             </egXML>
             <list>
@@ -697,7 +697,7 @@
             </list>
           </div>
         </div>
-      </div>
+      </div>-->
     </body>
     <back>
       <div type="part">
@@ -760,7 +760,7 @@
             </list>
           </div>
         </div>
-        <div type="slide" xml:lang="fr">
+        <!--<div type="slide" xml:lang="fr">
           <div>
             <head>Orientations bibliographiques .inverse[(XML)]</head>
             <list>
@@ -772,12 +772,11 @@
                 target="http://xmlfr.org/">http://xmlfr.org/</ref></item>
             </list>
           </div>
-        </div>
+        </div>-->
       </div>
       <div type="part">
         <div rend="title" xml:lang="fr">
-          <head>XML, <ref target="02-teiMacrostructure.html"
-              >Encoder la structure d’un document en TEI</ref></head>
+          <head>XML, <ref target="02-richessesTEI.html">Encoder la structure d’un document en TEI</ref></head>
           <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
               >Programme</ref></note>
         </div>

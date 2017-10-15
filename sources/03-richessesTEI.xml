@@ -4,7 +4,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>02 – Introduction aux richesses de la TEI</title>
+        <title>03 – Introduction aux richesses de la TEI</title>
       </titleStmt>
       <editionStmt>
         <edition>
@@ -31,7 +31,7 @@
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>02 – Introduction aux richesses de la TEI</titlePart>
+        <titlePart>03 – Introduction aux richesses de la TEI</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>
