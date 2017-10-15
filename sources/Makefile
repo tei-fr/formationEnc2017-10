@@ -1,3 +1,4 @@
+STYLESHEET=/home/lou/Public/TEIslides/Remark/TEItoRemark.xsl
 
 # Makefile
 # needs to be copied to and run from source directory 
@@ -42,7 +43,7 @@ setup:
 
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
-	saxon -o:../Diapos/$$f.html $$f.tei.xml ../xsl/tei2md.xsl; done; \
+	saxon -o:../Diapos/$$f.html $$f.tei.xml $(STYLESHEET); done; \
 	cd ../Diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
 
 
