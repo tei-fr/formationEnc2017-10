@@ -41,12 +41,12 @@
             <div>
                <head>Quelques mots sur GitHub</head>
                <figure>
-                  <graphic url="../images/git.png)"/>
+                  <graphic url="../images/git.png"/>
                </figure>
             </div>
             <div>
                <div>
-                  <head>Le paradigme du versionning</head>
+                  <head>Le paradigme du <soCalled>versioning</soCalled></head>
                   <p>diff et wikipédia</p>
                   <p>Code par nature mouvant, obsolescence</p>
                   <p>Corrections et versions. Développement de système pour garder la trace des changements. Crucial pour le développement informatique.</p>
@@ -54,11 +54,11 @@
                </div>
                <div>
                   <head>Le protocole Git</head>
-                  <p>Mis au point dans le cadre du développement du noyau Linux</p>
-                  <p>Finalement assez stupide, une manière de
+            <!--      <p>Mis au point dans le cadre du développement du noyau Linux</p>
+          -->        <p>Finalement assez stupide, une manière de
                   <list>
-                        <item>stoker des arbres de contenus un peu comme un système de fichiers</item>
-                        <item>un commit créer un nouvel arbre accessible par son nom</item>
+                        <item>stocker des arbres de contenus un peu comme un système de fichiers</item>
+                        <item>un commit crée un nouvel arbre accessible par son nom</item>
                         <item>on peut changer le répertoire pour recréer n’importe quel arbre</item>
                      </list>.</p>
                   <p>Conçu pour gérer le développement du noyau Linux (Linux Kernel) <list>
