@@ -8,7 +8,7 @@ ECHO=
 
 PDFTALKS= \
 	02-richessesTEI \
-	tei-florilege \
+	10-TEIflorilege \
 	10-xsltNuls 
 
 EXERCISES= \
@@ -21,6 +21,7 @@ EXERCISES= \
 	ex-7-entites \
 	ex-8-organisation \
 	ex-9-odd \
+	ex-10-explorations \
 	ex-11-xslt
 
 DIAPOS= \
