@@ -29,7 +29,7 @@
   <text>
     <front>
       <titlePage xml:lang="fr" xml:id="index">
-        <titlePart>00-Programme</titlePart>
+        <titlePart>00 – Programme</titlePart>
         <docImprint>Formation TEI | ENC 17 au 20 oct 2017</docImprint>
         <note><ref target="00-programme.html">Programme</ref></note>
       </titlePage>

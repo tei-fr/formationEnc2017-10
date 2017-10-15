@@ -47,7 +47,7 @@
     <body>
       <div type="part" xml:id="part1">
         <head xml:lang="fr">Distribution des XSL Stylesheets</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Les XSL Stylesheets</head>
             <p><hi>XSLT Stylesheets</hi> = une bibliothèque de XSL (XSLT et XSL-FO) pour transformer des documents TEI vers toute sorte de formats<list>
@@ -62,7 +62,7 @@
             <p/>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Pourquoi utiliser les XSL Stylesheet ?</head>
             <p>En dehors du fait d’être faignants…</p>
@@ -84,7 +84,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Limitations</head>
             <list>
@@ -101,7 +101,7 @@
             <p>Les transformations pour la P5 sont seulement développées en XSLT 2.0, leur utilisation nécessite donc un processeur adapté.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Sebastian Patrick Quintus Rahtz <lb/><ref>(13 February 1955 – 15 March 2016)</ref></head>
             <figure><graphic url="../images/sebastian.jpg"/></figure>
@@ -110,18 +110,18 @@
             <p>La TEI est une communauté, elle est largement redevable des personnes qui ont contribué à son fonctionnement. Sebastian Rahtz a été l’initiateur des XSL Stylesheets dont il a longtemps assuré la maintenance. Pour beaucoup d’entre nous, il était un modèle d’engagement, de désintéressement et de rigueur dans le travail. Sa contribution à la TEI fut considérable, et son décès est une grande perte pour la communauté.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Distribution des XSL Stylesheets</head>
             <list>
               <label>Sources</label>
-              <item>https://github.com/TEIC/Stylesheets</item>
+              <item><ref target="https://github.com/TEIC/Stylesheets">https://github.com/TEIC/Stylesheets</ref></item>
               <label>Documentation</label>
-              <item>http://www.tei-c.org/release/doc/tei-xsl/</item>
+              <item><ref target="http://www.tei-c.org/release/doc/tei-xsl/">http://www.tei-c.org/release/doc/tei-xsl/</ref></item>
               <label>Téléchargeables sous forme de packet Debian/Ubuntu</label>
-              <item>http://tei.oucs.ox.ac.uk/teideb/</item>
+              <item><ref target="http://tei.oucs.ox.ac.uk/teideb/">http://tei.oucs.ox.ac.uk/teideb/</ref></item>
               <label>Au cœur du convertisseur OxGarage</label>
-              <item>http://www.tei-c.org/oxgarage/</item>
+              <item><ref target="http://www.tei-c.org/oxgarage/">http://www.tei-c.org/oxgarage/</ref></item>
               <label>Distribuées comme <soCalled>framework</soCalled> d’oXygen</label>
               <item>Pré-installé dans la distribution d’oXygen</item>
             </list>
@@ -133,7 +133,7 @@
             <p>Enfin, les stylesheets sont également distribuées parmi les Framework offerts par oXygen et peuvent être exécutées directement depuis l’éditeur oXygen Editor.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Plusieurs manières de personnaliser les XSL Stylesheets</head>
             <list>
@@ -146,7 +146,7 @@
       </div>
       <div type="part" xml:id="part2">
         <head xml:lang="fr">Transformations par défaut avec o<hi>X</hi>ygen</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Scénarios du Framework TEI d’oXygen</head>
             <figure>
@@ -160,7 +160,7 @@
             <p>Vous pouvez également, si vous l’avez installé, de transformations spécialisées destinées à travailler avec des documents ODD.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Générer un document OpenOffice (ou MsWord)</head>
             <list>
@@ -171,7 +171,7 @@
             </list>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head><hi>TP</hi> personnalisation d’une sortie vers html</head>
             <p>Les XSL Stylesheets proposent de très nombreux paramètres de personnalisation pour calibrer la sortie.</p>
@@ -193,7 +193,7 @@
             <p>En appliquant un scénario pré-défini de transformation dans oXygen, vous avez en réalité appliqué une transformation XSLT, ou une suite de transformations XSL, définies par les XSL Stylesheets qui constituent le framework TEI d’oXygen.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Organisation du Framework</head>
             <list>
@@ -218,7 +218,7 @@
             <p>Ici, le répertoire <ident>profiles/</ident> est très important car c’est celui qui va contenir vos fichiers de personnalisation ou les profils de transformation. On peut employer les transformations proposées par défaut, ou bien celles développées par d’autres projets. Nous verrons plus tard que l’on peut aussi créer ses propres transformations.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Sorties non proposées par défaut</head>
             <p>Chemin du Framework : <code>oxygen/frameworks/tei/xml/tei/stylesheet/</code></p>
@@ -254,7 +254,7 @@
       </div>
       <div type="part" xml:id="part3">
         <head xml:lang="fr">Personnalisation</head>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Plusieurs manières de personnaliser les XSL Stylesheets</head>
             <list>
@@ -264,7 +264,7 @@
             </list>
           </div>
           <div>
-            <p>Les XSL Stylesheets ont été conçues pour pouvoir être personnalisées de différentes manières. Il est possible de modifier la sortie produite par défaut <list>
+            <p>Les <soCalled>XSL Stylesheets</soCalled> ont été conçues pour pouvoir être personnalisées de différentes manières. Il est possible de modifier la sortie produite par défaut <list>
                 <item>soit par l’intermédiaire de paramètres (comme on l’a vu précédemment),</item>
                 <item>soit en ajoutant des règles (templates) supplémentaires,</item>
                 <item>ou en les surchargeant.</item>
@@ -272,7 +272,7 @@
             <p>Si l’on regarde ce que contiennent les fichiers XSLT contenus dans le répertoire <code>profile/</code>, on s’aperçoit que le programme importe une autre feuille de transformation. On va ensuite pouvoir ajouter autant de règles supplémentaires ou surcharger les règles existantes dans ce fichier.</p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Exemple d’inclusion d’une <hi>XSLT</hi></head>
             <egXML xmlns="http://www.w3.org/1999/XSL/Transform">
@@ -282,7 +282,7 @@
             </egXML>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head><ident>import</ident> et <ident>include</ident></head>
             <p><ident>import</ident> et <ident>include</ident> sont deux fonctionnalités prévues par XSLT.</p>
@@ -300,7 +300,7 @@
               </list></p>
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Créer son propre profil</head>
             <p><ident>profiles/$PROFILENAME/$FORMAT/to.xsl</ident></p>
@@ -314,14 +314,14 @@
               <item>Supprimer les numéros de titres</item>
             </list>
             <p>Exemple :</p>
-            <egXML>
-              <![CDATA[<xsl:param name="numberFigures">false</xsl:param>]]>
-            </egXML>
+<egXML>
+<![CDATA[<xsl:param name="numberFigures">false</xsl:param>]]>
+</egXML>
             
             <!-- @todo définir un exercice -->
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Afficher une liste des personnes citées</head>
             <list>
@@ -332,7 +332,7 @@
             <!-- @todo définir un exercice -->
           </div>
         </div>
-        <div rend="slide" xml:lang="fr">
+        <div type="slide">
           <div>
             <head>Afficher une liste des personnes citées (suite)</head>
             <p>Un profil a déjà été défini pour le projet Oulipo</p>
