@@ -61,10 +61,10 @@
       <item> TP Création d’un ODD personnalisé<ref target="ex09-odd.xml">ex09-personnalisation</ref></item>
       <!-- @todo EC mettre à jour -->
       <label>15h30–16h15</label>
-      <item> Florilège de projets TEI <ref target="10-tei-florilege.xml"/>10-tei-florilege</item>
+      <item> Florilège de projets TEI <ref target="10-TEIflorilege.xml"/>10-TEIflorilege</item>
       <label>16h15–17h </label>
       <!-- no exist? -->
-      <item> TP Explorations <ref target="ex010-explore.xml">ex010-explore</ref></item>
+      <item> TP Explorations <ref target="ex10-explorations.xml">ex10-explorations</ref></item>
       <!-- @todo LB créée le fichier -->
     </list>
   </div>
