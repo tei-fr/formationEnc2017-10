@@ -36,6 +36,8 @@
          </p>
      <list>
         <head>Textes français disponible en format TEI : quelques exemplaires</head>
+        <item><ref target="http://www.cnrtl.fr/corpus/frantext/frantext.php">Corpus Frantext</ref> :
+        faites votre choix de 500 textes de litterature francais</item>
         <item>
                   <ref target="https://www.ortolang.fr/market/corpora/digulleville">Le Pelerinage de
                      Vie humaine de Guillaume de Digulleville</ref>
