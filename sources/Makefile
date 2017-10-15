@@ -45,21 +45,21 @@ DIAPOS= \
 default: exercises htmlslides pdfslides
 
 setup:
-	mkdir ../pdf ../diapos
+	mkdir ../PDF ../Diapos
 
 # should empty dir if it exists
 # need to copy js and themes to diapos
 
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
-	saxon -o:../diapos/$$f.html $$f.tei.xml $(STYLESHEET); done; \
-	cd ../diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
+	saxon -o:../Diapos/$$f.html $$f.tei.xml $(STYLESHEET); done; \
+	cd ../Diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
 
 
 exercises:
 	for i in $(EXERCISES) ; do \
 		teitopdf $$i.xml ; \
-		mv $$i.xml.pdf ../pdf/$$i.pdf; \
+		mv $$i.xml.pdf ../PDF/$$i.pdf; \
 	done
 
 slides: pdfslides 
@@ -67,7 +67,7 @@ slides: pdfslides
 pdfslides:  
 	for i in $(PDFTALKS) ; do \
 		teitoslides --profile=tei $$i.xml; \
-		mv $$i.xml.slides ../diapos/$$i.pdf; \
+		mv $$i.xml.slides ../Diapos/$$i.pdf; \
 	done
 
 
