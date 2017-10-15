@@ -1,4 +1,3 @@
-
 <div xmlns="http://www.tei-c.org/ns/1.0">
   <div type="slide">
     <head>Premier jour</head>
@@ -20,9 +19,7 @@
       <item>? À la découverte d’oXygen <ref target="ex-1-oxygen.xml"/></item>
       <label>14h -15h </label>
       <item resp="#LB"
-        > Introduction aux richesses de la TEI<!--<ref
-                                                  target="talk-tei-intro.xml"
-                                                >talk-tei-intro</ref>-->
+        > Introduction aux richesses de la TEI<!-- <ref target="talk-tei-intro.xml">talk-tei-intro</ref> -->
         <ref target="02-richessesTEI.tei.xml">02-richesses</ref> </item>
       <label>15h - 17h </label>
       <item resp="#LB"> Personnalisation TEI avec Roma<ref target="ex-3-roma.xml"

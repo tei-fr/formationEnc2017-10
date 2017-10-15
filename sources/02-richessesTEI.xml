@@ -62,6 +62,7 @@
           <graphic url="../images/sweeties.jpg"/>
         </figure>
       </div>
+      
       <div type="slide">
         <head>Comment s’orienter ?</head>
         <p>Les <title>TEI Guidelines</title>, imprimées ou en ligne, se divisent en deux grandes parties : <list>
@@ -71,6 +72,7 @@
         </p>
         <p rend="box">Comment savoir quel élément (etc.) choisir pour telle ou telle entité identifiée dans votre analyse préalable ? Comment savoir que vous avez besoin d’une <soCalled>licorne</soCalled> ? </p>
       </div>
+      
       <div type="slide">
         <head>La triste vérité…</head>
         <list>
@@ -84,6 +86,7 @@
             <item>quelle lacune TEI votre analyse vous permettra de corriger (oui, elles existent les licornes !)</item>
           </list></p>
       </div>
+      
       <div type="slide">
         <head>Un exemple simple…</head>
        <!-- <figure>
@@ -97,6 +100,7 @@
           <graphic url="../images/guy-1.png" height="89%"/>
         </figure>
       </div>
+      
       <div type="slide">
         <head>Structuration</head>
         <list>

@@ -37,7 +37,7 @@
         <div>
           <head>Introduction</head>
         </div>
-        <div rend="comments">
+        <div type="comments">
           <p>Un des avantages liés à l’utilisation de documents XML réside dans la possibilité de fournir des métadonnées directement dans le document. Ces métadonnées étant étroitement associées au fichier, elles facilitent l’échange de documents et leur intégration automatique dans des bases de données.</p>
           <p>Le modèle de la TEI prévoit que les métadonnées soient renseignées dans un élément <gi>teiHeader</gi>. C’est au contenu de cet élément que nous allons maintenant nous intéresser plus particulièrement.</p>
         </div>
@@ -65,7 +65,7 @@
               <item>rendre possible l’intégration dans des bibliothèques numériques</item>
             </list>
             <p>L’entête d’un fichier TEI ou <gi>teiheader</gi> vous permet de finement renseigner les métadonnées de votre fichier. Elles renseignent aussi bien le fichier de votre édition que la source du texte édité.</p>
-            <div rend="comments">
+            <div type="comments">
               <head>L’importance des métadonnées</head>
               <div>
                 <p>L’entête TEI ou <gi>teiHeader</gi> vous permet de renseigner finement les métadonnées concernant votre fichier. Comme ces métadonnées qui comportent des informations sur l’information font partie du document, on peut dire qu’elles sont auto-portées. </p>
@@ -86,7 +86,7 @@
                 target="http://sourceforge.net/p/weboai/wiki/Home/"
                 >« weboai, Human web interface on OAI repository »</ref>, SourceForge.</p>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <p>Dans le cadre de la production d’une édition numérique il est souvent nécessaire de traiter avec soin les en-têtes TEI et de produire des métadonnées de qualité. La TEI propose de nombreuses manières possibles de fournir une description des fichiers.</p>
             <p>Ici, pour arrêter les choix d’encodages, il convient d’examiner un certain nombre de pratiques documentaires existantes dans le monde bibliothéconomique et de rechercher des guides de bonnes pratiques pour la TEI.</p>
             <p>Un travail en vue de permettre un moissonnage des en-têtes TEI en OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting) des éditions produites au sein du Consortium cahier a permis de se diriger vers la définition de pratiques commune pour la communauté francophone. Il serait dommage de ne pas s’y conformer.</p>
@@ -108,7 +108,7 @@
               </TEI>
             </egXML>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <p>Vous vous souvenez probablement qu’un document TEI dispose d’un élément racine <gi>TEI</gi> (ou <gi>teiCorpus</gi>) qui contient obligatoirement deux éléments enfants qui sont <gi>teiHeader</gi> et <gi>text</gi>.</p>
             <p>C’est au sein du teiHeader que nous allons pouvoir renseigner les métadonnées concernant le texte édité.</p>
           </div>
@@ -229,7 +229,7 @@
   Chardon, 1724</bibl>
 </egXML>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <p>La description de la source est un élément obligatoire dans la description d’un fichier TEI. Notez bien que la TEI différencie clairement les informations concernant l’édition des informations concernant la source du texte encodé (avec <gi>sourceDesc</gi>).</p>
             <p>Plus tard, nous verrons que la TEI offre également un très riche modèle de contenu pour la description des sources manuscrites.</p>
           </div>

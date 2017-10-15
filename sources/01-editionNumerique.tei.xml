@@ -64,7 +64,7 @@
               <item>Objectivité / parti-pris</item>
             </list>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head>Qu’est-ce qu’une édition critique ?</head>
             <div>
               <head>Un essai de reconstitution d’un texte</head>
@@ -97,7 +97,7 @@
               <item>Justification des partis-pris</item>
             </list>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head>Critères de scientificité</head>
             <p>Il s’agit toujours de fournir un texte, et dans le domaine historique de savoir comment rendre compte le plus fidèlement possible de la source.</p>
             <p>Critères de scientificités</p>
@@ -165,7 +165,7 @@
             <head>vs</head>
             <head>encodage présentationnel</head>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head>Encodage descriptif vs encodage présentationnel</head>
             <p>Parce qu’il détermine tous les traitements informatiques qu’il est possible d’effectuer sur le texte, le balisage a historiquement constitué une question fondamentale dans l’histoire de l’informatique. Depuis l’article séminal de Coombs et ses collègues, on a pris l’habitude de distinguer plusieurs types de balisages : procédural, présentationnel, ou encore descriptif.</p>
             <bibl>cf. James H. Coombs, Allen H Renear, et Steven J DeRose. <ref
@@ -184,7 +184,7 @@
               <item>Possibilité de produire des vues distinctes</item>
             </list>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head>La production d’un <hi>balisage descriptif</hi></head>
             <p>La production d’un <hi rend="bold"
               >balisage descriptif</hi> consiste à identifier explicitement la structure sémantique sous-jacente d’un document, cela indépendamment de tout traitement déterminé à l’avance.</p>
@@ -206,7 +206,7 @@
               <item>Réalisation du balisage, marquage de l’élément</item>
             </list>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head>Procédure mise en œuvre lors du <hi>balisage</hi></head>
             <p>Les trois opérations qui interviennent au cours du balisage sont donc les suivantes :</p>
             <list type="unordered">
@@ -231,7 +231,7 @@
               <item>relations linéaires</item>
             </list>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head><hi>OHCO</hi>, Ordered Hierarchy of Content Objects</head>
             <p>L’idée d’un balisage descriptif qui repose sur le fait de marquer le contenu d’un texte par des éléments suggère une représentation du texte qui correspond à ce qu’on a appelé un modèle d’<hi
                 rend="bold"/>éléments contenus hiérarchiquement imbriqués<hi rend="bold"
@@ -249,7 +249,7 @@
               <item>Meilleure portabilité</item>
             </list>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head>Avantages sur un balisage présentationnel</head>
             <p>Contrairement aux apparences, les logiciels de traitement de texte qui mettent en forme les documents ne simplifient pas la production de documents en éliminant le besoin du balisage. D’une certaine manière cela est devenu plus clair aujourd’hui avec l’adoption des formats XML par Microsoft Word et Open Office. Mais, le balisage requis pour ces formats, tout en étant plus consommateur de ressources, n’atteint pas la même expressivité qu’un simple balisage descriptif. Par ailleurs, les dispositifs d’édition fondés sur un balisage descriptif présentent plusieurs avantages sur le balisage fondé sur la présentation comme LaTex :</p>
             <list type="ordered">
@@ -273,7 +273,7 @@
       </div>
       <div type="part" xml:id="part3">
         <head xml:lang="fr">Rappels sur XML (eXtensible Markup Language)</head>
-        <div rend="comments">
+        <div type="comments">
           <div>
             <p>On vient de voir qu’un balisage descriptif permettait de <hi rend="bold"
                 >se concentrer sur le contenu du texte plutôt que sur la présentation physique finale du document</hi>.</p>
@@ -321,7 +321,7 @@
               </list>
             </div>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <div>
               <head>Un héritier de SGML</head>
               <p>SGML lui-même héritier d’un langage descriptif conçu en 1969 par des ingénieurs de la société IBM : DCF (Document Composition Facility).</p>
@@ -357,7 +357,7 @@
               <item>modèle hiérarchique</item>
             </list>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head>Principes de conception de XML</head>
             <list>
               <item>XML s’applique à tout type de texte : fondé sur le principe du balisage → càd : sur l’isolement d’une portion de texte et l’identification explicite de son rôle ou nature particulière. Autorise l’imbrication des balises et une granularité aussi fine que nécessaire.</item>
@@ -440,7 +440,7 @@
   </doc>]]>
             </egXML>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <p>Un document XML prend toujours la forme suivante.</p>
             <p>Un document XML consiste en une séquence de caractères lisibles par l’homme. C’est <hi
                 rend="bold"
@@ -461,7 +461,7 @@
   </doc>]]>
             </egXML>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <p>On peut également préciser l’encodage des caractères (par défaut en XML mais une bonne pratique).</p>
             <p>Ici on déclare l’utilisation de l’encodage de caractère UTF-8 (pour Universal Character Set) qui permet de représenter la plupart des caractères du « répertoire universel de caractères codés » initialement développé par l’<ref
                 target="http://www.iso.org/iso/fr/catalogue_detail.htm?csnumber=51273"
@@ -489,7 +489,7 @@
             <p>Les paires nom-valeur des attributs ont la forme <code>nom=’valeur’</code> équivalente à <code>nom="valeur"</code></p>
             <p>Syntaxte des éléments vides : <code>&lt;div&gt;&lt;/div&gt;</code> = <![CDATA[<div/>]]></p>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <p>Les caractères <code>&lt;</code> et <code>&gt;</code> sont utilisés pour marquer le début et la fin de <soCalled>balises</soCalled> à l’intérieur de ce flux textuel. Ces éléments possèdent un nom.</p>
             <p>Vous remarquez que ces <soCalled>balises</soCalled>, ou <soCalled>markup</soCalled>, ou encore <soCalled>étiquettes (tag)</soCalled>, sont appariées : à chaque balise ouvrante correspond une balise fermante qui se distingue en débutant par la séquence <code>&lt;/</code>.</p>
             <p>Les balises et leur contenu forment un <soCalled>élement XML</soCalled>.</p>
@@ -512,7 +512,7 @@
               <p>Exemple de contenu mixte avec une <name>entité-nommée</name><pb/></p>
             </egXML>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head>Le corps du document XML consiste en un arbre d’éléments</head>
             <p>Les <soCalled>éléments</soCalled> permettent de décomposer le texte en unités d’information</p>
             <p>La portion de texte ainsi isolée est marquée par une balise de début (<soCalled>balise ouvrante</soCalled>) et par une balise de fin (<soCalled>balise fermante</soCalled>)</p>
@@ -538,7 +538,7 @@
               <item>Pour un même élément, il ne peut y avoir deux attributs de même nom <code>rend="bold center"</code></item>
             </list>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <p>Les attributs ne contiennent que du texte, ils ne peuvent donc pas servir pour stocker de l’information structurée.</p>
             <p>En principe ne sont pas destinés à ajouter du contenu à l’élément, donc leur valeur n’est pas destinée à être affichée telle quelle dans un format de sortie. Mais ils pourront être exploités par des applications informatiques pour faire par exemple des index, ils peuvent servir à identifier les éléments (attributs de type ID), à établir des renvois (attributs de type IDREF).</p>
           </div>
@@ -614,7 +614,7 @@
               <item/>
             </list>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <head>Notion d’<soCalled>espace de nom</soCalled></head>
             <p>De plus en plus souvent, afin de faciliter les échanges en évitant toute ambiguité, les noms des éléments et attributs sont rattachés à un namespace (espace de noms).</p>
             <list>
@@ -675,7 +675,7 @@
             </p>
             <p>Beaucoup d’applications XML sont validantes, ainsi un processeur XSLT n’opérera de transformation à partir d’un document XML associé à un modèle que si ce document XML est valide.</p>
           </div>
-          <div rend="comments">
+          <div type="comments">
             <p>Les schémas, qui peuvent s’écrire en XML quelle que soit la syntaxe choisie, permettent de contraindre plus fortement que les DTD le contenu des attributs et des éléments, et gèrent les espaces de noms. Un parseur sachant interpréter la syntaxe utilisée pourra vérifier qu’un document est conforme à un modèle donné (est valide).</p>
             <p>Exemples de parseurs : ceux intégrés aux éditeurs XML, aux navigateurs Web ; xmllint dans la librairie libxml, etc.</p>
             <p>Beaucoup d’applications XML sont validantes, ainsi un processeur XSLT n’opérera de transformation à partir d’un document XML associé à un modèle que si ce document XML est valide.</p>
