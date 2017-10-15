@@ -111,9 +111,9 @@
           un, et ajoutez le <gi>msDesc</gi> qui en ressort dans l’élément <gi>sourceDesc</gi> de
           votre document Oulipo. </p>
      </div><div><head>Autres exemples</head>
-     <p>Les propositions TEI pour l'encodage des descriptions de manuscrits ont connu un succes
-       dans plusieurs grands bibliotheques europeens et ailleurs, en partie du a l'absence de
-       systeme concurrent. Voici quelques liens sur des catalogues importants qui l'utilisent (sans
+     <p>Les propositions TEI pour l'encodage des descriptions de manuscrits ont connu un succès
+       dans plusieurs grands bibliothèques européennes et ailleurs, en partie du a l'absence de
+       système concurrent. Voici quelques liens sur des catalogues importants qui l'utilisent (sans
        forcément l'exposer) 
        <list>
          <item><ref target="handrit.is">Manuscrits des collections islandais</ref></item>

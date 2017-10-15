@@ -19,7 +19,7 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
-      <change when="2017-10"><name>Lou</name> controle des noms de fichiers; reformattage</change>
+      <change when="2017-10"><name>Lou</name> contrôle des noms de fichiers; reformattage</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,9 +39,9 @@
           existant</p>
         <p>L’encodage nous permet de représenter l’image des <emph>idées</emph> résultant de ces
           représentations</p>
-        <p>Difficile de limiter les idees, mais on peut distinguer plusieurs axes… <list>
+        <p>Difficile de limiter les idées, mais on peut distinguer plusieurs axes… <list>
             <item>infos <q>intrinsèques</q> à l’objet : les formes, couleurs, etc. d’une image; les
-              sons, rythmes, etc. d’une musique; les structures linguistiques (mot, phrase,
+              sons, rythmes, etc. d’une musique ; les structures linguistiques (mot, phrase,
               paragraphe) ou formels (chapitre, titre, nom de lieu) d’un texte…</item>
             <item>infos <q>extrinsèques</q> ou <q>meta</q> sur l’objet : son type, ses origines, ses
               buts, ses usages …</item>
@@ -54,15 +54,12 @@
       </div>
       <div>
         <head>Modéliser et structurer </head>
-        <p>Il existe (quelques) méthodes classiques d’analyses de données. L’important c’est de bien
-          comprendre que toute méthode ne serait qu’une modélisation. Cette modélisation devrait
-          faire ressortir la structuration essentielle d’un objet complexe, prioritisée selon les
-          besoins prevus pour ce modele. </p>
+        <p>Il existe (quelques) méthodes classiques d’analyses de données. L’important c’est de bien comprendre que toute méthode ne serait qu’une modélisation. Cette modélisation devrait faire ressortir la structuration essentielle d’un objet complexe, priorisée selon les besoins prévus pour ce modèle. </p>
         <p>Après une modélisation, on peut donner une implémentation informatisée ; sans modèle, une
           implémentation risque d’être incompréhensible et aléatoire, inutile…</p>
         <!--        <note><p>Ce que l’on va vouloir faire, c’est modéliser. Pourquoi cette étape ? c’est qu’elle va nous permettre de donner une implémentation informatisée. Si vous n’êtes pas conscient de votre modèle, vous risquer d’avoir une implémentation inconsistante ou incompréhensible qui ne sera pas exploitable.</p></note>-->
         <p>L'analyse des données classique nous requiert de identifier … <list>
-            <item>les <soCalled>objets d’interêt</soCalled></item>
+            <item>les <soCalled>objets d’intérêt</soCalled></item>
             <item>leurs attributs/propriétés</item>
             <item>les relations entre objets</item>
             <item>les procédures/traitements essentiels envisagés </item>
@@ -83,20 +80,15 @@
       </div>
 -->
       <div>
-        <p>Dans cet exercice, on vous propose de faire pareille pour les documents en repondant aux
-          questions suivantes :</p>
+        <p>Dans cet exercice, on vous propose de faire pareille pour les documents en répondant aux questions suivantes :</p>
         <list>
-          <item>quelles sont les unités que vous souhaitez traiter dans votre version numerisee
-            ?</item>
+          <item>quelles sont les unités que vous souhaitez traiter dans votre version numérisée ?</item>
           <item>comment sont-elles structurées (quels composants, quels attributs) ?</item>
-          <item>quelles relations eventuelles peut on envisager entre ces composants) ?</item>
+          <item>quelles relations éventuelles peut on envisager entre ces composants) ?</item>
           <item>est-ce que les occurrences de ces objets sont clairement identifiables dans un flux
             textuel ?</item>
         </list>
-        <p> Les trois documents que vous experimentez sont disponibles dans votre dossier
-            <ident>Travaux</ident>: <ident>cartePostale.jpg</ident>, <ident>manuscrit.jpg</ident>
-          et <ident>tapuscrit.jpg</ident>
-        </p>
+        <p> Les trois documents que vous expérimentez sont disponibles dans votre dossier <ident>Travaux</ident>: <ident>cartePostale.jpg</ident>, <ident>manuscrit.jpg</ident> et <ident>tapuscrit.jpg</ident> </p>
       </div>
      
       <div>
@@ -111,26 +103,25 @@
           <item>Sauriez vous faire en sorte qu’une autre personne reconnaîtrait les mêmes
             objets ?</item>
           <item>Faire une liste de tous les objets et propriétés essentiels de votre document</item>
-          <item>Supposez que le budget de votre projet soit coupé en deux: de quelles distinctions
-            pourriez vous vous en passer ? </item>
-          <item>Présenter cette liste… et justifier la ! </item>
+          <item>Supposez que le budget de votre projet soit coupé en deux: de quelles distinctions pourriez-vous vous en passer ? </item>
+          <item>Présenter cette liste… et justifier la !</item>
         </list>
       </div>
       
       <div>
-        <head>Document A : une carte postale</head>
+        <head>Document A : une carte postale</head>
         <figure>
           <graphic url="../images/carte-1v.png" width="80%"/>
         </figure>
       </div>
       <div>
-        <head>Document B : un manuscrit</head>
+        <head>Document B : un manuscrit</head>
         <figure>
           <graphic url="../images/acteRoyale.jpg" width="80%"/>
         </figure>
       </div>
       <div>
-        <head>Document C : un tapuscrit</head>
+        <head>Document C : un tapuscrit</head>
         <figure>
           <graphic url="../images/10010099-1_1.jpg" width="80%"/>
         </figure>

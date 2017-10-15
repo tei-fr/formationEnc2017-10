@@ -23,8 +23,8 @@
             <p><graphic url="../images/oddity.png"/></p>
          </div>-->
          <div>
-            <p>Dans cet exercice nous allons travailler avec oXygen sur un ODD minimal, concu pour
-               la transcription des sources primaires par un publique pas tres informé, et donc sans
+            <p>Dans cet exercice nous allons travailler avec oXygen sur un ODD minimal, conçu pour
+               la transcription des sources primaires par un public pas très informé, et donc sans
                trop de complications. </p>
          </div>
          <div xml:lang="fr">
@@ -42,7 +42,7 @@
             <p>Ajoutons de documentation. <list>
 
                   <item>Revenez dans votre copie du <ident>transMin.odd</ident> et ajoutez au début
-                     (apres le paragraphe qui commence <q>Cette personalisation propose...</q>) une
+                     (après le paragraphe qui commence <q>Cette personnalisation propose...</q>) une
                      paragraphe comme ceci: <eg><![CDATA[
                         <p>Voici la liste des elements textuels fournis par ce schema :
                            <specDesc key="ab"/>
@@ -51,10 +51,10 @@
                         </p>
                      ]]></eg>
                   </item>
-                  <item>Revenez dans le scenario de transformation que vous utilisiez pour générer
+                  <item>Revenez dans le scénario de transformation que vous utilisiez pour générer
                      votre schéma. Cette fois-ci cochez aussi la case pour <ident>TEI ODD XHTML</ident> (et/ou un
-                     des autres formats, meme <ident>TEI ODD DOCX</ident> si vous voulez) </item>
-                  <item>Regardez l'effet de vos modifications dans le doc qui en ressort.</item>
+                     des autres formats, même <ident>TEI ODD DOCX</ident> si vous voulez) </item>
+                  <item>Regardez l’effet de vos modifications dans le doc qui en ressort.</item>
                </list>
             </p>
             <p>En principe, vous devriez ajouter un <gi>specDesc</gi> pour chacun des éléments
@@ -63,18 +63,18 @@
                spécifiques etc. </p>
          </div>
          <div xml:lang="fr">
-            <head>Amélioration du schema (1) </head>
+            <head>Amélioration du schéma (1) </head>
             <list>
-               <item>On découvre quelques problèmes avec ce schema: <list>
+               <item>On découvre quelques problèmes avec ce schéma: <list>
                      <item>on souhaite indiquer la présence des glyphes et symboles
                         non-Unicode</item>
                      <item>on souhaite indiquer la présence des noms de personnes et de lieux</item>
                   </list></item>
                <item>Ajoutez donc les éléments <gi>g</gi> et <gi>name</gi> à votre ODD</item>
-               <item>Regénérez votre schéma et testez si ces elements sont maintenant
+               <item>Régénérez votre schéma et testez si ces éléments sont maintenant
                   disponibles.</item>
             </list>
-            <p rend="box">Vous souhaitez ajouter un element non-TEI? C'est aussi possible...</p>
+            <p rend="box">Vous souhaitez ajouter un élément non-TEI ? C’est aussi possible...</p>
          </div>
          <div xml:lang="fr">
             <head>Amélioration du schema (2) </head>
@@ -87,20 +87,20 @@
                <item>Ajoutez un element <gi>elementSpec</gi>, avec identifiant
                      <ident>botName</ident></item>
                <item>Dans cette spécification, il faut ajouter au moins: <list>
-                     <item>un <gi>desc</gi> avec une brève description de l'élément</item>
-                     <item>dans <gi>classes</gi> une indication de la classement de l'élément, avec
+                     <item>un <gi>desc</gi> avec une brève description de l’élément</item>
+                     <item>dans <gi>classes</gi> une indication de la classement de l’élément, avec
                         au moins un <gi>memberOf</gi> (nous vous conseillons de faire en sorte que
                         cet élément soit membre des classes <ident>att.global</ident> et
                            <ident>model.phrase</ident>) </item>
                      <item>dans <gi>content</gi> une indication du contenu du nouveau élément (par
                         ex <tag>macroRef key="macro.phraseSeq"</tag></item>
                   </list></item>
-               <item>Regénérez votre schéma et testez l'effet de vos modifications.</item>
+               <item>Regénérez votre schéma et testez l’effet de vos modifications.</item>
             </list>
          </div>
          <div xml:lang="fr">
             <head>Simplification du schéma </head>
-            <p>Notre personnalisation propose beaucoup d'attributs. Nous pouvons supprimer ceux qui
+            <p>Notre personnalisation propose beaucoup d’attributs. Nous pouvons supprimer ceux qui
                ne nous interessent pas en deux manières: <list>
                   <item>on peut supprimer une classe <emph>entièrement</emph> avec un redéclaration
                      spécifiant <att>mode</att>=<val>delete</val>: <egXML
@@ -125,10 +125,10 @@
                   <item>Supprimez dans votre schéma les classes suivantes :
                         <ident>att.declaring</ident>, <ident>att.fragmentable</ident>,
                         <ident>att.edition</ident>, <ident>att.editLike</ident></item>
-                  <item>Sélectionnez dans votre schéma l'attribut <att>key</att> de la classe
+                  <item>Sélectionnez dans votre schéma l’attribut <att>key</att> de la classe
                         <ident>att.canonical</ident>; supprimez les attributs <att>rendition</att>
                      et <att>rend</att> de la classe <ident>att.global.rendition</ident></item>
-                  <item>Regénérez votre schéma et testez l'effet de vos modifications...</item>
+                  <item>Regénérez votre schéma et testez l’effet de vos modifications...</item>
                </list>
             </p>
             <p>Vous pouvez également ajouter ou supprimer des attributs, en utilisant un
@@ -142,14 +142,14 @@
                </item>
                <item>Insérez un <gi>attDef</gi> pour définir un nouveau attribut
                      <ident>genus</ident></item>
-               <item>Cet attribut fournit le nom du genus auquel appartient l'objet indiqué:
+               <item>Cet attribut fournit le nom du genus auquel appartient l’objet indiqué:
                   expliquez cela dans son <gi>desc</gi></item>
                <item>La valeur de cet attribut sera conforme au datatype
                   <ident>teidata.word</ident></item>
                <item>Insérez un deuxième <gi>attDef</gi> pour définir un nouveau attribut
                      <att>status</att>
                </item>
-               <item>Cet attribut indique le status du nom botanique, par ex s'il est international,
+               <item>Cet attribut indique le status du nom botanique, par ex s’il est international,
                   vulgaire, etc.</item>
                <item>La valeur de cet attribut conformera au datatype
                      <ident>teidata.enumerated</ident>

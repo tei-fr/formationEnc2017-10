@@ -3,7 +3,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Edition numérique d’un document archival : un cas d’étude</title>
+        <title>Édition numérique d’un document archivistique : un cas d’étude</title>
         <author>Lou Burnard Consulting</author>
       </titleStmt>
       <publicationStmt>
@@ -18,7 +18,7 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
-      <change when="2017-10"><name>Lou</name> controle des noms de fichiers</change>
+      <change when="2017-10"><name>Lou</name> contrôle des noms de fichiers</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -99,12 +99,12 @@
         <p>Vous devez maintenant réaliser votre transcription sous le contrôle d’un Schéma. Pour ce
           faire, générez un schema RelaxNG <!--à partir de votre document ODD ou de Roma-->, et
           associez le à un nouveau document XML.</p>
-        <p>Faites vous guider par oXygen pour l'ajout des balises essentiels du Header (nous allons
+        <p>Faites vous guider par oXygen pour l’ajout des balises essentiels du Header (nous allons
           les améliorer dans le prochain exercice). Des que vous
-          aurez la squelette du document (l'entete et le texte, jusqu'a l'élément <gi>body</gi>) vous
+          aurez la squelette du document (l’entête et le texte, jusqu’à l’élément <gi>body</gi>) vous
           pouvez insérer le fichier texte <ident>cr650308.txt</ident> en utilisant <ident>Document ->
           Insérer -> Insérer un fichier</ident>. Balisez quelques parties du texte en utilisant les
-          balises disponibles de votre schema.</p>
+          balises disponibles de votre schéma.</p>
       </div>
     </body>
   </text>

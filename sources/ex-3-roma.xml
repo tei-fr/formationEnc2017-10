@@ -18,7 +18,7 @@
             </sourceDesc>
         </fileDesc>
         <revisionDesc>
-            <change when="2017-10"><name>Lou</name> controle des noms de fichiers</change>
+            <change when="2017-10"><name>Lou</name> contrôle des noms de fichiers</change>
             <change when="2016-05"><name>Emmanuel</name> Minor clarifications</change>
             <change when="2014-01-28"><name>Lou</name>Minor clarifications</change>
             <change when="2013-10-20"><name>Lou</name>Revised to use simpler schema as
@@ -193,21 +193,21 @@
                         <item>Cette interface vous permet d’explorer la fonction et l’usage de tous
                             les éléments TEI. Il vous permet également de sélectionner ceux que vous
                             souhaitez intégrer dans votre schéma. </item>
-                        <item>Si la la case à cocher <ident>Exclure</ident> est sélectionné, cet
-                            element est exclu du schéma; pareillement, si la case à cocher
-                                <ident>Inclure</ident> est sélectionné, cet element est inclu dans
+                        <item>Si la case à cocher <ident>Exclure</ident> est sélectionné, cet
+                            élément est exclu du schéma; pareillement, si la case à cocher
+                                <ident>Inclure</ident> est sélectionné, cet élément est inclus dans
                             le schéma. Et vous pouvez Inclure ou Exclure tous les éléments d’un
-                            module en selectionnant le titre de la table. </item>
+                            module en sélectionnant le titre de la table. </item>
                         <item>Pour cet exercice, votre choix de TEI Bare comme point de départ a
-                            déja effectué un séléctionnement des éléments parmi ceux proposés par
+                            déjà effectué une sélection des éléments parmi ceux proposés par
                             les trois modules <ident>core</ident>, <ident>header</ident> et
-                                <ident>textstructure</ident>. Vous êtes invité à proceder de la
+                                <ident>textstructure</ident>. Vous êtes invité à procéder de la
                             manière suivante : <list>
                                 <item>Au module <ident>core</ident> il faut ajouter les éléments
                                     suivants : <gi>add</gi>, <gi>choice</gi>, <gi>corr</gi>,
                                         <gi>del</gi>, <gi>graphic</gi>, <gi>hi</gi>, <gi>lb</gi>,
                                         <gi>pb</gi>, <gi>reg</gi>, <gi>sic</gi>, et
-                                    <gi>unclear</gi>. Du meme module il faut supprimer <gi>item</gi>
+                                    <gi>unclear</gi>. Du même module il faut supprimer <gi>item</gi>
                                     <gi>label</gi> et <gi>list</gi>. </item>
                                 <item>Pour le module <ident>header</ident> rien à faire.</item>
                                 <item>Du module <ident>textstructure</ident> vous devez exclure
@@ -361,7 +361,7 @@ xmlns="http://relaxng.org/ns/structure/1.0"?&gt; </egXML>
                             signaler que sa présence est requise.</item>
                         <item>Sélectionnez <att>type</att> et notez que oXygen vous propose la liste
                             des valeurs que nous avions prédéfinies dans notre schéma.</item>
-                        <item>Choisissez parmi les valeurs paroposées, par exemple
+                        <item>Choisissez parmi les valeurs proposées, par exemple
                                 <code>prose</code>, et votre document redevient valide, en affichant
                             un petit carré vert.</item>
                     </list>
@@ -435,8 +435,8 @@ xmlns="http://relaxng.org/ns/structure/1.0"?&gt; </egXML>
                     des phrases raturées et des ajouts avec le reste du texte. En vous repérant avec
                     les images <ident>degaulle_recto.jpg</ident> et
                         <ident>degaulle_verso.jpg</ident> contenues dans le même répertoire,
-                    améliorez le balisage. Balisez les mots raturés (par exexemple <q>Ses
-                        gouvernantes premieres</q>) avec une <gi>del</gi>. De même, balisez les mots
+                    améliorez le balisage. Balisez les mots raturés (par exemple <q>Ses
+                        gouvernantes premières</q>) avec une <gi>del</gi>. De même, balisez les mots
                     ajoutés (par exemple <q>cédant à la panique</q>) avec <gi>add</gi>. Et bien sûr,
                     indiquez chacun des paragraphes avec l’élément <gi>p</gi>.
                     <!-- ma proposition d'encodage est disponible dans le fichier "deGaulle-corr.xml" --></p>

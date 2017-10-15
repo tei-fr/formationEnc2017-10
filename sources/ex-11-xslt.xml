@@ -195,7 +195,7 @@
           <p><graphic height="5cm" url="../images/scenario-2.png"/></p>
           <list>
             <item>Tapez <code>duBellay.xsl</code> dans le champ <ident>XSL URL</ident>.</item>
-            <item>Selectionnez <ident>Saxon HE 9.0</ident> dans le menu déroulant labellisé
+            <item>Sélectionnez <ident>Saxon HE 9.0</ident> dans le menu déroulant labellisé
                 <ident>Transformateur</ident></item>
             <item>Cliquez sur l’onglet <code>Sortie</code>
             </item>
@@ -213,7 +213,7 @@
             <item>En bas de l’écran, le message <code>Transformation réussie</code> apparaît… </item>
             <item>.. et après un bref délai, votre navigateur devrait s’ouvrir pour afficher le
               fichier <ident>output.html</ident> que vous venez de créer.</item>
-            <item>C’est joli, hein ? Peut-être y a-t-il encore un peu de travail à faire…</item>
+            <item>C’est joli, non ? Peut-être y a-t-il encore un peu de travail à faire…</item>
           </list>
 
         </div>
@@ -239,7 +239,7 @@
           <list>
             <item>Après le <gi>html</gi>, tapez <code>&lt;head></code></item>
             <item>oXygen ajoute la balise fermante. C’est bien. Continuez donc. Ajoutez
-                <code>&lt;title></code> à l’intérieur de l’élément <gi>head</gi>. Pour trouver le
+                <gi>title</gi> à l’intérieur de l’élément <gi>head</gi>. Pour trouver le
               titre du document il faut naviguer de la racine du document (l’élément TEI) jusqu’à
               l’élément <gi>title</gi>, qui se trouve dans le <gi>titleStmt</gi>, dans le
                 <gi>fileDesc</gi>, dans le <gi>teiHeader</gi>. Cela s’effectue avec le
