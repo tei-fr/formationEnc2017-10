@@ -7,47 +7,48 @@ STYLESHEET=/home/lou/Public/TEIslides/Remark/tei2md.xsl
 ECHO=
 
 PDFTALKS= \
-	02-richessesTEI \
+	03-richessesTEI \
 	10-TEIflorilege \
-	10-xsltNuls 
+	12-xsltNuls 
 
 EXERCISES= \
-	ex-1-oxygen \
-	ex-2-analyse \
-	ex-3-roma \
-	ex-4-oulipo \
-	ex-5-header \
-	ex-6-msdesc \
-	ex-7-entites \
-	ex-8-organisation \
-	ex-9-odd \
-	ex-10-explorations \
-	ex-11-xslt
+	ex01-analyse \
+	ex02-oxygen \
+	ex03-roma \
+	ex04-oulipo \
+	ex05-header \
+	ex06-msdesc \
+	ex07-entites \
+	ex08-organisation \
+	ex09-odd \
+	ex10-explorations \
+	ex12-xslt
 
 DIAPOS= \
 	00-programme \
 	01-editionNumerique \
-	03-transcriptionManuscrits \
+	02-introductionXML \
+	03-richessesTEI \
 	04-teiHeader \
-	05-msdesc \
-	06-entitesNommees \
-	07-organisation \
-	08-personnalisation \
-	09-traitementTEI \
-	11-xsltParesseux \
-	12-teiCommunity 
+	05-teiHeader \
+	06-msdesc \
+	07-entitesNommees \
+	08-organisation \
+	09-personnalisation \
+	10-TEIfloriege \
+	11-traitementTEI.xml \
+	12-xsltNuls \
+	13-xsltParesseux \
+	14-14-outils \
+	15-teiCommunity
 
 default: exercises htmlslides pdfslides
 
 setup:
-<<<<<<< HEAD
 	mkdir ../pdf ../diapos
-=======
-	mkdir ../PDF ../Diapos
 
->>>>>>> 3edb163ffa42615e7564e64590ddc045397a4d5e
 # should empty dir if it exists
-# need to copy js and themes to Diapos
+# need to copy js and themes to diapos
 
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
