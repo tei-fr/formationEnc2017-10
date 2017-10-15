@@ -1,4 +1,5 @@
-STYLESHEET=../xsl/tei2md.xsl
+#STYLESHEET=/home/lou/Public/TEIslides/Remark/TEItoRemark.xsl
+STYLESHEET=/home/lou/Public/TEIslides/Remark/tei2md.xsl
 
 # Makefile
 # needs to be copied to and run from source directory 
@@ -38,8 +39,14 @@ DIAPOS= \
 default: exercises htmlslides pdfslides
 
 setup:
+<<<<<<< HEAD
 	mkdir ../pdf ../diapos
+=======
+	mkdir ../PDF ../Diapos
+
+>>>>>>> 3edb163ffa42615e7564e64590ddc045397a4d5e
 # should empty dir if it exists
+# need to copy js and themes to Diapos
 
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
@@ -82,7 +89,7 @@ validate:
 	 | grep -v ': error: unfinished element .* required to finish the element$$'; done
 
 driver:
-	cp /home/lou/Public/corpHeaderStart.txt driver.tei;\
+	cp corpHeaderStart.txt driver.tei;\
 		for f in *.xml ; do \
 		echo "<xi:include href='$$f'/>" >> driver.tei; \
 	done; echo "</teiCorpus>" >> driver.tei

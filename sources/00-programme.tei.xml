@@ -35,7 +35,7 @@
       </titlePage>
     </front>
     <body>
-      <div rend="slide">
+      <div type="slide">
         <div xml:lang="fr">
           <head>Programme d’ensemble</head>
           <list>
@@ -52,13 +52,13 @@
           </list>
         </div>
       </div>
-      <div rend="slide" xml:lang="fr">
+      <div type="slide" xml:lang="fr">
         <div>
           
         </div>
       </div>
     <include xmlns="http://www.w3.org/2001/XInclude" href="progindex.xml"/>
-      <!-- <div rend="slide">
+      <!-- <div type="slide">
         <div xml:lang="fr">
           <head>Première journée</head>
           <list type="gloss">
@@ -87,7 +87,7 @@
           </list>
         </div>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <div xml:lang="fr">
           <head>2<hi rend="superscript">ème</hi> journée</head>
           <list>
@@ -114,7 +114,7 @@
           </list>
         </div>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <div xml:lang="fr">
           <head>3<hi rend="superscript">ème</hi> journée</head>
           <list>
@@ -143,7 +143,7 @@
           </list>
         </div>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <div xml:lang="fr">
           <head>4<hi rend="superscript">ème</hi> journée</head>
           <list>
@@ -154,7 +154,7 @@
           </list>
         </div>
       </div>-->
-      <div rend="slide">
+      <div type="slide">
         <div>
           <head>Télécharger les sources</head>
           <list>
@@ -166,7 +166,7 @@
           <eg>git clone --recursive https://github.com/tei-fr/formationEnc2015-05.git</eg>
         </div>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <div>
           <head>Organisation du répertoire</head>
           <list>
@@ -182,7 +182,7 @@
           </list>
         </div>
       </div>
-      <div rend="slide">
+      <div type="slide">
         <div>
           <head>Utiliser ces diapositives</head>
           <list>
