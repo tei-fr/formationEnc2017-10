@@ -42,13 +42,16 @@ DIAPOS= \
 	14-outils \
 	15-teiCommunity
 
-default: exercises htmlslides pdfslides
+default: prog exercises htmlslides pdfslides
 
 setup:
 	mkdir ../PDF ../Diapos
 
 # should empty dir if it exists
 # need to copy js and themes to diapos
+
+prog:
+	saxon -xi -o:../Diapos/00-programme.html 00-programme.xml $(STYLESHEET)
 
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
