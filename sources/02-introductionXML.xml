@@ -221,7 +221,7 @@
             <!-- @todo traiter l’exemple correctement -->
 <egXML>
 <![CDATA[<?xml version="1.0" encoding="UTF-8?>
-  <doc xmlns="http://example.org/​namespace">
+  <doc xmlns="http://example.org/namespace">
     <p n="1">This is a paragraph.</p>
     <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
   </doc>]]></egXML>
@@ -242,10 +242,9 @@
         <div type="slide" xml:lang="fr">
           <div>
             <head>Spécification de l’<hi>encodage</hi></head>
-            <!-- @todo traiter l’exemple correctement -->
-<egXML>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
 <![CDATA[<?xml version="1.0" encoding="UTF-8?>
-  <doc xmlns="http://example.org/​namespace">
+  <doc xmlns="http://example.org/namespace">
     <p n="1">This is a paragraph.</p>
     <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
   </doc>]]></egXML>
@@ -467,8 +466,8 @@
         </div>
       </div>
         <div rend="title" xml:lang="fr">
-          <head>XML, <ref target="ex02-oxygen.xml">Prise en main du logiciel oXygen</ref></head>
-          <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
+          <head>XML, <ref target="../PDF/ex02-oxygen.pdf">Prise en main du logiciel oXygen</ref></head>
+          <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.html"
             >Programme</ref></note>
         </div>
       </div>
