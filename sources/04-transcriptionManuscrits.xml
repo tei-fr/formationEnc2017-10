@@ -25,7 +25,7 @@
       <titlePage xml:lang="fr">
         <titlePart>04 – Édition critique des sources manuscrites</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
       <div rend="title" xml:lang="fr">
         <div>
@@ -307,8 +307,10 @@
           <!-- @todo ajouter exemple apparat critique -->
           <head>Exemple d’<ref target="../travaux/witnessAngouleme.xml"
             >apparat critique</ref></head>
+          <head>Le <ref target="05-teiHeader.xml"
+            >teiHeader</ref></head>
           <note><ref target="#index">Revenir au début</ref></note>
-          <note><ref target="00-programme.html">Programme</ref></note>
+          <note><ref target="00-programme.xml">Programme</ref></note>
         </div>
       </div>
     </back>

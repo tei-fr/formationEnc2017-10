@@ -21,7 +21,7 @@
       <titlePage xml:lang="fr">
         <titlePart>13 – TEI pour les paresseux</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
       <div rend="title">
         <div>
@@ -29,8 +29,8 @@
         </div>
         <div>
           <head>Introduction</head>
-          <p>Lorsque des documents sont encodés en XML, il devient relativement aisé de les manipuler et de les transformer en utilisant différents langages informatiques tels que XSLT ou XQuery. Tout en étant extrêmement puissants, ces langages sont complexes et difficiles à maîtriser. Aussi, la Text Encoding Initiative met à disposition plusieurs outils pour transformer des documents TEI en différents formats sans nécessairement avoir besoin de connaissances approfondies en programmation.</p>
-          <p>Les <soCalled>XSL Stylesheets</soCalled> développées par Sebastian Rahtz, sont un ensemble de transformations XSLT qui sert notamment à produire les Guidelines et le site web de la TEI. Celles-ci sont également présentes au sein du Framework TEI offert par l’éditeur XML oXygen. Nous vous proposons une rapide introduction pour apprendre à les utiliser pour produire des sorties dans différents formats (xhtml, LateX, pdf, docx, etc.) à partir de vos documents TEI.</p>
+          <p>Lorsque des documents sont encodés en XML, il devient relativement aisé de les manipuler et de les transformer en utilisant différents langages informatiques tels que XSLT ou XQuery. Tout en étant extrêmement puissants, ces langages peuvent apparaître complexes et difficiles à maîtriser. Aussi, la Text Encoding Initiative met à disposition plusieurs outils pour faciliter la transformer des documents TEI en différents formats, sans nécessairement avoir besoin de connaissances approfondies en programmation dans ces langages.</p>
+          <p>Les <soCalled>XSL Stylesheets</soCalled> développées par Sebastian Rahtz, sont un ensemble de transformations XSLT qui sert notamment à produire les <title>Guidelines</title> et le site web de la TEI. Celles-ci sont également présentes au sein du Framework TEI offert par l’éditeur XML oXygen. Nous vous proposons ici une rapide introduction pour apprendre à les utiliser afin de pouvoir produire des sorties dans différents formats (xhtml, LateX, pdf, docx, etc.) à partir de vos documents TEI.</p>
         </div>
       </div>
       <div type="sommaire" xml:lang="fr" xml:id="index">
@@ -52,8 +52,8 @@
             <head>Les XSL Stylesheets</head>
             <p><hi>XSLT Stylesheets</hi> = une bibliothèque de XSL (XSLT et XSL-FO) pour transformer des documents TEI vers toute sorte de formats<list>
                 <item>conçues pour les besoins du TEI Consortium</item>
-                <item>processing de documents ODD pour Roma</item>
-                <item>génération des Guidelines en XHTML</item>
+                <item>traitement de documents ODD pour Roma</item>
+                <item>génération des <title>Guidelines</title> en XHTML</item>
                 <item>transformations vers LaTeX, MsWord (.docx), OpenOffice (.odt), epub, etc.</item>
                 <item>et bien d’autres choses encore…</item>
               </list></p>
@@ -64,7 +64,7 @@
         </div>
         <div type="slide">
           <div>
-            <head>Pourquoi utiliser les XSL Stylesheet ?</head>
+            <head>Pourquoi utiliser les XSL Stylesheets ?</head>
             <p>En dehors du fait d’être faignants…</p>
             <list>
               <item>elles résolvent divers problèmes plus ou moins courants</item>
@@ -156,8 +156,8 @@
           </div>
           <div>
             <p>Lorsque vous avez importé un document MsWord en XML-TEI, avec oXygen, vous déjà utilisé le Framework de la TEI P5 embarqué avec le logiciel.</p>
-            <p>oXygen propose un certain nombre de transformations par défault de documents TEI, telles que TEI vers pdf, xhtml, docx, odt.</p>
-            <p>Vous pouvez également, si vous l’avez installé, de transformations spécialisées destinées à travailler avec des documents ODD.</p>
+            <p>oXygen propose un certain nombre de transformations par défaut de documents TEI, telles que TEI vers pdf, xhtml, docx, odt.</p>
+            <p>Vous pouvez également, si vous l’avez installé, disposer de transformations spécialisées destinées à travailler avec des documents ODD.</p>
           </div>
         </div>
         <div type="slide">
@@ -175,22 +175,38 @@
           <div>
             <head><hi>TP</hi> personnalisation d’une sortie vers html</head>
             <p>Les XSL Stylesheets proposent de très nombreux paramètres de personnalisation pour calibrer la sortie.</p>
-            <p>Essayons de produire une sortie HTML de notre édition des archives de l’Oulipo</p>
+            <p>Afin de nous familiariser avec l’utilisation des Stylesheets, nous allons d’abord essayer de modifier les paramètres par défaut d’une transformation TEI vers HTML.</p>
             <list>
-              <head><hi>Exercice :</hi> personnalisation d’une sortie vers html</head>
-              <item>Configurez un scénario de transformation avec TEIP5 to HTML</item>
+              <head><hi>Exercice :</hi> Essayons d’abord de produire une sortie HTML par défaut de notre édition des archives de l’Oulipo</head>
+              <item>Ouvrez le fichier <ident>oulipo.xml</ident> qui se trouve dans <ident>oulipoEd</ident></item>
+              <item>Configurez un nouveau scénario de transformation avec TEIP5 XHTML</item>
+              <item>Sous l’onglet <ident>Sortie</ident> cochez la case <ident>Ouvrir dans un éditeur</ident> pour voir le code HTML résultant</item>
               <item>Exécutez la transformation et observez le résultat</item>
-              <item>Modifiez ensuite les paramètres ci-dessous</item>
-              <item>Ajoutez/retirer les sommaires</item>
-              <item>Retirez la numérotation des parties</item>
-              <item>Ajouter des id aux paragraphes</item>
-              <item>Sélectionner une CSS</item>
-              <item>Sous l’onglet <ident>Sortie</ident> cochez la case <ident>Ouvrir dans un éditeur</ident> pour voir le code html résultant</item>
-              <!-- @todo préciser sur quel fichier travailler -->
             </list>
           </div>
           <div>
             <p>En appliquant un scénario pré-défini de transformation dans oXygen, vous avez en réalité appliqué une transformation XSLT, ou une suite de transformations XSL, définies par les XSL Stylesheets qui constituent le framework TEI d’oXygen.</p>
+            <p>Ces programmes de transformation définissent de nombreux paramètres qui peuvent être modifiés pour altérer la sortie.</p>
+          </div>
+        </div>
+        <div type="slide">
+          <div>
+            <head>TP Modifier les paramètres d’une sortie HTML</head>
+            <p>Essayons maintenant de produire une sortie HTML personnalisée de notre édition des archives de l’Oulipo.</p>
+            <list>
+              <head><hi>Exercice :</hi> personnalisation de la sortie vers html</head>
+              <item>Éditer le scénario de transformation avec TEIP5 XHTML (oXygen va vous demander de le dupliquer)</item>
+              <item>Explorer les paramètres de transformation disponibles (en cliquant sur le bouton <ident>Paramètres</ident>, puis en parcourant la liste)</item>
+              <item>Ajoutez un sommaire</item>
+              <item>Ajouter des id aux paragraphes</item>
+              <item>Retirez la numérotation des parties (modifier le paramètre <ident>numberHeadings</ident>)</item>
+              <item>Associez au document XHTML un fichier CSS (celui-ci se trouve dans le répertoire <ident>travaux/oulipoEd/css/</ident>, le paramètre est <ident>cssFile</ident>)</item>
+            </list>
+            <p><hi>Rappel :</hi> <ref target="http://www.tei-c.org/release/doc/tei-xsl/"
+              >Documentation des XSLT Stylesheets</ref></p>
+          </div>
+          <div>
+            <p>Les paramètres prédéfinis par les XSLT Stylesheet vous permettent facilement de d’altérer la sortie.</p>
           </div>
         </div>
         <div type="slide">
@@ -350,7 +366,8 @@
     <back>
       <div rend="title">
         <div>
-          <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.html"
+          <head>Des <ref target="14-outils.xml">Outils pour travailler avec la TEI</ref></head>
+          <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.xml"
               >programme</ref></note>
         </div>
       </div>

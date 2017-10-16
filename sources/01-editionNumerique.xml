@@ -26,7 +26,7 @@
       <titlePage xml:lang="fr">
         <titlePart>01 – Synthèse sur le balisage des éditions critiques</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
       <div type="slide" xml:lang="fr">
         <div>
@@ -776,8 +776,8 @@
       </div>
       <div type="part">
         <div rend="title" xml:lang="fr">
-          <head>XML, <ref target="02-richessesTEI.html">Encoder la structure d’un document en TEI</ref></head>
-          <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
+          <head><ref target="02-introductionXML.xml">TP Analyse et modélisation des textes </ref></head>
+          <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.xml"
               >Programme</ref></note>
         </div>
       </div>

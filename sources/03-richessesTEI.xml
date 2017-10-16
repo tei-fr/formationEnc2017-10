@@ -33,7 +33,7 @@
       <titlePage xml:lang="fr">
         <titlePart>03 – Introduction aux richesses de la TEI</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
     </front>
     <body>
@@ -978,5 +978,14 @@
         </list>
       </div>-->
     </body>
+    <back>
+      <div type="part">
+        <div rend="title" xml:lang="fr">
+          <head><ref target="04-transcriptionManuscrits.xml">La transcription des manuscrits</ref></head>
+          <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.xml"
+            >Programme</ref></note>
+        </div>
+      </div>
+    </back>
   </text>
 </TEI>

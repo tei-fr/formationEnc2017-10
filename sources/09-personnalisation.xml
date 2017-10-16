@@ -23,7 +23,7 @@
       <titlePage xml:lang="fr">
         <titlePart>09 – personnalisation de la TEI</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
       <div rend="title" xml:lang="fr">
         <div>
@@ -434,9 +434,9 @@
       </div>
       <div rend="title" xml:lang="fr">
         <div>
-          <head>...</head>
+          <head>Un <ref target="10-TEIflorilege.xml">Forilège de projets TEI</ref></head>
           <note><ref target="#index">revenir au début</ref></note>
-          <note><ref target="00-programme.html">programme</ref></note>
+          <note><ref target="00-programme.xml">programme</ref></note>
         </div>
       </div>
     </back>

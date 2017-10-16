@@ -23,7 +23,7 @@
       <titlePage xml:lang="fr">
         <titlePart>01bis – Introduction eXtensible Markup Language</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
     </front>
     <body>
@@ -467,8 +467,8 @@
         </div>
       </div>
         <div rend="title" xml:lang="fr">
-          <head>XML, <ref target="ex02-oxygen.xml">Prise en main du logiciel oXygen</ref></head>
-          <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
+          <head>Les <ref target="03-richessesTEI.xml">Richesse de la TEI</ref></head>
+          <note><ref target="#index">Revenir au début</ref> | <ref target="programme.xml"
             >Programme</ref></note>
         </div>
       </div>

@@ -38,7 +38,7 @@
       <titlePage xml:lang="fr">
         <titlePart>12 – XSLT pour les nuls</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
     </front>
     <body>
@@ -903,7 +903,15 @@ XSLT</title>. O’Reilly, 2002.</item>
           <item>Beaucoup, beaucoup, d’autres ressources anglophones...</item>
         </list>
       </div>
-
     </body>
+    <back>
+      <div rend="title" xml:lang="fr">
+        <div>
+          <head><ref target="13-xsltParesseux.xml">XSLT pour les paresseux</ref></head>
+          <note><ref target="#index">revenir au début</ref></note>
+          <note><ref target="00-programme.xml">programme</ref></note>
+        </div>
+      </div>
+    </back>
   </text>
 </TEI>
