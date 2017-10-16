@@ -8,8 +8,8 @@ ECHO=
 
 PDFTALKS= \
 	03-richessesTEI \
-	10-TEIflorilege \
-	12-xsltNuls 
+	10-TEIflorilege 
+
 
 EXERCISES= \
 	ex01-analyse \
@@ -29,7 +29,7 @@ DIAPOS= \
 	01-editionNumerique \
 	02-introductionXML \
 	03-richessesTEI \
-	04-teiHeader \
+	04-transcriptionManuscrits \
 	05-teiHeader \
 	06-msdesc \
 	07-entitesNommees \
@@ -42,7 +42,7 @@ DIAPOS= \
 	14-outils \
 	15-teiCommunity
 
-default: exercises htmlslides pdfslides
+default: prog exercises htmlslides pdfslides
 
 
 setup:
@@ -51,10 +51,13 @@ setup:
 # should empty dir if it exists
 # need to copy js and themes to diapos
 
+prog:
+	saxon -xi -o:../Diapos/00-programme.html 00-programme.xml $(STYLESHEET)
+
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
 	saxon -o:../diapos/$$f.html $$f.xml $(STYLESHEET); done; \
-	cd ../Diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
+	cd ../diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
 
 
 exercises:
