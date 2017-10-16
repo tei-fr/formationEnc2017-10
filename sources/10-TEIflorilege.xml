@@ -241,7 +241,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
       </div>
     </body>
     <back>
-      <div rend="title" xml:lang="fr">
+      <div type="title" xml:lang="fr">
         <div>
           <head>Les <ref target="11-traitementTEI.xml">chaînes de traitement de la TEI</ref></head>
           <note><ref target="#index">revenir au début</ref></note>

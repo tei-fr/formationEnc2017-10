@@ -599,7 +599,7 @@ Provenance: Au feuillet chiffré 1 : "Ce present livre ma este donne de monsieur
 -->
         </body>
         <back>
-            <div rend="title" xml:lang="fr">
+            <div type="title" xml:lang="fr">
                 <head>Les <ref target="07-entitesNommees.xml">Entités nommées</ref></head>
                 <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.xml"
                         >Programme</ref></note>

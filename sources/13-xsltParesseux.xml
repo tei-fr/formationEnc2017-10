@@ -23,7 +23,7 @@
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
-      <div rend="title">
+      <div type="title">
         <div>
           <head>Introduction</head>
         </div>
@@ -364,7 +364,7 @@
       </div>
     </body>
     <back>
-      <div rend="title">
+      <div type="title">
         <div>
           <head>Des <ref target="14-outils.xml">Outils pour travailler avec la TEI</ref></head>
           <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.xml"

@@ -28,7 +28,7 @@
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
-      <div type="slide" xml:lang="fr">
+      <div type="title" xml:lang="fr">
         <div>
           <head>Introduction</head>
         </div>
@@ -40,7 +40,6 @@
       </div>
       <div type="slide" xml:lang="fr" xml:id="index">
         <div>
-          <head>Synthèse sur le balisage des éditions critiques</head>
           <head>Sommaire</head>
           <list type="ordered">
             <item><ref target="#part1"
@@ -162,7 +161,7 @@
         <div type="slide" xml:lang="fr">
           <div>
             <head>Encodage descriptif</head>
-            <head>vs</head>
+            <head><hi>vs</hi></head>
             <head>encodage présentationnel</head>
           </div>
           <div type="comments">
@@ -700,7 +699,7 @@
       </div>-->
     </body>
     <back>
-      <div type="part">
+      
         <div type="slide" xml:lang="fr">
           <div>
             <head>Conclusions</head>
@@ -716,9 +715,7 @@
             <p>Même si la mise en place d’un balisage descriptif du texte, implique le déploiement d’une infrastructure technique sans-doute moins confortable pour travailler que l’utilisation de logiciels de traitement de texte, il faut relever qu’il permet de se concentrer sur le contenu du texte plutôt que sur la présentation physique finale du document. Bien entendu, concernant l’édition de manuscrits historiques, ou de sources primaires, il pourra être nécessaire de traiter la matérialité physique du document. Néanmoins c’est avant tout l’édition du texte qui est ici privilégiée. Dans une telle démarche, il convient en premier lieu de rendre la structure du texte explicite, c’est-à-dire de clarifier à la fois les relations hiérarchiques et séquentielles. Et la présence du balisage détermine la possibilité de traiter les éléments pour une transformation.</p>
           </div>
         </div>
-      </div>
-      <div type="part">
-        <div rend="title" xml:lang="fr" xml:id="biblio">
+        <div type="title" xml:lang="fr" xml:id="biblio">
           <div>
             <head>Sources et bibliographie</head>
           </div>
@@ -773,14 +770,11 @@
             </list>
           </div>
         </div>-->
-      </div>
-      <div type="part">
-        <div rend="title" xml:lang="fr">
-          <head><ref target="02-introductionXML.xml">TP Analyse et modélisation des textes </ref></head>
+        <div type="title" xml:lang="fr">
+          <head><ref target="02-introductionXML.xml">Introduction à XML</ref></head>
           <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.xml"
               >Programme</ref></note>
         </div>
-      </div>
     </back>
   </text>
 </TEI>

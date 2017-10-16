@@ -905,7 +905,7 @@ XSLT</title>. O’Reilly, 2002.</item>
       </div>
     </body>
     <back>
-      <div rend="title" xml:lang="fr">
+      <div type="title" xml:lang="fr">
         <div>
           <head><ref target="13-xsltParesseux.xml">XSLT pour les paresseux</ref></head>
           <note><ref target="#index">revenir au début</ref></note>

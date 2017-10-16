@@ -409,7 +409,7 @@
 
     </body>
     <back>
-      <div rend="title">
+      <div type="title">
         <div>
           <head>La <ref target="09-personnalisation.xml">personnalisation de la TEI</ref></head>
           <note><ref target="#index">revenir au début</ref></note>

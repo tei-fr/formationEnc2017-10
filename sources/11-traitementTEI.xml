@@ -24,7 +24,7 @@
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
-      <div rend="title">
+      <div type="title">
         <div>
           <head>Introduction</head>
         </div>
@@ -248,7 +248,7 @@
           </list>
         </div>
       </div>
-      <div rend="title" xml:lang="fr">
+      <div type="title" xml:lang="fr">
         <div>
           <head><ref target="12-xsltNuls.xml">XSLT pour les nuls</ref></head>
           <note><ref target="#index">revenir au début</ref></note>

@@ -21,14 +21,14 @@
   <text>
     <front>
       <titlePage xml:lang="fr">
-        <titlePart>01bis – Introduction eXtensible Markup Language</titlePart>
+        <titlePart>02 – Introduction eXtensible Markup Language</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
     </front>
     <body>
       <div type="part">
-        <div rend="title" xml:lang="fr">
+        <div type="title" xml:lang="fr">
           <div>
             <head>Introduction sur <hi>XML</hi></head>
           </div>
@@ -200,11 +200,11 @@
             <head>Exemple de document <hi>XML</hi></head>
             <!-- @todo traiter l’exemple correctement -->
 <egXML>
-<![CDATA[<?xml version="1.0"?>
-<doc xmlns="http://example.org/​namespace">
-  <p n="1">This is a paragraph.</p>
-  <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
-</doc>]]></egXML>
+<![CDATA[&lt;?xml version="1.0"?&gt;
+&lt;doc xmlns="http://example.org/​namespace"&gt;
+  &lt;p n="1"&gt;This is a paragraph.&lt;/p&gt;
+  &lt;p n="2"&gt;This paragraph mentions &lt;placeName&gt;Bristol&lt;/placeName&gt;.&lt;/p&gt;
+&lt;/doc&gt;]]></egXML>
           </div>
           <div type="comments">
             <p>Un document XML prend toujours la forme suivante.</p>
@@ -220,11 +220,11 @@
             <head>Spécification de l’<hi>encodage</hi></head>
             <!-- @todo traiter l’exemple correctement -->
 <egXML>
-<![CDATA[<?xml version="1.0" encoding="UTF-8?>
-  <doc xmlns="http://example.org/​namespace">
-    <p n="1">This is a paragraph.</p>
-    <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
-  </doc>]]></egXML>
+<![CDATA[&lt;?xml version="1.0" encoding="UTF-8?&gt;
+  &lt;doc xmlns="http://example.org/​namespace"&gt;
+    &lt;p n="1"&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p n="2"&gt;This paragraph mentions &lt;placeName&gt;Bristol&lt;/placeName&gt;.&lt;/p&gt;
+&lt;/doc&gt;]]></egXML>
           </div>
           <div type="comments">
             <p>On peut également préciser l’encodage des caractères (par défaut en XML mais une bonne pratique).</p>
@@ -244,11 +244,11 @@
             <head>Spécification de l’<hi>encodage</hi></head>
             <!-- @todo traiter l’exemple correctement -->
 <egXML>
-<![CDATA[<?xml version="1.0" encoding="UTF-8?>
-  <doc xmlns="http://example.org/​namespace">
-    <p n="1">This is a paragraph.</p>
-    <p n="2">This paragraph mentions <placeName>Bristol</placeName>.</p>
-  </doc>]]></egXML>
+<![CDATA[&lt;?xml version="1.0" encoding="UTF-8?&gt;
+  &lt;doc xmlns="http://example.org/​namespace"&gt;
+    &lt;p n="1"&gt;This is a paragraph.&lt;/p&gt;
+    &lt;p n="2"&gt;This paragraph mentions &lt;placeName&gt;Bristol&lt;/placeName&gt;.&lt;/p&gt;
+&lt;/doc&gt;]]></egXML>
             <p>Les séquences <code>&lt;</code>, <code>&gt;</code> et <code>&lt;/</code> délimitent les balises : <code>&lt;div&gt;&lt;/div&gt;</code></p>
             <p>Les paires nom-valeur des attributs ont la forme <code>nom='valeur'</code> équivalente à <code>nom="valeur"</code></p>
             <p>Syntaxte des éléments vides : <code>&lt;div&gt;&lt;/div&gt;</code> = &lt;div/&gt;</p>
@@ -272,9 +272,10 @@
               <item>Un élément peut contenir du texte et/ou d’autres éléments (<soCalled>contenu mixte</soCalled>), ou être vide.</item>
               <item>Il existe un et un seul élément englobant tous les autres, encodé en premier, juste après le prologue : c’est l’<soCalled>élément racine</soCalled>.</item>
             </list>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <p>Exemple de contenu mixte avec une <name>entité-nommée</name><pb/></p>
-            </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <p>Exemple de contenu mixte avec 
+  une <name>entité-nommée</name><pb/></p>
+</egXML>
           </div>
           <div type="comments">
             <head>Le corps du document XML consiste en un arbre d’éléments</head>
@@ -289,9 +290,9 @@
           <div>
             <head>Les <hi>attributs</hi></head>
             <p>Les attributs précisent la signification des éléments, leur ajoutent des caractéristiques.</p>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <date when="2011-03-09">9 mars 2011</date>
-            </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+  <date when="2011-03-09">9 mars 2011</date>
+</egXML>
             <list>
               <item>toujours saisis à l’intérieur de la balise ouvrante de l’élément</item>
               <item>syntaxe : <code>nomAttribut="valeur"</code></item>
@@ -369,10 +370,10 @@
           <div>
             <head>Notion d’<hi>Espace de nom</hi></head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <TEI>
-    <teiHeader><!-- autres éléments --></teiHeader>
-      <text><!-- autres éléments --></text>
-  </TEI>
+<TEI xmlns="http://www.tei-c.org/ns/Examples">
+  <teiHeader><!-- autres éléments --></teiHeader>
+  <text><!-- autres éléments --></text>
+</TEI>
 </egXML>
             <list>
               <item/>
@@ -410,17 +411,17 @@
           <div>
             <head>Bien formé, oui ou non ?</head>
             <list>
-              <item><![CDATA[<segment>du texte</segment>]]></item>
-              <item><![CDATA[<segment><article>du</article><nom>texte</nom></segment>]]></item>
-              <item><![CDATA[<segment><article>du <nom></article> texte</nom></segment>]]></item>
-              <item><![CDATA[<segment type="text">du texte</segment>]]></item>
-              <item><![CDATA[<segment type='text'>du texte</segment>]]></item>
-              <item><![CDATA[<segment type=text>du texte</segment>]]></item>
-              <item><![CDATA[<segment type="text">du texte<segment/>]]></item>
-              <item><![CDATA[<segment type="text">du texte<lacune/></segment>]]></item>
-              <item><![CDATA[<segment type="text">du texte< /segment>]]></item>
-              <item><![CDATA[<segment type="text">du texte</Segment>]]></item>
-              <item><![CDATA[<segment type="text" type="toto">du texte</segment>]]></item>
+              <item><![CDATA[&lt;segment&gt;du texte&lt;/segment&gt;]]></item>
+              <item><![CDATA[&lt;segment&gt;article&gt;du&lt;/article&gt;&lt;nom&gt;texte&lt;/nom&gt;&lt;/segment&gt;]]></item>
+              <item><![CDATA[&lt;segment&gt;&lt;article&gt;du &lt;nom&gt;&lt;/article&gt; texte&lt;/nom&gt;&lt;/segment&gt;]]></item>
+              <item><![CDATA[&lt;segment type="text"&gt;du texte&lt;/segment&gt;]]></item>
+              <item><![CDATA[&lt;segment type='text'&gt;du texte&lt;/segment&gt;]]></item>
+              <item><![CDATA[&lt;segment type=text&gt;du texte&lt;/segment&gt;]]></item>
+              <item><![CDATA[&lt;segment type="text"&gt;du texte&lt;segment/&gt;]]></item>
+              <item><![CDATA[&lt;segment type="text"&gt;du texte&lt;lacune/&gt;&lt;/segment&gt;]]></item>
+              <item><![CDATA[&lt;segment type="text"&gt;du texte&lt;/segment&gt;]]></item>
+              <item><![CDATA[&lt;segment type="text"&gt;du texte&lt;/Segment&gt;]]></item>
+              <item><![CDATA[&lt;segment type="text" type="toto"&gt;du texte&lt;/segment&gt;]]></item>
             </list>
           </div>
         </div>
@@ -466,7 +467,7 @@
           </list>
         </div>
       </div>
-        <div rend="title" xml:lang="fr">
+        <div type="title" xml:lang="fr">
           <head>Les <ref target="03-richessesTEI.xml">Richesse de la TEI</ref></head>
           <note><ref target="#index">Revenir au début</ref> | <ref target="programme.xml"
             >Programme</ref></note>

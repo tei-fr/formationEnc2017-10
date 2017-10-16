@@ -198,7 +198,7 @@
     </body>
     <back>
       <div type="part">
-        <div rend="title" xml:lang="fr">
+        <div type="title" xml:lang="fr">
           <head><ref target="https://groupes.renater.fr/sympa/info/tei-fr"
             >À très bientôt</ref>, donc</head>
           <note><ref target="#index">Revenir au début</ref> | <ref target="programme.html"
