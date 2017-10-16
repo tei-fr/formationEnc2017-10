@@ -8,8 +8,8 @@ ECHO=
 
 PDFTALKS= \
 	03-richessesTEI \
-	10-TEIflorilege \
-	12-xsltNuls 
+	10-TEIflorilege 
+
 
 EXERCISES= \
 	ex01-analyse \
