@@ -14,10 +14,10 @@
        <label>12h30–13h30</label>
       <item>Pause déjeuner</item>
       <label>13h30–14h </label>
-      <item><ref target="../PDF/ex02-oxygen.pdf"/>À la découverte d’oXygen </item>
+      <item><ref target="../PDF/ex02-oxygen.pdf">À la découverte d’oXygen</ref> </item>
       <label>14h -15h </label>
       <item resp="#LB"> 
-        <ref target="03-richessesTEI.html">Introduction aux richesses de la TEI</ref> </item>
+        <ref target="03-richessesTEI.pdf">Introduction aux richesses de la TEI</ref> </item>
       <label>15h - 17h </label>
       <item resp="#LB"><ref target="../PDF/ex03-roma.pdf"
         > Personnalisation TEI avec Roma</ref></item>

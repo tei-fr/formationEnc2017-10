@@ -27,7 +27,6 @@ EXERCISES= \
 DIAPOS= \
 	01-editionNumerique \
 	02-introductionXML \
-	03-richessesTEI \
 	04-transcriptionManuscrits \
 	05-teiHeader \
 	06-msdesc \
@@ -55,7 +54,7 @@ prog:
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
 	saxon -o:../Diapos/$$f.html $$f.xml $(STYLESHEET); done; \
-	cd ../Diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
+	cd ../Diapos; perl -pi -e's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
 
 
 exercises:
