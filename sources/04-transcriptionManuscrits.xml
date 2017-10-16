@@ -25,9 +25,9 @@
       <titlePage xml:lang="fr">
         <titlePart>04 – Édition critique des sources manuscrites</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
-      <div rend="title" xml:lang="fr">
+      <div type="title" xml:lang="fr">
         <div>
           <head>Introduction</head>
         </div>
@@ -169,25 +169,25 @@
           <div>
             <head>Abréviations</head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <abbr>
-    <am>
-      <g ref="#b-per"/>
-    </am>sone
-  </abbr>
+<abbr>
+  <am>
+    <g ref="#b-per"/>
+  </am>sone
+</abbr>
 </egXML>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <expan>
-    <ex>per</ex>sone
-  </expan>
+<expan>
+  <ex>per</ex>sone
+</expan>
 </egXML>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <choice>
-    <am>
-      <g ref="#b-per"/>
-    </am>
-    <ex>per</ex>
-  </choice>sone
- </egXML>
+<choice>
+  <am>
+    <g ref="#b-per"/>
+  </am>
+  <ex>per</ex>
+</choice>sone
+</egXML>
           </div>
         </div>
       </div>
@@ -201,10 +201,10 @@
               <item><att>handDesc</att> et ses sous-éléments dans le <gi>teiHeader</gi></item>
             </list>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <handDesc>
-    <handNote xml:id="c2Hand1" scope="major">à l’encre noire</handNote>
-    <handNote xml:id="c2Hand2" scope="minor">au crayon</handNote>
-  </handDesc>
+<handDesc>
+  <handNote xml:id="c2Hand1" scope="major">à l’encre noire</handNote>
+  <handNote xml:id="c2Hand2" scope="minor">au crayon</handNote>
+</handDesc>
 </egXML>
             <p>handNote est répétable et peut contenir une localisation avec <att>locus</att>.</p>
           </div>
@@ -239,11 +239,11 @@
               <item><gi>rdg</gi> variante (lecture)</item>
             </list>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <app>
-    <lem>remener</lem>
-    <rdg wit="#l-1-C #l-1-D #l-1-E #l-1-F">remettre</rdg>
-    <rdg wit="#l-#-a">conduire dehors</rdg>
-  </app>
+<app>
+  <lem>remener</lem>
+  <rdg wit="#l-1-C #l-1-D #l-1-E #l-1-F">remettre</rdg>
+  <rdg wit="#l-#-a">conduire dehors</rdg>
+</app>
 </egXML>
           </div>
         </div>
@@ -261,23 +261,23 @@
           <div>
             <head>Tableau de tradition</head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <listWit>
-    <witness xml:id="A">
-      <msDesc>
-        <msIdentifier>
-          <country>France</country>
-          <settlement>Paris</settlement>
-          <repository>Archives nationales</repository>
-          <collection>Monuments ecclésiastiques</collection>
-          <idno>S 2364 n° 5</idno>
-        </msIdentifier>
-      </msDesc>
-    </witness>
-    <witness xml:id="B">
-      <msDesc><!-- ... --></msDesc>
-    </witness>
-    <!-- répéter l’élément witness autant de fois que de témoins -->
-  </listWit>
+<listWit>
+  <witness xml:id="A">
+    <msDesc>
+      <msIdentifier>
+        <country>France</country>
+        <settlement>Paris</settlement>
+        <repository>Archives nationales</repository>
+        <collection>Monuments ecclésiastiques</collection>
+        <idno>S 2364 n° 5</idno>
+      </msIdentifier>
+    </msDesc>
+  </witness>
+  <witness xml:id="B">
+    <msDesc><!-- ... --></msDesc>
+  </witness>
+  <!-- répéter l’élément witness autant de fois que de témoins -->
+</listWit>
 </egXML>
           </div>
         </div>
@@ -285,30 +285,31 @@
           <!-- @todo choisir un meilleur exemple tiré des Guidelines -->
           <div>
             <head>Localisation référencée</head>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <div type="alignmentText" xml:id="cAlignmentText">
-                <linkGrp>
-                  <!-- Front -->
-                  <link target="#c1Front #c2Front"/>
-                  <link target="#c1FrontFr #c2FrontFr02"/>
-                  <link target="#c1FrontFr01 #c2FrontFr01"/>
-                  <link target="#c1FrontFr01.p001 #c2FrontFr01.p001"/>
-                  <!-- ... -->
-                </linkGrp>
-              </div>
-            </egXML>
+<egXML xmlns="http://www.tei-c.org/ns/Examples">
+<div type="alignmentText" xml:id="cAlignmentText">
+  <linkGrp>
+  <link target="#c1Front #c2Front"/>
+  <link target="#c1FrontFr #c2FrontFr02"/>
+  <link target="#c1FrontFr01 #c2FrontFr01"/>
+  <link target="#c1FrontFr01.p001 #c2FrontFr01.p001"/>
+  <!-- ... -->
+  </linkGrp>
+</div>
+</egXML>
           </div>
         </div>
       </div>
     </body>
     <back>
-      <div rend="title" xml:lang="fr">
+      <div type="title" xml:lang="fr">
         <div>
           <!-- @todo ajouter exemple apparat critique -->
           <head>Exemple d’<ref target="../travaux/witnessAngouleme.xml"
             >apparat critique</ref></head>
+          <head>Le <ref target="05-teiHeader.xml"
+            >teiHeader</ref></head>
           <note><ref target="#index">Revenir au début</ref></note>
-          <note><ref target="00-programme.html">Programme</ref></note>
+          <note><ref target="00-programme.xml">Programme</ref></note>
         </div>
       </div>
     </back>

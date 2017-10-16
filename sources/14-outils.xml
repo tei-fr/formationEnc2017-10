@@ -21,7 +21,7 @@
       <titlePage xml:lang="fr">
         <titlePart>14 – Outils</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
     </front>
     <body>
@@ -439,9 +439,8 @@
             </div>
          </div>
          <div type="title">
-            <head>
-            </head>
-            <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.html">programme</ref></note>
+            <head><ref target="15-teiCommunity.xml">Bienvenue dans la Communauté TEI</ref></head>
+            <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.xml">programme</ref></note>
          </div>
       </back>
   </text>

@@ -32,7 +32,7 @@
       <titlePage xml:lang="fr">
         <titlePart>09-Florilège de la TEI</titlePart>
         <docImprint>Formation TEI | ENC 9 au 12 mai 2016</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
     </front>
     <body>
@@ -239,7 +239,15 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         </list>
         <p>Un effort de standardisation qui ne dit pas « fais comme moi » ; mais plutôt « explique-moi ce que tu fais ».</p>
       </div>
-     
     </body>
+    <back>
+      <div type="title" xml:lang="fr">
+        <div>
+          <head>Les <ref target="11-traitementTEI.xml">chaînes de traitement de la TEI</ref></head>
+          <note><ref target="#index">revenir au début</ref></note>
+          <note><ref target="00-programme.xml">programme</ref></note>
+        </div>
+      </div>
+    </back>
   </text>
 </TEI>

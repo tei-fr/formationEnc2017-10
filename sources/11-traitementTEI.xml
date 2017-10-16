@@ -22,9 +22,9 @@
       <titlePage xml:lang="fr">
         <titlePart>11 – Chaînes de traitement pour la TEI</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
-        <note><ref target="00-programme.html">Programme</ref></note>
+        <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
-      <div rend="title">
+      <div type="title">
         <div>
           <head>Introduction</head>
         </div>
@@ -246,6 +246,13 @@
             <item>Flanders, Julia, and Scott Hamlin. "TAPAS: Building a TEI Publishing and Repository Service." Journal of the Text Encoding Initiative 5 (2013). <ref
                 target="http://jtei.revues.org/788">http://jtei.revues.org/788</ref></item>
           </list>
+        </div>
+      </div>
+      <div type="title" xml:lang="fr">
+        <div>
+          <head><ref target="12-xsltNuls.xml">XSLT pour les nuls</ref></head>
+          <note><ref target="#index">revenir au début</ref></note>
+          <note><ref target="00-programme.xml">programme</ref></note>
         </div>
       </div>
     </back>

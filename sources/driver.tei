@@ -1,0 +1,47 @@
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0"
+	   xmlns:xi="http://www.w3.org/2001/XInclude">
+     <teiHeader>
+         <fileDesc>
+             <titleStmt>
+                 <title>A TEI Corpus</title>
+                 <author>assembled by Lou from work done by everyone else</author>
+             </titleStmt>
+	        <publicationStmt>
+	           <p>Not published or publishable</p>
+	        </publicationStmt>
+	        <sourceDesc>
+	           <p>No source: this is a driver file</p>
+	        </sourceDesc>
+         </fileDesc>
+     </teiHeader>
+<xi:include href='00-programme.xml'/>
+<xi:include href='01-editionNumerique.xml'/>
+<xi:include href='02-introductionXML.xml'/>
+<xi:include href='03-richessesTEI.xml'/>
+<xi:include href='04-teiHeader.xml'/>
+<xi:include href='04-transcriptionManuscrits.xml'/>
+<xi:include href='05-teiHeader.xml'/>
+<xi:include href='06-msdesc.xml'/>
+<xi:include href='07-entitesNommees.xml'/>
+<xi:include href='08-organisation.xml'/>
+<xi:include href='09-personnalisation.xml'/>
+<xi:include href='10-TEIflorilege.xml'/>
+<xi:include href='11-traitementTEI.xml'/>
+<xi:include href='12-xsltNuls.xml'/>
+<xi:include href='13-xsltParesseux.xml'/>
+<xi:include href='14-outils.xml'/>
+<xi:include href='15-teiCommunity.xml'/>
+<xi:include href='ex01-analyse.xml'/>
+<xi:include href='ex02-oxygen.xml'/>
+<xi:include href='ex03-roma.xml'/>
+<xi:include href='ex04-oulipo.xml'/>
+<xi:include href='ex05-header.xml'/>
+<xi:include href='ex06-msdesc.xml'/>
+<xi:include href='ex07-entites.xml'/>
+<xi:include href='ex08-organisation.xml'/>
+<xi:include href='ex09-odd.xml'/>
+<xi:include href='ex10-explorations.xml'/>
+<xi:include href='ex12-xslt.xml'/>
+<xi:include href='myProgindex.xml'/>
+<xi:include href='progindex.xml'/>
+</teiCorpus>
