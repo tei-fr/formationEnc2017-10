@@ -27,7 +27,7 @@ EXERCISES= \
 DIAPOS= \
 	00-programme \
 	01-editionNumerique \
-	02-introductionXML \
+	02-introductionXML \
 	03-richessesTEI \
 	04-teiHeader \
 	05-teiHeader \
@@ -39,7 +39,7 @@ DIAPOS= \
 	11-traitementTEI.xml \
 	12-xsltNuls \
 	13-xsltParesseux \
-	14-14-outils \
+	14-outils \
 	15-teiCommunity
 
 default: exercises htmlslides pdfslides
