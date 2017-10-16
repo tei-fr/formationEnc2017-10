@@ -29,14 +29,14 @@ DIAPOS= \
 	01-editionNumerique \
 	02-introductionXML \
 	03-richessesTEI \
-	04-teiHeader \
+	04-transcriptionManuscrits \
 	05-teiHeader \
 	06-msdesc \
 	07-entitesNommees \
 	08-organisation \
 	09-personnalisation \
-	10-TEIfloriege \
-	11-traitementTEI.xml \
+	10-TEIflorilege \
+	11-traitementTEI \
 	12-xsltNuls \
 	13-xsltParesseux \
 	14-outils \
@@ -52,7 +52,7 @@ setup:
 
 htmlslides: 
 	for f in $(DIAPOS); do echo $$f; \
-	saxon -o:../Diapos/$$f.html $$f.tei.xml $(STYLESHEET); done; \
+	saxon -o:../Diapos/$$f.html $$f.xml $(STYLESHEET); done; \
 	cd ../Diapos; perl -pi -e \ 's|xmlns="http://www.tei-c.org/ns/Examples"||e' *.html 
 
 
