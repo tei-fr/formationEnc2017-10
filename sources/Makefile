@@ -25,7 +25,6 @@ EXERCISES= \
 	ex12-xslt
 
 DIAPOS= \
-	00-programme \
 	01-editionNumerique \
 	02-introductionXML \
 	03-richessesTEI \
