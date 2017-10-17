@@ -60,7 +60,7 @@ htmlslides:
 exercises:
 	for i in $(EXERCISES) ; do \
 		teitopdf $$i.xml ; \
-		mv $$i.xml.pdf ../pdfs/$$i.pdf; \
+		mv $$i.xml.pdf ../PDF/$$i.pdf; \
 	done
 
 slides: pdfslides 
@@ -68,7 +68,7 @@ slides: pdfslides
 pdfslides:  
 	for i in $(PDFTALKS) ; do \
 		teitoslides --profile=tei $$i.xml; \
-		mv $$i.xml.slides ../diapos/$$i.pdf; \
+		mv $$i.xml.slides ../Diapos/$$i.pdf; \
 	done
 
 
