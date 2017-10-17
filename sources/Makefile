@@ -7,8 +7,8 @@ STYLESHEET=../xsl/tei2remarks.xsl
 ECHO=
 
 PDFTALKS= \
-	03-richessesTEI \
-	10-TEIflorilege 
+	03-richessesTEI 
+
 
 
 EXERCISES= \
@@ -44,10 +44,10 @@ default: prog exercises htmlslides pdfslides
 
 
 setup:
-	mkdir ../pdfs ../diapos
+	mkdir ../PDF ../Diapos
 
 # should empty dir if it exists
-# need to copy js and themes to diapos
+
 
 prog:
 	saxon -xi -o:../Diapos/00-programme.html 00-programme.xml $(STYLESHEET)
@@ -70,7 +70,6 @@ pdfslides:
 		teitoslides --profile=tei $$i.xml; \
 		mv $$i.xml.slides ../Diapos/$$i.pdf; \
 	done
-
 
 clean:
 	-rm -f *.aux
