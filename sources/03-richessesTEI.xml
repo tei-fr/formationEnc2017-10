@@ -906,7 +906,7 @@
 -->
       <div>
         <head> TEI modules (1)</head>
-        <p>Vous aurez assurément besoin des éléments de ces moduleles : </p>
+        <p>Vous aurez assurément besoin des éléments de ces modules : </p>
         <table rend="rules">
           <row role="label">
             <cell>module</cell>
@@ -916,37 +916,37 @@
           </row>
           <row>
             <cell>core </cell>
-            <cell>features common to almost every kind of document</cell>
-            <cell>éléments communs à presque tout type de documents</cell>
+       <!--     <cell>features common to almost every kind of document</cell>
+       -->     <cell>éléments communs à presque tout type de documents</cell>
             <cell>82</cell>
             <cell>71</cell>
           </row>
           <row>
             <cell>figures</cell>
-            <cell>tables, formulas, figures</cell>
-            <cell>tables, formules et figures</cell>
+       <!--     <cell>tables, formulas, figures</cell>
+       -->     <cell>tables, formules et figures</cell>
             <cell>7</cell>
             <cell>6</cell>
           </row>
           <row>
             <cell>header </cell>
-            <cell>bibliographic and other metadata </cell>
-            <cell>les métadonnées bibliographiques et autres</cell>
+        <!--    <cell>bibliographic and other metadata </cell>
+        -->    <cell>les métadonnées bibliographiques et autres</cell>
             <cell>69</cell>
             <cell>57</cell>
           </row>
           <row>
             <cell> tei </cell>
-            <cell>datatypes, classes, and macros used by every TEI module</cell>
-            <cell>module infrastructural definissant les types de donnees, les classes, et les
-              macros utilisees partout</cell>
+        <!--    <cell>datatypes, classes, and macros used by every TEI module</cell>
+        -->    <cell>module infrastructural définissant les types de données, les classes, et les
+              macros utilisées partout</cell>
             <cell>0</cell>
             <cell>0</cell>
           </row>
           <row>
             <cell>textstructure </cell>
-            <cell>basic structural elements</cell>
-            <cell>elements fondamentales de structuration</cell>
+          <!--  <cell>basic structural elements</cell>
+          -->  <cell>éléments fondamentales de structuration</cell>
             <cell>33</cell>
             <cell>31</cell>
           </row>
@@ -964,29 +964,29 @@
           </row>
           <row>
             <cell>gaiji</cell>
-            <cell>handling special (non-Unicode) characters and glyphs </cell>
-            <cell>traitement des caracteres et glyphes non Unicode</cell>
+         <!--   <cell>handling special (non-Unicode) characters and glyphs </cell>
+         -->   <cell>traitement des caractères et glyphes non Unicode</cell>
             <cell>11</cell>
             <cell>15</cell>
           </row>
           <row>
             <cell>msdescription</cell>
-            <cell>manuscript and incunabula cataloguing and description</cell>
-            <cell>catalogage et description des manuscrits et des incunables</cell>
+        <!--    <cell>manuscript and incunabula cataloguing and description</cell>
+       -->     <cell>catalogage et description des manuscrits et des incunables</cell>
             <cell>69</cell>
             <cell>0</cell>
           </row>
           <row>
             <cell>textcrit</cell>
-            <cell>traditional critical apparatus</cell>
-            <cell>apparat critique classique</cell>
+        <!--    <cell>traditional critical apparatus</cell>
+       -->     <cell>apparat critique classique</cell>
             <cell>14</cell>
             <cell>12</cell>
           </row>
           <row>
             <cell>transcr</cell>
-            <cell>diplomatic or genetic transcription of primary sources</cell>
-            <cell>transcription diplomatique ou genetique des sources primaires</cell>
+      <!--      <cell>diplomatic or genetic transcription of primary sources</cell>
+      -->      <cell>transcription diplomatique ou génétique des sources primaires</cell>
             <cell>29</cell>
             <cell>10</cell>
           </row>
@@ -1004,36 +1004,36 @@
           </row>
           <row>
             <cell>dictionaries</cell>
-            <cell>print dictionaries</cell>
-            <cell>dictionnaires et lexiques</cell>
+       <!--     <cell>print dictionaries</cell>
+       -->     <cell>dictionnaires imprimés</cell>
             <cell>35</cell>
             <cell>37</cell>
           </row>
           <row>
             <cell>drama</cell>
-            <cell>performance texts</cell>
-            <cell>textes de theatre, de cinema, etc</cell>
+      <!--      <cell>performance texts</cell>
+      -->      <cell>textes du théâtre, du cinéma, etc</cell>
             <cell>17</cell>
             <cell>16</cell>
           </row>
           <row>
             <cell>spoken</cell>
-            <cell>oral transcription</cell>
-            <cell>transcription de l'oral</cell>
+         <!--   <cell>oral transcription</cell>
+         -->   <cell>transcription de l'oral</cell>
             <cell>14</cell>
             <cell>7</cell>
           </row>
           <row>
             <cell>tagdocs</cell>
-            <cell>markup documentation (ODD)</cell>
-            <cell>documentation des systeme de balisage</cell>
+        <!--    <cell>markup documentation (ODD)</cell>
+        -->    <cell>documentation des systèmes de balisage  (ODD)</cell>
             <cell>54</cell>
             <cell>31</cell>
           </row>
           <row>
             <cell>verse</cell>
-            <cell>poetic texts</cell>
-            <cell>textes poetiques</cell>
+     <!--       <cell>poetic texts</cell>
+     -->       <cell>textes poétiques</cell>
             <cell>4</cell>
             <cell>6</cell>
           </row>
@@ -1041,7 +1041,7 @@
       </div>
       <div>
         <head>TEI Modules (4)</head>
-        <p>Si vous faites des analyses specialisés vous aurez peut être besoin de ceux-ci : </p>
+        <p>Si vous faites des analyses specialisés vous aurez peut être besoin de quelques un de ceux-ci : </p>
         <table rend="rules">
           <row role="label">
             <cell>module</cell>
@@ -1051,45 +1051,50 @@
           </row>
           <row>
             <cell>analysis</cell>
-            <cell>simple analytic mechanisms</cell>
-            <cell>mecanismes simples pour l'analyse et l'interpretation</cell>
+          <!--  <cell>simple analytic mechanisms</cell>
+         -->   <cell>mécanismes simples pour l'analyse et l'interprétation</cell>
             <cell>11</cell>
             <cell>10</cell>
           </row>
           <row>
             <cell>certainty</cell>
-            <cell>uncertainty and relevance</cell><cell>indications de certitude et probabilite</cell>
+       <!--     <cell>uncertainty and relevance</cell>
+       -->     <cell>indications de certitude et probabilité</cell>
             <cell>3</cell>
             <cell>2</cell>
           </row>
           <row>
             <cell>corpus</cell>
-            <cell>language corpus metadata</cell><cell>metadonnees pour les corpus</cell>
+      <!--      <cell>language corpus metadata</cell>
+     -->       <cell>métadonnées pour les corpus</cell>
             <cell>14</cell>
             <cell>26</cell>
           </row>
           <row>
             <cell>iso-fs</cell>
-            <cell>feature structure based analysis</cell>
+      <!--      <cell>feature structure based analysis</cell>
+      -->      <cell>analyses abstraites utilisant des structures de trait
+             </cell>
             <cell>28</cell>
             <cell>32</cell>
           </row>
           <row>
             <cell>linking</cell>
-            <cell>links, segments, alignment </cell>
+   <!--         <cell>links, segments, alignment </cell>
+  -->    <cell>liens, segmentation, alignements</cell>
             <cell>11</cell>
             <cell>12</cell>
           </row>
           <row>
             <cell>namesdates</cell>
-            <cell>names, dates, and named entities</cell>
-            <cell>52</cell>
+   <!--         <cell>names, dates, and named entities</cell>
+   -->     <cell>noms, dates, entités nommés</cell>    <cell>52</cell>
             <cell>30</cell>
           </row>
           <row>
             <cell>nets</cell>
-            <cell>graphs, networks, and trees</cell>
-            <cell>12</cell>
+   <!--         <cell>graphs, networks, and trees</cell>
+  -->    <cell>graphes, reseaux génériques, et arborescences</cell>      <cell>12</cell>
             <cell>12</cell>
           </row>
         </table>
