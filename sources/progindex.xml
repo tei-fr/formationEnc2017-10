@@ -8,7 +8,7 @@
       <item resp="#EM"><ref target="01-editionNumerique.html"
         >Synthèse sur le balisage</ref> </item>
       <label>11h30–12h00</label>
-      <item resp="#LB"><ref target="../PDF/ex01-analyse.pdf"> TP Modélisatione</ref></item>
+      <item resp="#LB"><ref target="../PDF/ex01-analyse.pdf"> TP Modélisation</ref></item>
       <label>12h00–12h30</label>
       <item resp="#EM"><ref target="02-introductionXML.html">Introduction XML</ref></item>
        <label>12h30–13h30</label>
