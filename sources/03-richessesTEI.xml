@@ -26,13 +26,13 @@
     </revisionDesc>
   </teiHeader>
   <text>
-    <front>
+    <!--<front>
       <titlePage xml:lang="fr">
         <titlePart>03 – Introduction aux richesses de la TEI</titlePart>
         <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
         <note><ref target="00-programme.xml">Programme</ref></note>
       </titlePage>
-    </front>
+    </front>-->
     <body>
       <div>
         <head>Par exemple</head>
@@ -1062,7 +1062,7 @@ when="1794-10-30">9 Brumaire An III</date></egXML>
         </list>
       </div>-->
     </body>
-    <back>
+    <!--<back>
       <div type="part">
         <div type="title" xml:lang="fr">
           <head><ref target="04-transcriptionManuscrits.xml">La transcription des manuscrits</ref></head>
@@ -1070,6 +1070,6 @@ when="1794-10-30">9 Brumaire An III</date></egXML>
             >Programme</ref></note>
         </div>
       </div>
-    </back>
+    </back>-->
   </text>
 </TEI>
