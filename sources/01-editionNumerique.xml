@@ -221,10 +221,10 @@
         </div>
         <div type="slide" xml:lang="fr">
           <div>
-            <head><hi>OHCO</hi>, Ordered Hierarchical Content Objects</head>
+            <head><hi>OHCO</hi>, Ordered Hierarchy of Content Objects</head>
             <p>L’idée d’un balisage descriptif suggère une représentation du texte qui correspond à un modèle d’<hi
                 rend="bold">éléments contenus hiérarchiquement imbriqués</hi> (OHCO, <hi
-                rend="italic">Ordered Hierarchical Content Objects, en anglais</hi>).</p>
+                rend="italic">Ordered Hierarchy of Content Objects, en anglais</hi>).</p>
             <list type="unordered">
               <item>structure hiérarchique</item>
               <item>relations linéaires</item>
