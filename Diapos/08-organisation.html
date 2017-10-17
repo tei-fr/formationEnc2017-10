@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Programme</title><link href="../remarks/themes/remark-dark.css" rel="stylesheet" media="all" type="text/css"></head><body><textarea id="source">
 title: Modalités d’organisation des documents TEI
-description: , 
+description: ,
 theme: theme/remark-dark-em.css
 name: inverse
 layout: true
@@ -20,7 +20,7 @@ class: center middle
 ![test](../remarks/images/logo-ecole-nationale-des-chartes.png)
 
 ---
-
+layout: false
 
 # Structure(s) d’un document TEI-XML
 
@@ -35,7 +35,7 @@ Le terme document  n’a aucune définition formelle, mais d’habitude il corre
 
 # Un document n’est pas la même chose qu’un fichier&nbsp;!
 
-* un fichier est un unité de stockage numérique 
+* un fichier est un unité de stockage numérique
 
 * un document est un objet ayant une structure logique
 
@@ -50,9 +50,9 @@ Un fichier peut se trouver sur votre disque dur, dans le cloud, ou sur le Web…
 
 # L’édition numérique&nbsp;: en pratique
 
-On fait une édition numérique à partir des composants suivants&nbsp;: 
+On fait une édition numérique à partir des composants suivants&nbsp;:
 
-* un ensemble d’images numérique, chacun représentant une page d’une ressource 
+* un ensemble d’images numérique, chacun représentant une page d’une ressource
 
 * une transcription plus ou moins complète du texte qui figure sur ces pages
 
@@ -168,17 +168,17 @@ NB: aucune manière de structurer les images
 
 # Inconvénients
 
-* difficile de supporter des relations plus compliquées 
+* difficile de supporter des relations plus compliquées
 
-* maintien difficile d’informations propres à l’image 
+* maintien difficile d’informations propres à l’image
 
-* nécessité donc d’intégration avec d’autres fichiers (typiquement METS) 
+* nécessité donc d’intégration avec d’autres fichiers (typiquement METS)
 
-Problèmes&nbsp;: 
+Problèmes&nbsp;:
 
 * plusieurs images pour une seul page
 
-* comment associer des pages, par ex pour une feuille, ou une double-page 
+* comment associer des pages, par ex pour une feuille, ou une double-page
 
 ---
 
@@ -234,7 +234,7 @@ L’élément `&lt;zone&gt;` nous permet d’identifier n’importe quelle régi
 
 * Toute définition de zone doit utiliser le système de coordonnées définie pour la surface
 
-* Un système de coordonnées définit une plage de valeurs pour les paires de coordonnées (x,y) qui expriment un polygone 2d 
+* Un système de coordonnées définit une plage de valeurs pour les paires de coordonnées (x,y) qui expriment un polygone 2d
 
 * (il ne s’agit pas d’une mensuration)
 
@@ -282,7 +282,7 @@ L’élément `&lt;zone&gt;` nous permet d’identifier n’importe quelle régi
 ---
 
 
-# Exemple 
+# Exemple
 ![](../images/bovelles-1.png)
 ---
 
@@ -301,7 +301,7 @@ L’élément `&lt;zone&gt;` nous permet d’identifier n’importe quelle régi
 
 XInclude est un standard W3C pour la représentation de la structure physique (en termes de ressources) supportant un document XML
 
-Par exemple&nbsp;: notre document est un `&lt;teiCorpus&gt;`, contenant donc 
+Par exemple&nbsp;: notre document est un `&lt;teiCorpus&gt;`, contenant donc
 * un `&lt;teiHeader&gt;`
 
 * plusieurs `&lt;TEI&gt;`
@@ -314,7 +314,7 @@ Nous avons donc un fichier `corpusHdr.xml` et plusieurs fichiers `text1.xml`, `t
 ---
 
 
-Nous pouvons intégrer dans un seul document TEI toutes ces ressources en utilisant XInclude ainsi&nbsp;: 
+Nous pouvons intégrer dans un seul document TEI toutes ces ressources en utilisant XInclude ainsi&nbsp;:
 
 ```xml
 
@@ -332,7 +332,7 @@ Voir [XML Inclusions (XInclude) Version 1.0 (Second Edition), W3C Recommendation
 
 * On peut aussi spécifier un fallback , un texte ou un fichier à utiliser si celui proposé n’est pas disponible
 
-* Le fichier à inclure peut correspondre à n’importe quel fragment du document XML, mais il doit être bien formé 
+* Le fichier à inclure peut correspondre à n’importe quel fragment du document XML, mais il doit être bien formé
 
 * Attention&nbsp;! il faut comprendre l’usage des espaces de nom ...
 

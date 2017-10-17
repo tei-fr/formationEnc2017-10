@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Programme</title><link href="../remarks/themes/remark-dark.css" rel="stylesheet" media="all" type="text/css"></head><body><textarea id="source">
 title: 02 – Introduction eXtensible Markup Language
-description: Emmanuel Château-Dutier, 
+description: Emmanuel Château-Dutier,
 theme: theme/remark-dark-em.css
 name: inverse
 layout: true
@@ -47,7 +47,7 @@ XML propose simplement .red[une solution rigoureuse, compréhensible par les mac
 La plupart des contenus des bibliothèques numériques aujourd’hui mis à disposition sur le web sont encodés en utilisant un balisage XML. « La large adoption de vocabulaires XML spécialisés comme la TEI rendent disponible une importante information sémantique, mais seulement sous la forme d’une documentation en prose et de pratiques partagées. »
 James H Coombs, Allen H Renear, et Steven J DeRose. «&nbsp;Markup Systems and the Future of Scholarly Text Processing.» Communications of the ACM 30, n°&nbsp;11 (1987): 933-947. [http://xml.coverpages.org/coombs.html](http:/.html.coverpages.org/coombs.html)
 ---
-
+layout: false
 
 # e.red[X]tensible .red[M]arkup .red[L]anguage – historique
 
@@ -249,7 +249,7 @@ Notez la syntaxe particulière des éléments vides.
 
 ```xml
 
-<p >Exemple de contenu mixte avec 
+<p >Exemple de contenu mixte avec
   une <name>entité-nommée</name><pb></pb></p>
 ```
 
@@ -369,13 +369,13 @@ sections de caractères non parsées. Commencent par `&lt;![CDATA[` et se termin
 
 ```xml
 
-<TEI >
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader><!-- autres éléments --></teiHeader>
   <text><!-- autres éléments --></text>
 </TEI>
 ```
 
-* 
+*
 
 ???
 

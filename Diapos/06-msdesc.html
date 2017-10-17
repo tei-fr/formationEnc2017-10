@@ -20,15 +20,15 @@ class: center middle
 ![test](../remarks/images/logo-ecole-nationale-des-chartes.png)
 
 ---
-
+layout: false
 
 # Objectifs
 
-  
+
 
 * découvrir les balises spécifiques pour l’encodage de descriptions des manuscrits
 
- 
+
 
 ---
 
@@ -48,7 +48,7 @@ On pourrait dire autant pour d’autres objets "texte-portant" p.e. les inscript
 
 # Propositions de la TEI
 
-La TEI propose un élément `&lt;msDesc&gt;`, apte à plusieurs applications&nbsp;: 
+La TEI propose un élément `&lt;msDesc&gt;`, apte à plusieurs applications&nbsp;:
 * base de données d’enregistrements bibliographique (finding aid)
 
 * texte discursif contenant plusieurs enregistrements (catalogue raisonné)
@@ -115,7 +115,7 @@ Dans ce cas, la description aura une tendance base-de-données
 
 L’élément `&lt;msDesc&gt;` doit contenir un élément `&lt;msIdentifier&gt;` qui fournit une identification (ou plusieures) du manuscrit
 
-Facultativement il est completé par une séléction d’ éléments plus spécialisés&nbsp;: 
+Facultativement il est completé par une séléction d’ éléments plus spécialisés&nbsp;:
 * `&lt;msContents&gt;`&nbsp;: décrit le contenu intellectuel, soit en `&lt;p&gt;`, soit avec une série d’éléments structurés (`&lt;msItem&gt;`) pour chacun des items du manuscrit.
 
 * `&lt;physDesc&gt;`&nbsp;: contient une description physique complète, soit en `&lt;p&gt;`, soit avec une série d’éléments plus spécialisés, chacun décrivant les pages, l’écriture, la reliure etc.
@@ -128,7 +128,7 @@ Facultativement il est completé par une séléction d’ éléments plus spéci
 ---
 
 
-# Exemple 
+# Exemple
 
 ```xml
 
@@ -168,13 +168,13 @@ Facultativement il est completé par une séléction d’ éléments plus spéci
 
 L’élément `&lt;msIdentifier&gt;`
 
-Une spécification classique est divisée en trois: 
+Une spécification classique est divisée en trois:
 * lieu (`&lt;country&gt;`, `&lt;region&gt;`, `&lt;settlement&gt;`)
 
 * entrepôt (`&lt;institution&gt;`, `&lt;repository&gt;`)
 
 * identifiant (`&lt;collection&gt;`, `&lt;idno&gt;`)
- 
+
 ```xml
 
 <msIdentifier >
@@ -191,7 +191,7 @@ Une spécification classique est divisée en trois:
 
 # Identification (2)
 
-L’élément `&lt;msName&gt;` fournit un nom ou une appellation familière (surnom)&nbsp;: 
+L’élément `&lt;msName&gt;` fournit un nom ou une appellation familière (surnom)&nbsp;:
 ```xml
 
 <msIdentifier >
@@ -216,14 +216,14 @@ L’élément `&lt;msName&gt;` fournit un nom ou une appellation familière (sur
 
 * … précedée d’une sommaire facultative
 
-On peut décrire le contenu à un niveau general&nbsp;: 
+On peut décrire le contenu à un niveau general&nbsp;:
 ```xml
 
 <msContents >
     <p>Receuil des comptes fiscales de l’Abbeye de Nimportou.</p>
   </msContents>
 ```
- Ou bien, on peut distinguer et détailler chaque item (ou quelques un)&nbsp;: 
+ Ou bien, on peut distinguer et détailler chaque item (ou quelques un)&nbsp;:
 ```xml
 
 <msContents >
@@ -243,10 +243,10 @@ On peut décrire le contenu à un niveau general&nbsp;:
 
 # L’élément `&lt;msItem&gt;`
 
-Un manuscrit contient plusieurs .red[items] distincts, chacun en principe localisé dans un (ou plusieurs) lieu(x), ce qu’on appelle leur locus. 
+Un manuscrit contient plusieurs .red[items] distincts, chacun en principe localisé dans un (ou plusieurs) lieu(x), ce qu’on appelle leur locus.
 * L’element `&lt;locus&gt;` contient une localisation formelle, facultativement normalisée par les attributs `@from` et `@to`
 
-* et suivie d’une sélection des éléments suivants&nbsp;: 
+* et suivie d’une sélection des éléments suivants&nbsp;:
 * `&lt;author&gt;`, `&lt;respStmt&gt;`
 
 * `&lt;title&gt;`, `&lt;rubric&gt;`, `&lt;incipit&gt;`, `&lt;explicit&gt;`, `&lt;colophon&gt;`, `&lt;finalRubric&gt;`
@@ -332,14 +332,14 @@ Comme ailleurs, ces éléments généralement fournissent un choix entre des él
 ---
 
 
-# Le support (1) 
+# Le support (1)
 
-Pour distinguer l’objet inscrit de la manière où il est inscrit, `&lt;objectDesc&gt;` peut etre structuré en `&lt;supportDesc&gt;` et `&lt;layoutDesc&gt;` 
+Pour distinguer l’objet inscrit de la manière où il est inscrit, `&lt;objectDesc&gt;` peut etre structuré en `&lt;supportDesc&gt;` et `&lt;layoutDesc&gt;`
 ```xml
 
 <objectDesc  form="codex">
     <supportDesc material="mixed">
-      <p><material>parchemin</material> et <material>papier</material> 
+      <p><material>parchemin</material> et <material>papier</material>
           du 12eme siecle.</p>
     </supportDesc>
     <layoutDesc>
@@ -386,7 +386,7 @@ D’autres éléments structurants sont disponibles pour la description détaill
 
 # Layout(s)
 
-Plusiers mise-en-forme (layout)s peuvent être spécifiées&nbsp;: 
+Plusiers mise-en-forme (layout)s peuvent être spécifiées&nbsp;:
 ```xml
 
 <layoutDesc >
@@ -395,7 +395,7 @@ Plusiers mise-en-forme (layout)s peuvent être spécifiées&nbsp;:
     <locus from="210r" to="212v"></locus> 25 lignes réglées.</p>
   </layout>
   <layout ruledLines="34 50" columns="2">
-    <p><locus from="203r" to="209v"></locus>Entre 34 et 50 lignes réglées, 
+    <p><locus from="203r" to="209v"></locus>Entre 34 et 50 lignes réglées,
         disposées en deux colonnes.</p>
   </layout>
 </layoutDesc>
@@ -407,7 +407,7 @@ Plusiers mise-en-forme (layout)s peuvent être spécifiées&nbsp;:
 
 # `&lt;handDesc&gt;` et `&lt;decoDesc&gt;`
 
-Ces éléments décrivent respectivement les mains (écritures) distinguées dans un manuscrit et les décorations, soit en prose, soit avec les éléments structurants&nbsp;: 
+Ces éléments décrivent respectivement les mains (écritures) distinguées dans un manuscrit et les décorations, soit en prose, soit avec les éléments structurants&nbsp;:
 * `&lt;handNote&gt;` décrit un style d’écriture ou une main qui sont reconnus dans un manuscrit.
 
 * `&lt;decoNote&gt;`contient une note décrivant soit un élément de décoration du manuscrit, soit une catégorie relativement homogène de tels éléments.
@@ -423,11 +423,11 @@ Ces éléments décrivent respectivement les mains (écritures) distinguées dan
 
 <handDesc  hands="2">
   <p>The manuscript is written in two contemporary
-  hands, otherwise unknown, but clearly those 
-  of practised scribes. Hand I writes ff.1r-22v 
+  hands, otherwise unknown, but clearly those
+  of practised scribes. Hand I writes ff.1r-22v
   and hand II ff. 23 and 24. Some scholars, notably
-  Verner Dahlerup and Hreinn Benediktsson, have 
-  argued for a third hand on f. 24, but the evidence 
+  Verner Dahlerup and Hreinn Benediktsson, have
+  argued for a third hand on f. 24, but the evidence
   for this is insubstantial.</p>
 </handDesc>
 ```
@@ -445,8 +445,8 @@ Ces éléments décrivent respectivement les mains (écritures) distinguées dan
   <handDesc>
     <handNote xml:id="secretaire" scope="major">Un secrétaire a couché
     par écrit une liste de questions.</handNote>
-    <handNote xml:id="PDN" scope="minor">Philippe de Noailles (1715-1794), 
-    intendant et gouverneur du château et domaine de Versailles, a porté 
+    <handNote xml:id="PDN" scope="minor">Philippe de Noailles (1715-1794),
+    intendant et gouverneur du château et domaine de Versailles, a porté
     dans la marge de gauche les réponses du roi, en paraphant ces réponses.
     Il a également signé le document.</handNote>
     <handNote xml:id="anonyme" scope="minor">une autre main à noté la
@@ -459,7 +459,7 @@ Ces éléments décrivent respectivement les mains (écritures) distinguées dan
 ---
 
 
-# Ajouts significatifs 
+# Ajouts significatifs
 
 L’élément `&lt;additions&gt;` contient une description des ajouts significatifs trouvés dans un manuscrit, tels que gloses marginales ou autres annotations.
 
@@ -467,15 +467,15 @@ L’élément `&lt;additions&gt;` contient une description des ajouts significat
 ```xml
 
 <additions >
-  <p>The text of this manuscript is not interpolated 
-  with sentences from Royal decrees promulgated 
-  in 1294, 1305 and 1314. In the margins, however, 
+  <p>The text of this manuscript is not interpolated
+  with sentences from Royal decrees promulgated
+  in 1294, 1305 and 1314. In the margins, however,
   another somewhat later scribe has added the
-  relevant paragraphs of these decrees, see pp. 8, 
+  relevant paragraphs of these decrees, see pp. 8,
   24, 44, 47 etc.</p>
-  <p>As a humorous gesture the scribe in one opening 
-  of the manuscript, pp. 36 and 37, has prolonged 
-  the lower stems of one letter f and five letters 
+  <p>As a humorous gesture the scribe in one opening
+  of the manuscript, pp. 36 and 37, has prolonged
+  the lower stems of one letter f and five letters
   þ and has them drizzle down the margin.</p>
 </additions>
 ```
@@ -484,7 +484,7 @@ L’élément `&lt;additions&gt;` contient une description des ajouts significat
 ---
 
 
-# Matériel d’accompagnement 
+# Matériel d’accompagnement
 
 `&lt;accMat&gt;` (accompanying material) donne des détails sur tout matériel d’accompagnement étroitement associé au manuscrit, tel que documents non contemporains ou fragments reliés avec le manuscrit à une époque antérieure.
 
@@ -492,7 +492,7 @@ L’élément `&lt;additions&gt;` contient une description des ajouts significat
 ```xml
 
 <accMat >Un formulaire des impôts datée 1947 était collé
-  sur la derniere page; elle n’a pas été cataloguée 
+  sur la derniere page; elle n’a pas été cataloguée
   séparamment. </accMat>
 ```
 
@@ -500,9 +500,9 @@ L’élément `&lt;additions&gt;` contient une description des ajouts significat
 ---
 
 
-# Historique du manuscrit 
+# Historique du manuscrit
 
-L’élément `&lt;history&gt;` rassemble les éléments servant à donner un historique complet du manuscrit&nbsp;: 
+L’élément `&lt;history&gt;` rassemble les éléments servant à donner un historique complet du manuscrit&nbsp;:
 * `&lt;origin&gt;`&nbsp;: informations sur l’origine du manuscrit
 
 * `&lt;acquisition&gt;`&nbsp;: informations sur les modalités d’entrée du manuscrit dans l’institution qui le conserve, (etc.)
@@ -522,10 +522,10 @@ L’élément `&lt;history&gt;` rassemble les éléments servant à donner un hi
 
 <history >
     <origin notBefore="1750-01-01" notAfter="1750-12-31">
-      <p>Reliure exécutée par Louis-François Le Monnier 
+      <p>Reliure exécutée par Louis-François Le Monnier
       (signature), Paris, vers 1750 d’après <ref target="#bib01">Michon, 1956 (n° 38 (120)</ref> .</p>
     </origin>
-    <provenance>Répertorié comme appartenant à l’abbé Untel 
+    <provenance>Répertorié comme appartenant à l’abbé Untel
     en 1788.</provenance>
     <provenance>Vendu par Sothebys en 1820.</provenance>
     <acquisition notBefore="1833-12-31" notAfter="1848-01-31">Estampille
@@ -539,7 +539,7 @@ L’élément `&lt;history&gt;` rassemble les éléments servant à donner un hi
 
 # Informations supplémentaires
 
-L’élément `&lt;additional&gt;` regroupe&nbsp;: 
+L’élément `&lt;additional&gt;` regroupe&nbsp;:
 * `&lt;adminInfo&gt;`&nbsp;: informations administratives
 
 * `&lt;surrogates&gt;`&nbsp;: informations sur surrogates, e.g. photos, images numerisés, etc.
@@ -550,9 +550,9 @@ L’élément `&lt;additional&gt;` regroupe&nbsp;:
 ---
 
 
-# Informations administratives 
+# Informations administratives
 
-L’élément `&lt;admininfo&gt;` regroupe&nbsp;: 
+L’élément `&lt;admininfo&gt;` regroupe&nbsp;:
 * `&lt;recordHist&gt;`&nbsp;: historique du record
 
 * `&lt;availability&gt;`&nbsp;: disponibilité du manuscrit
@@ -560,7 +560,7 @@ L’élément `&lt;admininfo&gt;` regroupe&nbsp;:
 * `&lt;custHist&gt;`&nbsp;: historique du manuscrit apres son acquisition
 
 * `&lt;note&gt;`&nbsp;: d’autres remarques pertinentes
- 
+
 ```xml
 
 <adminInfo >
