@@ -5,10 +5,12 @@
   exclude-result-prefixes="tei teix xsl" 
   xpath-default-namespace="http://www.tei-c.org/ns/1.0">
 
-  <xsl:import
-    href="/Users/emmanuelchateau/TEIC/stylesheets/markdown/tei-to-markdown.xsl"/>
+  <!--xsl:import
+    href="/Users/emmanuelchateau/TEIC/stylesheets/markdown/tei-to-markdown.xsl"/-->
 
-  <xsl:output method="html" version="5.0" indent="no"/>
+<xsl:import href="/usr/share/xml/tei/stylesheet/markdown/tei-to-markdown.xsl"/>
+
+<xsl:output method="html" version="5.0" indent="no"/>
 
   <!--<xsl:strip-space elements="egXML"/>-->
   <xsl:preserve-space elements="egXML"/>
@@ -77,7 +79,8 @@
     <xsl:call-template name="newline"/>
     <xsl:call-template name="newline"/>
     <xsl:apply-templates/>
-    <xsl:text>![test](images/logo.svg)</xsl:text>
+    <!--    <xsl:text>![test](images/logo.svg)</xsl:text> -->
+    <xsl:text>![test](../remarks/images/logo-ecole-nationale-des-chartes.png)</xsl:text>
     <xsl:call-template name="newline"/>
   </xsl:template>
   
