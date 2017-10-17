@@ -651,7 +651,7 @@ when="1794-10-30">9 Brumaire An III</date></egXML>
         
         <p>Nous allons traiter plus tard ce sujet avec plus de détails.</p>
       </div>
-      <div type="slide">
+<!--      <div type="slide">
         <head>(4) Les références croisées et les liens</head>
         <p>Pour relier deux endroits d’un ou plusieurs textes, on utilise l’un des éléments
             <gi>ptr</gi> ou <gi>ref</gi>.</p>
@@ -664,10 +664,10 @@ when="1794-10-30">9 Brumaire An III</date></egXML>
               target="http://www.example.org/example.xml#pv1894_61"/></egXML></p>
         <p>Dans ces exemples, on pointe sur la section suivante : <egXML rend="tiny"
             xmlns="http://www.tei-c.org/ns/Examples"><div xml:id="pv1894_61"
-            ><!-- … --></div></egXML></p>
+            ><!- - … - -></div></egXML></p>
         <p>Plusieurs autres attributs de type <soCalled>pointeur</soCalled> sont disponibles, fournissant une gamme de type de liens plus spécialisés. </p>
       </div>
-
+-->
       <div type="slide">
         <head>(5) Les images</head>
         <p>
@@ -682,7 +682,7 @@ when="1794-10-30">9 Brumaire An III</date></egXML>
       </div>
       <div type="slide">
         <head>Par exemple</head>
-        <!--<egXML xmlns="http://www.tei-c.org/ns/Examples">
+        <egXML xmlns="http://www.tei-c.org/ns/Examples">
           <pb n="5" facs="page_A3r.png"/>
           <fw>5</fw>
           <div>
@@ -690,15 +690,15 @@ when="1794-10-30">9 Brumaire An III</date></egXML>
             <figure><graphic url="I2dtl.png"
                 /><figDesc>Un renard regarde un arbre dans lequel se trouve un corbeau. Le renard tient un fromage dans la bouche. En arrière plan, un château.</figDesc></figure>
             <head>Le Corbeau &amp; le Renard.</head>
-            <l>Maistre Coirbeau sur un arbre perché…</l>
+            <l>Maistre Corbeau sur un arbre perché…</l>
           </div></egXML>
         <cb/>
         <p>
           <graphic url="../images/corbeau-1.jpg"/>
-        </p>-->
-        <figure>
+        </p>
+       <!-- <figure>
           <graphic url="../images/corbeau.png" height="98%"/>
-        </figure>
+        </figure>-->
       </div>
       <div type="slide">        <head>Les citations bibliographiques</head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples"><bibl xml:id="MK_73">Sturm, U. &amp; 
