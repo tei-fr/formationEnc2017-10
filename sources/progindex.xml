@@ -4,7 +4,7 @@
     <list>
       <label>10h-10h45 </label>
       <item> Présentation des participants</item>
-      <label>11h–11h30 </label>
+      <label>11h–11h30</label>
       <item resp="#EM"><ref target="01-editionNumerique.html"
         >Synthèse sur le balisage</ref> </item>
       <label>11h30–12h00</label>
@@ -13,34 +13,29 @@
       <item resp="#EM"><ref target="02-introductionXML.html">Introduction XML</ref></item>
        <label>12h30–13h30</label>
       <item>Pause déjeuner</item>
-      <label>13h30–14h </label>
+      <label>13h30–14h45</label>
       <item resp="#EM"><ref target="../PDF/ex02-oxygen.pdf">À la découverte d’oXygen</ref> </item>
-      <label>14h -15h </label>
+      <label>15h00-17h</label>
       <item resp="#LB"> 
         <ref target="03-richessesTEI.pdf">Introduction aux richesses de la TEI</ref> </item>
-      <label>15h - 17h </label>
-      <item resp="#LB"><ref target="../PDF/ex03-roma.pdf"
-        > Personnalisation TEI avec Roma</ref></item>
     </list>
   </div>
   <div type="slide">
     <head>2<hi rend="superscript">ème</hi> journée…</head>
     <list>
-      <label>9h30-10h </label>
-      <item resp="#EM"><ref target="04-transcriptionManuscrits.html"> Édition critique ou transcription</ref>
-        </item>
-       <label>10h-11h  </label>
-      <item resp="#LB"><ref target="../PDF/ex04-oulipo.pdf">TP Édition critique </ref></item>
-      <label>11h30–1200  </label>
+      <label>9h30-10h30</label>
+      <item resp="#LB"><ref target="../PDF/ex03-roma.pdf"> Personnalisation TEI avec Roma</ref></item>
+      <label>10h30-10h45</label>
+      <item resp="#EM"><ref target="04-transcriptionManuscrits.html"> Édition critique ou transcription</ref></item>
+      <label>11h15-11h45</label>
       <item resp="#EM"><ref target="05-teiHeader.html"> TEI Header </ref></item>
-      <label>12h–12h30 </label>
+      <label>11h45–12h15</label>
       <item resp="#EM"><ref target="../PDF/ex05-header.pdf">TP TEI Header</ref></item>
-      <label>13h30–14h15</label>
-      <item resp="#LB"> <ref target="06-msdesc.html"
-        >TEI Msdescription</ref></item>
-      <label>14h15–15h30</label>
+      <label>13h30–14h30</label>
+      <item resp="#LB"><ref target="06-msdesc.html">TEI Msdescription</ref></item>
+      <label>14h30–15h30</label>
       <item resp="#LB"> <ref target="../PDF/ex06-msdesc.pdf">TP TEI Msdescription</ref></item>
-      <label>16h–17h</label>
+      <label>16h00–17h</label>
       <item>Présentation projets avec la TEI</item>
     </list>
   </div>
@@ -62,8 +57,10 @@
       <item resp="#LB"><ref target="09-personnalisation.html"
         >Personnalisation avancée avec ODD</ref></item>
       <label>14h–15h </label>
-      <item resp="#LB">
-        <ref target="../PDF/ex09-odd.pdf">TP Création d’un ODD personnalisé</ref></item>
+      <!-- déplacé du premier jour -->
+      <item resp="#LB"><ref target="../PDF/ex04-oulipo.pdf">TP Création d’un ODD et personnalisation </ref></item>
+      <!-- @todo ajouter une personnalisation manuelle -->
+      <!--<item resp="#LB"><ref target="../PDF/ex09-odd.pdf">TP Création d’un ODD personnalisé</ref></item>-->
       <!-- @todo EC mettre à jour -->
       <label>15h30–16h15</label>
       <item resp="#EM"><ref target="10-TEIflorilege.html">Florilège de projets TEI </ref></item>
@@ -78,7 +75,7 @@
       <item resp="#EM"><ref target="11-traitementTEI.html">Chaînes de traitement TEI</ref> </item>
       <!-- @todo Ajouter les CSS dire que pas d’usine à Gaz mais que basée sur XSLT CSS et XQuery -->
       <label>10h00–11h</label>
-      <item resp="#LB"><ref target="12-xsltNuls.html">XSLT Pour les nuls</ref> 
+      <item resp="#LB"><ref target="12-xsltNuls.xml">XSLT Pour les nuls</ref> 
         <ref target="../PDF/ex12-xslt.pdf">Un peu de XPath, un peu de XSLT</ref></item>
       <label>11h30-12h30</label>
       <item resp="#EM"><ref target="13-xsltParesseux.html"
