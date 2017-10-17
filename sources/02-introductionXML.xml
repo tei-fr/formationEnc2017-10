@@ -245,9 +245,10 @@
             <!-- @todo traiter l’exemple correctement -->
 <egXML>
 <![CDATA[&lt;?xml version="1.0" encoding="UTF-8?&gt;
-  &lt;doc xmlns="http://example.org/​namespace"&gt;
-    &lt;p n="1"&gt;This is a paragraph.&lt;/p&gt;
-    &lt;p n="2"&gt;This paragraph mentions &lt;placeName&gt;Bristol&lt;/placeName&gt;.&lt;/p&gt;
+&lt;doc xmlns="http://example.org/​namespace" &gt;
+  &lt;p n="1"&gt;This is a paragraph.&lt;/p&gt;
+  &lt;p n="2"&gt;This paragraph 
+  mentions &lt;placeName&gt;Bristol&lt;/placeName&gt;.&lt;/p&gt;
 &lt;/doc&gt;]]></egXML>
             <p>Les séquences <code>&lt;</code>, <code>&gt;</code> et <code>&lt;/</code> délimitent les balises : <code>&lt;div&gt;&lt;/div&gt;</code></p>
             <p>Les paires nom-valeur des attributs ont la forme <code>nom='valeur'</code> équivalente à <code>nom="valeur"</code></p>
@@ -273,8 +274,9 @@
               <item>Il existe un et un seul élément englobant tous les autres, encodé en premier, juste après le prologue : c’est l’<soCalled>élément racine</soCalled>.</item>
             </list>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <p>Exemple de contenu mixte avec 
-  une <name>entité-nommée</name><pb/></p>
+<p>Exemple de contenu mixte avec 
+  une <name>entité-nommée</name><pb/>
+ </p>
 </egXML>
           </div>
           <div type="comments">

@@ -681,8 +681,8 @@
         <head>La mise en évidence et son interprétation - 2</head>
         <p>on peut combiner ces deux niveaux de description… </p>
         <egXML rend="tiny" xmlns="http://www.tei-c.org/ns/Examples"><p>… mais Prévert pense que la
-              <emph rend="italic">parole</emph> convainc, et il continue <q rend="italic">mais la
-              brûlure de son regard Les rappelle à de bons sentiments</q>, plus prompts à l’accord
+              <emph rend="italic">parole</emph> convainc, et il continue <quote rend="italic">mais la
+              brûlure de son regard Les rappelle à de bons sentiments</quote>, plus prompts à l’accord
             que les gens du <title rend="italic">Dîner de Têtes</title>, …</p></egXML>
         <p>Les valeurs possibles de l’attribut <att>rend</att> sont à définir pour chaque
           projet.</p>
@@ -711,7 +711,7 @@
                 <rs type="place">Champs-Élysées</rs>, est resté dans ma mémoire, parce que
               l’après-midi de ce même jour fut celui où j’allai enfin entendre <rs type="person">la
                 Berma</rs>, en « matinée », dans <title>Phèdre</title>…</p></egXML></p>
-        <p>Les balises <gi>name</gi>, <gi>persName</gi>, ou <gi>persName</gi> sont plus spécifique :
+        <p>Les balises <gi>name</gi>, <gi>persName</gi>, ou <gi>placeName</gi> sont plus spécifique :
             <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="tiny"><p>Le premier dîner que
                 <persName ref="http://fr.wikipedia.org/wiki/Marquis_de_Norpois">M. de
                 Norpois</persName> fit à la maison, une année où je jouais encore aux
