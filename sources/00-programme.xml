@@ -52,6 +52,56 @@
           </list>
         </div>
       </div>
+      <div type="slide">
+        <div>
+          <div><head>Objectifs</head>
+          <list>
+            <item>Introduction à l’univers XML (langages et exemples de logiciels)</item>
+            <item>Proposer un aperçu de l’édition critique</item>
+            <item>Expérimenter l’utilisation de la Text Encoding Initiative</item>
+          </list></div>
+          <div><head>Contenus</head>
+          <list>
+            <item>Réflexion sur les enjeux de l’édition électronique</item>
+            <item>Syntaxe XML et modèles</item>
+            <item>Présentation de la Text Encoding Initiative</item>
+            <item>Travaux pratiques d’encodage en XML/TEI (éditions critiques)</item>
+            <item>Chaîne de traitement de documents XML</item>
+          </list></div>
+        </div>
+        <div type="comments">
+          <div>
+            <div>
+              <head>Objectifs</head>
+            <list>
+              <item>Se familiariser avec l'édition électronique et la TEI</item>
+              <item>Acquérir une première expérience d’encodage en XML/TEI</item>
+              <item>Évaluer les possibilités de recherche et évaluer les moyens nécessaires</item>
+              <item>introduction aux langages XPath et XSL pour mettre en ligne une édition</item>
+            </list>
+          <p>Préciser qu'il s’agit d’une initiation. Même si une initiation intensive.</p></div>
+          <div>
+            <head>Contenus</head>
+            <list>
+            <item>Présentation de la Text Encoding Initiative (TEI)</item>
+            <item>Réflexion sur les enjeux de l’édition électronique</item>
+            <item>Travaux pratiques d'encodage en XML/TEI (éditions critiques)</item>
+            <item>Initiation à la personnalisation de la TEI</item>
+            <item>Initiation aux langages XPath et XSL</item>
+          </list></div>
+          <div>
+            <head>Approche pédagogique</head>
+            <p>Du point de vue de la méthode pédagogique, on essayera autant faire se peut d'alterner différents types d'approches.</p>
+          <list>
+            <item>Exposés introductifs</item>
+            <item>Méthode démonstrative</item>
+            <item>Méthode active ou de découverte</item>
+          </list>
+          <p>Votre active participation est requise, n’hésitez pas à m'interrompre ou à poser des questions.</p>
+          <p>L’accent sera mis sur les exercices pratiques et les situations réelles. Les supports de cours seront mis à votre disposition ainsi que différent matériaux à l'issue de la formation.</p></div>
+        </div>
+        </div>
+      </div>
       <div type="slide" xml:lang="fr">
        
           <include xmlns="http://www.w3.org/2001/XInclude" href="progindex.xml"/>
@@ -71,7 +121,7 @@
 cd Desktop
 git clone [CTRL-V]
 </egXML>
-          <eg>(i.e. git clone --recursive https://github.com/tei-fr/formationEnc2017-10.git)</eg>
+          <eg>(i.e. git clone https://github.com/tei-fr/formationEnc2017-10.git)</eg>
         </div>
       </div>
       <div type="slide">
@@ -79,9 +129,9 @@ git clone [CTRL-V]
           <head>Organisation du répertoire</head>
           <list>
          <!--   <item><code>exemples/</code> exemples tei</item>
-        -->    <item><code>Travaux/</code> contient les dossiers de travaux pratiques</item>
-            <item><code>PDF/</code> tutoriaux et diapos au format pdf</item>
-            <item><code>Diapos/</code> présentations au format HTML</item>
+        -->    <item><code>travaux/</code> contient les dossiers de travaux pratiques</item>
+            <item><code>pdfs/</code> tutoriaux et diapos au format pdf</item>
+            <item><code>diapos/</code> présentations au format HTML</item>
             <item><code>images/</code> contenus graphiques</item>
          <!--   <item><code>ressources/</code> matériel d’accompagnement</item>
             <item><code>schemas/</code> schémas distribués pour la formation</item>
