@@ -181,7 +181,15 @@ class: center middle
 
 
 # Exemple de document .red[XML]
-&amp;lt;?xml version="1.0"?&amp;gt; &amp;lt;doc xmlns="http://example.org/​namespace"&amp;gt; &amp;lt;p n="1"&amp;gt;This is a paragraph.&amp;lt;/p&amp;gt; &amp;lt;p n="2"&amp;gt;This paragraph mentions &amp;lt;placeName&amp;gt;Bristol&amp;lt;/placeName&amp;gt;.&amp;lt;/p&amp;gt; &amp;lt;/doc&amp;gt;
+```
+<?xml version="1.0" ?> 
+<doc xmlns="http://example.org/​namespace"> 
+  <p n="1">This is a paragraph.</p> 
+  <p n="2">This paragraph mentions <placeName>Bristol</placeName>.
+  </p>
+</doc>
+```
+
 ???
 
 Un document XML prend toujours la forme suivante.
@@ -196,7 +204,17 @@ La première ligne de ce documents s’appelle une déclaration XML elle apparti
 
 
 # Spécification de l’.red[encodage]
-&amp;lt;?xml version="1.0" encoding="UTF-8?&amp;gt; &amp;lt;doc xmlns="http://example.org/​namespace"&amp;gt; &amp;lt;p n="1"&amp;gt;This is a paragraph.&amp;lt;/p&amp;gt; &amp;lt;p n="2"&amp;gt;This paragraph mentions &amp;lt;placeName&amp;gt;Bristol&amp;lt;/placeName&amp;gt;.&amp;lt;/p&amp;gt; &amp;lt;/doc&amp;gt;
+
+```
+<?xml version="1.0" encoding="UTF-8?> 
+<doc xmlns="http://example.org/​namespace"> 
+  <p n="1">This is a paragraph.</p> 
+  <p n="2">This paragraph mentions 
+  <placeName>Bristol</placeName>.
+  </p>
+</doc>
+```
+
 ???
 
 On peut également préciser l’encodage des caractères (par défaut en XML mais une bonne pratique).
@@ -213,7 +231,14 @@ Le répertoire Unicode peut contenir plus d’un million de caractères.
 
 
 # Spécification de l’.red[encodage]
-&amp;lt;?xml version="1.0" encoding="UTF-8?&amp;gt; &amp;lt;doc xmlns="http://example.org/​namespace"&amp;gt; &amp;lt;p n="1"&amp;gt;This is a paragraph.&amp;lt;/p&amp;gt; &amp;lt;p n="2"&amp;gt;This paragraph mentions &amp;lt;placeName&amp;gt;Bristol&amp;lt;/placeName&amp;gt;.&amp;lt;/p&amp;gt; &amp;lt;/doc&amp;gt;
+```
+<?xml version="1.0" encoding="UTF-8?>
+<doc xmlns="http://example.org/​namespace">
+  <p n="1">This is a paragraph.</p> <p n="2">This paragraph 
+  mentions <placeName>Bristol</placeName>.</p>
+</doc>
+```
+
 Les séquences `&lt;`, `&gt;` et `&lt;/` délimitent les balises : `&lt;div&gt;&lt;/div&gt;`
 
 Les paires nom-valeur des attributs ont la forme `nom='valeur'` équivalente à `nom="valeur"`
@@ -249,8 +274,9 @@ Notez la syntaxe particulière des éléments vides.
 
 ```xml
 
-<p >Exemple de contenu mixte avec
-  une <name>entité-nommée</name><pb></pb></p>
+<p>Exemple de contenu mixte avec
+  une <name>entité-nommée</name></pb>
+</p>
 ```
 
 ???
