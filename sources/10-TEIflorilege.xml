@@ -158,9 +158,18 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         </list>
         <!-- screenshot of XML source on website -->
       </div>
-
-
-
+      
+      <div type="slide">
+        <head>Le Petit Thalamus de Montpellier</head>
+        <p><ref target="http://thalamus.huma-num.fr">Le Petit Thalamus</ref></p>
+        <list>
+          <item>Visualisation des variantes textuelles</item>
+          <item>Édition hyper-diplomatique</item>
+          <item>Index</item>
+        </list>
+        
+      </div>
+      
       <div type="slide">
         <head>Bibliothèques virtuelles humanistes </head>
         <list>
@@ -195,6 +204,33 @@ les reflexions sur la materialite des textes qu’ils impliquent?
             target="http://www.fihrist.org.uk"
             >FIHRIST : catalogue des collections britanniques de manuscrits en langue arabe</ref>
         </p>
+      </div>
+      
+      <div type="slide">
+        <head>Vincent Van Gogh, The Letters</head>
+        <p><ref target="http://vangoghletters.org/vg/">Vincent Van Gogh, The Letters</ref></p>
+        <list><item>édition multilingue</item>
+          <item>avec facsimili</item>
+          <item>documentation annexe</item>
+        </list>
+      </div>
+      
+      <div type="slide">
+        <head>Sandrart. A net-based research platform on the history of art and culture in the 17th century</head>
+        <p><ref target="http://www.sandrart.net/en/">Sandrart</ref></p>
+        <list>
+          <item>Édition d’un texte ancien du 17e siècle</item>
+          <item>Lien avec une base de données</item>
+        </list>
+      </div>
+      
+      <div type="slide">
+        <head>The Shelley-Godwin Archive</head>
+        <p><ref target="http://shelleygodwinarchive.org">The Shelley-Godwin Archive</ref></p>
+        <list>
+          <item>Édition critique en XML-TEI</item>
+          <item>Module d’édition collaborative</item>
+        </list>
       </div>
 
       <div type="slide">
