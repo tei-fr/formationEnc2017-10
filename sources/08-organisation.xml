@@ -98,14 +98,14 @@
         <p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
 <teiCorpus>
-  <teiHeader>
-    <!-- obligatoire -->
-  </teiHeader>
-  <TEI>
-    <!-- obligatoire -->
-  </TEI>
-    <!-- encore d’elements <TEI>  -->
-  </teiCorpus>
+<teiHeader>
+  <!-- obligatoire -->
+</teiHeader>
+<TEI>
+  <!-- obligatoire -->
+</TEI>
+  <!-- encore d’elements <TEI>  -->
+</teiCorpus>
 </egXML>
         </p>
         <p rend="box">Cette structure servirait par ex à une collection de livres de la meme
@@ -128,14 +128,14 @@
 </egXML>
         <p>NB: aucune manière de structurer les images</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
-  <TEI>
-    <teiHeader><!-- métadonnées sur l’édition numerique --></teiHeader>
-    <text>
-      <pb facs="page1.png"/>
-      <!-- texte de la  page 1 facultativement transcrit ici -->
-      <pb facs="page2.png"/>
-      <!-- texte de la  page 2 facultativement transcrit ici-->
-    </text>
+<TEI>
+  <teiHeader><!-- métadonnées sur l’édition numerique --></teiHeader>
+  <text>
+    <pb facs="page1.png"/>
+    <!-- texte de la  page 1 facultativement transcrit ici -->
+    <pb facs="page2.png"/>
+    <!-- texte de la  page 2 facultativement transcrit ici-->
+  </text>
 </TEI>
 </egXML>
         <p>(On se servirait de <gi>sourceDoc</gi> au lieu de <gi>text</gi> selon ses principes éditoriaux)</p>
@@ -198,14 +198,14 @@
           <item>(il ne s’agit pas d’une mensuration)</item>
         </list>
 <egXML xmlns="http://www.tei-c.org/ns/Examples" rend="teeny">
-  <facsimile>
-    <surface ulx="0" uly="0" lrx="40" lry="30">
-      <graphic url="page1r.png"/>
-      <zone points="22,10 30,21 17,25 12,23">
-        <graphic url="page1rdetail.png"/>
-      </zone>
-    </surface>
-  </facsimile>
+<facsimile>
+  <surface ulx="0" uly="0" lrx="40" lry="30">
+    <graphic url="page1r.png"/>
+    <zone points="22,10 30,21 17,25 12,23">
+      <graphic url="page1rdetail.png"/>
+    </zone>
+  </surface>
+</facsimile>
 </egXML>
       </div>
       <div type="slide">
@@ -412,8 +412,7 @@
       <div type="title">
         <div>
           <head>La <ref target="09-personnalisation.xml">personnalisation de la TEI</ref></head>
-          <note><ref target="#index">revenir au début</ref></note>
-          <note><ref target="00-programme.xml">programme</ref></note>
+          <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.xml">programme</ref></note>
         </div>
       </div>
     </back>

@@ -435,8 +435,7 @@
       <div type="title" xml:lang="fr">
         <div>
           <head>Un <ref target="10-TEIflorilege.xml">Forilège de projets TEI</ref></head>
-          <note><ref target="#index">revenir au début</ref></note>
-          <note><ref target="00-programme.xml">programme</ref></note>
+          <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.xml">programme</ref></note>
         </div>
       </div>
     </back>

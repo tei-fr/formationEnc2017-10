@@ -308,8 +308,7 @@
             >apparat critique</ref></head>
           <head>Le <ref target="05-teiHeader.xml"
             >teiHeader</ref></head>
-          <note><ref target="#index">Revenir au début</ref></note>
-          <note><ref target="00-programme.xml">Programme</ref></note>
+          <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.xml">Programme</ref></note>
         </div>
       </div>
     </back>

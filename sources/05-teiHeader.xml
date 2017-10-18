@@ -90,14 +90,14 @@
           <div>
             <head>Macrostructure d’un document TEI</head>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <TEI>
-                <teiHeader>
-                  <!-- ... métadonnées ... -->
-                </teiHeader>
-                <text>
-                  <!-- ... votre édition ...-->
-                </text>
-              </TEI>
+<TEI>
+  <teiHeader>
+    <!-- ... métadonnées ... -->
+  </teiHeader>
+  <text>
+    <!-- ... votre édition ...-->
+  </text>
+</TEI>
             </egXML>
           </div>
           <div type="comments">
@@ -182,27 +182,27 @@
           <div>
             <head>Exemple de mentions de titre et de responsabilité (<gi>titleStmt</gi>)</head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <titleStmt>
-    <title xml:lang="fre" type="main">Sauval 1724</title>
-    <principal>
-      <persName ref="#MCL">
-        <forename>Marianne</forename>
-        <surname>Cojannot-Le Blanc</surname>
+<titleStmt>
+  <title xml:lang="fre" type="main">Sauval 1724</title>
+  <principal>
+    <persName ref="#MCL">
+      <forename>Marianne</forename>
+      <surname>Cojannot-Le Blanc</surname>
+    </persName>
+  </principal>
+  <funder>
+    <orgName>Labex Les Passés dans le Présent</orgName>
+    <date from="2013" to="2018">2013-2018</date>
+  </funder>
+  <respStmt>
+    <resp key="mrk">encodage XML-TEI</resp>
+      <persName ref="#EC">
+        <forename>Emmanuel</forename>
+        <surname>Château</surname>
       </persName>
-    </principal>
-    <funder>
-      <orgName>Labex Les Passés dans le Présent</orgName>
-      <date from="2013" to="2018">2013-2018</date>
-    </funder>
-    <respStmt>
-      <resp key="mrk">encodage XML-TEI</resp>
-        <persName ref="#EC">
-          <forename>Emmanuel</forename>
-          <surname>Château</surname>
-        </persName>
-    </respStmt>
-    <!-- ... -->
-  </titleStmt>
+  </respStmt>
+  <!-- ... -->
+</titleStmt>
 </egXML>
           </div>
         </div>
@@ -267,18 +267,18 @@
             <head>exemple d’<gi>encodingDesc</gi></head>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
   <encodingDesc>
-    <charDecl>
-      <glyph xml:id="uut">
-        <glyphName>two latin small letter u with macron and vertical
-        line</glyphName>
-        <charProp>
-          <localName>entity</localName>
-          <value>omega2</value>
-        </charProp>
-        <mapping type="composed">&#117;&#862;&#117;&#862;&#124;</mapping>
-        <graphic url="x2.jpg"/>
-      </glyph>
-    </charDecl>
+  <charDecl>
+    <glyph xml:id="uut">
+      <glyphName>two latin small letter u with macron and vertical
+      line</glyphName>
+      <charProp>
+        <localName>entity</localName>
+        <value>omega2</value>
+      </charProp>
+      <mapping type="composed">&#117;&#862;&#117;&#862;&#124;</mapping>
+      <graphic url="x2.jpg"/>
+    </glyph>
+</charDecl>
     <editorialDecl>
       <normalization>
         <p>La ponctuation a été ajoutée, conformément...</p>
@@ -307,30 +307,30 @@
               <item><gi>langUsage</gi> langues présentes dans le texte</item>
               <item><gi>textClass</gi> nature du texte d’après un thesaurus interne ou externe</item>
             </list>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <profileDesc>
-    <creation><date when="2009-04-20">20 avril
-    2009</date></creation>
-    <langUsage>
-      <language indent="fre" scope="60">Français</language>
-      <language ident="lat" scope="40">Latin</language>
-    </langUsage>
-  </profileDesc>
-</egXML>
+          <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<profileDesc>
+  <creation><date when="2009-04-20">20 avril
+  2009</date></creation>
+  <langUsage>
+    <language indent="fre" scope="60">Français</language>
+    <language ident="lat" scope="40">Latin</language>
+  </langUsage>
+</profileDesc>
+          </egXML>
         </div>
           <div type="slide" xml:lang="fr">
             <div>
               <head><gi>revisionDesc</gi></head>
               <p>Enregistre les révisions et modifications du fichier</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <revisionDesc>
-    <change when="2009-11" who="#VJ">Deuxième édition
-    électronique</change>
-    <change when="2009-10" who="#FG">Schéma et 
-    transformations</change>
-    <change when="2009-10" who="#CD">Encodage de 
-    l’apparat critique</change>
-  </revisionDesc>
+<revisionDesc>
+  <change when="2009-11" who="#VJ">Deuxième édition
+  électronique</change>
+  <change when="2009-10" who="#FG">Schéma et 
+  transformations</change>
+  <change when="2009-10" who="#CD">Encodage de 
+  l’apparat critique</change>
+</revisionDesc>
 </egXML>
             </div>
           </div>
@@ -366,7 +366,7 @@
       <div type="title" xml:lang="fr">
         <div>
           <head>La <ref target="06-msdesc.xml">description des manuscrits</ref></head>
-          <note><ref target="#index">revenir au début</ref><ref target="00-programme.xml"
+          <note><ref target="#index">revenir au début</ref> | <ref target="00-programme.xml"
               >Programme</ref></note>
         </div>
       </div>

@@ -282,40 +282,41 @@
 
             <div type="slide">
                 <head><gi>physDesc</gi> exemple simple </head>
-                <p>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
+                <egXML xmlns="http://www.tei-c.org/ns/Examples">
 <physDesc>
   <objectDesc>
     <supportDesc>
       <condition>
-        <damage>Il manque les trois derniers feuillets, dont deux
-        blancs.</damage>
+        <damage>Il manque les trois derniers feuillets, 
+         dont deux blancs.</damage>
       </condition>
     </supportDesc>
   </objectDesc>
   <bindingDesc>
     <binding>
-      <p>Reliure maroquin vert, signée Koehler. Dos à 4 nerfs. </p>
+      <p>Reliure maroquin vert, signée Koehler. Dos à 
+      4 nerfs.</p>
     </binding>
   </bindingDesc>
 </physDesc>
-</egXML></p>
+                    </egXML>
             </div>
 
             <div type="slide">
                 <head>Le support (1) </head>
                 <p>Pour distinguer l’objet inscrit de la manière où il est inscrit, <gi>objectDesc</gi> peut etre structuré en <gi>supportDesc</gi> et <gi>layoutDesc</gi>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <objectDesc form="codex">
-    <supportDesc material="mixed">
-      <p><material>parchemin</material> et <material>papier</material> 
-          du 12eme siecle.</p>
-    </supportDesc>
-    <layoutDesc>
-      <layout columns="1" ruledLines="25 32"/>
-    </layoutDesc>
-  </objectDesc>
-</egXML></p>
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+<objectDesc form="codex">
+  <supportDesc material="mixed">
+    <p><material>parchemin</material> 
+    et <material>papier</material> du 
+    12eme siecle.</p>
+  </supportDesc>
+  <layoutDesc>
+    <layout columns="1" ruledLines="25 32"/>
+  </layoutDesc>
+</objectDesc>
+                    </egXML></p>
             </div>
 
             <div type="slide">
@@ -350,19 +351,19 @@
             </div>
             <div type="slide">
                 <head>Layout(s)</head>
-                <p>Plusiers mise-en-forme (layout)s peuvent être spécifiées : 
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
+                <p>Plusiers mise-en-forme (layout)s peuvent être spécifiées :
+                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
 <layoutDesc>
   <layout ruledLines="25" columns="1">
     <p><locus from="1r" to="202v"/>
     <locus from="210r" to="212v"/> 25 lignes réglées.</p>
   </layout>
   <layout ruledLines="34 50" columns="2">
-    <p><locus from="203r" to="209v"/>Entre 34 et 50 lignes réglées, 
-        disposées en deux colonnes.</p>
+    <p><locus from="203r" to="209v"/>Entre 34 et 50 
+        lignes réglées, disposées en deux colonnes.</p>
   </layout>
 </layoutDesc>
-</egXML></p>
+                    </egXML></p>
             </div>
 
             <div type="slide">

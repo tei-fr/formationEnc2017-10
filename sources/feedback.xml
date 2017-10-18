@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Feed back formation XML-TEI octobre 2017</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <div xmlns="http://www.tei-c.org/ns/1.0">
+            <div type="slide">
+               <head>Premier jour</head>
+               <list>
+                  <label>10h-10h45 </label>
+                  <item> Présentation des participants</item>
+                  <label>11h–11h30 </label>
+                  <item resp="#EM"><ref target="01-editionNumerique.html"
+                     >Synthèse sur le balisage</ref> </item>
+                  <label>11h30–12h00</label>
+                  <item resp="#LB"><ref target="../PDF/ex01-analyse.pdf"> TP Modélisation</ref></item>
+                  <note>Adapter la présentation précédente pour ménager une meilleure transition  vers l’exercice</note>
+                  <label>12h00–12h30</label>
+                  <item resp="#EM"><ref target="02-introductionXML.html">Introduction XML</ref></item>
+                  <note>Ajouter une description des attributs par défaut, montrer le mécanisme des pointeurs</note>
+                  <label>12h30–13h30</label>
+                  <item>Pause déjeuner</item>
+                  <label>13h30–14h </label>
+                  <item resp="#EM"><ref target="../PDF/ex02-oxygen.pdf">À la découverte d’oXygen</ref> </item>
+                  <note>L’exercice entre directement dans le feu de la TEI, est-ce la meilleure manière avec des novices.</note>
+                  <label>14h -15h </label>
+                  <item resp="#LB"> 
+                     <ref target="03-richessesTEI.pdf">Introduction aux richesses de la TEI</ref> </item>
+                  <note>Pour la prochaine fois on peut diviser la présentation car elle est longue. On peut se passer des présentations pour les interventions éditoriales, liens, images et figures</note>
+                  <label>15h - 17h </label>
+                  <item resp="#LB"><ref target="../PDF/ex03-roma.pdf"
+                     > Personnalisation TEI avec Roma</ref></item>
+               </list>
+            </div>
+            <div type="slide">
+               <head>2<hi rend="superscript">ème</hi> journée…</head>
+               <list>
+                  <label>9h30-10h </label>
+                  <item resp="#EM"><ref target="04-transcriptionManuscrits.html"> Édition critique ou transcription</ref>
+                  </item>
+                  <label>10h-11h  </label>
+                  <item resp="#LB"><ref target="../PDF/ex04-oulipo.pdf">TP Édition critique </ref></item>
+                  <label>11h30–1200  </label>
+                  <item resp="#EM"><ref target="05-teiHeader.html"> TEI Header </ref></item>
+                  <label>12h–12h30 </label>
+                  <item resp="#EM"><ref target="../PDF/ex05-header.pdf">TP TEI Header</ref></item>
+                  <label>13h30–14h15</label>
+                  <item resp="#LB"> <ref target="06-msdesc.html"
+                     >TEI Msdescription</ref></item>
+                  <label>14h15–15h30</label>
+                  <item resp="#LB"> <ref target="../PDF/ex06-msdesc.pdf">TP TEI Msdescription</ref></item>
+                  <label>16h–17h</label>
+                  <item>Présentation projets avec la TEI</item>
+               </list>
+            </div>
+            <div type="slide">
+               <head>3<hi rend="superscript">ème</hi> journée…</head>
+               <list>
+                  <label>09h30-10h</label>
+                  <item resp="#EM"><ref target="07-entitesNommees.html"
+                     >Entités nommées</ref></item>
+                  <label>10h-11h00  </label>
+                  <item resp="#EM"><ref target="../PDF/ex07-entites.pdf">Création et gestion des Entités nommées</ref></item>
+                  <!-- @todo EC ajouter des instructions, faire un résultat -->
+                  <label>11h30-12h</label>
+                  <item resp="#LB"><ref target="08-organisation.html">Modalités d’organisation des documents TEI</ref></item>
+                  <label>12h–12h30</label>
+                  <item resp="#EM"><ref target="../PDF/ex08-organisation.pdf">Cas d’étude : organisation du projet Oulipo</ref>
+                     <!-- actually about github --> </item>
+                  <label>13h30–14h</label>
+                  <item resp="#LB"><ref target="09-personnalisation.html"
+                     >Personnalisation avancée avec ODD</ref></item>
+                  <label>14h–15h </label>
+                  <item resp="#LB">
+                     <ref target="../PDF/ex09-odd.pdf">TP Création d’un ODD personnalisé</ref></item>
+                  <!-- @todo EC mettre à jour -->
+                  <label>15h30–16h15</label>
+                  <item resp="#EM"><ref target="10-TEIflorilege.html">Florilège de projets TEI </ref></item>
+                  <label>16h15–17h </label>
+                  <item><ref target="../PDF/ex10-explorations.pdf">TP Explorations </ref></item>
+               </list>
+            </div>
+            <div type="slide">
+               <head>4<hi rend="superscript">ème</hi> journée…</head>
+               <list>
+                  <label>9h30–10h</label>
+                  <item resp="#EM"><ref target="11-traitementTEI.html">Chaînes de traitement TEI</ref> </item>
+                  <!-- @todo Ajouter les CSS et @style, évoquer @rendition et processing model ? dire que pas d’usine à Gaz mais que basée sur XSLT CSS et XQuery -->
+                  <label>10h00–11h</label>
+                  <item resp="#LB"><ref target="12-xsltNuls.html">XSLT Pour les nuls</ref> 
+                     <ref target="../PDF/ex12-xslt.pdf">Un peu de XPath, un peu de XSLT</ref></item>
+                  <label>11h30-12h30</label>
+                  <item resp="#EM"><ref target="13-xsltParesseux.html"
+                     >XSLT pour les paresseux </ref></item>
+                  <label>13h30-14h30</label>
+                  <item resp="#EM"><ref target="14-outils.html">L’outillage TEI</ref></item>
+                  <label>14h30–15h</label>
+                  <item resp="#LB"><ref target="15-teiCommunity.html">Welcome to the TEI community </ref></item>
+               </list>
+            </div>
+         </div>
+         
+      </body>
+  </text>
+</TEI>
