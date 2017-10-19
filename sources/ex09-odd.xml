@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_lite.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -18,7 +16,7 @@
    </teiHeader>
    <text>
       <body>
-       <!--  <div xml:lang="fr">
+         <!--  <div xml:lang="fr">
             <head>Organigramme ODD</head>
             <p><graphic url="../images/oddity.png"/></p>
          </div>-->
@@ -30,7 +28,11 @@
          <div xml:lang="fr">
             <head>Le ODD minimal </head>
             <list>
-               <item>Ouvrez le fichier <ident>transMin.odd</ident> avec oXygen</item>
+               <!--           <item>Ouvrez le fichier <ident>transMin.odd</ident> avec oXygen</item>
+    -->
+               <item>Ouvrez le fichier <ident>teiTranscrODD.xml</ident> que vous avez exporté de
+                  Roma dans l'exercice précedente</item>
+
                <item>Testez votre compréhension de ce fichier</item>
                <item>Utilisez oXygen pour en générer un schéma dans votre langage de schéma préférée </item>
                <item>Créez un nouveau document TEI XML qui utilise ce schéma</item>
@@ -41,7 +43,7 @@
             <head>Documentation</head>
             <p>Ajoutons de documentation. <list>
 
-                  <item>Revenez dans votre copie du <ident>transMin.odd</ident> et ajoutez au début
+                  <item>Revenez dans votre copie du <ident>teiTranscrODD</ident> et ajoutez au début
                      (après le paragraphe qui commence <q>Cette personnalisation propose...</q>) une
                      paragraphe comme ceci: <eg><![CDATA[
                         <p>Voici la liste des elements textuels fournis par ce schema :
@@ -52,8 +54,9 @@
                      ]]></eg>
                   </item>
                   <item>Revenez dans le scénario de transformation que vous utilisiez pour générer
-                     votre schéma. Cette fois-ci cochez aussi la case pour <ident>TEI ODD XHTML</ident> (et/ou un
-                     des autres formats, même <ident>TEI ODD DOCX</ident> si vous voulez) </item>
+                     votre schéma. Cette fois-ci cochez aussi la case pour <ident>TEI ODD
+                        XHTML</ident> (et/ou un des autres formats, même <ident>TEI ODD DOCX</ident>
+                     si vous voulez) </item>
                   <item>Regardez l’effet de vos modifications dans le doc qui en ressort.</item>
                </list>
             </p>
@@ -64,20 +67,38 @@
          </div>
          <div xml:lang="fr">
             <head>Amélioration du schéma (1) </head>
+            <p>On découvre quelques problèmes avec ce schéma. Pour traitez vos documents du projet
+               Oulipo il faut ajouter plusieurs éléments non pas disponibles dans le schema jusqu'a
+               present. Bien sur on pourrait retourner dans Roma le faire, mais on peut aussi
+               modifier le ODD directement dans oXygen. </p>
             <list>
-               <item>On découvre quelques problèmes avec ce schéma: <list>
+               <item>Du module <ident>core</ident>, vous aurez besoin additionellement des éléments
+                  suivants:
+                     <gi>teiCorpus</gi>, <gi>editor</gi>, <gi>publisher</gi>, <gi>respStmt</gi>, 
+                  <gi>resp</gi>, <gi>name</gi>, <gi>date</gi>, <gi>sp</gi>, <gi>speaker</gi>, <gi>stage</gi>
+               </item><item>Du module <ident>header</ident>,vous aurez besoin additionellement des éléments
+                  suivants: <gi>profileDesc</gi>, <gi>editorialDecl</gi>, <gi>revisionDesc</gi>, <gi>change</gi>
+                </item><item>En plus, vous aurez bezoin de plusieurs elements du module <ident>namesdates</ident>,
+                notamment <gi>listPerson</gi>, <gi>person</gi>, <gi>birth</gi>, <gi>death</gi>, <gi>affiliation</gi></item>
+               <!--     .
+                  <list>
                      <item>on souhaite indiquer la présence des glyphes et symboles
                         non-Unicode</item>
                      <item>on souhaite indiquer la présence des noms de personnes et de lieux</item>
                   </list></item>
-               <item>Ajoutez donc les éléments <gi>g</gi> et <gi>name</gi> à votre ODD</item>
+<item></item>-->
+               <item>Ajoutez ces éléments à votre ODD</item>
                <item>Régénérez votre schéma et testez si ces éléments sont maintenant
                   disponibles.</item>
             </list>
-            <p rend="box">Vous souhaitez ajouter un élément non-TEI ? C’est aussi possible...</p>
+            <p>Dans le dossier <ident>oulipoEd</ident> vous trouverez un fichier 
+               <ident>oulipoCorpus.xml</ident>. D'abord assurez-vous que ce document est valide par 
+              rapport à votre schema. Ensuite on va ajouter les autres fichiers sur lesquels on a travaillé
+              ....</p>
          </div>
          <div xml:lang="fr">
             <head>Amélioration du schema (2) </head>
+            <p rend="box">Vous souhaitez ajouter un élément non-TEI ? C’est aussi possible...</p>
             <p>La TEI nous propose plusieurs variétés de noms (<gi>persName</gi>,
                <gi>placeName</gi>, <gi>orgName</gi> etc.) mais rien de particulier pour les noms
                botaniques. Dans cet exercice vous allez créer un élément <gi>botName</gi> pour
