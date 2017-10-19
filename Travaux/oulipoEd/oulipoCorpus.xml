@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="../../../../../Downloads/out/teiTranscrODD2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">Archives oulipiennes</title>
-           <title type="sub">Corpus des comptes-rendus des réunions de l'OULIPO</title>
-            <editor>
-               <persName>
-                  <forename>Lou</forename>
-                  <surname>Burnard</surname>
-               </persName>
-            </editor>          
+            <title type="sub">Corpus des comptes-rendus des réunions de l'OULIPO</title>
+            <editor> Lou Burnard </editor>
             <!-- mentionnez-vous -->
          </titleStmt>
          <publicationStmt>
-            <publisher>École nationale des chartes: Service de formation continue</publisher>
-            <date when="2017-10">octobre 2017</date>
+            <publisher>
+               <date when="2017-10">octobre 2017</date> École nationale des chartes: Service de
+               formation continue</publisher>
          </publicationStmt>
          <sourceDesc>
             <p>Né numérique aucune source indépendante</p>
          </sourceDesc>
-        
       </fileDesc>
-     <profileDesc>
-        <particDesc>
-           <xi:include href="oulipiens.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>          
-        </particDesc>
-     </profileDesc>
-  </teiHeader>
-  <!--<xi:include href="VOTRE FICHIER ICI" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
--->   <TEI>
+      <profileDesc>
+         <particDesc>
+            <xi:include href="oulipiens.xml">
+               <xi:fallback>
+                  <xi:include href="oops.xml"/>
+               </xi:fallback>
+            </xi:include>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   <xi:include href="650308-1.xml"/>
+   <!--<xi:include href="VOTRE FICHIER ICI" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+-->
+   <TEI>
       <teiHeader>
          <fileDesc>
             <titleStmt>
@@ -43,10 +46,12 @@
             </sourceDesc>
          </fileDesc>
       </teiHeader>
-     <text>
-        <body>
-           <div><divGen type='namelist'/></div>
-        </body>
-     </text>
+      <text>
+         <body>
+            <div>
+               <divGen type="namelist"/>
+            </div>
+         </body>
+      </text>
    </TEI>
 </teiCorpus>
