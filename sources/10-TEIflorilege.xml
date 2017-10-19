@@ -82,60 +82,56 @@ les reflexions sur la materialite des textes qu’ils impliquent?
 
       <div type="slide">
         <head>Usages typiques de la TEI</head>
-        <p>
-          <list>
-            <item>Éditions de sources patrimoniales en ligne</item>
-            <item>Catalogues en ligne de notices bibliographiques</item>
-            <item>Ressources linguistiques (corpus, lexiques, dictionnaires… )</item>
-          </list>
-        </p>
+        <p> <list>
+          <item>Éditions de sources patrimoniales en ligne</item>
+          <item>Catalogues en ligne de notices bibliographiques</item>
+          <item>Ressources linguistiques (corpus, lexiques, dictionnaires… )</item>
+          </list> </p>
         <p>Ces distinctions sont un peu floues : l’intérêt d’un encodage TEI c’est justement sa polyvalence… </p>
       </div>
       <div type="slide">
         <head>Quelques exemples</head>
         <p>Commençons avec un bref regard sur quelques projets de divers types, d’origines différentes, et également très variables d’un point de vue disciplinaire. Mais ils on tous en commun : <list>
-            <item>ils se servent de la TEI</item>
-            <item>ils traitent des documents français</item>
-            <item>ils exposent les sources XML-TEI</item>
+          <item>ils se servent de la TEI</item>
+          <item>ils traitent des documents français</item>
+          <item>ils exposent les sources XML-TEI</item>
           </list></p>
       </div>
       <div type="slide">
         <head>Répertoires d’éditions critiques numériques</head>
         <list>
           <item><ref target="http://www.tei-c.org/Activities/Projects/"
-              >Projects Using the TEI, site
+            >Projects Using the TEI, site
               de la TEI</ref></item>
           <item><ref target="http://www.digitale-edition.de"
-              >Scholarly Digital Editions. An
+            >Scholarly Digital Editions. An
               annotated List, compiled by Patrick Sahle</ref></item>
           <item><ref target="https://github.com/gfranzini/digEds_cat/wiki"
-              >Greta Franzini, Catalogue of Digital Editions</ref></item>
+            >Greta Franzini, Catalogue of Digital Editions</ref></item>
         </list>
       </div>
       <div type="slide">
         <head>Essai sur le récit, ou entretiens sur la manière de raconter de François-Joseph Bérardier de Bataut</head>
         <list>
-          <item>http://www.beradier.org</item>
+          <item><ref target="http://www.berardier.org">http://www.berardier.org</ref></item>
           <item>Projet modeste consistant à mettre en ligne un seul texte </item>
           <item>Se servant d’un logiciel du « marché » (drupal)</item>
           <item>Choix d’affichage du texte : texte de lecture ou transcription linéaire</item>
         </list>
-        <note rend="none">
-          <list>
-            <item>Choisir une page (e.g. second entretien) </item>
-            <item>Texte de lecture vs Transcription linéaire</item>
-            <item>Utilisation des notes marginales</item>
-            <item>télécharger un chapitre et ouvrir dans oXygen</item>
-            <item>regardez les éléments <gi>choice</gi> dans l’encodage qui rendent tout possible</item>
-            <item>validez avec TEI All (et réglez les erreurs)</item>
-          </list>
-        </note>
+        <note rend="none"> <list>
+          <item>Choisir une page (e.g. second entretien) </item>
+          <item>Texte de lecture vs Transcription linéaire</item>
+          <item>Utilisation des notes marginales</item>
+          <item>télécharger un chapitre et ouvrir dans oXygen</item>
+          <item>regardez les éléments <gi>choice</gi> dans l’encodage qui rendent tout possible</item>
+          <item>validez avec TEI All (et réglez les erreurs)</item>
+          </list> </note>
       </div>
 
       <div type="slide">
         <head>Le mariage sous L’Ancien Régime</head>
         <list>
-          <item>http://mariage.uvic.ca</item>
+          <item><ref target="http://mariage.uvic.ca">http://mariage.uvic.ca</ref></item>
           <item>Une « anthologie virtuelle » sur la parole polémique relative au mariage, rassemblant des fictions, des gravures, des traités catholiques, médicaux…</item>
           <item>Indexage des termes et des noms propres beaucoup très minutieuse</item>
         </list>
@@ -147,10 +143,8 @@ les reflexions sur la materialite des textes qu’ils impliquent?
       <div type="slide">
         <head>Presses universitaires de Caen, Chroniques latines du Mont Saint-Michel</head>
         <list>
-          <item>
-            <ref target="http://www.unicaen.fr/services/puc/sources/chroniqueslatines"
-              >http://www.unicaen.fr/services/puc/sources/chroniqueslatines</ref>
-          </item>
+          <item> <ref target="http://www.unicaen.fr/services/puc/sources/chroniqueslatines"
+            >http://www.unicaen.fr/services/puc/sources/chroniqueslatines</ref> </item>
           <item>Équipe d’édition pionnière : une chaîne éditoriale XML-TEI</item>
           <item>affichage parallèle du texte original et de sa traduction</item>
           <item>affichage du fac-similé (sans navigation continue)</item>
@@ -158,7 +152,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         </list>
         <!-- screenshot of XML source on website -->
       </div>
-      
+
       <div type="slide">
         <head>Le Petit Thalamus de Montpellier</head>
         <p><ref target="http://thalamus.huma-num.fr">Le Petit Thalamus</ref></p>
@@ -167,9 +161,9 @@ les reflexions sur la materialite des textes qu’ils impliquent?
           <item>Édition hyper-diplomatique</item>
           <item>Index</item>
         </list>
-        
+
       </div>
-      
+
       <div type="slide">
         <head>Bibliothèques virtuelles humanistes </head>
         <list>
@@ -188,7 +182,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         <head>Corpus littéraires</head>
         <p>Le LABEX Obvil (Observatoire de la vie littéraire) rassemble plusieurs corpus de textes littéraires français, pas forcément tous disponibles en XML-TEI</p>
         <p>Par exemple <ref target="http://obvil.paris-sorbonne.fr/corpus/haine-theatre/"
-            >Corpus Haine du Théâtre</ref></p>
+          >Corpus Haine du Théâtre</ref></p>
       </div>
 
       <div type="slide">
@@ -198,23 +192,22 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         </list>
         <p>On peut faire mention de plusieurs autres projets similaires à vocation nationale.</p>
         <p>Par exemple : <ref target="http://handrit.is"
-            >Handrit : projet nationale islandais</ref> | <ref
-            target="http://www.manuscriptorium.com"
-            >Manuscriptorium : projet international et coopératif de la BN de Prague</ref> | <ref
-            target="http://www.fihrist.org.uk"
-            >FIHRIST : catalogue des collections britanniques de manuscrits en langue arabe</ref>
-        </p>
+          >Handrit : projet nationale islandais</ref> | <ref target="http://www.manuscriptorium.com"
+          >Manuscriptorium : projet international et coopératif de la BN de Prague</ref> | <ref
+          target="http://www.fihrist.org.uk"
+          >FIHRIST : catalogue des collections britanniques de manuscrits en langue arabe</ref> </p>
       </div>
-      
+
       <div type="slide">
         <head>Vincent Van Gogh, The Letters</head>
         <p><ref target="http://vangoghletters.org/vg/">Vincent Van Gogh, The Letters</ref></p>
-        <list><item>édition multilingue</item>
+        <list>
+          <item>édition multilingue</item>
           <item>avec facsimili</item>
           <item>documentation annexe</item>
         </list>
       </div>
-      
+
       <div type="slide">
         <head>Sandrart. A net-based research platform on the history of art and culture in the 17th century</head>
         <p><ref target="http://www.sandrart.net/en/">Sandrart</ref></p>
@@ -223,7 +216,7 @@ les reflexions sur la materialite des textes qu’ils impliquent?
           <item>Lien avec une base de données</item>
         </list>
       </div>
-      
+
       <div type="slide">
         <head>The Shelley-Godwin Archive</head>
         <p><ref target="http://shelleygodwinarchive.org">The Shelley-Godwin Archive</ref></p>
@@ -237,10 +230,9 @@ les reflexions sur la materialite des textes qu’ils impliquent?
         <head>Dictionnaires</head>
         <p>La TEI propose une gamme de balises très détaillée pour l’encodage des dictionnaires, existantes ou nouvelles.</p>
         <p>Par exemple <list>
-            <item><ref target="http://www.freedict.org/fr/"
-                > Projet Freedict : rassemble et harmonise des lexiques disponibles sur internet </ref>
-              <!-- "Liste detaillée"-->
-            </item>
+          <item><ref target="http://www.freedict.org/fr/"
+            > Projet Freedict : rassemble et harmonise des lexiques disponibles sur internet </ref>
+            <!-- "Liste detaillée"--> </item>
           </list></p>
       </div>
 
@@ -254,13 +246,13 @@ les reflexions sur la materialite des textes qu’ils impliquent?
           <item><ref target="https://www.ortolang.fr/market/corpora"
             > Le projet Ortolang</ref> rassemble de nombreux projets linguistiques, dont plusieurs utilisent la TEI. Mais typiquement il faut faire quelques contorsions pour arriver à les télécharger, ou même les visualiser </item>
           <item>Corpus classique de presse : le quotidien contemporain <ref
-              target="http://www.cnrtl.fr/corpus/estrepublicain/">L’Est Républicain</ref>
+            target="http://www.cnrtl.fr/corpus/estrepublicain/">L’Est Républicain</ref>
             <!-- lestrep.png --></item>
           <item>Édition médiévale avec annotation linguistique : <ref
-              target="https://www.ortolang.fr/market/corpora/digulleville"
-              >Le Pelerinage de Vie humaine de Guillaume de Digulleville</ref></item>
+            target="https://www.ortolang.fr/market/corpora/digulleville"
+            >Le Pelerinage de Vie humaine de Guillaume de Digulleville</ref></item>
           <item>Corpus multilingue : corpus bouddhiste des <ref
-              target="http://buddhistinformatics.ddbc.edu.tw/BZA/">Samyukta Agama</ref></item>
+            target="http://buddhistinformatics.ddbc.edu.tw/BZA/">Samyukta Agama</ref></item>
         </list>
       </div>
 
