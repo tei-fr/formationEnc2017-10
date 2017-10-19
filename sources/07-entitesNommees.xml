@@ -128,7 +128,7 @@
             <p>Regroupe les éléments qui se rapportent tous à un nom de personne ou de lieu</p>
             <list>
               <item>agents (<gi>name</gi>, <gi>orgName</gi>, <gi>persName</gi>)</item>
-              <item>lieux (<gi>place</gi>, <gi>country</gi>, <gi>district</gi>...)</item>
+              <item>lieux (<gi>placeName</gi>, <gi>country</gi>, <gi>district</gi>...)</item>
             </list>
             <p>Chacun avec des propriétés de nommage, des traits, des états, des événements, des relations.</p>
           </div>
@@ -137,6 +137,7 @@
             <p>L’élément <gi>person</gi> peut être instancié à l’intérieur d’un élément <gi>persList</gi> pour créer par exemple un fichier d’autorité dans le cadre d’un projet.</p>
             <p>La classe <ident>model.namelike</ident> (comme un nom) regroupe des éléments qui se rapportent tous à un nom de personne ou de lieu. Les éléments appartenant à cette classe y figurent. On peut voir que c’est une super-classe qui est composée de plusieurs classes qui comprennent des éléments comme <gi>persname</gi>, <gi>name</gi>, etc.</p>
             <p>Comme il s’agit d’une classe, tous les éléments qui appartiennent à cette classe disposent de certaines propriétés.</p>
+            <note>Revoir pour insérer la distinction entre les deux classe</note>
           </div>
         </div>
       </div>
@@ -209,11 +210,11 @@
             <p>
               <gi>roleName</gi> qui peut par exemple être typé : Nobiliaire, honorifique, grade, épithète</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <persName ref="tag:projectname.org,2012:DUDO1">
-    <roleName type="honorific" full="abb">Mme</roleName>
-    <nameLink>de la</nameLink>
-    <surname>Rochefoucault</surname>
-  </persName>
+<persName ref="tag:projectname.org,2012:DUDO1">
+  <roleName type="honorific" full="abb">Mme</roleName>
+  <nameLink>de la</nameLink>
+  <surname>Rochefoucault</surname>
+</persName>
 </egXML>
           </div>
         </div>
@@ -235,8 +236,7 @@
     <nameLink>de la</nameLink>
     <surname>Rochefoucault</surname>
   </persName>
-  <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16377695t
-  </idno>
+  <idno type="autBnf">http://catalogue.bnf.fr/ark:/12148/cb16377695t</idno>
 </person>
 </egXML>
           </div>
@@ -275,6 +275,7 @@
               <item>des <hi rend="italic">états (states)</hi> qui sont seulement vrai une période de temps donnée</item>
               <item>des <hi rend="italic">événements (events)</hi> ou incidents qui peuvent conduire à un changement d’état ou moins fréquemment de trait.</item>
             </list>
+            <note>@todo fournir la liste d’éléments classés correspondants</note>
           </div>
         </div>
         <div type="slide" xml:lang="fr">
@@ -285,6 +286,7 @@
             <list>
               <item></item>
             </list>
+            <note>@todo améliorer</note>
           </div>
           <div>
             <head>Éléments biographiques et prosopographiques</head>
@@ -300,10 +302,10 @@
               <head>Traits</head>
               <p>Traits, typiquement indépendants du vouloir de la personne, ou de ses actions. Peuvent être d’ordre physiques, sexe, couleur des yeux, ou culturels, ethniques, croyance…</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <trait type="ethnicity" key="alb">
-    <label>Ethnicity</label>
-    <desc>Ethnic Albanian.</desc>
-  </trait>
+<trait type="ethnicity" key="alb">
+  <label>Ethnicity</label>
+  <desc>Ethnic Albanian.</desc>
+</trait>
 </egXML>
             </div>
             <div>
@@ -311,8 +313,9 @@
               <p>Les états incluent par exemple le statut marital, le lieu de résidence et la position ou l’occupation.</p>
               <p>Durée définie, c’est-à-dire un début et une fin.</p>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <state type="office" from="1777-04-07"
-  to="1780-07-12">Procureur</state>
+<state type="office" from="1777-04-07"
+  to="1780-07-12">
+  Procureur</state>
 </egXML>
             </div>
           </div>
@@ -365,34 +368,34 @@
           </div>
           <div>
 <egXML xmlns="http://www.tei-c.org/ns/Examples">
-  <person xml:id="WM">
-    <event type="marriage" when="1859-04-26">
-      <label>Marriage</label>
-      <desc>
-        <name type="person" ref="#WM">William Morris</name> and <name type="person"
-        ref="http://en.wikipedia.org/wiki/Jane_Burden">Jane Burden</name> were
-        married at <name type="place">St Michael's Church, Ship Street, Oxford</name> on
-        <date when="1859-04-26">26 April 1859</date>. The wedding was
-        conducted by Morris's friend <name type="person" ref="#RWD">R. W.
-        Dixon</name> with <name type="person" ref="#CBF">Charles
-        Faulkner</name> as
-        the best man. The bride was given away by her father,
-        <name type="person" ref="#RB">Robert Burden</name>.
-        According to the account that <name type="person"
-        ref="http://en.wikipedia.org/wiki/Edward_Burne-Jones">Burne-Jones</name>
-        gave <name type="person" ref="#JWM">Mackail</name>
-        <quote>M. said to Dixon beforehand <said>Mind
-        you don't call her Mary</said> but he did</quote>. The entry in the
-        Register reads: <quote>William Morris, 25, Bachelor Gentleman, 13
-        George Street, son of William Morris decd. Gentleman. Jane Burden,
-        minor, spinster, 65 Holywell Street, d. of Robert Burden,
-        Groom.</quote> The witnesses were Jane's parents and Faulkner. None of
-        Morris's family attended the ceremony. Morris presented Jane with a
-        plain gold ring bearing the London hallmark for 1858. She gave her
-        husband a double-handled antique silver cup.</desc>
-        <bibl>J. W. Mackail, <title>The Life of William Morris</title>, 1899.</bibl>
-    </event>
-  </person>
+<person xml:id="WM">
+  <event type="marriage" when="1859-04-26">
+    <label>Marriage</label>
+    <desc>
+      <name type="person" ref="#WM">William Morris</name> and <name type="person"
+      ref="http://en.wikipedia.org/wiki/Jane_Burden">Jane Burden</name> were
+      married at <name type="place">St Michael's Church, Ship Street, Oxford</name> on
+      <date when="1859-04-26">26 April 1859</date>. The wedding was
+      conducted by Morris's friend <name type="person" ref="#RWD">R. W.
+      Dixon</name> with <name type="person" ref="#CBF">Charles
+      Faulkner</name> as
+      the best man. The bride was given away by her father,
+      <name type="person" ref="#RB">Robert Burden</name>.
+      According to the account that <name type="person"
+      ref="http://en.wikipedia.org/wiki/Edward_Burne-Jones">Burne-Jones</name>
+      gave <name type="person" ref="#JWM">Mackail</name>
+      <quote>M. said to Dixon beforehand <said>Mind
+      you don't call her Mary</said> but he did</quote>. The entry in the
+      Register reads: <quote>William Morris, 25, Bachelor Gentleman, 13
+      George Street, son of William Morris decd. Gentleman. Jane Burden,
+      minor, spinster, 65 Holywell Street, d. of Robert Burden,
+      Groom.</quote> The witnesses were Jane's parents and Faulkner. None of
+      Morris's family attended the ceremony. Morris presented Jane with a
+      plain gold ring bearing the London hallmark for 1858. She gave her
+      husband a double-handled antique silver cup.</desc>
+      <bibl>J. W. Mackail, <title>The Life of William Morris</title>, 1899.</bibl>
+  </event>
+</person>
 </egXML>
             <p>Contiennent des données relatives à n’importe quelle événement significatif associé à une personne, un lieu ou une organisation.</p>
           </div>
