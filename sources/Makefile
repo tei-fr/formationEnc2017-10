@@ -7,7 +7,8 @@ STYLESHEET=../xsl/tei2remarks.xsl
 ECHO=
 
 PDFTALKS= \
-	03-richessesTEI 
+	03-richessesTEI \
+	06-msdesc
 
 
 
@@ -29,7 +30,6 @@ DIAPOS= \
 	02-introductionXML \
 	04-transcriptionManuscrits \
 	05-teiHeader \
-	06-msdesc \
 	07-entitesNommees \
 	08-organisation \
 	09-personnalisation \
