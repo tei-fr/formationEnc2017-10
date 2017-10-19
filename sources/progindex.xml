@@ -27,7 +27,13 @@
       <item resp="#LB"><ref target="../PDF/ex03-roma.pdf"> Personnalisation TEI avec Roma</ref></item>
       <label>10h30-10h45</label>
       <item resp="#EM"><ref target="04-transcriptionManuscrits.html"> Édition critique ou transcription</ref></item>
+     
+      
+      
       <label>11h15-11h45</label>
+      <item resp="#LB"><ref target="../PDF/ex04-oulipo.pdf">TP Création d’un ODD et personnalisation </ref></item>
+      <label>11h45–12h15</label>
+      
       <item resp="#EM"><ref target="05-teiHeader.html"> TEI Header </ref></item>
       <label>11h45–12h15</label>
       <item resp="#EM"><ref target="../PDF/ex05-header.pdf">TP TEI Header</ref></item>
@@ -55,13 +61,9 @@
         <!-- actually about github --> </item>
       <label>13h30–14h</label>
       <item resp="#LB"><ref target="09-personnalisation.html"
-        >Personnalisation avancée avec ODD</ref></item>
+        >Personnalisation avec ODD</ref></item>
       <label>14h–15h </label>
-      <!-- déplacé du premier jour -->
-      <item resp="#LB"><ref target="../PDF/ex04-oulipo.pdf">TP Création d’un ODD et personnalisation </ref></item>
-      <!-- @todo ajouter une personnalisation manuelle -->
-      <!--<item resp="#LB"><ref target="../PDF/ex09-odd.pdf">TP Création d’un ODD personnalisé</ref></item>-->
-      <!-- @todo EC mettre à jour -->
+      <item resp="#LB"><ref target="../PDF/ex09-odd.pdf">TP Traitement d’un ODD personnalisé avec oXygen</ref></item>
       <label>15h30–16h15</label>
       <item resp="#EM"><ref target="10-TEIflorilege.html">Florilège de projets TEI </ref></item>
       <label>16h15–17h </label>

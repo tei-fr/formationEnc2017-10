@@ -25,14 +25,14 @@
         </revisionDesc>
     </teiHeader>
     <text>
-        <front>
+<!--        <front>
             <titlePage xml:lang="fr">
                 <titlePart>06 – Description des manuscrits</titlePart>
                 <docImprint>Formation TEI | ENC 16 au 20 octobre 2017</docImprint>
                 <note><ref target="00-programme.xml">Programme</ref></note>
             </titlePage>
         </front>
-        <body xml:lang="fra">
+    -->    <body xml:lang="fra">
             <div type="slide">
                 <head>Objectifs</head>
                 <p><graphic url="../images/morrisCatalog.jpg" height="50%"/>
@@ -599,12 +599,12 @@ Provenance: Au feuillet chiffré 1 : "Ce present livre ma este donne de monsieur
 </div>
 -->
         </body>
-        <back>
+<!--        <back>
             <div type="title" xml:lang="fr">
                 <head>Les <ref target="07-entitesNommees.xml">Entités nommées</ref></head>
                 <note><ref target="#index">Revenir au début</ref> | <ref target="00-programme.xml"
                         >Programme</ref></note>
             </div>
-        </back>
+        </back>-->
     </text>
 </TEI>
