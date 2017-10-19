@@ -47,7 +47,6 @@
         >Entités nommées</ref></item>
       <label>10h-11h00  </label>
       <item resp="#EM"><ref target="../PDF/ex07-entites.pdf">Création et gestion des Entités nommées</ref></item>
-      <!-- @todo EC ajouter des instructions, faire un résultat -->
       <label>11h30-12h</label>
       <item resp="#LB"><ref target="08-organisation.html">Modalités d’organisation des documents TEI</ref></item>
       <label>12h–12h30</label>
