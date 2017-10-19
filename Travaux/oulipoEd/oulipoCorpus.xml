@@ -24,7 +24,7 @@
       </fileDesc>
      <profileDesc>
         <particDesc>
-           <xi:include href="../../Travaux/oulipiens.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>          
+           <xi:include href="oulipiens.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>          
         </particDesc>
      </profileDesc>
   </teiHeader>
