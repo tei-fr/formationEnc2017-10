@@ -131,11 +131,9 @@ Les transformations pour la P5 sont seulement développées en XSLT&nbsp;2.0, le
 
 
 # Sebastian Patrick Quintus Rahtz [(13 February 1955 – 15 March 2016)]()
-![](../images/sebastian.jpg)
+![](../images/web-rahtz.jpg)
 ???
-
 La TEI est une communauté, elle est largement redevable des personnes qui ont contribué à son fonctionnement. Sebastian Rahtz a été l’initiateur des XSL Stylesheets dont il a longtemps assuré la maintenance. Pour beaucoup d’entre nous, il était un modèle d’engagement, de désintéressement et de rigueur dans le travail. Sa contribution à la TEI fut considérable, et son décès est une grande perte pour la communauté.
-
 ---
 
 
@@ -193,7 +191,7 @@ Vous pouvez également, si vous l’avez installé, disposer de transformations 
 
 # Générer un document OpenOffice (ou MsWord)
 
-* Ouvrez le fichier `oulipo.xml` qui se trouve dans `oulipoEd`
+* Ouvrez le fichier `oulipoCorpus.xml` qui se trouve dans `oulipoEd`
 
 * Configurez un scénario de transformation
 
@@ -210,7 +208,7 @@ Les XSL Stylesheets proposent de très nombreux paramètres de personnalisation 
 
 Afin de nous familiariser avec l’utilisation des Stylesheets, nous allons d’abord essayer de modifier les paramètres par défaut d’une transformation TEI vers HTML.
 
-* Ouvrez le fichier de votre édition qui qui se trouve dans `oulipoEd`
+* Ouvrez le fichier de votre édition `oulipoCorpus.xml` qui se trouve dans `oulipoEd`
 
 * Configurez un nouveau scénario de transformation avec TEIP5 XHTML
 
@@ -285,7 +283,7 @@ En faisant directement appel aux XSL Stylesheets, vous pouvez bénéficier d’u
 
 * appliquez la transformation pour produire une sortie LaTeX
 
-* afficher le résulat dans [Overleaf](https://www.overleaf.com)
+* afficher le résultat dans [Overleaf](https://www.overleaf.com)
 
 * modifiez le paramètre institution et prenez connaissance du résultat de vos modifications
 
@@ -350,7 +348,7 @@ Si l’on regarde ce que contiennent les fichiers XSLT contenus dans le réperto
 
 
 # Exemple d’inclusion d’une .red[XSLT]
-&lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/latex/latex.xsl"/&gt; 
+&lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/profiles/default/html5/to.xsl"/&gt; 
 ---
 
 
@@ -374,8 +372,10 @@ Dans le cas où vous voudriez importer dans un fichier des règles correspondant
 # Personnaliser la sortie par défaut (1)
 
 Inclure la transformation par défaut dans sa XSL, puis ajouter vos propres règles
-&lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/latex/latex.xsl"/&gt;
+&lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/profiles/default/html5/to.xsl"/&gt;
 * insérer le paramètre suivant&nbsp;:`&lt;xsl:param name="institution"&gt;École nationale des chartes&lt;/xsl:param&gt; `
+
+* insérer le paramètre suivant&nbsp;:`&lt;xsl:param name="numberHeadings"&gt;false&lt;/xsl:param&gt; `
 
 * créer un scénario de transformation XML avec XSLT
 

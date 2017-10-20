@@ -104,10 +104,10 @@
         <div type="slide">
           <div>
             <head>Sebastian Patrick Quintus Rahtz <lb/><ref>(13 February 1955 – 15 March 2016)</ref></head>
-            <figure><graphic url="../images/sebastian.jpg"/></figure>
+            <figure><graphic url="../images/web-rahtz.jpg"/></figure>
           </div>
           <div>
-            <p>La TEI est une communauté, elle est largement redevable des personnes qui ont contribué à son fonctionnement. Sebastian Rahtz a été l’initiateur des XSL Stylesheets dont il a longtemps assuré la maintenance. Pour beaucoup d’entre nous, il était un modèle d’engagement, de désintéressement et de rigueur dans le travail. Sa contribution à la TEI fut considérable, et son décès est une grande perte pour la communauté.</p>
+            <quote>La TEI est une communauté, elle est largement redevable des personnes qui ont contribué à son fonctionnement. Sebastian Rahtz a été l’initiateur des XSL Stylesheets dont il a longtemps assuré la maintenance. Pour beaucoup d’entre nous, il était un modèle d’engagement, de désintéressement et de rigueur dans le travail. Sa contribution à la TEI fut considérable, et son décès est une grande perte pour la communauté.</quote>
           </div>
         </div>
         <div type="slide">
@@ -164,7 +164,7 @@
           <div>
             <head>Générer un document OpenOffice (ou MsWord)</head>
             <list>
-              <item>Ouvrez le fichier <ident>oulipo.xml</ident> qui se trouve dans <ident>oulipoEd</ident></item>
+              <item>Ouvrez le fichier <ident>oulipoCorpus.xml</ident> qui se trouve dans <ident>oulipoEd</ident></item>
               <item>Configurez un scénario de transformation</item>
               <item>Dans <ident>TEI P5</ident>, sélectionnez <ident>TEI P5 to ODT</ident></item>
               <item>Appliquez les scénarios sélectionnés</item>
@@ -178,7 +178,7 @@
             <p>Afin de nous familiariser avec l’utilisation des Stylesheets, nous allons d’abord essayer de modifier les paramètres par défaut d’une transformation TEI vers HTML.</p>
             <list>
               <head><hi>Exercice :</hi> Essayons d’abord de produire une sortie HTML par défaut de notre édition des archives de l’Oulipo</head>
-              <item>Ouvrez le fichier de votre édition qui qui se trouve dans <ident>oulipoEd</ident></item>
+              <item>Ouvrez le fichier de votre édition <ident>oulipoCorpus.xml</ident> qui se trouve dans <ident>oulipoEd</ident></item>
               <item>Configurez un nouveau scénario de transformation avec TEIP5 XHTML</item>
               <item>Sous l’onglet <ident>Sortie</ident> cochez la case <ident>Ouvrir dans un éditeur</ident> pour voir le code HTML résultant</item>
               <item>Exécutez la transformation et observez le résultat</item>
@@ -194,7 +194,7 @@
             <head>TP Modifier les paramètres d’une sortie HTML</head>
             <p>Essayons maintenant de produire une sortie HTML personnalisée de notre édition des archives de l’Oulipo.</p>
             <list>
-              <head><hi>Exercice :</hi> personnalisation de la sortie vers html</head>
+              <head><hi>Exercice :</hi> personnalisation de la sortie vers HTML</head>
               <item>Éditer le scénario de transformation avec TEIP5 XHTML (oXygen va vous demander de le dupliquer)</item>
               <item>Explorer les paramètres de transformation disponibles (en cliquant sur le bouton <ident>Paramètres</ident>, puis en parcourant la liste)</item>
               <item>Retirez la numérotation des parties (modifier le paramètre <ident>numberHeadings</ident>)</item>
@@ -247,8 +247,9 @@
                 <item>dans XSL URL, tapez <code>${profiledir}/${profile}</code></item>
                 <item>sélectionnez le transformateur <ident>Saxon HE 9.6</ident></item>
                 <item>appliquez la transformation pour produire une sortie LaTeX</item>
-                <item>afficher le résulat dans <!--<ref target="https://fr.sharelatex.com"
-                >Sharelatex</ref>--><ref target="https://www.overleaf.com">Overleaf</ref></item>
+                <item>afficher le résultat dans <!--<ref target="https://fr.sharelatex.com"
+                >Sharelatex</ref>--><ref
+                  target="https://www.overleaf.com">Overleaf</ref></item>
                 <item>modifiez le paramètre institution et prenez connaissance du résultat de vos modifications</item>
                 <item>Comment changer de police ou modifier le format de page ?</item>
               </list>
@@ -297,7 +298,7 @@
           <div>
             <head>Exemple d’inclusion d’une <hi>XSLT</hi></head>
 <eg>
-  &lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/latex/latex.xsl"/>
+  &lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/profiles/default/html5/to.xsl"/>
 </eg>
           </div>
         </div>
@@ -323,10 +324,13 @@
           <div>
             <head>Personnaliser la sortie par défaut (1)</head>
             <p>Inclure la transformation par défaut dans sa XSL, puis ajouter vos propres règles</p>
-            <eg>&lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/latex/latex.xsl"/></eg>
+            <eg>&lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/profiles/default/html5/to.xsl"/></eg>
             <list>
               <item>insérer le paramètre suivant :<code>
                 &lt;xsl:param name="institution">École nationale des chartes&lt;/xsl:param>
+              </code></item>
+              <item>insérer le paramètre suivant :<code>
+                &lt;xsl:param name="numberHeadings">false&lt;/xsl:param>
               </code></item>
               <item>créer un scénario de transformation XML avec XSLT</item>
               <item>assurez vous que la transformation fonctionne toujours en l’appliquant</item>
@@ -347,7 +351,6 @@
               <item>Avec ce que vous connaissez de XSLT, créez dans votre profil une règle qui s’occupera de cet élément avec <gi>xsl:template</gi> et l’attribut <att>match</att></item>
               <item>Donnez un contenu à cette règle qui liste tous les éléments <gi>persName</gi> contenus dans le document</item>
             </list>
-            <!-- @todo définir un exercice -->
           </div>
         </div>
         <div type="slide">
