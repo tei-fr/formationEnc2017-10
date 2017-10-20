@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Compte-rendu de la réunion du mardi 11 septembre</title>
+                <title type="sub">Edition numérique</title>
+                <editor xml:id="LouB">Lou Burnard</editor>
+                <respStmt>
+                    <resp>transcription</resp>
+                    <name>Morgane Mignon</name>
+                </respStmt>
+                <funder>Agence Nationale de Recherche</funder>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Bibliothèque nationale de France</publisher>
+                <date>Octobre 2017</date>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Selon le facsimile de Gallica (<title>Fonds Oulipo. Dossiers mensuels de réunion
+                        1960-2010</title>)</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Virgules non retenues dans les listes</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="#LouB">Ajout de l'en-tête</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <head>OUVROIR DE LITTERATURE POTENTIELLE Circulaire n°25 Réunion du mardi 11 septembre
+                1962</head>
+            <div type="inconnu">
+                <p><list>
+                        <head>PRESENTS : </head>
+                        <item><persName ref="#NA">Arnaud</persName></item>
+                        <item><persName ref="#JB">Bens</persName></item>
+                        <item><persName ref="#JD">Duchateau</persName></item>
+                        <item><persName ref="#FLL">Le Lionnais</persName></item>
+                        <item><persName ref="#JL">Lescure</persName></item>
+                        <item><persName ref="#RQ">Queneau</persName></item>
+                    </list>
+                </p>
+                <p><list>
+                        <head>EXCUSES :</head>
+                        <item>Les autres</item>
+                    </list>
+                </p>
+                <p><list>
+                        <head>PRESIDENT :</head>
+                        <item><persName ref="#JL">Lescure</persName></item>
+                    </list></p>
+            </div>
+
+
+            <div type="inconnu">
+                <p> La direction du <placeName>« Vieux Paris »</placeName> nous ayant installé à la
+                    terrasse, ce qui doit nuire à nos débats, le S.P. s’enfle d’une juste colère.
+                    Sur son instigation, il est décidé que, fuyant désormais les traiteurs
+                    inhospitaliers, nous déjeunerons les uns chez les autres.</p>
+                <sp>
+                    <speaker><persName ref="#RQ">R QUENEAU</persName></speaker>
+                    <p>nous ferons la tournée des bobodes.</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="#FLL">F. LE LIONNAIS</persName></speaker>
+                    <p>Je soumets à votre approbation la liste, réduite à deux noms, d’un certain
+                        nombre de personnalités que nous pourrions inviter à l’un de nos prochains
+                        déjeuners. Il s’agit de <persName>G.E. Clancier</persName> et de
+                            <persName>Jean Ferry</persName>.</p>
+                </sp>
+                <p> Cette liste est adoptée avec enthousiasme. On remarque que l’invitation de
+                    Clancier, quoique jamais suivie d’effet, n’a jamais, non plus, été
+                    contestée.</p>
+                <p>
+                    <persName ref="#FLL">Le Lionnais</persName> signale encore qu’il n’a pas de
+                    nouvelles de M. Florkin. Il communique à l’assemblée la copie d’une lettre de
+                    Blavier à Florkin. Cette lettre, approuvée, est versée aux archives.</p>
+                <sp>
+                    <speaker>X… </speaker>
+                    <p>Il doit le p’tit Florkin-kin.</p>
+                </sp>
+                <p>
+                    <persName ref="#NA">Arnaud</persName> communique une OuLiPo-Java composée en
+                    notre honneur par François Dufrêne. Cette composition est versée aux archives.
+                    On en trouvera le texte en Annexe de la présente.</p>
+                <p> Il est question des Rhinogrades. <persName ref="#FLL">F. Le Lionnais</persName>,
+                    avec la plus parfaite mauvaise foi, se déclare « confondu par l’ignorance
+                    biologique du dataire ». Il insiste, non sans vulgarité, pour que cette
+                    confusion (on ne saurait mieux dire) soit inscrite au procès-verbal.</p>
+                <p>
+                    <persName ref="#JD">Duchateau</persName> fait un exposé très remarqué sur le
+                    roman combinatoire. On trouvera, en Annexe, l’essentiel de sa communication. La
+                    discussion s’ouvre.</p>
+                <sp>
+                    <speaker><persName ref="#JB">J. BENS</persName> :</speaker>
+                    <p>A mon sens, la difficulté réside en ceci (que démontre suf-<pb/> fisamment la
+                        tentative de Saporta) : sans lien de cause à effet, il n’y a pas de
+                        romanesque possible.</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="#FLL">F. LE LIONNAIS</persName> :</speaker>
+                    <p>Bens est étroitement conditionné par la culture classique. Ces structures
+                        sont-elles inévitables ? (Sinon, il faut évidemment faire autre chose que
+                        Saporta, qui a seulement démontré qu’une solution de négligence n’est pas
+                        possible.) On pourrait, par exemple, admettre qu’il existe un ordre
+                        différent de l’ordre temporel. Peut-être pas n’importe lequel, d’ailleurs.
+                        Mais je ne sais pas lequel. Si nous prenons 100.000 milliards de poèmes,
+                        nous constatons que chaque poème est bon. Dans le livre de Saporta, toutes
+                        les combinaisons ne sont pas bonnes. Peut-on proposer quelques bonnes
+                        solutions et écarter les mauvaises ?</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="#JL">J. LESCURE</persName> :</speaker>
+                    <p>On limiterait le choix de l’auteur ?</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="#RQ">R. QUENEAU</persName> :</speaker>
+                    <p>L’auteur a toujours un choix, dans n’importe quelle littérature.</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="#FLL">F. LE LIONNAIS</persName> :</speaker>
+                    <p>Son choix sera limité à l’intérieur d’un certain système.</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="#JB">J. BENS</persName> :</speaker>
+                    <p>Il n’y a pas de comparaison possible. (On notera l’exemplaire obscurité de
+                        chacune de ces répliques. Obscurité qui n’est que la rançon de leur
+                        elliptique profondeur.)</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="#RQ">R. QUENEAU</persName> :</speaker>
+                    <p>Historiquement… </p>
+                </sp>
+                <sp>
+                    <speaker>Voix :</speaker>
+                    <p>Ah !</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="#RQ">R. QUENEAU</persName> :</speaker>
+                    <p>… Historiquement, il existe deux ouvrages forts intéressants de Georges
+                        Polti : Les 36 situations dramatiques et l’Art d’inventer les personnages.
+                        Le premier contient une thèse : le nombre total des situations dramatiques
+                        est limité à 36. Toutes les situations « nouvelles » que l’on peut inventer
+                        se ramènent à une des précédentes. Dans le second ouvrage, Polti propose des
+                        combinaisons (de caractères, de situations, etc.) permettant de définir
+                        7.000 (ou 70.000 ?) types. Un autre auteur a proposé une autre
+                        combinatoire : c’est Léon Bopp. Sa méthode était également limitative, mais
+                        d’une manière beaucoup plus naïve. D’ailleurs, les romans que l’on a écrits
+                        après lui n’entrent pas dans les cadres qu’il avait prévus…</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="#FLL">F. LE LIONNAIS</persName> :</speaker>
+                    <p>Souriau a également étudié la question, dans un ouvrage publié par la
+                        « Bibliothèque de Philosophie Scientifique » de Flammarion.</p>
+                </sp>
+                <sp>
+                    <speaker><persName ref="JB">J. BENS</persName> :</speaker>
+                    <p>Dans le roman policier, on connaît les célèbres règles de Van Dine. Mais il
+                        ne s’agit alors que de règles interdisant certaines facilités. Cela n’a rien
+                        à voir avec la combinatoire.</p>
+                </sp>
+                <sp>
+                    <p><persName ref="#FLL">F. LE LIONNAIS</persName> : Je vous proposerai, lors d’une prochaine réunion, une
+                        nouvelle solution pour les problèmes de local clos. Je rumine également,
+                        d’ailleurs, un cas où l’assassin est le lecteur. p. 4 F. LE LIONNAIS : Je
+                        voudrais faire, à propos du lettrisme et de l’OuLiPo, deux communications
+                        indépendantes mais liées : 1. Je rappelle que l’OuLiPo a pour but de
+                        découvrir des structures nouvelles et de donner, pour chaque structure, des
+                        exemples en petite quantité. Il ne faut donc pas s’étonner que nos travaux
+                        n’aillent pas plus vite ; 2. Le lettrisme m’apparaît, en un sens, comme une
+                        tentative de recherche de structures. Comme il existe, nous n’avons rien à
+                        faire dans ce domaine. Pourquoi n’inventerions-nous pas Dufrêne ? Nous
+                        pouvons apporter quelque chose au lettrisme. Par exemple : inventer une
+                        nouvelle lettre de l’alphabet. On ajoute donc François Dufrêne à la liste
+                        précédente des personnalités à inviter prochainement. On ne manque pas,
+                        naturellement, d’échanger des vœux de Bonne Année Pataphysique. On remarque
+                        qu’une nouvelle Ere, l’Ere Oulipienne, pourrait être créée. Le premier jour
+                        de l’année en serait le 24 novembre, anniversaire de la fondation de
+                        l’OuLiPo. (On néglige dans ce calcul, mais sans les oublier, les entretiens
+                        préalables à la fondation solennelle.) Raymond Queneau et François Le
+                        Lionnais échangent alors les fruits mathématiques de leurs veilles.
+                        L’impuissance du S.P. à suivre cette estimable discussion l’empêche d’en
+                        faire part ici. Non sans regret. Une femme peintre, installée à deux pas de
+                        nous, sous couleur de fixer les traits austères de Saint-Etienne-du-Mont,
+                        nous tire le portrait. Ainsi, la dernière réunion publique de l’OuLiPo
+                        s’inscrira dans une oléagineuse, et peut-être (qui sait ?) drouotique,
+                        postérité. La prochaine réunion… R. QUENEAU : On va faire la tournée des
+                        OuLiPopotes ! … la prochaine réunion, donc, se tiendra le vendredi 26
+                        octobre chez Jacques Duchateau. (On sait que, par la suite de modifications
+                        ultérieures, cette réunion s’est tenue, le 31 octobre, chez Claude Berge.)
+                        Le S.P.</p>
+                </sp>
+            </div>
+        </body>
+    </text>
+</TEI>

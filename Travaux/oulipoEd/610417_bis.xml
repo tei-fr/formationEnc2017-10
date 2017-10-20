@@ -1,0 +1,98 @@
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Compte-rendu séance du 17 avril 1961</title>
+            <editor>François Léger</editor>
+            <respStmt>
+               <resp>encodage</resp>
+               <name>François Léger</name>
+            </respStmt>
+
+         </titleStmt>
+
+         <publicationStmt>
+            <publisher>Bibliothèque nationale de France</publisher>
+            <date>Octobre 2017</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Site Gallica,<name>Fonds Oulipo. Dossiers mensuels de réunion (1960-2010)</name>.</p>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Mots coupés par ligne réunis sans remarque</p>
+         </editorialDecl>
+      </encodingDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>Circulaire n°6</head>
+         <head> OUVROIR DE LITTERATURE POTENTIELLE</head>
+         <head> Compte-rendu de la réunion du <date>lundi 17 avril 1961</date>
+         </head>
+         <div type="autre">
+            <p>Présents : <persName ref="NA">Noël Arnaud</persName>, <name ref="JD">Jacques
+                  Duchateau</name>, <name ref="JL">Jean Lescure</name>, <name ref="RQ">Raymond Queneau</name>>,
+                  <name ref="JQ">Jean Queval</name>. Président : <name ref="RQ">Raymond Queneau</name>.</p>
+         </div>
+         <div type="autre">
+            <p>Les absents s’étant excusés eux-mêmes, le Président se donne la parole assez
+               facilement, pour constater que :</p>
+            <list>
+               <item><label>a</label> point (a) de l’ordre du jour (<hi>les monosyllabes
+                        d’<name>Amédée Pommier</name></hi>) est, en l’absence d’<name ref="AMS">A.M.
+                     Schmidt</name>, exclu du dit ordre ;</item>
+               <item><label>b</label>qu’il en est de même du point (c), en l’absence de <abbr>S.
+                     Exc.</abbr>
+                  <name><abbr>Q.B.</abbr></name> ;</item>
+               <item><label>c</label>qu’en l’absence des mathématiciens, le point (b) doit être
+                  reporté à une date ultérieure</item>
+            </list>
+            <p>Ceci étant acquis, le Président se lance dans un long exposé de cette loi
+               d’Estoup-Zipf, objet du point (b). Divers mouvements sur tous les bancs suggèrent que
+               les assistants perdent assez vite de vue la constante de cette loi. Un nouvel examen
+               s’avère indispensable et aura lieu au cours d’un prochain déjeuner.</p>
+            <p> Le Président s’engage à publier dans le prochain Dossier du Collège un communiqué
+               annonçant la création de l’Oulipo. Ce sera fait.</p>
+            <p> Il était normal que ces occurrences portassent les OuLiPiens présents à s’interroger
+               sur leur être même. Au terme de cette interrogation, ils aboutirent à deux
+               définitions provisoirement péremptoires :</p>
+            <p>
+               <hi>OuLiPo</hi> : Organisme qui se propose d’examiner en quoi et par quel moyen,
+               étant donnée une théorie scientifique concernant éventuellement le langage (donc :
+               l’anthropologie), on peut y introduire du plaisir esthétique (affectivité et
+               fantaisie).</p>
+            <p>
+               <hi>Oulipiens</hi> : Rats qui ont à construire le labyrinthe dont ils se proposent de
+                  sortir.<note n="1">On aperçoit, sous les grands mots, toute la sournoiserie du
+                  cheminement. Car le labyrinthe dont on sort les plus aisément est évidemment celui
+                  que l’on a construit de ses mains. (N.D.<name>Q.B.</name>)</note> Voici que tourne à l’aigre
+               une discussion sur le Cratyle entre Lescure et Queneau. Le premier ayant
+               jésuitiquement provoqué le second à commettre un affreux calembour sur le « sot
+               Cratyle », il est déclaré que « l’étymologie est une pente neigeuse qui nous entraîne
+               dans un abîme de merdre » <note n="2">On voit où peut conduire l’absence des membres
+                  les plus avisés (N.D.A.M.S.).</note></p>
+            <p> La séance est levée. <note n="3">Il était temps, en effet (N.D.F.L.L.)</note></p>
+
+            <p>Prochaine réunion : </p>
+            <p><date>VENDREDI 28 AVRIL 1961</date>
+               <name>Restaurant Laborderie,</name> 40, rue de l’Université</p>
+            <p> Par intérim :</p>
+            <p>
+               <name>R.Q.</name> et <name>J.L.</name></p>
+         </div>
+
+
+         <div type="autre">
+            <p>Erratum :</p>
+            <p>Inclure, ligne 8 en partant du bas, entre « OuLiPo » et « Ce sera fait ». La phrase
+               suivante qui a sauté à la composition :</p>
+            <p>« A ce sujet, <name>Noël Arnaud</name> précise qu’il est nécessaire d’étudier, au
+               cours de notre prochaine séance, le contenu du Dossier du Collège qui sera consacré
+               (pour moitié environ) aux activités OuLiPiennes. » </p>
+         </div>
+      </body>
+   </text>
+</TEI>
