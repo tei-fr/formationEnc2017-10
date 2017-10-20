@@ -178,7 +178,7 @@
             <p>Afin de nous familiariser avec l’utilisation des Stylesheets, nous allons d’abord essayer de modifier les paramètres par défaut d’une transformation TEI vers HTML.</p>
             <list>
               <head><hi>Exercice :</hi> Essayons d’abord de produire une sortie HTML par défaut de notre édition des archives de l’Oulipo</head>
-              <item>Ouvrez le fichier <ident>oulipo.xml</ident> qui se trouve dans <ident>oulipoEd</ident></item>
+              <item>Ouvrez le fichier de votre édition qui qui se trouve dans <ident>oulipoEd</ident></item>
               <item>Configurez un nouveau scénario de transformation avec TEIP5 XHTML</item>
               <item>Sous l’onglet <ident>Sortie</ident> cochez la case <ident>Ouvrir dans un éditeur</ident> pour voir le code HTML résultant</item>
               <item>Exécutez la transformation et observez le résultat</item>
@@ -197,10 +197,10 @@
               <head><hi>Exercice :</hi> personnalisation de la sortie vers html</head>
               <item>Éditer le scénario de transformation avec TEIP5 XHTML (oXygen va vous demander de le dupliquer)</item>
               <item>Explorer les paramètres de transformation disponibles (en cliquant sur le bouton <ident>Paramètres</ident>, puis en parcourant la liste)</item>
-              <item>Ajoutez un sommaire</item>
-              <item>Ajouter des id aux paragraphes</item>
               <item>Retirez la numérotation des parties (modifier le paramètre <ident>numberHeadings</ident>)</item>
               <item>Associez au document XHTML un fichier CSS (celui-ci se trouve dans le répertoire <ident>travaux/oulipoEd/css/</ident>, le paramètre est <ident>cssFile</ident>)</item>
+              <!--<item>Ajoutez un sommaire</item>
+              <item>Ajouter des ids aux paragraphes</item>-->
             </list>
             <p><hi>Rappel :</hi> <ref target="http://www.tei-c.org/release/doc/tei-xsl/"
               >Documentation des XSLT Stylesheets</ref></p>
@@ -238,33 +238,38 @@
           <div>
             <head>Sorties non proposées par défaut</head>
             <p>Chemin du Framework : <code>oxygen/frameworks/tei/xml/tei/stylesheet/</code></p>
+            <p>avec des paramètre oXygen : <code>${profiledir}/${profile}</code></p>
             <div>
               <head><hi>Exercice</hi> : Bénéficier d’un plus grand nombre de formats de sortie</head>
-              <p>En faisant directement appel aux XSL Stylesheet, vous pouvez bénéficier d’un plus grand nombre de formats de sortie, par ex. : LaTeX, csv, etc.</p>
+              <p>En faisant directement appel aux XSL Stylesheets, vous pouvez bénéficier d’un plus grand nombre de formats de sortie, par ex. : LaTeX, csv, etc.</p>
               <list>
-                <item>configurez un scénario de transformation en utilisant le profil par défaut pour PDF</item>
-                <item>produire une sortie PDF à partir d’un fichier encodé en TEI</item>
+                <item>configurez un nouveau scénario de transformation XML avec XSLT</item>
+                <item>dans XSL URL, tapez <code>${profiledir}/${profile}</code></item>
+                <item>sélectionnez le transformateur <ident>Saxon HE 9.6</ident></item>
+                <item>appliquez la transformation pour produire une sortie LaTeX</item>
+                <item>afficher le résulat dans <!--<ref target="https://fr.sharelatex.com"
+                >Sharelatex</ref>--><ref target="https://www.overleaf.com">Overleaf</ref></item>
                 <item>modifiez le paramètre institution et prenez connaissance du résultat de vos modifications</item>
-                <item>Comment traiter le texte sur deux colonnes, retirer les numéros de page, modifier le retrait des paragraphes, changer de format de page ?</item>
+                <item>Comment changer de police ou modifier le format de page ?</item>
               </list>
-              <p>Vous pouvez prendre connaissance de la liste des paramètres dans la <ref
-                  target="http://www.tei-c.org/release/doc/tei-xsl/">documentation</ref></p>
+              <p><hi>Rappel :</hi> Vous pouvez prendre connaissance de la liste des paramètres dans la <ref target="http://www.tei-c.org/release/doc/tei-xsl/">documentation</ref></p>
             </div>
           </div>
-            <div>
-              <p>Outre les sorties par défaut proposées par oXygen, vous pouvez directement à toutes les transformations définies dans le Framework avec leurs paramètres en configurant votre propre scénario de transformation.</p>
-              <p>Pour cela, il vous faut localiser les transformations définies par les XSL Stylesheets sur votre ordinateur. Celles-ci étant embarquées par oXygen, vous pouvez les trouver au chemin suivant : <code>oxygen/frameworks/tei/xml/tei/stylesheet/</code></p>
-              <p>Pour localiser le chemin du Framewok, localisez d’abord l’application sur votre ordinateur.</p>
-              <p>Chaque répertoire de profil peut contenir autant de répertoires nommés selon d’après les formats de sortie. Ici les feuilles de transformations nommées « from » ou « to » permettent de transformer « depuis » ou « vers » le format désigné.</p>
-              <p>Par exemple, pour transformer un fichier TEI vers html5 par défaut, on peut exécuter la transformation <code>profiles/default/html/to.xsl</code>.</p>
-              <list>
-                <head><hi>Exercice :</hi> personnalisation d’une sortie vers LaTeX</head>
-                <item>configurez un scénario de transformation en utilisant le profile par défaut pour LaTeX</item>
-                <item>produire une sortie LaTeX à partir d’un fichier encodé en TEI</item>
-                <item>afficher le résulat dans <ref target="https://fr.sharelatex.com"
-                    >Sharelatex</ref></item>
-                <item>configurez les paramètres pour modifier la sortie et prenez connaissance du résultat de vos modifications</item>
-              </list>
+          <div>
+            <p>Outre les sorties par défaut proposées par oXygen, vous pouvez directement accéder toutes les transformations définies dans le Framework avec leurs paramètres en configurant votre propre scénario de transformation.</p>
+            <p>Pour cela, il vous faut localiser les transformations définies par les XSL Stylesheets sur votre ordinateur. Celles-ci étant embarquées par oXygen, vous pouvez les trouver au chemin suivant : <code>oxygen/frameworks/tei/xml/tei/stylesheet/</code></p>
+            <p>Pour localiser le chemin du Framewok, localisez d’abord l’application sur votre ordinateur.</p>
+            <p>Chaque répertoire de profil peut contenir autant de répertoires nommés selon d’après les formats de sortie. Ici les feuilles de transformations nommées « from » ou « to » permettent de transformer « depuis » ou « vers » le format désigné.</p>
+            <p>Par exemple, pour transformer un fichier TEI vers html5 par défaut, on peut exécuter la transformation <code>profiles/default/html/to.xsl</code>.</p>
+            <list>
+              <head><hi>Exercice :</hi> personnalisation d’une sortie vers LaTeX</head>
+              <item>configurez un scénario de transformation en utilisant le profile par défaut pour LaTeX</item>
+              <item>produire une sortie LaTeX à partir d’un fichier encodé en TEI</item>
+              <item>afficher le résulat dans <!--<ref target="https://fr.sharelatex.com"
+                >Sharelatex</ref>--><ref target="https://www.overleaf.com">Overleaf</ref></item>
+              <item>configurez les paramètres pour modifier la sortie et prenez connaissance du résultat de vos modifications</item>
+            </list>
+            <p>Comment traiter le texte sur deux colonnes, retirer les numéros de page, modifier le retrait des paragraphes ? sans doute dans LateX...</p>
           </div>
         </div>
       </div>
@@ -291,11 +296,9 @@
         <div type="slide">
           <div>
             <head>Exemple d’inclusion d’une <hi>XSLT</hi></head>
-            <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <![CDATA[<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-                <xsl:import href="../path/to/" />
-              </xsl:stylesheet>]]>
-            </egXML>
+<eg>
+  &lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/latex/latex.xsl"/>
+</eg>
           </div>
         </div>
         <div type="slide">
@@ -303,9 +306,9 @@
             <head><ident>import</ident> et <ident>include</ident></head>
             <p><ident>import</ident> et <ident>include</ident> sont deux fonctionnalités prévues par XSLT.</p>
             <list>
-              <label><code><![CDATA[<xsl:import href="..."/>]]></code></label>
+              <label><code>&lt;xsl:import href="..."/></code></label>
               <item>inclue les règles d’un autre fichier XSLT, en prenant la prééminence sur elles si besoin</item>
-              <label><code><![CDATA[<xsl:include href="..."/>]]></code></label>
+              <label><code>&lt;xsl:include href="..."/></code></label>
               <item>importe les règles d’un autre fichier XSLT, mais sans prendre de prééminence sur elles</item>
             </list>
           </div>
@@ -318,31 +321,30 @@
         </div>
         <div type="slide">
           <div>
-            <head>Créer son propre profil</head>
-            <p><ident>profiles/$PROFILENAME/$FORMAT/to.xsl</ident></p>
-            <p><ident>profiles/$PROFILENAME/$FORMAT/from.xsl</ident></p>
-            <p>Vous pouvez commencer en copiant les fichiers par défaut. Par exemple, prendre html5</p>
+            <head>Personnaliser la sortie par défaut (1)</head>
+            <p>Inclure la transformation par défaut dans sa XSL, puis ajouter vos propres règles</p>
+            <eg>&lt;xsl:include href="http://www.tei-c.org/release/xml/tei/stylesheet/latex/latex.xsl"/></eg>
             <list>
-              <item>Créez un répertoire <ident>perso/</ident> dans <ident>profiles/</ident>.</item>
-              <item>Dans ce répertoire copiez le répertoire <ident>html5/</ident> contenu dans <ident>default/</ident></item>
-              <item>Créez un scénario de transformation avec le fichier <ident>to.xsl</ident> contenu dans <ident>profiles/perso/html5/</ident></item>
-              <item>Modifiez le fichier <ident>profiles/perso/html5/to.xsl</ident> pour personnalisez votre transformation avec des paramètres</item>
-              <item>Supprimer les numéros de titres</item>
+              <item>insérer le paramètre suivant :<code>
+                &lt;xsl:param name="institution">École nationale des chartes&lt;/xsl:param>
+              </code></item>
+              <item>créer un scénario de transformation XML avec XSLT</item>
+              <item>assurez vous que la transformation fonctionne toujours en l’appliquant</item>
             </list>
-            <p>Exemple :</p>
-<egXML xmlns="http://www.tei-c.org/ns/Examples">
-<![CDATA[<xsl:param name="numberFigures">false</xsl:param>]]>
-</egXML>
-            
-            <!-- @todo définir un exercice -->
           </div>
         </div>
         <div type="slide">
           <div>
-            <head>Afficher une liste des personnes citées</head>
+            <head>Personnaliser la sortie par défaut (2)</head>
+            <p>Vous pouvez maintenant inclure plusieurs règles XSLT de votre choix dans le fichier pour modifier le comportement de la XSLT par défaut des XSL Stylesheets.</p>
+          </div>
+        </div>
+        <div type="slide">
+          <div>
+            <head>Afficher la liste des personnes citées</head>
             <list>
-              <item>Observez dans le fichier <ident>oulipo.xml</ident> que nous avons ajouté un document TEI à la fin du corpus qui contient un élément <ident>divGen</ident> identifié par un attribut <att>type</att></item>
-              <item>Avec ce que vous connaissez de XSLT, créez dans votre pofil une règle qui s’occupera de cet élément avec <gi>xsl:template</gi> et l’attribut <att>match</att></item>
+              <item>Observez dans le fichier <ident>oulipo.xml</ident> que nous avons ajouté un document TEI à la fin du corpus qui contient un élément <ident>divGen</ident> identifié par un attribut <att>type</att> qui a la valeur <val>namelist</val></item>
+              <item>Avec ce que vous connaissez de XSLT, créez dans votre profil une règle qui s’occupera de cet élément avec <gi>xsl:template</gi> et l’attribut <att>match</att></item>
               <item>Donnez un contenu à cette règle qui liste tous les éléments <gi>persName</gi> contenus dans le document</item>
             </list>
             <!-- @todo définir un exercice -->
@@ -359,6 +361,20 @@
               <item>Appliquez cette transformation au fichier <ident>oulipo.xml</ident> et consultez le fichier HTML résulat dans un navigateur</item>
             </list>
             <!-- @todo définir un exercice -->
+          </div>
+        </div>
+        <div type="slide">
+          <div>
+            <head>Créer un profil personnel</head>
+            <p><ident>profiles/$PROFILENAME/$FORMAT/to.xsl</ident></p>
+            <p><ident>profiles/$PROFILENAME/$FORMAT/from.xsl</ident></p>
+            <p>Vous pouvez commencer en copiant les fichiers par défaut. Par exemple, prendre html5</p>
+            <list>
+              <item>Créez un répertoire <ident>perso/</ident> dans <ident>profiles/</ident>.</item>
+              <item>Dans ce répertoire copiez le répertoire <ident>html5/</ident> contenu dans <ident>default/</ident></item>
+              <item>Créez un scénario de transformation avec le fichier <ident>to.xsl</ident> contenu dans <ident>profiles/perso/html5/</ident></item>
+              <item>Modifiez le fichier <ident>profiles/perso/html5/to.xsl</ident> pour personnalisez votre transformation avec des paramètres</item>
+            </list>
           </div>
         </div>
       </div>
