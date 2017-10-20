@@ -130,19 +130,27 @@
                 préfériez les voir…</p>
               <p>Réponse : 16</p>
             </item>
-            <label>Combien y a-t-il de vers (<gi>l</gi>) qui contient au moins un tel
-              segment?</label>
+            <label>Combien y a-t-il de vers (<gi>l</gi>) qui contient au moins un lieu de 
+              variation dans l'encodage (<gi>choice</gi>)
+              ?</label>
             <item>
               <p>Expression XPath à écrire : </p>
-              <p><code>count(//l[orig])</code></p>
-              <p>Réponse : 7</p>
+              <p><code>count(//l[choice])</code></p>
+              <p>Réponse : 5</p>
+            </item>
+            <label>Combien y a-t-il de formes originaux (<gi>orig</gi>) contenus par un <gi>choice</gi>
+              ?</label>
+            <item>
+              <p>Expression XPath à écrire : </p>
+              <p><code>count(//choice/orig)</code></p>
+              <p>Réponse : 10</p>
             </item>
             <label>Et combien y a-t-il de <gi>orig</gi> qui sont contenu directement par un
                 <gi>l</gi> ?</label>
             <item>
               <p>Expression XPath à écrire : </p>
               <p><code>count(//l/orig)</code></p>
-              <p>Réponse : 6</p>
+              <p>Réponse : 2</p>
             </item>
             <label>Quel est le contenu textuel du premier vers de chaque strophe ? et du
               dernier ?</label>
@@ -255,7 +263,7 @@
           <list>
             <item>Cliquez sur l’icône de la disquette (ou tapez ctrl-s) pour enregistrer les
               modifications que vous venez de faire.</item>
-            <item>Cliquez sur l’onglet <ident>duBellayEd.xml</ident> pour revenir sur votre document
+            <item>Cliquez sur l’onglet <ident>duBellay.xml</ident> pour revenir sur votre document
               XML.</item>
             <item>Cliquez sur l’icône triangle-rouge pour relancer la transformation (ou tapez
               CTRL-maj-T)</item>
