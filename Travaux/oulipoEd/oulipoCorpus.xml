@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-model href="../../../../../Downloads/out/teiTranscrODD2.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
    <teiHeader>
       <fileDesc>
@@ -22,14 +21,21 @@
       <profileDesc>
          <particDesc>
             <xi:include href="oulipiens.xml">
-               <xi:fallback>
+               <!--   <xi:fallback>
                   <xi:include href="oops.xml"/>
-               </xi:fallback>
+               </xi:fallback>-->
             </xi:include>
          </particDesc>
       </profileDesc>
    </teiHeader>
    <xi:include href="650308-1.xml"/>
+   <xi:include href="610417.xml"> </xi:include>
+   <xi:include href="611219.xml"> </xi:include>
+   <xi:include href="620911.xml"> </xi:include>
+   <xi:include href="610417_bis.xml"> </xi:include>
+   <xi:include href="611219_bis.xml"> </xi:include>
+   <!--<xi:include href="620911_bis.xml" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
+-->
    <!--<xi:include href="VOTRE FICHIER ICI" ><xi:fallback><xi:include href="oops.xml"/></xi:fallback></xi:include>
 -->
    <TEI>
@@ -48,7 +54,7 @@
       </teiHeader>
       <text>
          <body>
-            <div>
+            <div type="autre">
                <divGen type="namelist"/>
             </div>
          </body>

@@ -20,7 +20,7 @@ class: center middle
 ![test](../remarks/images/logo-ecole-nationale-des-chartes.png)
 
 ---
-layout: false
+
 
 # Structure(s) d’un document TEI-XML
 
@@ -97,12 +97,12 @@ Un élément `&lt;TEI&gt;` (un document) contient au minimum un `&lt;teiHeader&g
 <TEI >
   <teiHeader><!-- obligatoire :  métadonnées  --></teiHeader>
     <facsimile>
-      <!-- facultatif : rassemble des images de l’objet-->
+      <!-- facultatif :  rassemble des images de l’objet-->
     </facsimile>
     <sourceDoc>
-      <!-- facultatif : transcription documentaire  de l’objet -->
+      <!-- facultatif :  transcription documentaire  de l’objet -->
     </sourceDoc>
-    <text><!-- facultatif : transcription textuelle  de l’objet --></text>
+    <text><!-- facultatif :  transcription textuelle  de l’objet --></text>
 </TEI>
 ```
 
@@ -115,12 +115,12 @@ Un élément `&lt;TEI&gt;` (un document) contient au minimum un `&lt;teiHeader&g
 ```xml
 
 <teiCorpus >
-  <teiHeader>
-    <!-- obligatoire -->
-  </teiHeader>
-  <TEI>
-    <!-- obligatoire -->
-  </TEI>
+<teiHeader>
+  <!-- obligatoire -->
+</teiHeader>
+<TEI>
+  <!-- obligatoire -->
+</TEI>
   <!-- encore d’elements <TEI>  -->
 </teiCorpus>
 ```
@@ -131,17 +131,17 @@ Cette structure servirait par ex à une collection de livres de la meme sorte, o
 ---
 
 
-### 2 méthodes simplissimes pour gérer un facsimile numérique
+# Deux méthodes simplissimes pour gérer un facsimile numérique
 
 ```xml
 
 <TEI >
   <teiHeader><!-- métadonnées sur l’édition numerique --></teiHeader>
   <facsimile>
-    <graphic url="page1r.png"/>
-    <graphic url="page1v.png"/>
-    <graphic url="page2r.png"/>
-    <graphic url="page2v.png"/>
+    <graphic url="page1r.png"></graphic>
+    <graphic url="page1v.png"></graphic>
+    <graphic url="page2r.png"></graphic>
+    <graphic url="page2v.png"></graphic>
   </facsimile>
 </TEI>
 ```
@@ -153,9 +153,9 @@ NB: aucune manière de structurer les images
 <TEI >
   <teiHeader><!-- métadonnées sur l’édition numerique --></teiHeader>
   <text>
-    <pb facs="page1.png"/>
+    <pb facs="page1.png"></pb>
     <!-- texte de la  page 1 facultativement transcrit ici -->
-    <pb facs="page2.png"/>
+    <pb facs="page2.png"></pb>
     <!-- texte de la  page 2 facultativement transcrit ici-->
   </text>
 </TEI>
@@ -190,13 +190,13 @@ L’élément `&lt;surface&gt;` nous permet de regrouper les images équivalente
 ```xml
 
 <facsimile >
-  <graphic url="page1.png"/>
+  <graphic url="page1.png"></graphic>
     <surface>
-      <graphic url="page2-highRes.png"/>
-      <graphic url="page2-lowRes.png"/>
+      <graphic url="page2-highRes.png"></graphic>
+      <graphic url="page2-lowRes.png"></graphic>
     </surface>
-  <graphic url="page3.png"/>
-  <graphic url="page4.png"/>
+  <graphic url="page3.png"></graphic>
+  <graphic url="page4.png"></graphic>
 </facsimile>
 ```
 
@@ -212,10 +212,10 @@ L’élément `&lt;surfaceGrp&gt;` nous permet de regrouper les surfaces:
 <facsimile >
   <surfaceGrp type="leaf">
     <surface>
-      <graphic url="page1recto.png"/>
+      <graphic url="page1recto.png"></graphic>
     </surface>
     <surface>
-      <graphic url="page1verso.png"/>
+      <graphic url="page1verso.png"></graphic>
     </surface>
   </surfaceGrp>
 </facsimile>
@@ -224,7 +224,7 @@ L’élément `&lt;surfaceGrp&gt;` nous permet de regrouper les surfaces:
 ---
 
 
-### On veut distinguer des sous-parties d’une surface
+# On veut distinguer des sous-parties d’une surface
 
 L’élément `&lt;zone&gt;` nous permet d’identifier n’importe quelle région d’une surface.
 
@@ -234,15 +234,17 @@ L’élément `&lt;zone&gt;` nous permet d’identifier n’importe quelle régi
 
 * Toute définition de zone doit utiliser le système de coordonnées définie pour la surface
 
-* Un système de coordonnées définit une plage de valeurs pour les paires de coordonnées (x,y) qui expriment un polygone 2d (il ne s’agit pas d’une mensuration)
+* Un système de coordonnées définit une plage de valeurs pour les paires de coordonnées (x,y) qui expriment un polygone 2d 
+
+* (il ne s’agit pas d’une mensuration)
 
 ```xml
 
 <facsimile >
   <surface ulx="0" uly="0" lrx="40" lry="30">
-    <graphic url="page1r.png"/>
+    <graphic url="page1r.png"></graphic>
     <zone points="22,10 30,21 17,25 12,23">
-      <graphic url="page1rdetail.png"/>
+      <graphic url="page1rdetail.png"></graphic>
     </zone>
   </surface>
 </facsimile>
@@ -262,17 +264,17 @@ L’élément `&lt;zone&gt;` nous permet d’identifier n’importe quelle régi
 <facsimile >
   <surfaceGrp type="leaf">
     <surface xml:id="p1r">
-      <graphic url="page1r.png"/>
-      <graphic url="page1r.tiff"/>
+      <graphic url="page1r.png"></graphic>
+      <graphic url="page1r.tiff"></graphic>
     </surface>
     <surface xml:id="p1v">
-      <graphic url="page1v.png"/>
+      <graphic url="page1v.png"></graphic>
     </surface>
   </surfaceGrp>
 </facsimile><text >
-  <pb facs="#p1r"/>
+  <pb facs="#p1r"></pb>
   <!-- text from page 1 recto transcribed here -->
-  <pb facs="#p1v"/>
+  <pb facs="#p1v"></pb>
   <!-- text from page 1 verso transcribed here -->
 </text>
 ```
@@ -315,12 +317,7 @@ Nous avons donc un fichier `corpusHdr.xml` et plusieurs fichiers `text1.xml`, `t
 Nous pouvons intégrer dans un seul document TEI toutes ces ressources en utilisant XInclude ainsi&nbsp;: 
 
 ```xml
-<teiCorpus xmlns:xi="http://www.w3.org/2001/XInclude" >
-  <xi:include href="corpusHdr.xml"/>
-  <xi:include href="text1.xml"/>
-  <xi:include href="text2.xml"/>
-  <!-- etc -->
-</teiCorpus>
+
 
 ```
 

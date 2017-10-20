@@ -38,7 +38,6 @@ Parallèlement à cet effort de modélisation, un travail en cours sur le mappin
 
 ---
 name: index
-layout: false
 
 # Sommaire
 
@@ -142,7 +141,7 @@ Regroupe les éléments qui se rapportent tous à un nom de personne ou de lieu
 
 * agents (`&lt;name&gt;`, `&lt;orgName&gt;`, `&lt;persName&gt;`)
 
-* lieux (`&lt;place&gt;`, `&lt;country&gt;`, `&lt;district&gt;`...)
+* lieux (`&lt;placeName&gt;`, `&lt;country&gt;`, `&lt;district&gt;`...)
 
 Chacun avec des propriétés de nommage, des traits, des états, des événements, des relations.
 
@@ -155,6 +154,8 @@ L’élément `&lt;person&gt;` peut être instancié à l’intérieur d’un é
 La classe `model.namelike` (comme un nom) regroupe des éléments qui se rapportent tous à un nom de personne ou de lieu. Les éléments appartenant à cette classe y figurent. On peut voir que c’est une super-classe qui est composée de plusieurs classes qui comprennent des éléments comme `&lt;persname&gt;`, `&lt;name&gt;`, etc.
 
 Comme il s’agit d’une classe, tous les éléments qui appartiennent à cette classe disposent de certaines propriétés.
+
+.footnote[Revoir pour insérer la distinction entre les deux classe]
 
 ---
 template: inverse
@@ -351,6 +352,8 @@ La TEI fournit trois éléments génériques, et quelques-uns plus spécifiques.
 
 * des .red[événements (events)] ou incidents qui peuvent conduire à un changement d’état ou moins fréquemment de trait.
 
+.footnote[@todo fournir la liste d’éléments classés correspondants]
+
 ---
 
 
@@ -361,6 +364,8 @@ Ce module fournit également des éléments pour la représentation d’informat
 --&gt; production de fichier d’autorité ou collection d’information biographiques
 
 * 
+
+.footnote[@todo améliorer]
 
 ???
 

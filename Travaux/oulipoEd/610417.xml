@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Compte rendu de la réunion du 17 avril 1961</title>
+            <title type="sub">Circulaire n°6</title>
+            <author>Lou Burnard</author>
+            <editor>Marie</editor>
+            <respStmt>
+               <resp>encodage</resp>
+               <name>Marie</name>
+            </respStmt>
+            <funder>CNRS</funder>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>école nationale des chartes</publisher>
+            <date>2017</date>
+         </publicationStmt>
+         <sourceDesc>
+            <p>archives de l'OULIPO, à partir du facsimile issu de Gallica, <orgName>Bibliothèque
+                  nationale de France</orgName>cote123456</p>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <textClass/>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <head>OUVROIR DE LITTERATURE POTENTIELLE</head>
+         <head>Circulaire n°6</head>
+         <head>Compte-rendu de la réunion du <date>lundi 17 avril 1961</date></head>
+         <div type="autre">
+            <p><hi rend="underline">Présents</hi> : <persName ref="#NA">Noël Arnaud</persName>,
+                  <persName ref="#JD">Jacques Duchateau</persName>, <persName ref="#JL">Jean
+                  Lescure</persName>, <persName ref="#RQ">Raymond Queneau</persName>, <persName
+                  ref="JQ">Jean Queval</persName>.</p>
+            <p><hi rend="underline">Président</hi> : <persName ref="#RQ">Raymond
+               Queneau</persName>.</p>
+         </div>
+         <div type="autre">
+            <p>Les absents s’étant excusés eux-mêmes, le Président se donne la parole assez
+               facilement, pour constater que :</p>
+            <list>
+               <item><label>a.</label>le point (a) de l’ordre du jour (<hi rend="underline">les
+                     monosyllabes d’<persName>Amédée Pommier</persName></hi>) est, en l’absence
+                  d’<persName ref="#AMS">A.M. Schmidt</persName>, exclu du dit ordre ;</item>
+               <item><label>b.</label>qu’il en est de même du point (c), en l’absence de <abbr>S.
+                     Exc.</abbr>
+                  <persName>Q.B.</persName> ;</item>
+               <item><label>c.</label>qu’en l’absence des mathématiciens, le point (b) doit être
+                  reporté à une date ultérieure</item>
+            </list>
+            <p>Ceci étant acquis, le Président se lance dans un long exposé de cette <hi
+                  rend="underline">loi d’Estoup-Zipf</hi>, objet du point (b). Divers mouvements sur
+               tous les bancs suggèrent que les assistants perdent assez vite de vue la constante de
+               cette loi. Un nouvel examen s’avère indispensable et aura lieu au cours d’un prochain
+               déjeuner.</p>
+            <p>Le Président s’engage à publier dans le prochain Dossier du Collège un communiqué
+               annonçant la création de l’Oulipo. Ce sera fait.</p>
+            <p>Il était normal que ces occurrences portassent les OuLiPiens présents à s’interroger
+               sur leur être même. Au terme de cette interrogation, ils aboutirent à deux
+               définitions provisoirement péremptoires : <list>
+                  <item><hi rend="underline">OuLiPo</hi> : Organisme qui se propose d’examiner en
+                     quoi et par quel moyen, étant donnée une théorie scientifique concernant
+                     éventuellement le langage (donc : l’anthropologie), on peut y introduire du
+                     plaisir esthétique (affectivité et fantaisie).</item>
+                  <item><hi rend="underline">Oulipiens</hi> : Rats qui ont à construire le
+                     labyrinthe dont ils se proposent de sortir. <note n="1">On aperçoit, sous les
+                        grands mots, toute la sournoiserie du cheminement. Car le labyrinthe dont on
+                        sort les plus aisément est évidemment celui que l’on a construit de ses
+                        mains. (N.D.Q.B.)</note></item>
+               </list></p>
+            <p>Voici que tourne à l’aigre une discussion sur le <title><hi rend="italic"
+                     >Cratyle</hi></title> entre <persName ref="#JL">Lescure</persName> et
+                  <persName ref="#RQ">Queneau</persName>. Le premier ayant jésuitiquement provoqué le second à
+               commettre un affreux calembour sur le « sot Cratyle », il est déclaré que
+               <quote>l’étymologie est une pente neigeuse qui nous entraîne dans un abîme de merdre</quote>
+                  <note n="2">On voit où peut conduire l’absence des membres les plus avisés
+                  (N.D.A.M.S.)</note>. La séance est levée. <note n="3">Il était temps, en effet
+                  (N.D.F.L.L.)</note></p>
+            <p>Prochaine réunion :<lb/>
+               <date>VENDREDI 28 AVRIL 1961</date><lb/> Restaurant Laborderie, <address>
+                  <addrLine>40, rue de l’Université</addrLine>
+               </address></p>
+            <p>Par intérim : <persName ref="#RQ">R.Q.</persName> et <persName ref="JL">J.L.</persName></p>
+         </div>
+         <div type="autre">
+            <p>Erratum</p>
+            <p>Inclure, ligne 8 en partant du bas, entre « OuLiPo » et « Ce sera fait ». La phrase
+               suivante qui a sauté à la composition : <lb/>« A ce sujet, <persName ref="NA">Noël
+                  Arnaud</persName> précise qu’il est nécessaire d’étudier, au cours de notre
+               prochaine séance, le contenu du Dossier du Collège qui sera consacré (pour moitié
+               environ) aux activités OuLiPiennes. »</p>
+         </div>
+      </body>
+   </text>
+</TEI>
