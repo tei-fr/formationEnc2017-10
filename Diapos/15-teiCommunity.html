@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Programme</title><link href="../remarks/themes/remark-dark.css" rel="stylesheet" media="all" type="text/css"></head><body><textarea id="source">
+title: La communauté TEI
+description: Lou BurnardEmmanuel Château, 
+theme: theme/remark-dark-em.css
+name: inverse
+layout: true
+class: inverse
+
+---
+class: center middle
+name: index
+
+
+# 15 – La Communauté TEI
+
+### Formation TEI | ENC 16 au 20 octobre 2017
+
+.footnote[[Programme](00-programme.html)]
+![test](../remarks/images/logo-ecole-nationale-des-chartes.png)
+
+---
+layout: false
+
+# Qu’est-ce que la Text Encoding Initiative (TEI)&nbsp;?
+
+
+
+* Une organisation, une institution&nbsp;?
+
+* Un club, une mode, une religion&nbsp;?
+
+* Une spécification technique&nbsp;?
+
+* Un gabarit pour la construction des spécifications techniques&nbsp;?
+
+---
+
+
+# Naissance de la Text Encoding Initiative
+
+* printemps 1987&nbsp;: En Europe, des réunions sur la possibilité de standardisation des données et sources historiques (J.P. Genet, M. Thaller)
+
+* automne 1987&nbsp;: Aux États-Unis, la NEH finance une réunion internationale sur la possibilité de définir des "text encoding guidelines"
+![](../images/1987-11-vassarPt.png)
+---
+
+
+# Les enjeux de la TEI
+
+Reconnaissant les possibilités démotiques du numérique… l’initiative .red[«&nbsp;Text Encoding for Interchange&nbsp;»] s’est donnée comme mission&nbsp;:
+
+* de faciliter la .red[création], l’.red[échange], et l’.red[intégration] des données textuelles informatisées 
+* pour toute sorte de texte
+
+* dans toutes les langues 
+
+* de toute origine temporelle ou culturelle
+
+
+* La TEI s’adresse également ...
+* aux débutants, cherchant des solutions bien connues et consensuelles
+
+* aux experts, cherchant à créer de nouvelles solutions
+
+
+---
+
+
+# 2000&nbsp;: Naissance du TEI Consortium
+
+Suite à des travaux sérieux de la part de plusieurs utilisateurs de la TEI (notamment à Londres, Virginia, Brown, Oxford, Bergen…) le TEI Consortium a été établi comme association à but non lucratif en 2000. 
+
+Enjeux du consortium (à part les détails bureaucratiques)&nbsp;: 
+* de garantir l’entretien du système TEI
+
+* de mettre en place des mises à jour urgentes&nbsp;: 
+* version XML
+
+* élargissement des sujets traités
+
+
+* définir un modèle économique et scientifique qui permette une pérennité aux efforts de la communauté TEI
+
+
+http://www.ariadne.ac.uk/issue24/tei/
+
+---
+
+
+# L’organisation de la TEI
+
+Le [Consortium TEI](http://www.tei-c.org/index.html) se compose de&nbsp;:
+
+* [Le Technical council](http://www.tei-c.org/Activities/Council/)
+
+* [Groupes de travail (Workgroup)](http://www.tei-c.org/Activities/Workgroups/)
+
+* [Le Board](http://www.tei-c.org/Board/)
+
+* [Les Special Interest Group (SIG)](http://www.tei-c.org/Activities/SIG/)
+
+* Sa communauté d’utilisateurs
+
+---
+
+
+# TEI organigramme (aujourdhui)
+![](../images/tei-community.png)
+---
+
+
+# Devenir membre
+
+La Text Encoding Initiative étant une organisation à but non lucratif, vous pouvez [devenir membre.](http://members.tei-c.org/Join)
+
+* Manifester son soutien
+
+* Participer aux décisions et aux orientations
+
+* Bénéficier de services communautaires (par exemple [TAPAS](http://tapasproject.org)) ou de tarifs négociés pour des logiciels
+
+* Participer à la [conférence annuelle](http://www.tei-c.org/Membership/Meetings/) (TEI annual Conference and Members’Meeting)
+
+---
+
+
+# Listes de diffusion
+
+La communauté TEI possède plusieurs listes de diffusion où vous pouvez poser vos questions ou trouver des solutions à vos problèmes.
+* Liste francophone&nbsp;: [https://groupes.renater.fr/sympa/info/tei-fr](https://groupes.renater.fr/sympa/info/tei-fr)
+* Liste internationale&nbsp;: [https://listserv.brown.edu/archives/cgi-bin/wa?A0=tei-l](https://listserv.brown.edu/archives/cgi-bin/wa?A0=tei-l)
+
+---
+
+
+# Entrepôt GitHub
+
+Le code source de la TEI est distribué de manière libre et open source par l’intermédiaire d’un entrepôt GitHub auquel vous pouvez contribuer.
+* Le consortium TEI sur GitHub&nbsp;: [https://github.com/TEIC](https://github.com/TEIC)
+* Entrepôt des Guidelines&nbsp;: [https://github.com/TEIC/TEI](https://github.com/TEIC/TEI)
+* Gestionnaires d’issues des Guidelines&nbsp;: [https://github.com/TEIC/TEI/issues](https://github.com/TEIC/TEI/issues)
+
+---
+
+
+## Un standard existe pour qu'on s'y conforme, non ?
+![](../images/1991-TEI-commandments.png)
+---
+
+
+# L’esprit TEI
+
+Qu’est-ce que cela veut dire&nbsp;: «&nbsp;être conforme&nbsp;» à la TEI&nbsp;?
+
+* une pratique de balisage consensuelle
+
+* un lexique commun
+
+* un respect de l’autonomie
+
+La standardisation ne doit pas signifier «&nbsp;fais comme moi&nbsp;»&nbsp;; elle veut dire «&nbsp;explique-moi ce que tu fais.&nbsp;»
+
+---
+
+
+# … d’où les variations TEI
+
+Par exemple&nbsp;: éléments pour description bibliographique&nbsp;: On a le choix entre 
+* `&lt;bibl&gt;` qui contient n’importe quel mélange de composants bibliographiques … ou aucun
+
+* `&lt;biblStruct&gt;` qui contient une sélection prédéfinie d’éléments, strictement structurés
+
+
+---
+
+
+# L’architecture TEI
+
+* TEI est un système modulaire. On s’en sert pour créer un système d’encodage selon ses propres besoins, en sélectionnant des modules spécifiques
+
+* Chaque module fournit un ensemble d’éléments (et leurs attributs)
+
+* on peut sélectionner les éléments voulus, et même en changer des propriétés 
+
+* on peut y mélanger des éléments nouveaux, ou bien originels ou bien en provenance d’autres standards
+
+Un encodage TEI représente une modélisation spécifique de l’univers textuel
+
+---
+template: inverse
+class: center middle
+
+
+# [À très bientôt](https://groupes.renater.fr/sympa/info/tei-fr), donc
+
+.footnote[[Revenir au début](#index) | [Programme](programme.html)]
+</textarea><script src="../remarks/js/remark-0.6.5.min.js" type="text/javascript"></script><script type="text/javascript">
+        var hljs = remark.highlighter.engine;
+      </script><script src="remark.language.js" type="text/javascript"></script><script type="text/javascript">
+        var slideshow = remark.create({
+        highlightStyle: 'monokai',
+        highlightLanguage: 'remark'
+        }) ;
+      </script></body></html>
