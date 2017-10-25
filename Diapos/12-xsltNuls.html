@@ -20,7 +20,7 @@ class: center middle
 ![test](../remarks/images/logo-ecole-nationale-des-chartes.png)
 
 ---
-layout: false
+
 
 # Objectifs
 
@@ -312,11 +312,10 @@ A partir de ceci :
 
 ```xml
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
   <xsl:template match="ref">
-    <a  href="{@target}">
-      <xsl:apply-templates/>
+    <a href="{@target}">
+      <xsl:apply-templates></xsl:apply-templates>
     </a>
   </xsl:template>
 </xsl:stylesheet>
@@ -344,8 +343,8 @@ A partir de ceci :
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <h1>34: Pasta pour les novices</h1>
-  <p>Ingrédients: pâtes  fromage râpé</p>
-  <p>Faire bouillir les pâtes, et mélanger avec le fromage.</p>
+  <p>Ingrédients: pates  fromage râpé</p>
+  <p>Faire bouiller les pates, et melanger avec le fromage.</p>
 </html>
 ```
 
@@ -358,19 +357,18 @@ A partir de ceci :
 
 ```xml
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
   <xsl:template match="div">
-    <html >
+    <html>
       <h1>
-        <xsl:value-of select="@n"/>:
-	      <xsl:value-of select="head"/>
+        <xsl:value-of select="@n"></xsl:value-of>:
+	      <xsl:value-of select="head"></xsl:value-of>
       </h1>
       <p>Ingrédients:    
-	      <xsl:apply-templates select="list/item"/>
+	      <xsl:apply-templates select="list/item"></xsl:apply-templates>
       </p>
       <p>
-        <xsl:value-of select="p"/>
+        <xsl:value-of select="p"></xsl:value-of>
       </p>
     </html>
   </xsl:template>
@@ -391,11 +389,10 @@ xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
 
 ```xml
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
-  <xsl:output method="html" encoding="ISO-8859-1"/>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+  <xsl:output method="html" encoding="ISO-8859-1"></xsl:output>
   <xsl:template match="/">
-    <xsl:apply-templates/>
+    <xsl:apply-templates></xsl:apply-templates>
   </xsl:template>
 </xsl:stylesheet>
 ```
@@ -436,8 +433,7 @@ Il peut contenir d’autres éléments XSL, des éléments d’autres noms d’e
 
 ```xml
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
   <xsl:template match="div">
     <!--  .... actions pour les éléments div... -->
   </xsl:template>
@@ -447,7 +443,7 @@ xpath-default-namespace="http://www.tei-c.org/ns/1.0" version="2.0">
   <xsl:template match="div/head">
     <!--  .... actions pour les éléments head contenus par un div....-->
   </xsl:template>
-  <xsl:template match="teiHeader"/>
+  <xsl:template match="teiHeader"></xsl:template>
 </xsl:stylesheet>
 ```
 
@@ -484,28 +480,26 @@ Un template vide requiert la sortie de ... rien, donc (s’il est invoqué) il s
 ---
 
 
-#### Plusieurs templates peuvent être spécifies pour un même élément en des contextes divers
+# Plusieurs templates peuvent être spécifies pour un même élément en des contextes divers
 
 Comparer 
 ```xml
 
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-match="head">
+<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="head">
   <!-- ... -->
-</xsl:template>
-``` 
+  </xsl:template>
+```
+ avec 
 ```xml
 
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-match="div/head">
+<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="div/head">
   <!-- ... -->
-</xsl:template>
-
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-match="figure/head">
+</xsl:template><xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="figure/head">
   <!-- ... -->
 </xsl:template>
 ```
+
+
 En cas de conflit, c’est le template le plus spécifique qui gagne.
 
 ---
@@ -517,37 +511,32 @@ Cet élément rend disponible dans le contexte courant les règles contenus par 
 
 ```xml
 
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-match="/">
-  <html >
-    <xsl:apply-templates/>
+<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="/">
+  <html>
+    <xsl:apply-templates></xsl:apply-templates>
   </html>
 </xsl:template>
 ```
 
 ```xml
 
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-match="TEI">
-    <xsl:apply-templates select="text"/>
+<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="TEI">
+    <xsl:apply-templates select="text"></xsl:apply-templates>
   </xsl:template>
 ```
-
----
-# `&lt;xsl:apply-templates&gt;` varier l’ordre des sorties
 
 Il est très utile pour varier l’ordre des sorties: 
 ```xml
 
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-match="text">
-  <h1 >Corps du texte</h1>
-  <xsl:apply-templates select="body"/>
-  <h1 >Pièces liminaires</h1>
-  <xsl:apply-templates select="front"/>
-  <xsl:apply-templates select="back"/>
+<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="text">
+  <h1>Corps du texte</h1>
+  <xsl:apply-templates select="body"></xsl:apply-templates>
+  <h1>Pièces liminaires</h1>
+  <xsl:apply-templates select="front"></xsl:apply-templates>
+  <xsl:apply-templates select="back"></xsl:apply-templates>
 </xsl:template>
 ```
+
 
 ---
 
@@ -557,24 +546,19 @@ match="text">
 Cet élément fait sortir la valeur d’un élément ou d’un attribut : 
 ```xml
 
-<xsl:value-of xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
- select="/TEI/teiHeader/fileDesc/titleStmt/title"/>
+<xsl:value-of xmlns:xsl="http://www.w3.org/1999/XSL/Transform" select="/TEI/teiHeader/fileDesc/titleStmt/title"></xsl:value-of>
 ```
 
 
 Attention aux doublons potentiels! 
 ```xml
 
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-match="div">
-  <h2 >
-    <xsl:value-of select="@n"/>
-    <xsl:value-of select="head"/>
-  </h2>
-    <xsl:apply-templates/>
-</xsl:template>
-<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-match="div/head"/>
+<xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="div">
+  <h2>
+    <xsl:value-of select="@n"></xsl:value-of>
+    <xsl:value-of select="head"></xsl:value-of></h2>
+    <xsl:apply-templates></xsl:apply-templates>
+</xsl:template><xsl:template xmlns:xsl="http://www.w3.org/1999/XSL/Transform" match="div/head"></xsl:template>
 ```
 
 
